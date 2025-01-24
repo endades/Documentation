@@ -1,3 +1,3 @@
 # Manual de Usuario
 
-[Manual del usuario Control de Stock](Manual_Stock_Control.md)
+[Sistema de control de stock](Manual_Stock_Control.md)
