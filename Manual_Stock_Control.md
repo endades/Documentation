@@ -1,4 +1,4 @@
-# Manual de Usuario para el Sistema de Control de Stock
+# Sistema de control de stock
 
 ## Índice
 
@@ -27,7 +27,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ---
 
-## 2. Acceso al Sistema
+## 2. Acceso al sistema
 
 - Inicie sesión con sus credenciales proporcionadas.
 - Verifique que el sistema se encuentre en la versión actualizada.
@@ -35,9 +35,9 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ---
 
-## 3. Gestión de Pedidos de Compra
+## 3. Gestión pedidos de compra
 
-### 3.1. Pedidos de Compra
+### 3.1. Pedidos de compra
 
 - Desde el menú principal **Compras**, navegue a la sección "Pedidos de Compra".
 - Especifique los materiales requeridos y su cantidad.
@@ -55,7 +55,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ![permiso_especiales](Imagenes/Sistema_Control/permisos_especiales.jpg)
 
-### 3.2. Materiales Reservados
+### 3.2. Materiales reservados
 
 - Desde un documento de **Ventas**, **Compras** y en **Proyectos**, se pueden reservar materiales para el proyecto, indicando en **Materiales reservados** desde el desplegable de **Almacén**.
 
@@ -68,12 +68,12 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 ![reposicion_stock](Imagenes/Sistema_Control/reposicion_stock.jpg)
 
 
-### 3.3. Artículos Importados
+### 3.3. Artículos
 
 - En el pedido de compras, en la pestaña **Detalle** en la cinta lateral derecha, verás que hay una sección ubicada en la parte inferior llamada **Artículos** y **Artículos importados**.
   - **Artículos**: Son materiales propios creados desde en **MATERIAL**.
 
-![articulos](Imagenes/Sistema_Control/articulos.jpg)
+  ![articulos](Imagenes/Sistema_Control/articulos.jpg)
 
   - **Artículos importados**: Son los materiales importados de los proyectos de **Logikal**. Son los mismos materiales que están también en Almacén **Materiales importados**.
 
@@ -81,7 +81,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ---
 
-## 4. Recepción de Materiales
+## 4. Recepción de materiales
 
 - En **Almacenes**, acceda a la opción **"Pendientes de Recibir"**. Se abrirá una pestaña con todos los materiales pendientes de recibir para cada proyecto.
 
@@ -114,7 +114,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ---
 
-## 5. Gestión de Almacenes y Movimientos
+## 5. Gestión de almacenes y movimientos
 
 ### 5.1. Almacenes Layout
 
@@ -133,7 +133,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
     ![almacen_layout](Imagenes/Sistema_Control/almacen_layout2.jpg)
 
-### 5.2. Movimientos en Almacén
+### 5.2. Movimientos en almacén
 
 - Realiza movimientos de materiales entre zonas:
   - En **Almacenes** – **Detallado**, haz clic derecho sobre el material que quieras traspasar o descontar.
@@ -257,7 +257,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
    
 ---
 
-## 7. Control de Stock y Reportes
+## 7. Control de stock y reportes
 
 - Monitorea el stock necesario desde la sección "Producción".
 - Identifica materiales reservados y pendientes en tiempo real.
@@ -265,7 +265,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ---
 
-## 8. Resolución de Problemas Comunes
+## 8. Resolución de problemas comunes
 
 - **Error al importar referencias**: Verifica que las referencias estén configuradas en la base de datos.
 - **Materiales sobrantes o faltantes**: Asegúrate de registrar correctamente las ubicaciones y cantidades al recibir materiales.
