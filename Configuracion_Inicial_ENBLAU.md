@@ -112,7 +112,7 @@ El presente manual está diseñado para guiar a los nuevos usuarios en la config
 
 ## 6. Configuración de Proyectos
 
-- Desde **Proyectos**, accede a **Configuración**.
+- Desde el apartado de **Ventas** selecionar **Proyectos**, accede a **Configuración**.
 
   ![conf_proyectos](Imagenes/Config_Inicial/conf_proyectos.png)
 
@@ -138,7 +138,7 @@ El presente manual está diseñado para guiar a los nuevos usuarios en la config
 
 ## 7. Configuración de Ventas
 
-- Desde **Documentos de Ventas**, accede a **Configuración**.
+- Desde el apartado de **Ventas** selecionar **Documentos de Ventas**, accede a **Configuración**.
 
   ![conf_ventas](Imagenes/Config_Inicial/conf_ventas.png)
 
@@ -208,7 +208,7 @@ El presente manual está diseñado para guiar a los nuevos usuarios en la config
 
 ## 8. Configuración de Compras
 
-- Desde **Documentos de Compras**, accede a **Configuración**.
+- Desde el apartado de **Comparas** selecionar **Documentos de Compras**, accede a **Configuración**.
 
   ![conf_compras](Imagenes/Config_Inicial/conf_compras.png)
 
