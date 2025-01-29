@@ -1,0 +1,23 @@
+/* Estilos para el índice */
+#toc {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los enlaces del índice */
+#toc a {
+    display: block;
+    color: #0366d6;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+#toc a:hover {
+    text-decoration: underline;
+}
