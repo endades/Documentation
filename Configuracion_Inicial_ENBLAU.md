@@ -1,12 +1,3 @@
----
-layout: default
----
-
-<link rel="stylesheet" href="/styles.css">
-<script src="/script.js" defer></script>
-
-<div id="toc"></div>
-
 # Configuración Inicial de ENBLAU
 
 ## Índice
