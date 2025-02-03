@@ -1,247 +1,225 @@
-# Manual de Usuario
+# Manual de Usuario dar de alta Materiales en enMATERIAL
 
 ## Índice
 
 1. [Introducción](#1-introducción)
-
 2. [Definición de Materiales](#2-definición-de-materiales)
-
    - [2.1. Tipos de Materiales](#21-tipos-de-materiales)
-
    - [2.2. Artículos y Colores](#22-artículos-y-colores)
-
 3. [Creación de Materiales](#3-creación-de-materiales)
-
-   - [3.1. Definir un Material](#31-definir-un-material)
-
-   - [3.2. Asignación de Colores](#32-asignación-de-colores)
-
+   - [3.1. Definir un Artículo](#31-definir-un-artículo)
+   - [3.2. Creación de Colores](#32-creación-de-colores)
+   - [3.3. Creación de un Material Base](#33-creación-de-un-material-base)
 4. [Gestión de Proveedores](#4-gestión-de-proveedores)
-
 5. [Comercial y Stock](#5-comercial-y-stock)
-
    - [5.1. Datos de Compra y Proveedores](#51-datos-de-compra-y-proveedores)
-
-   - [5.2 Asignación de Referencias](#52-asignación-de-referencias)
-
-6. [Creación de un Nuevo Material](#6-creación-de-un-nuevo-material)
-
-   - [6.1. Pasos para Crear un Material](#61-pasos-para-crear-un-material)
-
-   - [6.2. Definición de Descripciones](#62-definición-de-descripciones)
-
+   - [5.2. Asignación de Referencias](#52-asignación-de-referencias)
+6. [Tipología de Materiales](#6-tipología-de-materiales)
+   - [6.1. Piezas](#61-piezas)
+   - [6.2. Barras](#62-barras)
+   - [6.3. Superficies](#63-superficies)
+   - [6.4. Juntas](#64-juntas)
 7. [Estándares a Seguir](#7-estándares-a-seguir)
-
 8. [Creación de Documentos de Compra](#8-creación-de-documentos-de-compra)
-
-9. [Tipología de Materiales](#9-tipología-de-materiales)
-
-   - [9.1. Piezas](#91-piezas)
-
-   - [9.2. Chapas y Superficies](#92-chapas-y-superficies)
-
-   - [9.3. Barras y Perfiles](#93-barras-y-perfiles)
-
-10. [Conclusión](#10-conclusión)
+9. [Conclusión](#9-conclusión)
 
 ---
 
 ## 1. Introducción
 
-Este manual tiene como objetivo explicar el proceso de alta de materiales dentro del sistema, asegurando la correcta definición y gestión de los mismos.
+Este manual tiene como objetivo guiar al usuario en el proceso de alta y gestión de materiales prorios en enMATERIAL. Asegúrate de seguir las instrucciones detalladas para garantizar una correcta definición y organización de los materiales.
 
 ---
 
 ## 2. Definición de Materiales
 
-Los materiales pueden ser de diferentes tipos: pieza, barra, junta o superficie. Dependiendo del tipo, tendrán distintas propiedades.
+Los materiales pueden clasificarse en diferentes tipos según sus propiedades y características. A continuación, se describen los principales tipos:
 
-### 2.1 Tipos de Materiales
+### 2.1. Tipos de Materiales
 
-- **Piezas**: Son los materiales más comunes y sencillos de definir.
+- **Piezas**: Se calculan por unidad y son los materiales más comunes y sencillos de definir.
+- **Barras**: Se calculan por metro lineal y requieren información adicional, como longitud.
+- **Superficies**: Se calculan por metro cuadrado y pueden incluir características adicionales.
+- **Juntas**: Se calculan por metro lineal y tienen especificaciones especiales para su aplicación.
 
-- **Barras**: Requieren información adicional como longitud y medidas de seguridad.
+### 2.2. Artículos y Colores
 
-- **Superficies**: Se valoran por metro cuadrado y pueden incluir características adicionales.
+Los materiales se definen dentro de la sección "Artículos", mientras que los acabados se gestionan en "Colores" y la materia prima en "Materiales".
 
-- **Juntas**: Tienen especificaciones especiales para su aplicación.
-
-### 2.2 Artículos y Colores
-
-Los materiales se definen dentro de "Artículos", mientras que los acabados se manejan en la sección de "Colores" y la materia prima en "Materiales".
-
-![articulos_colores](Imagenes/05_Crear_Material/articulos_colores.png)
+![Artículos y Colores](Imagenes/05_Crear_Material/articulos_colores.png)
 
 ---
 
 ## 3. Creación de Materiales
 
-Para dar de alta un material, se deben seguir estos pasos:
+Para dar de alta un material, sigue estos pasos:
 
-### 3.1. Definir un Articulo
+### 3.1. Definir un Artículo
 
-1. Acceder a la sección de "Artículos".
+1. Accede a la sección de "Artículos".
 
-![articulos](Imagenes/05_Crear_Material/articulos.png)
+   ![Artículos](Imagenes/05_Crear_Material/articulos.png)
+   ![Nuevo Artículo](Imagenes/05_Crear_Material/nuevo_articulo.png)
 
-![nuevo_articulos](Imagenes/05_Crear_Material/nuevo_articulo.png)
+2. Desde la pestaña **General** Asigna una referencia, un tipo de cálculo y un material.
 
-2. Para crear un nuevo artículo es necesario que se asigne una referencia, un tipo de calculo y un material.
+   ![Referencia](Imagenes/05_Crear_Material/referencia.png)
 
-![referencia](Imagenes/05_Crear_Material/referencia.png)
+3. Organiza los artículos por niveles utilizando los campos "Familia1", "Familia2", etc.
 
-3.  El campo familia1,2,3.. es para organizar los articulos por niveles.
+   ![Familias Artículo](Imagenes/05_Crear_Material/familias_articulo.png)
 
-![familias_articulo](Imagenes/05_Crear_Material/familias_articulo.png)
+4. Completa la descripción de compra (para proveedores) y la de venta (para clientes).
 
-4. Completar la descripción de compra (para proveedores) y la de venta (para clientes).
+   ![Descripción Artículo](Imagenes/05_Crear_Material/descripcion_articulo.png)
 
-![descripcion_articulo](Imagenes/05_Crear_Material/descripcion_articulo.png)
+5. Asigna un material base arrastrando un material desde el árbol de materiales en la cinta derecha.
 
-5. Para asignar material base a un artculo solo hay que arrastrar un material del arbol de materiales en la cinta derecha.
+   ![Material](Imagenes/05_Crear_Material/material.png)
 
-![material](Imagenes/05_Crear_Material/material.png)
+6. Añade imágenes al material. Asegúrate de optimizar las imágenes para evitar lentitud en la base de datos.
 
- 
-### 3.2. Creacion de colores
+   ![Imagen](Imagenes/05_Crear_Material/imagen.png)
 
-1. Acceder a la sección de "Colores".
+> **Nota:** El apartado "General" del articulo es igual para todos los tipos de calculo.
 
-![colores](Imagenes/05_Crear_Material/colores.png)
+### 3.2. Creación de Colores
 
-![nuevo_color](Imagenes/05_Crear_Material/nuevo_color.png)
+1. Accede a la sección de "Colores".
 
-2. Para crear un color nuevo desde "General" es necesario que se asigne referencia, nombre y un color o textura.
+   ![Colores](Imagenes/05_Crear_Material/colores.png)
+   ![Nuevo Color](Imagenes/05_Crear_Material/nuevo_color.png)
 
-![crear_color](Imagenes/05_Crear_Material/crear_color.png)
+2. Asigna una referencia, nombre y un color o textura.
 
-  - Tambien se puede asignar un proveedor a los colores. Desde la pestaña "Proveedor" arrastrar el proveedor que se encuentra en la ventana a la derecha.
+   ![Crear Color](Imagenes/05_Crear_Material/crear_color.png)
 
-![proveedor_color](Imagenes/05_Crear_Material/proveedor_color.png)
+3. Asigna un proveedor desde la pestaña "Proveedor" arrastrando el proveedor desde la ventana derecha.
 
----
+   ![Proveedor Color](Imagenes/05_Crear_Material/proveedor_color.png)
 
-### 3.3. Creación de un material base
+### 3.3. Creación de un Material Base
 
-1. Acceder a la sección de "Materiales".
+1. Accede a la sección de "Materiales".
 
-![materiales](Imagenes/05_Crear_Material/materiales.png)
+   ![Materiales](Imagenes/05_Crear_Material/materiales.png)
+   ![Nuevo Material](Imagenes/05_Crear_Material/nuevo_material.png)
 
-![nuevo_material](Imagenes/05_Crear_Material/nuevo_material.png)
+2. Indica el nombre, color y marca el check "Material" para que aparezca como materia prima.
 
-2. Para crear un material nuevo hay que indicar nombre, color y marcar el check Material(ese check tiene que estar marcado si quieres que aparezca como una materia prima para seleccionar cuando creas o edita un articulo).
+   ![Crear Material](Imagenes/05_Crear_Material/crear_material.png)
 
-![crear_material](Imagenes/05_Crear_Material/crear_material.png)
+> **Nota:** Para generar automáticamente la carta RAL de colores y materiales base, selecciona el botón **Esenciales** en la barra de "Inicio".
 
+   ![Esenciales](Imagenes/05_Crear_Material/esenciales.png)
 
-> **Nota:** Para que la base de datos te crees la carta RAL de colores y algunos materiales bases por defecto tienes la opcion de selecionar el boton **Esenciales** en la barra de "Inicio".
-
-![esenciales](Imagenes/05_Crear_Material/esenciales.png)
-
-> **Nota:**  Se insertara de manera automatica los colores y materiales bases a la base de datos.
-
-![ral](Imagenes/05_Crear_Material/ral.png)
-
-![material_articulo](Imagenes/05_Crear_Material/material_articulo.png)
+   ![RAL](Imagenes/05_Crear_Material/ral.png)
+   ![Material Artículo](Imagenes/05_Crear_Material/material_articulo.png)
 
 ---
 
 ## 4. Gestión de Proveedores
 
-Antes de dar de alta un material, se debe verificar si el proveedor ya está registrado en ENBLAU en el apartado de "Compras" "Proveedores". En caso contrario, se debe crear siguiendo los estándares definidos.
+Antes de dar de alta un material, verifica si el proveedor ya está registrado en ENBLAU en la sección "Compras > Proveedores". Si no está registrado, créalo siguiendo los estándares definidos.
 
-![proveedores_enblau](Imagenes/05_Crear_Material/proveedores_enblau.png)
+   ![Proveedores ENBLAU](Imagenes/05_Crear_Material/proveedores_enblau.png)
 
 ---
 
 ## 5. Comercial y Stock
 
-Una vez definido el material, se debe proceder a completar su información en las secciones de comercial y stock.
+Una vez definido el material, completa su información en las secciones de comercial y stock.
+
+### 5.1. Datos de Compra y Proveedores
+
+Asigna proveedores, unidades y precios de compra según cada color del material.
+
+   ![Asignar Proveedor](Imagenes/05_Crear_Material/asignar_proveedor.png)
+
+> **Nota:** Puedes añadir una referencia de proveedor si es distinta de la registrada en la base de datos.
 
 ### 5.2. Asignación de Referencias
 
-Cada color y material tendrá una referencia única que lo identificará en el sistema _(Referencia Articulo + Referencia color)_. Para eso hay que arrastrar uno o mas colores desde la pestaña de colores que se encuentra a la derecha de la ventana (para elegir mas de un color usar _ctrl+click derecho_, tambien se puede asignar toda una familia/carta de color arrastrando la carpeta.)
+Cada color y material tendrá una referencia única _(Referencia Artículo + Referencia Color)_. Arrastra uno o más colores desde la pestaña de colores en la ventana derecha.
 
-![asignar_color](Imagenes/05_Crear_Material/asignar_color.png)
-
-### 5.2. Datos de Compra y Proveedores
-
-Se asignan proveedores, unidades y precios de compra según cada color del material.
-
-![asignar_proveedor](Imagenes/05_Crear_Material/asignar_proveedor.png)
-
-> **Nota:** Se puede añadir una referencia de proveedor si es distinta de la que esta dada de alta en la base de datos.
+   ![Asignar Color](Imagenes/05_Crear_Material/asignar_color.png)
 
 ---
 
-## 6. Tipología de Materiales
+## 6. Tipología de Materiales y deatos adicionales
 
 ### 6.1. Piezas
 
-- Materiales individuales que se gestionan por unidad. Como informacion adicional en la pestaña "Propriedades Comunes" se puede indicar algunos campos extra segun vea necesario.
+- Materiales individuales gestionados por unidad (accesorios, tornillos, etc.).
+- Se valoran por unidad.
+- En la pestaña "Propiedades Comunes", puedes añadir campos adicionales si es necesario.
 
-![articulos_propriedades](Imagenes/05_Crear_Material/articulos_propriedades.png)
+   ![Propiedades Comunes](Imagenes/05_Crear_Material/articulos_propriedades.png)
 
-### 6.2. Chapas y Superficies
+### 6.2. Barras
 
-- Se valoran por metro cuadrado.
+- Materiales definidos por longitud y otros atributos técnicos.
+- Se valoran por metro lineal.
+- En la pestaña "Propiedades Comunes", indica la longitud de la barra (obligatorio).
 
-- Hay que añadir dimensiones de ancho y alto por defecto.
+   ![Barra Propiedades](Imagenes/05_Crear_Material/barra_propriedades.png)
 
-![articulos_propriedades](Imagenes/05_Crear_Material/articulos_propriedades.png)
+- Para perfiles, añade información adicional como distancia de seguridad y retal mínimo/máximo. Ese tipo de informacion son opcionales.
 
-### 9.3 Barras y Perfiles
+   ![Perfil](Imagenes/05_Crear_Material/perfil.png)
 
-- Se definen por longitud y otros atributos técnicos.
+> **Nota:** Los apartados como Tipología, Rol, Datos Técnicos, Descuentos y Reglas no son necesarios para creación de materiales propios, ya que son información relevante únicamente para los materiales dibujados.
 
-- En algunos casos, incluyen descuentos y normativas especiales.
+### 6.3. Superficies
+
+- Materiales definidos por metro cuadrado (vidrios, chapas, etc.).
+- Se valora por M2.
+- En la pestaña "Propiedades Comunes", indica el alto y ancho de la superficie.
+
+![Superficie Propiedades](Imagenes/05_Crear_Material/superficie_propriedades.png) 
+
+- En la pestaña "Valoración y datos técnicos", indica algunos datos dependiendo del tipo de la superficie y su necesidad. Por ejemplo: Espesor, tipo de superficie, precios por M2 (marcar el check "M2 por proveedor" si el precio se calcula por proveedor), etc... 
+
+![Valoracion Tecnica](Imagenes/05_Crear_Material/valoracion_tecnica.png) 
+
+### 6.4. Juntas
+
+- Materiales definidos por metro lineal.
+- Se valora por metro lineal.
+- En la pestaña "Propiedades Comunes", se puede indicar la longitud si lo ves necesario.
+
+   ![Junta Propiedades](Imagenes/05_Crear_Material/junta_propriedades.png)
 
 ---
 
 ## 7. Estándares a Seguir
 
-Para asegurar una correcta gestión, se deben seguir estos estándares:
+Para garantizar una correcta gestión, sigue estos estándares:
 
-- Uso de mayúsculas en nombres y referencias.
-
-- Verificación previa antes de dar de alta un proveedor o material.
-
-- Formato uniforme en referencias de materiales y colores.
+- Usa mayúsculas en nombres y referencias.
+- Verifica la existencia de proveedores y materiales antes de darlos de alta.
+- Mantén un formato uniforme en referencias de materiales y colores.
 
 ---
 
-## 8. Creación de Documentos de Compra
+## 8. Creación de Documentos de Compra ENBLAU
 
-1. Seleccionar el proveedor.
+Para comprobar si el articulo esta dado de alta abrir ENBLAU y crear un documento de compra:
 
-2. Buscar y agregar el material.
+1. Crea un pedido de compra y selecciona el proveedor.
+2. En el pedido de compra busca y agrega el material desde la ventana derecha. Arrastra y selecciona el color asociado.
 
-3. Validar el precio asignado al proveedor.
+   ![Articulo Compra](Imagenes/05_Crear_Material/articulo_compra.png)
 
+3. Valida el precio asignado al proveedor.
+
+   ![Precio Proveedor](Imagenes/05_Crear_Material/precio_proveedor.png)
+
+   - Si el material tiene mas de un proveedor asignado, puedes selecionar el proveedor deseado con un doble click sobre el proveedor.
 ---
 
-## 9. Tipología de Materiales
+## 9. Conclusión
 
-### 9.1 Piezas
-
-Materiales individuales que se gestionan por unidad.
-
-### 9.2 Chapas y Superficies
-
-- Se valoran por metro cuadrado.
-
-- Incluyen dimensiones de ancho y alto por defecto.
-
-### 9.3 Barras y Perfiles
-
-- Se definen por longitud y otros atributos técnicos.
-
-- En algunos casos, incluyen descuentos y normativas especiales.
+Siguiendo este manual, podrás dar de alta y gestionar materiales de manera eficiente en el sistema, asegurando una correcta organización y optimización de los procesos de compra y venta.
 
 ---
-
-
-
-## 10. Conclusión
-
-Siguiendo este manual, el usuario podrá dar de alta y gestionar materiales correctamente dentro del sistema, asegurando su correcta organización y compra-venta.

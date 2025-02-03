@@ -252,4 +252,6 @@ El presente manual está diseñado para guiar a los nuevos usuarios en la config
 
 ---
 
+## 9. Conclusión
 
+Siguiendo este manual, podrás hacer una configuracion inicial de ENBLAU para el uso de creación de documentos de compras y ventas.
