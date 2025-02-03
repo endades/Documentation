@@ -1,4 +1,4 @@
-# Manual de Usuario dar de alta Materiales en enMATERIAL
+# Creación de materiales proprios en enMATERIALES
 
 ## Índice
 
