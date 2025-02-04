@@ -11,3 +11,5 @@
 [5. Creación de materiales proprios en enMATERIALES](05_Crear_Materiales_enMATERIAL.md)<!--(Crear_Materiales_enMATERIAL.md)-->
 
 [6. Sistema de control de stock](06_Manual_Stock_Control.md)
+
+[7. Creación y Edición de Informes Personalizados](07_Editar_Informes.md)

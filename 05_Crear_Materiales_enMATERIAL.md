@@ -199,6 +199,7 @@ Para garantizar una correcta gestión, sigue estos estándares:
 - Usa mayúsculas en nombres y referencias.
 - Verifica la existencia de proveedores y materiales antes de darlos de alta.
 - Mantén un formato uniforme en referencias de materiales y colores.
+- Guardar siempre los cambio.
 
 ---
 
