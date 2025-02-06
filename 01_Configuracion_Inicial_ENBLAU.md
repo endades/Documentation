@@ -170,7 +170,7 @@ El presente manual está diseñado para guiar a los nuevos usuarios en la config
 
 ### 7.3. Bancos
 
-- Al seleccionar **Bancos**, se abrirá una ventana para indicar la información bancaria.
+- Al seleccionar **Bancos**, se abrirá una ventana para indicar la información del banco. El nombre y un codigo.
 
   ![banco](Imagenes/01_Config_Inicial/banco.png)
 
