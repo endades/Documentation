@@ -28,7 +28,7 @@ Acceder a la configuración de enCONTROL (F10). Este proceso puede tardar un poc
 
 - En "Puestos" definirás los equipos asociados para cada puesto.
 
-  ![Puestos](Imagenes/01_Config_enCONTROL/puestos.jpg)
+  ![Puestos](Imagenes/CO_Config_enCONTROL/puestos.jpg)
 
 ---
 
@@ -36,7 +36,7 @@ Acceder a la configuración de enCONTROL (F10). Este proceso puede tardar un poc
 
 - Se define el modo en que se descontará del stock los perfiles, herrajes y accesorios según avanza la producción.
 
-  ![Modo stock](Imagenes/01_Config_enCONTROL/varios_modo.jpg)
+  ![Modo stock](Imagenes/CO_Config_enCONTROL/varios_modo.jpg)
 
     - **No descontar**: No se descuenta de ningún sitio.
     - **Descontar del proyecto**: Se descuenta solo del proyecto, independientemente de la zona.
@@ -46,11 +46,11 @@ Acceder a la configuración de enCONTROL (F10). Este proceso puede tardar un poc
 
 - En "Ruta de documentación genérica" puedes indicar documentaciones como información del sistema, entre otros, que se pueda ver desde enCONTROL y los puestos.
 
-  ![Ruta Documentación](Imagenes/01_Config_enCONTROL/ruta_doc.jpg)
+  ![Ruta Documentación](Imagenes/CO_Config_enCONTROL/ruta_doc.jpg)
 
   Ejemplo en un puesto:
 
-  ![Ruta Documentación](Imagenes/01_Config_enCONTROL/ruta_doc2.jpg)
+  ![Ruta Documentación](Imagenes/CO_Config_enCONTROL/ruta_doc2.jpg)
 
 ---
 
@@ -62,15 +62,15 @@ Las clasificaciones en producción se usan de manera informativa al crear una pr
 
 - Accede al apartado de Ventas - Configuración - **Clasificaciones**.
 
-  ![Clasificaciones](Imagenes/01_Config_enCONTROL/clasificasiones.jpg)
+  ![Clasificaciones](Imagenes/CO_Config_enCONTROL/clasificasiones.jpg)
 
 - Desde "Clasificaciones", crea las clasificaciones que sean necesarias e indica la línea y los puestos de enCONTROL.
 
-  ![Clasificaciones](Imagenes/01_Config_enCONTROL/clasificasiones2.jpg)
+  ![Clasificaciones](Imagenes/CO_Config_enCONTROL/clasificasiones2.jpg)
 
 - Al crear una producción desde un pedido de venta, verás que hay un desplegable de clasificaciones donde puedes indicar la clasificación para esa producción.
 
-  ![Clasificaciones](Imagenes/01_Config_enCONTROL/clasificasiones3.jpg)
+  ![Clasificaciones](Imagenes/CO_Config_enCONTROL/clasificasiones3.jpg)
 
 ---
 
@@ -80,7 +80,7 @@ Informes que se requieran y que se generan automáticamente, guardándose como d
 
 - En el presupuesto (producción), accede al apartado de Logikal - **Informes para producción**. Desde allí, marca los informes que quieras que se guarden en producción como documentación en la columna **Para documentación**.
 
-  ![Informes Producción](Imagenes/01_Config_enCONTROL/informes_produccion.jpg)
+  ![Informes Producción](Imagenes/CO_Config_enCONTROL/informes_produccion.jpg)
 
 **Nota:** Para el tema de la documentación, no cambies nada en las columnas **Exportación** y **Gestión**.
 
@@ -92,17 +92,17 @@ La información adicional es un campo informativo para cuando la producción pas
 
 - Accede al apartado de Ventas - Configuración - **Información adicional producción**.
 
-  ![Información adicional](Imagenes/01_Config_enCONTROL/info_adicional.jpg)
+  ![Información adicional](Imagenes/CO_Config_enCONTROL/info_adicional.jpg)
 
 - Desde "Información adicional producción", crea las informaciones adicionales que sean necesarias.
 
-  ![Información adicional](Imagenes/01_Config_enCONTROL/info_adicional1.jpg)
+  ![Información adicional](Imagenes/CO_Config_enCONTROL/info_adicional1.jpg)
 
 - Al crear una producción desde un pedido de venta, verás que hay un desplegable de información adicional donde puedes indicar cómo quieres que llegue esa información a la cola de producción.
 
-  ![Información adicional](Imagenes/01_Config_enCONTROL/info_adicional2.jpg)
+  ![Información adicional](Imagenes/CO_Config_enCONTROL/info_adicional2.jpg)
 
-  ![Información adicional](Imagenes/01_Config_enCONTROL/info_adicional3.jpg)
+  ![Información adicional](Imagenes/CO_Config_enCONTROL/info_adicional3.jpg)
 
 ---
 

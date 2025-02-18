@@ -46,7 +46,7 @@ Los materiales pueden clasificarse en diferentes tipos según sus propiedades y 
 
 Los materiales se definen dentro de la sección "Artículos", mientras que los acabados se gestionan en "Colores" y la materia prima en "Materiales".
 
-![Artículos y Colores](Imagenes/05_Crear_Material/articulos_colores.png)
+![Artículos y Colores](Imagenes/UP_Crear_Material/articulos_colores.png)
 
 ---
 
@@ -58,28 +58,28 @@ Para dar de alta un material, sigue estos pasos:
 
 1. Accede a la sección de "Artículos".
 
-   ![Artículos](Imagenes/05_Crear_Material/articulos.png)
-   ![Nuevo Artículo](Imagenes/05_Crear_Material/nuevo_articulo.png)
+   ![Artículos](Imagenes/UP_Crear_Material/articulos.png)
+   ![Nuevo Artículo](Imagenes/UP_Crear_Material/nuevo_articulo.png)
 
 2. Desde la pestaña **General** Asigna una referencia, un tipo de cálculo y un material.
 
-   ![Referencia](Imagenes/05_Crear_Material/referencia.png)
+   ![Referencia](Imagenes/UP_Crear_Material/referencia.png)
 
 3. Organiza los artículos por niveles utilizando los campos "Familia1", "Familia2", etc.
 
-   ![Familias Artículo](Imagenes/05_Crear_Material/familias_articulo.png)
+   ![Familias Artículo](Imagenes/UP_Crear_Material/familias_articulo.png)
 
 4. Completa la descripción de compra (para proveedores) y la de venta (para clientes).
 
-   ![Descripción Artículo](Imagenes/05_Crear_Material/descripcion_articulo.png)
+   ![Descripción Artículo](Imagenes/UP_Crear_Material/descripcion_articulo.png)
 
 5. Asigna un material base arrastrando un material desde el árbol de materiales en la cinta derecha.
 
-   ![Material](Imagenes/05_Crear_Material/material.png)
+   ![Material](Imagenes/UP_Crear_Material/material.png)
 
 6. Añade imágenes al material. Asegúrate de optimizar las imágenes para evitar lentitud en la base de datos.
 
-   ![Imagen](Imagenes/05_Crear_Material/imagen.png)
+   ![Imagen](Imagenes/UP_Crear_Material/imagen.png)
 
 > **Nota:** El apartado "General" del articulo es igual para todos los tipos de calculo.
 
@@ -87,34 +87,34 @@ Para dar de alta un material, sigue estos pasos:
 
 1. Accede a la sección de "Colores".
 
-   ![Colores](Imagenes/05_Crear_Material/colores.png)
-   ![Nuevo Color](Imagenes/05_Crear_Material/nuevo_color.png)
+   ![Colores](Imagenes/UP_Crear_Material/colores.png)
+   ![Nuevo Color](Imagenes/UP_Crear_Material/nuevo_color.png)
 
 2. Asigna una referencia, nombre y un color o textura.
 
-   ![Crear Color](Imagenes/05_Crear_Material/crear_color.png)
+   ![Crear Color](Imagenes/UP_Crear_Material/crear_color.png)
 
 3. Asigna un proveedor desde la pestaña "Proveedor" arrastrando el proveedor desde la ventana derecha.
 
-   ![Proveedor Color](Imagenes/05_Crear_Material/proveedor_color.png)
+   ![Proveedor Color](Imagenes/UP_Crear_Material/proveedor_color.png)
 
 ### 3.3. Creación de un Material Base
 
 1. Accede a la sección de "Materiales".
 
-   ![Materiales](Imagenes/05_Crear_Material/materiales.png)
-   ![Nuevo Material](Imagenes/05_Crear_Material/nuevo_material.png)
+   ![Materiales](Imagenes/UP_Crear_Material/materiales.png)
+   ![Nuevo Material](Imagenes/UP_Crear_Material/nuevo_material.png)
 
 2. Indica el nombre, color y marca el check "Material" para que aparezca como materia prima.
 
-   ![Crear Material](Imagenes/05_Crear_Material/crear_material.png)
+   ![Crear Material](Imagenes/UP_Crear_Material/crear_material.png)
 
 > **Nota:** Para generar automáticamente la carta RAL de colores y materiales base, selecciona el botón **Esenciales** en la barra de "Inicio".
 
-   ![Esenciales](Imagenes/05_Crear_Material/esenciales.png)
+   ![Esenciales](Imagenes/UP_Crear_Material/esenciales.png)
 
-   ![RAL](Imagenes/05_Crear_Material/ral.png)
-   ![Material Artículo](Imagenes/05_Crear_Material/material_articulo.png)
+   ![RAL](Imagenes/UP_Crear_Material/ral.png)
+   ![Material Artículo](Imagenes/UP_Crear_Material/material_articulo.png)
 
 ---
 
@@ -122,7 +122,7 @@ Para dar de alta un material, sigue estos pasos:
 
 Antes de dar de alta un material, verifica si el proveedor ya está registrado en ENBLAU en la sección "Compras > Proveedores". Si no está registrado, créalo siguiendo los estándares definidos.
 
-   ![Proveedores ENBLAU](Imagenes/05_Crear_Material/proveedores_enblau.png)
+   ![Proveedores ENBLAU](Imagenes/UP_Crear_Material/proveedores_enblau.png)
 
 ---
 
@@ -134,7 +134,7 @@ Una vez definido el material, completa su información en las secciones de comer
 
 Asigna proveedores, unidades y precios de compra según cada color del material.
 
-   ![Asignar Proveedor](Imagenes/05_Crear_Material/asignar_proveedor.png)
+   ![Asignar Proveedor](Imagenes/UP_Crear_Material/asignar_proveedor.png)
 
 > **Nota:** Puedes añadir una referencia de proveedor si es distinta de la registrada en la base de datos.
 
@@ -142,7 +142,7 @@ Asigna proveedores, unidades y precios de compra según cada color del material.
 
 Cada color y material tendrá una referencia única _(Referencia Artículo + Referencia Color)_. Arrastra uno o más colores desde la pestaña de colores en la ventana derecha.
 
-   ![Asignar Color](Imagenes/05_Crear_Material/asignar_color.png)
+   ![Asignar Color](Imagenes/UP_Crear_Material/asignar_color.png)
 
 ---
 
@@ -154,7 +154,7 @@ Cada color y material tendrá una referencia única _(Referencia Artículo + Ref
 - Se valoran por unidad.
 - En la pestaña "Propiedades Comunes", puedes añadir campos adicionales si es necesario.
 
-   ![Propiedades Comunes](Imagenes/05_Crear_Material/articulos_propriedades.png)
+   ![Propiedades Comunes](Imagenes/UP_Crear_Material/articulos_propriedades.png)
 
 ### 6.2. Barras
 
@@ -162,11 +162,11 @@ Cada color y material tendrá una referencia única _(Referencia Artículo + Ref
 - Se valoran por metro lineal.
 - En la pestaña "Propiedades Comunes", indica la longitud de la barra (obligatorio).
 
-   ![Barra Propiedades](Imagenes/05_Crear_Material/barra_propriedades.png)
+   ![Barra Propiedades](Imagenes/UP_Crear_Material/barra_propriedades.png)
 
 - Para perfiles, añade información adicional como distancia de seguridad y retal mínimo/máximo. Ese tipo de informacion son opcionales.
 
-   ![Perfil](Imagenes/05_Crear_Material/perfil.png)
+   ![Perfil](Imagenes/UP_Crear_Material/perfil.png)
 
 > **Nota:** Los apartados como Tipología, Rol, Datos Técnicos, Descuentos y Reglas no son necesarios para creación de materiales propios, ya que son información relevante únicamente para los materiales dibujados.
 
@@ -176,11 +176,11 @@ Cada color y material tendrá una referencia única _(Referencia Artículo + Ref
 - Se valora por M2.
 - En la pestaña "Propiedades Comunes", indica el alto y ancho de la superficie.
 
-![Superficie Propiedades](Imagenes/05_Crear_Material/superficie_propriedades.png) 
+![Superficie Propiedades](Imagenes/UP_Crear_Material/superficie_propriedades.png) 
 
 - En la pestaña "Valoración y datos técnicos", indica algunos datos dependiendo del tipo de la superficie y su necesidad. Por ejemplo: Espesor, tipo de superficie, precios por M2 (marcar el check "M2 por proveedor" si el precio se calcula por proveedor), etc... 
 
-![Valoracion Tecnica](Imagenes/05_Crear_Material/valoracion_tecnica.png) 
+![Valoracion Tecnica](Imagenes/UP_Crear_Material/valoracion_tecnica.png) 
 
 ### 6.4. Juntas
 
@@ -188,7 +188,7 @@ Cada color y material tendrá una referencia única _(Referencia Artículo + Ref
 - Se valora por metro lineal.
 - En la pestaña "Propiedades Comunes", se puede indicar la longitud si lo ves necesario.
 
-   ![Junta Propiedades](Imagenes/05_Crear_Material/junta_propriedades.png)
+   ![Junta Propiedades](Imagenes/UP_Crear_Material/junta_propriedades.png)
 
 ---
 
@@ -210,11 +210,11 @@ Para comprobar si el articulo esta dado de alta abrir ENBLAU y crear un document
 1. Crea un pedido de compra y selecciona el proveedor.
 2. En el pedido de compra busca y agrega el material desde la ventana derecha. Arrastra y selecciona el color asociado.
 
-   ![Articulo Compra](Imagenes/05_Crear_Material/articulo_compra.png)
+   ![Articulo Compra](Imagenes/UP_Crear_Material/articulo_compra.png)
 
 3. Valida el precio asignado al proveedor.
 
-   ![Precio Proveedor](Imagenes/05_Crear_Material/precio_proveedor.png)
+   ![Precio Proveedor](Imagenes/UP_Crear_Material/precio_proveedor.png)
 
    - Si el material tiene mas de un proveedor asignado, puedes selecionar el proveedor deseado con un doble click sobre el proveedor.
 ---
