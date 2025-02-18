@@ -4,9 +4,9 @@
 
 1. [Propósito](#1-propósito)
 2. [Configuración General](#2-configuración-general)
-   - [2.1. General](#21-general)
-   - [2.2. Textos en Ventas](#22-textos-en-ventas)
-   - [2.3. Configuración de Conexión con Logikal](#23-configuración-de-conexión-con-logikal)
+   - [2.1. Configuración de Conexión con Logikal](#21-configuración-de-conexión-con-logikal)
+   - [2.2. General](#22-general)
+   - [2.3. Textos en Ventas](#23-textos-en-ventas)
 3. [Gestión de Usuarios](#3-gestión-de-usuarios)
 4. [Configuración de Cuentas de Email](#4-configuración-de-cuentas-de-email)
 5. [Gestión de Empresas](#5-gestión-de-empresas)
@@ -38,11 +38,23 @@ El presente manual está diseñado para guiar a los nuevos usuarios en la config
 
 ## 2. Configuración General
 
-### 2.1. General
+  ![general](Imagenes/01_Config_Inicial/general.png)
+
+### 2.1. Configuración de Conexión con Logikal
+
+- Para conectar con la fábrica y los proyectos de Logikal, es necesario indicar la ruta de instalación y la DLL de Logikal (unidad de red donde apunta Logikal).
+
+- Desde **General**, ir a **Logikal - Conexión y Proyectos**.
+
+  ![configuracion_inicial](Imagenes/01_Config_Inicial/conexion_logikal.png)
+
+---
+
+### 2.2. General
 
 ![general](Imagenes/01_Config_Inicial/general.png)
 
-- **Ruta de almacenamiento**: Indicar la ruta donde se guardarán los documentos de ENBLAU y Logikal. Ejemplo:
+- **Ruta de almacenamiento**: Indicar la ruta donde se guardarán los documentos de ENBLAU y Logikal (unidad de red). Ejemplo:
 
   ![ruta_almacenamiento](Imagenes/01_Config_Inicial/ruta_almacenamiento.png)
 
@@ -52,21 +64,13 @@ El presente manual está diseñado para guiar a los nuevos usuarios en la config
 
   ![info_empresa](Imagenes/01_Config_Inicial/info_empresa.png)
 
-### 2.2. Textos en Ventas
+---
+
+### 2.3. Textos en Ventas
 
 - Añadir textos para documentos de ventas, como observaciones, condiciones, etc.
 
   ![texto_ventas](Imagenes/01_Config_Inicial/texto_ventas.png)
-
-### 2.3. Configuración de Conexión con Logikal
-
-- Para conectar con la fábrica y los proyectos de Logikal, es necesario indicar la ruta de instalación y la DLL de Logikal.
-
-- Desde **General**, ir a **Logikal - Conexión y Proyectos**.
-
-  ![general](Imagenes/01_Config_Inicial/general.png)
-
-  ![configuracion_inicial](Imagenes/01_Config_Inicial/conexion_logikal.png)
 
 ---
 

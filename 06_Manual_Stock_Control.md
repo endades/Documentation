@@ -81,7 +81,7 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
 
 ---
 
-## 4. Recepción de materiales
+## 4. Recepción de materiales enSITE
 
 - En **Almacenes**, acceda a la opción **"Pendientes de Recibir"**. Se abrirá una pestaña con todos los materiales pendientes de recibir para cada proyecto.
 
@@ -250,9 +250,9 @@ El presente manual está diseñado para usuarios nuevos en el sistema de control
     ![varios](Imagenes/06_Sistema_Control/varios.jpg)
 
     - **No descontar**: No se descuenta de ningún sitio.
-    - **Descontar del proyecto**: Se descuenta solo del proyecto.
+    - **Descontar del proyecto**: Se descuenta solo del proyecto. Independiente de la zona.
     - **Descontar de la zona, en su defecto del proyecto**: Se descuenta de la zona indicada y del proyecto.
-    - **Descontar de la zona**: Solo se descuenta de la Zona indicada.
+    - **Descontar de la zona**: Solo se descuenta de la Zona indicada. Independiente del proyecto.
     - **Descontar del proyecto, en su defecto de cualquier zona**: Se descuenta del proyecto y de cualquier zona que tenga ese material.
    
 ---

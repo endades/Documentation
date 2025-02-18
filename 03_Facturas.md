@@ -51,7 +51,7 @@ Los filtros permiten personalizar la visualización de los documentos en los lis
 
 - Otra opción para cambiar de posición y eliminar las columnas es arrastrarlas.
 
-    ![Organizar filtro](Imagenes/03_Facturas/organizar_filtro2.png)
+    ![Organizar filtro](Imagenes/03_Facturas/eliminar_columnas.gif)
     
 - Desde "Filtros", accede a "Gestión de filtros" y añade un nuevo filtro.
 
