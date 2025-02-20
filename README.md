@@ -14,15 +14,15 @@
 
 [1. Ventas, compras y producción **(EN PROCESO)**](EN_PROCESO.md)<!--(Presupuesto_Compras.md)-->
 
-[2. Facturación](UP_Facturas.md)
+[2. Facturación](PR_Facturas.md)
 
-[3. Sistema de control de stock](UP_Manual_Stock_Control.md)
+[3. Sistema de control de stock](PR_Manual_Stock_Control.md)
 
 ## Utilidades
 
-[1. Relación entre fases en ENBLAU y Logikal](OT_Relacion_ENBLAU_Logikal.md)
+[1. Relación entre fases en ENBLAU y Logikal](UT_Relacion_ENBLAU_Logikal.md)
 
-[2. Creación de materiales proprios en enMATERIALES](UP_Crear_Materiales_enMATERIAL.md)
+[2. Creación de materiales proprios en enMATERIALES](UT_Crear_Materiales_enMATERIAL.md)
 
-[3. Creación y edición de informes personalizados](UP_Editar_Informes.md)
+[3. Creación y edición de informes personalizados](UT_Editar_Informes.md)
 

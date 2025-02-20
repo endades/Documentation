@@ -37,29 +37,29 @@ Los filtros permiten personalizar la visualización de los documentos en los lis
 ### 2.1. Acceder a los filtros  
 - En la cabecera de los listados, utiliza los filtros para definir qué columnas y datos deseas ver.
 
-    ![Facturas](Imagenes/UP_Facturas/cabecera.png)
+    ![Facturas](Imagenes/PR_Facturas/cabecera.png)
 
 - Por ejemplo, puedes crear un filtro llamado "Facturas" que muestre solo las columnas necesarias (empresa, proyecto, fecha de factura, número, estado del documento, etc.).
 
-    ![Filtros](Imagenes/UP_Facturas/filtros.png)
+    ![Filtros](Imagenes/PR_Facturas/filtros.png)
 
 ### 2.2. Guardar filtros personalizados  
 
 - Organiza las columnas según tus necesidades. Puedes eliminar, añadir y cambiar las columnas de posición con el botón derecho sobre cualquier cabecera.
 
-    ![Organizar filtro](Imagenes/UP_Facturas/organizar_filtro.png)
+    ![Organizar filtro](Imagenes/PR_Facturas/organizar_filtro.png)
 
 - Otra opción para cambiar de posición y eliminar las columnas es arrastrarlas.
 
-    ![Organizar filtro](Imagenes/UP_Facturas/eliminar_columnas.gif)
+    ![Organizar filtro](Imagenes/PR_Facturas/eliminar_columnas.gif)
     
 - Desde "Filtros", accede a "Gestión de filtros" y añade un nuevo filtro.
 
-    ![Nuevo filtro](Imagenes/UP_Facturas/nuevo_filtro.png)
+    ![Nuevo filtro](Imagenes/PR_Facturas/nuevo_filtro.png)
 
 - Guarda el filtro con un nombre específico (ej. "Facturas 2").
 
-    ![Nuevo filtro](Imagenes/UP_Facturas/nuevo_filtro2.png)
+    ![Nuevo filtro](Imagenes/PR_Facturas/nuevo_filtro2.png)
 
 > **Nota:** Cada usuario puede tener sus propios filtros guardados.
 
@@ -73,46 +73,46 @@ Para crear facturas a partir de presupuestos, sigue estos pasos:
 - Añade líneas con los productos o servicios (ej. ventanas, chapas).
 - Define cantidades y precios.
 
-    ![Presupuesto](Imagenes/UP_Facturas/presupuesto.png)
+    ![Presupuesto](Imagenes/PR_Facturas/presupuesto.png)
 
 ### 3.2. Generar la factura:
 
 - Accede al apartado de facturación.
 - Selecciona "Crear factura" desde el presupuesto.
 
-    ![Crear factura](Imagenes/UP_Facturas/crear_factura.png) 
+    ![Crear factura](Imagenes/PR_Facturas/crear_factura.png) 
 
 - Elige el tipo de factura:
 
     - **Factura de anticipo**: Permite cobrar un importe parcial y facturar el resto más adelante.
 
-        ![Factura anticipo](Imagenes/UP_Facturas/anticipo_factura.png)
+        ![Factura anticipo](Imagenes/PR_Facturas/anticipo_factura.png)
 
     - **Factura por unidades**: Factura solo las unidades indicadas que quieras facturar. Luego obliga a continuar facturando en el mismo modo (esta marcada por defecto).
 
-        ![Factura unidades](Imagenes/UP_Facturas/unidades_factura.png)
+        ![Factura unidades](Imagenes/PR_Facturas/unidades_factura.png)
 
     - **Introducir importe a facturar**: Permite cobrar un importe específico del total de la factura. Luego obliga a continuar facturando en el mismo modo.
 
-        ![Factura importe](Imagenes/UP_Facturas/importe_factura.png)
+        ![Factura importe](Imagenes/PR_Facturas/importe_factura.png)
 
     - **Introducir porcentaje a facturar**: Permite cobrar un porcentaje específico del total de la factura. Luego obliga a continuar facturando en el mismo modo.
 
-    ![Factura porcentaje](Imagenes/UP_Facturas/porcentage_factura.png)
+    ![Factura porcentaje](Imagenes/PR_Facturas/porcentage_factura.png)
 
 ### 3.3. Enviar la factura al cliente:
 
 - Una vez creada, puedes ver la factura en vista previa antes de enviarla o imprimirla.
 
-    ![Factura](Imagenes/UP_Facturas/factura.png)
+    ![Factura](Imagenes/PR_Facturas/factura.png)
 
-    ![Vista previa](Imagenes/UP_Facturas/vista_previa.png)
+    ![Vista previa](Imagenes/PR_Facturas/vista_previa.png)
 
-    ![Vista previa](Imagenes/UP_Facturas/vista_previa2.png) 
+    ![Vista previa](Imagenes/PR_Facturas/vista_previa2.png) 
 
 - Envía la factura al cliente por correo electrónico o imprímela.
 
-    ![Imprimir email](Imagenes/UP_Facturas/imprimir_email.png)
+    ![Imprimir email](Imagenes/PR_Facturas/imprimir_email.png)
 
 > **Nota:** La factura se puede generar desde el presupuesto, pedido o albarán. Es recomendable generar las facturas siempre desde el mismo documento, es decir, si haces desde el pedido (el pedido normalmente es el que se acuerda con el cliente), seguir generando las facturas siempre desde ahí para una mejor gestión y trazabilidad.
 
@@ -126,49 +126,49 @@ Para gestionar los cobros de las facturas:
 
 - Desde el propio documento de la factura, se puede marcar que la factura está cobrada.
 
-    ![Factura cobrada](Imagenes/UP_Facturas/cobrado_factura.png)
+    ![Factura cobrada](Imagenes/PR_Facturas/cobrado_factura.png)
 
 - Otra opción es acceder al listado de vencimientos desde "Documentos de ventas".
 
-    ![Filtrar vencimiento](Imagenes/UP_Facturas/listado_vencimento.png)
+    ![Filtrar vencimiento](Imagenes/PR_Facturas/listado_vencimento.png)
 
 - Filtra las facturas pendientes de cobro.
 
-    ![Filtrar cobro](Imagenes/UP_Facturas/filtrar_cobrado.png)
+    ![Filtrar cobro](Imagenes/PR_Facturas/filtrar_cobrado.png)
 
 - Selecciona las facturas y márcalas como cobradas. Para seleccionar más de una factura, usa la tecla **Ctrl + Click** o **Ctrl + A** para seleccionar todas las facturas.
 
-    ![Seleccionar cobro](Imagenes/UP_Facturas/selecionar_cobro.png)
+    ![Seleccionar cobro](Imagenes/PR_Facturas/selecionar_cobro.png)
 
 - Indica el modo de pago (transferencia, pagaré, etc.), la fecha de cobro y la fecha de ingreso en cuenta. Los campos marcados en rojo son obligatorios. Estos campos se pueden configurar previamente en el apartado "Formas de pago".
 
-    ![Modo cobro](Imagenes/UP_Facturas/modo_cobro.png)
+    ![Modo cobro](Imagenes/PR_Facturas/modo_cobro.png)
 
     > **Nota:** En este apartado, como en otros listados de documentos, se pueden utilizar los filtros según sea necesario.
 
 - En el listado de documentos de ventas, aparecerá en la trazabilidad del presupuesto el estado de la factura como "Cobrado".
 
-    ![Cobro estado](Imagenes/UP_Facturas/cobrado_estado.png)
+    ![Cobro estado](Imagenes/PR_Facturas/cobrado_estado.png)
 
 ### 4.2. Informes de cobros:  
 
 - Acepta el presupuesto para que genere un pedido (en el caso de que hayas facturado desde el presupuesto).
 
-    ![Aceptar presupuesto](Imagenes/UP_Facturas/acceptar_presupuesto.png)
+    ![Aceptar presupuesto](Imagenes/PR_Facturas/acceptar_presupuesto.png)
 
 - Utiliza el informe "Estado de facturación y cobros" para ver el estado de las facturas (cobradas, pendientes, porcentaje de facturación, etc.). Filtra por el presupuesto que quieras que se muestre.
 
-    ![Estado facturación y cobros](Imagenes/UP_Facturas/estado_facturacion.png)
+    ![Estado facturación y cobros](Imagenes/PR_Facturas/estado_facturacion.png)
 
-    ![Estado facturación y cobros](Imagenes/UP_Facturas/estado_facturacion2.png)
+    ![Estado facturación y cobros](Imagenes/PR_Facturas/estado_facturacion2.png)
 
 - Utiliza el informe de listado de facturas para ver la información de la factura (fecha, cliente, base imponible, IVA, total de la factura, etc.). Este informe se puede listar desde un rango de fechas o marcando un check que indica que se aplique solo a las facturas que estén en el filtrado del listado.
 
-    ![Listado facturas](Imagenes/UP_Facturas/listado_factura.png)
+    ![Listado facturas](Imagenes/PR_Facturas/listado_factura.png)
 
-    ![Listado facturas](Imagenes/UP_Facturas/listado_factura2.png)
+    ![Listado facturas](Imagenes/PR_Facturas/listado_factura2.png)
 
-    ![Listado facturas](Imagenes/UP_Facturas/listado_factura3.png)
+    ![Listado facturas](Imagenes/PR_Facturas/listado_factura3.png)
 
 ---
 
@@ -182,29 +182,29 @@ Para facturar desde pedidos, sigue estos pasos:
 
 - Otra manera de facturar sería crear una producción desde un pedido e indicar la cantidad de ventanas que quieres que estén en esta fase de producción. 
 
-    ![Crear producción](Imagenes/UP_Facturas/crear_produccion.png)
+    ![Crear producción](Imagenes/PR_Facturas/crear_produccion.png)
 
-    ![Fase producción](Imagenes/UP_Facturas/fase_produccion.png)
+    ![Fase producción](Imagenes/PR_Facturas/fase_produccion.png)
 
-    ![Producción 1](Imagenes/UP_Facturas/produccion_1.png)
+    ![Producción 1](Imagenes/PR_Facturas/produccion_1.png)
 
 - Una vez confirmes que se han fabricado las ventanas indicadas en la fase de "Producción 1", por ejemplo, puedes ir al pedido y crear una factura indicando la cantidad a facturar.
 
-    ![Factura pedido](Imagenes/UP_Facturas/fase_produccion.png)
+    ![Factura pedido](Imagenes/PR_Facturas/fase_produccion.png)
 
 > **Nota:** Se recomienda siempre facturar desde el pedido, ya que es lo que se acuerda con el cliente para aceptar el presupuesto.
 
 - En el caso de que descuentes el total de la factura (unidad) y hayas emitido y cobrado una factura de anticipo, al intentar confirmar la factura, te aparecerá un mensaje para confirmar o no que descuentes el anticipo.
 
-    ![Descuento anticipo](Imagenes/UP_Facturas/descontar_anticipo.png)
+    ![Descuento anticipo](Imagenes/PR_Facturas/descontar_anticipo.png)
 
 - Al confirmar, se descontará el anticipo de la factura.
 
-    ![Importe anticipo](Imagenes/UP_Facturas/importe_anticipo.png)
+    ![Importe anticipo](Imagenes/PR_Facturas/importe_anticipo.png)
 
 - Al generar la factura para enviar al cliente, verás en detalle lo que se ha cobrado y descontado.
 
-    ![Informe factura](Imagenes/UP_Facturas/informe_factura.png)
+    ![Informe factura](Imagenes/PR_Facturas/informe_factura.png)
 
 ---
 
@@ -216,7 +216,7 @@ Si trabajas con albaranes, sigue estos pasos:
 
 - Genera albaranes para las producciones realizadas.
 
-    ![Crear albarán](Imagenes/UP_Facturas/crear_albaran.png)
+    ![Crear albarán](Imagenes/PR_Facturas/crear_albaran.png)
 
 > **Nota:** Asegúrate de que los precios y descripciones sean correctos.
 
@@ -225,7 +225,7 @@ Si trabajas con albaranes, sigue estos pasos:
 - Accede al pedido correspondiente.
 - Selecciona "Crear factura" desde el albarán y sigue los mismos pasos anteriores.
 
-    ![Factura albarán](Imagenes/UP_Facturas/factura_albaran.png)
+    ![Factura albarán](Imagenes/PR_Facturas/factura_albaran.png)
 
 > **Nota:** Verifica que los precios y las unidades coincidan con lo acordado con el cliente, ya que puede variar dependiendo si hay alguna modificación en la producción (ej. cambiar la medida de la ventana) y que puede afectar el precio y facturar con un precio distinto del pedido.
 
@@ -235,31 +235,31 @@ Si trabajas con albaranes, sigue estos pasos:
 
 Configura las formas y modos de pago según tus necesidades:
 
-![Configuración](Imagenes/UP_Facturas/configuracion_venta.png)
+![Configuración](Imagenes/PR_Facturas/configuracion_venta.png)
 
 ### 7.1. Formas de pago:
 
 - Define cómo se pagará (ej. 30 días, 60 días, 90 días). Se pueden crear tantas formas como se necesiten con diferentes configuraciones. 
 
-    ![Crear formas pago](Imagenes/UP_Facturas/crear_formas.png)
+    ![Crear formas pago](Imagenes/PR_Facturas/crear_formas.png)
 
 - Configura si es necesario exigir el modo de pago, la fecha real de vencimiento, la fecha de ingreso y el banco. Esta configuración se reflejará en el apartado de listado de vencimientos cuando se marque la factura como cobrada y aparezcan los campos en rojo como obligatorios a rellenar. 
 
-    ![Nuevas formas pago](Imagenes/UP_Facturas/nueva_formas.png)
+    ![Nuevas formas pago](Imagenes/PR_Facturas/nueva_formas.png)
 
 - Establece el número de vencimientos y los porcentajes de pago.
 
-    ![Forma pago](Imagenes/UP_Facturas/forma_pago.png)
+    ![Forma pago](Imagenes/PR_Facturas/forma_pago.png)
 
 ### 7.2. Modos de pago:
 
 - Indica cómo se realizará el pago (transferencia, pagaré, contado).
 
-    ![Modo pago](Imagenes/UP_Facturas/modo_pago.png)
+    ![Modo pago](Imagenes/PR_Facturas/modo_pago.png)
 
 - Configura si es necesario exigir la fecha de cobro, el banco o la fecha de ingreso en cuenta.
 
-    ![Nuevo modo pago](Imagenes/UP_Facturas/nuevo_modo.png)
+    ![Nuevo modo pago](Imagenes/PR_Facturas/nuevo_modo.png)
 
 ---
 
@@ -273,21 +273,21 @@ Si necesitas corregir o anular una factura:
 
     - Desde el listado de ventas, busca la factura, haz clic con el botón derecho sobre la línea y selecciona "Eliminar".
 
-        ![Eliminar factura](Imagenes/UP_Facturas/eliminar_factura.png) 
+        ![Eliminar factura](Imagenes/PR_Facturas/eliminar_factura.png) 
 
     - Desde la factura, abre la factura y elimínala desde la pestaña "Factura", haz clic con el botón derecho y selecciona "Eliminar".
 
-        ![Eliminar factura](Imagenes/UP_Facturas/eliminar_factura2.png)
+        ![Eliminar factura](Imagenes/PR_Facturas/eliminar_factura2.png)
 
     - Desde la factura, arriba a la izquierda, haz clic sobre el logo de ENBLAU y selecciona "Eliminar".
 
-        ![Eliminar factura](Imagenes/UP_Facturas/eliminar_factura3.png)
+        ![Eliminar factura](Imagenes/PR_Facturas/eliminar_factura3.png)
 
 ### 8.2. Facturas ya enviadas:
 
 - En el caso de que la factura ya haya sido enviada, emite una factura rectificativa.
 
-    ![Factura rectificada](Imagenes/UP_Facturas/factura_retificada.png)
+    ![Factura rectificada](Imagenes/PR_Facturas/factura_retificada.png)
 
 - Asegúrate de que cumpla con los requisitos de Hacienda.
 
