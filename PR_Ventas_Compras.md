@@ -158,9 +158,37 @@ Una vez entres en **Documentos de venta** abrira un listado de todos los documen
 
    ![Pedido](Imagenes/PR_Ventas_Compras/pedido2.jpg)  
 
->**Notas:** Los datos del documento tambien se puede hacer los cambios asi como en el documento del presupuesto.
+>**Notas:** Los datos del documento de pedido tambien se pueden modificar asi como en el documento del presupuesto.
 
-   - 
+   Desde el pedido se puede editar o añadir posiciones, listar materiales, crear mediciones, crear producciones, etc..
+
+   ![Pedido](Imagenes/PR_Ventas_Compras/pedido3.jpg)
+
+   - **Material Necesario**: En ese apartado podras listar los materiales del pedido y desde ahi pedir el material al proveedor.
+
+      ![Material necesario](Imagenes/PR_Ventas_Compras/material_necesario.jpg)
+
+      Al listar materiales veras en las columnas de Articulos y Unidades a comprar en color verde y rojo. Verde indica que tiene ese material en stock para ese proyecto (obra) y Rojo que no hay suficiente materiales para ese proyecto.
+
+      ![Listar material](Imagenes/PR_Ventas_Compras/material_necesario.jpg)
+
+      Puedes elegir si quieres o no comprar los materiales, marcando o desmarcado la casilla de Comprar:
+
+      ![Comprar material](Imagenes/PR_Ventas_Compras/material_comprar.gif)
+
+      Luego al pedir material abrira una ventana **Nuevo documento de compra**, donde puedes cambiar algunos campos por defecto y elegir el proveedor.
+
+      ![Pedir Material](Imagenes/PR_Ventas_Compras/pedir_material.jpg)
+
+      ![Elegir proveedor](Imagenes/PR_Ventas_Compras/buscar_proveedor.jpg)      
+
+   - **Pedido de Compra**: Una vez creado el pedido de compra se puede revizar y modificar segun sea necesario (proveedor, proyecto, cantidad de los materiales, etc.. )
+
+
+
+
+
+
 
 
 
