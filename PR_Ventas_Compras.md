@@ -25,63 +25,28 @@ Este manual está diseñado para guiar a los usuarios en el uso del sistema de v
 
 ## 2. Processo
 Una vez dentro, verás dos secciones principales:
-   - **Ventas**: Documentos de venta - Gestión y listado de presupuestos, pedidos, albaranes y facturas. Creacion de Proyectos y Clientes.
+   1. **Ventas**: Documentos de venta - Gestión y listado de presupuestos, pedidos, albaranes y facturas. Creacion de Proyectos y Clientes.
 
      ![Ventas](Imagenes/PR_Ventas_Compras/ventas.jpg)
 
-   - **Compras**: Documentos de compra - Gestión y listado de pedidos de compra y recepción de materiales. Creacion de Proveedores.
+   2. **Compras**: Documentos de compra - Gestión y listado de pedidos de compra y recepción de materiales. Creacion de Proveedores.
 
       ![Compras](Imagenes/PR_Ventas_Compras/compras.jpg)
 
 ---
 
-## 3. Uso de Filtros en Listados
-Los filtros permiten personalizar la visualización de los documentos en los listados. Sigue estos pasos:
-
-### 3.1. Acceder a los filtros  
-- En la cabecera de los listados, utiliza los filtros para definir qué columnas y datos deseas ver.
-
-    ![Facturas](Imagenes/PR_Ventas_Compras/cabecera.jpg)
-
-- Por ejemplo, puedes crear un filtro llamado "Presupuestos" que muestre solo las columnas necesarias (empresa, proyecto, fecha de solicitud, estado del documento, técnico del proyecto, tipo de documento etc..).
-
-    ![Filtros](Imagenes/PR_Ventas_Compras/filtros2.jpg)
-
-    ![Filtros](Imagenes/PR_Ventas_Compras/filtros.jpg)
-
-### 3.2. Guardar filtros personalizados  
-
-- Organiza las columnas según tus necesidades. Puedes eliminar, añadir y cambiar las columnas de posición con el botón derecho sobre cualquier cabecera.
-
-    ![Organizar filtro](Imagenes/PR_Ventas_Compras/organizar_filtro.jpg)
-
-- Otra opción para cambiar de posición y eliminar las columnas es arrastrarlas.
-
-    ![Organizar filtro](Imagenes/PR_Ventas_Compras/eliminar_columnas.gif)
-    
-- Desde "Filtros", accede a "Gestión de filtros" y añade un nuevo filtro.
-
-    ![Nuevo filtro](Imagenes/PR_Ventas_Compras/nuevo_filtro.jpg)
-
-- Guarda el filtro con un nombre específico (ej. "Facturas 2").
-
-    ![Nuevo filtro](Imagenes/PR_Ventas_Compras/nuevo_filtro2.jpg)
-
-> **Nota:** Cada usuario puede tener sus propios filtros guardados.
-
 ## 3. Ventas
+   - En el apartado de Ventas tendras Proyectos, Documentos de venta y clientes.
 
-En el apartado de Ventas tendras Proyectos, Documentos de venta y clientes.
-
-  ![Ventas](Imagenes/PR_Ventas_Compras/ventas.jpg)
+   ![Ventas](Imagenes/PR_Ventas_Compras/ventas.jpg)
 
 ### 3.1. Documentos de Venta
-Una vez entres en **Documentos de venta** abrira un listado de todos los documentos relacionado a ventas.
+   - Una vez entres en **Documentos de venta** abrira un listado de todos los documentos relacionado a ventas.
 
   ![Ventas](Imagenes/PR_Ventas_Compras/ventas2.jpg)
 
-- **Tipos de Documentos**
-   Para crear un documento nuevo en el apartado Documentos de venta desde la cinta de arriba clic sobre **Nuevo**:
+   1. **Tipos de Documentos**
+   - Para crear un documento nuevo en el apartado Documentos de venta desde la cinta de arriba clic sobre **Nuevo**:
 
      ![Ventas Nuevo](Imagenes/PR_Ventas_Compras/ventas_nuevo.jpg)
 
@@ -106,19 +71,21 @@ Una vez entres en **Documentos de venta** abrira un listado de todos los documen
      ![Ventas cinta superior](Imagenes/PR_Ventas_Compras/venta_cinta.jpg)   
 
 ### 3.2. Presupuesto
-   Al crear un nuevo presupuesto abrira una ventana con el numero del presupuesto de venta.
+   - Al crear un nuevo presupuesto abrira una ventana con el numero del presupuesto de venta.
 
-   ![Presupuesto](Imagenes/PR_Ventas_Compras/presupuesto.jpg)   
+      ![Presupuesto](Imagenes/PR_Ventas_Compras/presupuesto.jpg)   
 
-   - **Datos del documentos**: en ese apartado se puede ver y cambiar algunos campos del presupuesto segun sea necesario.
+   1. **Datos del documentos**
+      - En ese apartado se puede ver y cambiar algunos campos del presupuesto segun sea necesario.
 
-      ![Presupuesto datos documento](Imagenes/PR_Ventas_Compras/presupuesto_datos.jpg)
+         ![Presupuesto datos documento](Imagenes/PR_Ventas_Compras/presupuesto_datos.jpg)
 
-   - **Detalle**: en ese apartado se añade posiciones para la Version del presupuesto.
+   2. **Detalle** 
+      - En ese apartado se añade posiciones para la Version del presupuesto.
 
-      ![Presupuesto detalle](Imagenes/PR_Ventas_Compras/presupuesto_detalle.jpg)
+         ![Presupuesto detalle](Imagenes/PR_Ventas_Compras/presupuesto_detalle.jpg)
 
-      Desde de Detalle es donde añades la posicion del presupuesto. Hay diferentes maneras de añadir una posicion en el documento.
+         Desde de Detalle es donde añades la posicion del presupuesto. Hay diferentes maneras de añadir una posicion en el documento.
 
       - Añadir una nueva posicion vacia, donde puede añadir lineas de descripcion. 
 
@@ -128,11 +95,12 @@ Una vez entres en **Documentos de venta** abrira un listado de todos los documen
 
          ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_logikal.jpg)
 
-         Una vez configurado la ventana en Logikal se añadira la posicion en ENBLAU.
+         - Una vez configurado la ventana en Logikal se añadira la posicion en ENBLAU.
 
-         ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_logikal2.jpg)
+            ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_logikal2.jpg)
 
-      - **Vincular proyecto**: Desde el apartado de Logikal puedes crear un proyecto o vincular un proyecto ya creado en Logikal:
+   3. **Logikal** 
+      - Desde el apartado de Logikal puedes crear un proyecto o vincular un proyecto ya creado en Logikal:
 
          ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_logikal3.jpg)
 
@@ -140,98 +108,127 @@ Una vez entres en **Documentos de venta** abrira un listado de todos los documen
 
          ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_logikal4.jpg)
 
-      - **Versiones**: Se puede crear diferentes versiones del presupuesto. Con el boton derecho sobre la pestaña de *Version 1* o desde la cinta superior en el desplegado de *Presupuesto*:
+      - Se puede crear diferentes versiones del presupuesto. Con el boton derecho sobre la pestaña de *Version 1* o desde la cinta superior en el desplegado de *Presupuesto*:
 
          ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_version.jpg)
          ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_version2.jpg)
 
-         Abrira una ventana de Nueva version de presupuesto donde puedes indicar si quieres las lineas de la version activa (la version activa esta en ROJO) o crear una version en blanco:
+      - Abrira una ventana de Nueva version de presupuesto donde puedes indicar si quieres las lineas de la version activa (la version activa esta en ROJO) o crear una version en blanco:
 
          ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_version3.jpg)
 
->**Nota:** En las pestañas de Versiones el nombre es editable.
+>**Nota:** En las pestañas de Versiones el nombre es editable. Para editarlo clic con boton derecho sobre la pestaña de version y *Cambiar el nombre de la version*
 
 ### 3.3. Pedido
-   Una ves creado la Version del presupuesto el seguinte paso es acceptarlo y crear el pedido.
 
-   ![Pedido](Imagenes/PR_Ventas_Compras/pedido.jpg)
+   1. **Crear pedido**
+   - Una ves creado la version del presupuesto el seguinte paso es acceptarlo y crear el pedido de cliente.
 
-   ![Pedido](Imagenes/PR_Ventas_Compras/pedido2.jpg)  
+      ![Pedido](Imagenes/PR_Ventas_Compras/pedido.jpg)
+
+      ![Pedido](Imagenes/PR_Ventas_Compras/pedido2.jpg)  
+
+   2. **Editar posicion**
+   - Desde el pedido se puede editar o añadir posiciones, listar materiales, crear mediciones, crear producciones, etc..
+
+      ![Pedido](Imagenes/PR_Ventas_Compras/pedido3.jpg)
 
 >**Notas:** Los datos del documento de pedido tambien se pueden modificar asi como en el documento del presupuesto.
 
-   Desde el pedido se puede editar o añadir posiciones, listar materiales, crear mediciones, crear producciones, etc..
+### 3.4. Medicion
+   
+   1. **Crear medicion** 
+      - Desde el pedido se puede crear una medicion.
 
-   ![Pedido](Imagenes/PR_Ventas_Compras/pedido3.jpg)
+         ![Medicion](Imagenes/PR_Ventas_Compras/medicion.jpg)
 
-   - **Material Necesario**: En ese apartado podras listar los materiales del pedido y desde ahi pedir el material al proveedor.
+   2. **Seleccionar posiciones**
+      - Al crear una medicion abre una ventana *Nueva fase de medicion* donde puedes seleccionar las posiciones para la fase de medicion.
 
-      ![Material necesario](Imagenes/PR_Ventas_Compras/material_necesario.jpg)
+         ![Nueva Fase medicion](Imagenes/PR_Ventas_Compras/fase_medicion.jpg)
 
-      Al listar materiales veras en las columnas de Articulos y Unidades a comprar en color verde y rojo. Verde indica que tiene ese material en stock para ese proyecto (obra) y Rojo que no hay suficiente materiales para ese proyecto.
+   3. **Fase medicion**
+      - Se crea una fase creacion donde puedes editar las mediciones sin afectar el pedido.
 
-      ![Listar material](Imagenes/PR_Ventas_Compras/material_necesario.jpg)
+         ![Nueva Fase medicion](Imagenes/PR_Ventas_Compras/fase_medicion2.jpg)
 
-      Puedes elegir si quieres o no comprar los materiales, marcando o desmarcado la casilla de Comprar:
+>**Notas:** Los datos del documento de medicion tambien se pueden modificar asi como en el documento del presupuesto.
 
-      ![Comprar material](Imagenes/PR_Ventas_Compras/material_comprar.gif)
+### 3.4. Produccion
 
-      Luego al pedir material abrira una ventana **Nuevo documento de compra**, donde puedes cambiar algunos campos por defecto y elegir el proveedor.
+   1. **Crear produccion**
+      - La fase de produccion se puede crear desde el pedido o medicion.
 
-      ![Pedir Material](Imagenes/PR_Ventas_Compras/pedir_material.jpg)
+         ![Crear produccion](Imagenes/PR_Ventas_Compras/crear_produccion.jpg)    
 
-      ![Elegir proveedor](Imagenes/PR_Ventas_Compras/buscar_proveedor.jpg)      
+   2. **Seleccionar posiciones**
+      - Al crear una produccion abre una ventana *Nueva fase de preduccion* donde puedes seleccionar las posiciones para la fase de produccion.
 
-   - **Pedido de Compra**: Una vez creado el pedido de compra se puede revizar y modificar segun sea necesario (proveedor, proyecto, cantidad de los materiales, etc.. )
+         ![Nueva Fase produccion](Imagenes/PR_Ventas_Compras/fase_produccion.jpg)
 
+      - Al acceptar aparecera una ventana preguntando si quieres enviar a produccion.
 
+          ![Pregunta enviar a produccion](Imagenes/PR_Ventas_Compras/pregunta_enviar.jpg)
 
+   3. **Fase produccion**
+      - Se crea una fase creacion donde puedes editar las mediciones sin afectar el pedido.
 
+         ![Nueva Fase produccion](Imagenes/PR_Ventas_Compras/fase_produccion2.jpg)
 
+>**Notas:** Los datos del documento de medicion tambien se pueden modificar asi como en el documento del presupuesto.
 
+## 4. Compras
 
+### 4.1. Pedidos de Compra
 
+   1. **Desde un Presupuesto**:
+      - Acepta un presupuesto para generar un pedido de cliente.
 
-**Listado de Documentos**: Todos los documentos se muestran en un listado configurable donde se puede usar filtros personalizados.
+   2. **Material Necesario**:
+      - Accede a la pestaña "Material Necesario" para listar los materiales requeridos.
 
+         ![Material necesario](Imagenes/PR_Ventas_Compras/material_necesario.jpg)
 
-### Trazabilidad
-- **Árbol de Trazabilidad**: Muestra la trazabilidad completa de un documento, desde el presupuesto hasta la producción.
-  - Ejemplo: Desde un presupuesto (ej. 483) hasta su envío a producción.
-- **Visualización**: Haz clic en cualquier documento para ver su trazabilidad en el panel derecho.
+      - Al listar materiales veras en las columnas de Articulos y Unidades a comprar en color verde y rojo. Verde indica que tiene ese material en stock para ese proyecto (obra) y Rojo que no hay suficiente materiales para ese proyecto.
 
-### Configuración de Listados
-- **Personalización**:
-  - Arrastra columnas para reorganizar el listado.
-  - Elimina columnas no necesarias (los cambios no se guardan automáticamente).
-- **Búsquedas**:
-  - Usa `Ctrl + F` para buscar en el listado.
-  - Filtra por campos específicos (ej. proyecto, cliente, etc.).
-- **Guardar Filtros**:
-  - Crea y guarda filtros personalizados para recuperarlos fácilmente.
+         ![Listar material](Imagenes/PR_Ventas_Compras/material_necesario.jpg)
 
----
+      - Puedes elegir si quieres o no comprar los materiales, marcando o desmarcado la casilla de la columna *Comprar*:
 
-## Compras
+         ![Comprar material](Imagenes/PR_Ventas_Compras/material_comprar.gif)
 
-### Pedidos de Compra
-1. **Desde un Presupuesto**:
-   - Acepta un presupuesto para generar un pedido de cliente.
-2. **Material Necesario**:
-   - Accede a la pestaña "Material Necesario" para listar los materiales requeridos.
-   - Marca los materiales a comprar.
-3. **Generar Pedido de Compra**:
-   - Selecciona los materiales y genera el pedido de compra.
-   - Asigna un proveedor y envía el pedido.
+   3. **Generar Pedido de Compra**:
+      - Selecciona los materiales y genera el pedido de compra en **Pedir material** abrira una ventana **Nuevo documento de compra**, donde puedes cambiar algunos campos por defecto y elegir el proveedor.
 
-### Recepción de Material
-1. **Albarán de Recibido**:
-   - Genera un albarán al recibir el material.
-2. **Unidades Recibidas**:
-   - Indica las unidades recibidas.
-   - Gestiona las unidades pendientes.
-3. **Escaneo de Documentos**:
-   - Escanea y adjunta el albarán del proveedor en la sección de documentación.
+         ![Pedir material](Imagenes/PR_Ventas_Compras/pedir_material.jpg)
+
+      - Asigna un proveedor y envía el pedido.
+
+         ![Elegir proveedor](Imagenes/PR_Ventas_Compras/buscar_proveedor.jpg)
+
+   4. **Pedido de Compra**:
+      Una vez creado el pedido de compra se puede revizar y modificar segun sea necesario (proveedor, proyecto, cantidad de los materiales, etc.. )
+
+         ![Pedido compra detalle](Imagenes/PR_Ventas_Compras/pedidoc_detalle.jpg)
+
+   5. **Documentos de compra**
+      - Desde el apartado de compras puedes acceder al listado de comprar y a Proveedores.
+
+         ![Documentos de compra](Imagenes/PR_Ventas_Compras/compras_documentos.jpg) 
+
+         ![Documentos de compra](Imagenes/PR_Ventas_Compras/lista_compra.jpg)
+
+### 4.2 Recepción de Material
+
+   1. **Albarán de Recibido**:
+      - Genera un albarán al recibir el material.
+
+         ![Generar albran](Imagenes/PR_Ventas_Compras/generar_albaran.jpg)
+
+   2. **Unidades Recibidas**:
+      - Indica las unidades recibidas en la columna Unidades a albaranar.
+
+         ![Unidades recibidas](Imagenes/PR_Ventas_Compras/unidades_recibidas.jpg)
 
 ---
 
@@ -270,6 +267,64 @@ Una vez entres en **Documentos de venta** abrira un listado de todos los documen
   - Gestiona la reposición de materiales.
 
 ---
+
+
+
+
+
+
+
+### Trazabilidad
+- **Árbol de Trazabilidad**: Muestra la trazabilidad completa de un documento, desde el presupuesto hasta la producción.
+  - Ejemplo: Desde un presupuesto (ej. 483) hasta su envío a producción.
+
+- **Visualización**: Haz clic en cualquier documento para ver su trazabilidad en el panel derecho.
+
+### Configuración de Listados
+- **Personalización**:
+  - Arrastra columnas para reorganizar el listado.
+  - Elimina columnas no necesarias (los cambios no se guardan automáticamente).
+- **Búsquedas**:
+  - Usa `Ctrl + F` para buscar en el listado.
+  - Filtra por campos específicos (ej. proyecto, cliente, etc.).
+
+**Listado de Documentos**: Todos los documentos se muestran en un listado configurable donde se puede usar filtros personalizados.
+
+## 5. Uso de Filtros en Listados
+Los filtros permiten personalizar la visualización de los documentos en los listados. Sigue estos pasos:
+
+### 5.1. Acceder a los filtros  
+   - En la cabecera de los listados, utiliza los filtros para definir qué columnas y datos deseas ver.
+
+      ![Facturas](Imagenes/PR_Ventas_Compras/cabecera.jpg)
+
+   - Por ejemplo, puedes crear un filtro llamado "Presupuestos" que muestre solo las columnas necesarias (empresa, proyecto, fecha de solicitud, estado del documento, técnico del proyecto, tipo de documento etc..).
+
+      ![Filtros](Imagenes/PR_Ventas_Compras/filtros2.jpg)
+
+      ![Filtros](Imagenes/PR_Ventas_Compras/filtros.jpg)
+
+### 5.2. Guardar filtros personalizados  
+   - Organiza las columnas según tus necesidades. Puedes eliminar, añadir y cambiar las columnas de posición con el botón derecho sobre cualquier cabecera.
+
+    ![Organizar filtro](Imagenes/PR_Ventas_Compras/organizar_filtro.jpg)
+
+   - Otra opción para cambiar de posición y eliminar las columnas es arrastrarlas.
+
+      ![Organizar filtro](Imagenes/PR_Ventas_Compras/eliminar_columnas.gif)
+      
+   - Desde "Filtros", accede a "Gestión de filtros" y añade un nuevo filtro.
+
+      ![Nuevo filtro](Imagenes/PR_Ventas_Compras/nuevo_filtro.jpg)
+
+   - Guarda el filtro con un nombre específico (ej. "Facturas 2").
+
+      ![Nuevo filtro](Imagenes/PR_Ventas_Compras/nuevo_filtro2.jpg)
+
+>**Nota:** Cada usuario puede tener sus propios filtros guardados.
+---
+
+
 
 ## Preguntas Frecuentes
 
