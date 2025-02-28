@@ -117,6 +117,8 @@ Una vez dentro, verás dos secciones principales:
 
          ![Presupuesto posicion logikal](Imagenes/PR_Ventas_Compras/presupuesto_version3.jpg)
 
+      - Para editar una posicion en Logikal pulse **ctrl + doble clic** sobre la posicion que quieras editar.
+
 >**Nota:** En las pestañas de Versiones el nombre es editable. Para editarlo clic con boton derecho sobre la pestaña de version y *Cambiar el nombre de la version*
 
 ### 3.3. Pedido
@@ -133,7 +135,7 @@ Una vez dentro, verás dos secciones principales:
 
       ![Pedido](Imagenes/PR_Ventas_Compras/pedido3.jpg)
 
->**Notas:** Los datos del documento de pedido tambien se pueden modificar asi como en el documento del presupuesto.
+>**Notas:** Los datos del documento de pedido tambien se pueden modificar asi como en los otros documentos de venta.
 
 ### 3.4. Medicion
    
@@ -152,7 +154,7 @@ Una vez dentro, verás dos secciones principales:
 
          ![Nueva Fase medicion](Imagenes/PR_Ventas_Compras/fase_medicion2.jpg)
 
->**Notas:** Los datos del documento de medicion tambien se pueden modificar asi como en el documento del presupuesto.
+>**Notas:** Los datos del documento de medicion tambien se pueden modificar asi como en los otros documentos de venta.
 
 ### 3.4. Produccion
 
@@ -175,7 +177,7 @@ Una vez dentro, verás dos secciones principales:
 
          ![Nueva Fase produccion](Imagenes/PR_Ventas_Compras/fase_produccion2.jpg)
 
->**Notas:** Los datos del documento de medicion tambien se pueden modificar asi como en el documento del presupuesto.
+>**Notas:** Los datos del documento de produccion tambien se pueden modificar asi como en los otros documentos de venta.
 
 ## 4. Compras
 
@@ -229,6 +231,8 @@ Una vez dentro, verás dos secciones principales:
       - Indica las unidades recibidas en la columna Unidades a albaranar.
 
          ![Unidades recibidas](Imagenes/PR_Ventas_Compras/unidades_recibidas.jpg)
+
+
 
 ---
 
