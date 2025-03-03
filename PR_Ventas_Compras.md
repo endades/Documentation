@@ -25,6 +25,7 @@ Este manual está diseñado para guiar a los usuarios en el uso del sistema de v
 
 ## 2. Processo
 Una vez dentro, verás dos secciones principales:
+
    1. **Ventas**: Documentos de venta - Gestión y listado de presupuestos, pedidos, albaranes y facturas. Creacion de Proyectos y Clientes.
 
      ![Ventas](Imagenes/PR_Ventas_Compras/ventas.jpg)
@@ -32,6 +33,8 @@ Una vez dentro, verás dos secciones principales:
    2. **Compras**: Documentos de compra - Gestión y listado de pedidos de compra y recepción de materiales. Creacion de Proveedores.
 
       ![Compras](Imagenes/PR_Ventas_Compras/compras.jpg)
+
+ > **Nota:** Para crear documentos de venta y de compra es importante tener creados **proyectos, clientes y proveedores**. Para mas informacion seguir ese enlace [4. Proyecto, cliente y proveedores **(EN PROCESO)**](EN_PROCESO.md).
 
 ---
 
@@ -119,7 +122,7 @@ Una vez dentro, verás dos secciones principales:
 
       - Para editar una posicion en Logikal pulse **ctrl + doble clic** sobre la posicion que quieras editar.
 
->**Nota:** En las pestañas de Versiones el nombre es editable. Para editarlo clic con boton derecho sobre la pestaña de version y *Cambiar el nombre de la version*
+      >**Nota:** En las pestañas de Versiones el nombre es editable. Para editarlo clic con boton derecho sobre la pestaña de version y *Cambiar el nombre de la version*
 
 ### 3.3. Pedido
 
@@ -134,6 +137,12 @@ Una vez dentro, verás dos secciones principales:
    - Desde el pedido se puede editar o añadir posiciones, listar materiales, crear mediciones, crear producciones, etc..
 
       ![Pedido](Imagenes/PR_Ventas_Compras/pedido3.jpg)
+
+   3. **Albaran**
+
+      - Desde la fase de Pedido se puede crear alabaran y indicar las unidades a albaranar.
+
+         ![Albaran ](Imagenes/PR_Ventas_Compras/albaran.jpg)
 
 >**Notas:** Los datos del documento de pedido tambien se pueden modificar asi como en los otros documentos de venta.
 
@@ -154,7 +163,11 @@ Una vez dentro, verás dos secciones principales:
 
          ![Nueva Fase medicion](Imagenes/PR_Ventas_Compras/fase_medicion2.jpg)
 
->**Notas:** Los datos del documento de medicion tambien se pueden modificar asi como en los otros documentos de venta.
+   3. **Albaran**
+
+      - Desde la fase de Medicion se puede crear alabaran y indicar las unidades a albaranar de la misma forma que en pedido.
+
+   >**Notas:** Los datos del documento de medicion tambien se pueden modificar asi como en los otros documentos de venta.
 
 ### 3.4. Produccion
 
@@ -177,7 +190,11 @@ Una vez dentro, verás dos secciones principales:
 
          ![Nueva Fase produccion](Imagenes/PR_Ventas_Compras/fase_produccion2.jpg)
 
->**Notas:** Los datos del documento de produccion tambien se pueden modificar asi como en los otros documentos de venta.
+   3. **Albaran**
+
+      - Desde la fase de Produccion se puede crear alabaran y indicar las unidades a albaranar de la misma forma que en pedido.     
+
+   >**Notas:** Los datos del documento de produccion tambien se pueden modificar asi como en los otros documentos de venta.
 
 ## 4. Compras
 
@@ -218,7 +235,7 @@ Una vez dentro, verás dos secciones principales:
 
          ![Documentos de compra](Imagenes/PR_Ventas_Compras/compras_documentos.jpg) 
 
-         ![Documentos de compra](Imagenes/PR_Ventas_Compras/lista_compra.jpg)
+         ![Lista de compra](Imagenes/PR_Ventas_Compras/lista_compra.jpg)
 
 ### 4.2 Recepción de Material
 
@@ -232,72 +249,68 @@ Una vez dentro, verás dos secciones principales:
 
          ![Unidades recibidas](Imagenes/PR_Ventas_Compras/unidades_recibidas.jpg)
 
-
-
+---
+>**Nota General:** En todos los procesos se puede sacar y enviar por email documentaciones y informes. Para mas informacion seguir ese enlace [4. Imprimir informes **(EN PROCESO)**](EN_PROCESO.md)
 ---
 
-## Proyectos
+## 5. Material Adicional y Roturas
 
-### Creación de Proyectos
-1. **Nuevo Proyecto**:
-   - Crea un proyecto desde el botón "Nuevo Proyecto".
-   - Asigna un nombre y selecciona el cliente.
-2. **Detalles del Proyecto**:
-   - Técnico de obra.
-   - Comercial.
-   - Responsable de compras.
-   - Responsable de facturación.
-3. **IVA**:
-   - Confirma el IVA con el cliente para evitar errores en facturas.
+### 5.1 Material Adicional
+   - Los materiales adicionales se puede añadir al pedido, medicion o produccion. Son materiales proprios que se ha creado desde enMATERIAL. Para mas informacion de como crear materiales proprios seguir ese [2. Creación de materiales proprios en enMATERIALES](UT_Crear_Materiales_enMATERIAL.md).
 
-### Documentos Relacionados
-- **Presupuestos y Facturas**: Todos los documentos relacionados con el proyecto se agrupan aquí.
-- **Programación de Tareas**: Gestiona las tareas asociadas al proyecto.
+      ![Material adicional](Imagenes/PR_Ventas_Compras/material_adicional.jpg)
 
----
+   1. **Añadir Material**:
+      - Arrastra material adicional desde el árbol Articulos.
 
-## Material Adicional y Roturas
+         ![Añadir material](Imagenes/PR_Ventas_Compras/añadir_articulo.gif)
 
-### Material Adicional
-- **Añadir Material**:
-  - Arrastra material adicional desde el árbol.
-  - Genera un albarán de envío.
-- **Costes**:
-  - El material adicional se contabiliza como coste del proyecto, pero no está presupuestado al cliente.
+      - Añadir lineas de textos.
 
-### Roturas
-- **Añadir a Roturas**:
-  - Desde la sección "Material Necesario", añade materiales rotos.
+         ![Albaran envio](Imagenes/PR_Ventas_Compras/añadir_linea.jpg)
+
+      - Se puede generar un albarán de envío para material adicional.
+
+         ![Albaran envio](Imagenes/PR_Ventas_Compras/albaran_envio.jpg)
+
+   2. **Costes**:
+      - El material adicional se contabiliza como coste del proyecto, pero no está presupuestado al cliente.
+
+### 5.2 Roturas
+
+   1. **Añadir a Roturas**:
+
+   - Desde la sección "Material Necesario", boton derecho sobre el material seleccionar **Añadir a roturas**. 
+
+      ![Añadir roturas](Imagenes/PR_Ventas_Compras/añadir_roturas.jpg)
+
+   - El material se añade en el apartado de **Roturas**. En la columna Concepto puedes indicar motivo de la rotura, se desplegara una lista previamente definida en configuracion Conceptos de rotura ([1. Configuración Inicial de ENBLAU](CO_Configuracion_Inicial_ENBLAU.md)).
+
+      ![Rotura](Imagenes/PR_Ventas_Compras/rotura.jpg)      
+
   - Gestiona la reposición de materiales.
 
 ---
 
+## 6. Trazabilidad
+
+   1. **Árbol de Trazabilidad**: 
+
+      - Muestra la trazabilidad completa de un documento, desde el presupuesto hasta la producción. Ejemplo: Desde un presupuesto (ej. 483) hasta su envío a producción.
+
+         ![Trazabilidad](Imagenes/PR_Ventas_Compras/trazabilidad.jpg) 
+
+   2. **Visualización**: 
+      
+      - Haz clic en cualquier documento para ver su trazabilidad en el panel derecho.
+
+         ![Trazabilidad](Imagenes/PR_Ventas_Compras/trazabilidad_vizualizacion.gif)
 
 
-
-
-
-
-### Trazabilidad
-- **Árbol de Trazabilidad**: Muestra la trazabilidad completa de un documento, desde el presupuesto hasta la producción.
-  - Ejemplo: Desde un presupuesto (ej. 483) hasta su envío a producción.
-
-- **Visualización**: Haz clic en cualquier documento para ver su trazabilidad en el panel derecho.
-
-### Configuración de Listados
-- **Personalización**:
-  - Arrastra columnas para reorganizar el listado.
-  - Elimina columnas no necesarias (los cambios no se guardan automáticamente).
-- **Búsquedas**:
-  - Usa `Ctrl + F` para buscar en el listado.
-  - Filtra por campos específicos (ej. proyecto, cliente, etc.).
-
-**Listado de Documentos**: Todos los documentos se muestran en un listado configurable donde se puede usar filtros personalizados.
-
-## 5. Uso de Filtros en Listados
+## 7. Gestion Filtros en Listados
 Los filtros permiten personalizar la visualización de los documentos en los listados. Sigue estos pasos:
 
-### 5.1. Acceder a los filtros  
+### 7.1. Acceder a los filtros  
    - En la cabecera de los listados, utiliza los filtros para definir qué columnas y datos deseas ver.
 
       ![Facturas](Imagenes/PR_Ventas_Compras/cabecera.jpg)
@@ -308,7 +321,11 @@ Los filtros permiten personalizar la visualización de los documentos en los lis
 
       ![Filtros](Imagenes/PR_Ventas_Compras/filtros.jpg)
 
-### 5.2. Guardar filtros personalizados  
+   - Usa `Ctrl + F` para buscar en el listado.
+
+      ![Buscar](Imagenes/PR_Ventas_Compras/buscar.jpg)
+
+### 7.2. Guardar filtros personalizados  
    - Organiza las columnas según tus necesidades. Puedes eliminar, añadir y cambiar las columnas de posición con el botón derecho sobre cualquier cabecera.
 
     ![Organizar filtro](Imagenes/PR_Ventas_Compras/organizar_filtro.jpg)
@@ -326,28 +343,22 @@ Los filtros permiten personalizar la visualización de los documentos en los lis
       ![Nuevo filtro](Imagenes/PR_Ventas_Compras/nuevo_filtro2.jpg)
 
 >**Nota:** Cada usuario puede tener sus propios filtros guardados.
+
+**Listado de Documentos**: Todos los documentos se muestran en un listado configurable donde se puede usar filtros personalizados.
+
 ---
 
+## 8. Preguntas Frecuentes
 
-
-## Preguntas Frecuentes
-
-### ¿Cómo gestionar incidencias postventa?
+### 8.1. ¿Cómo gestionar incidencias postventa?
 - **Opción 1**: Crea un nuevo presupuesto.
 - **Opción 2**: Genera un pedido de cliente a importe cero y envíalo a producción.
 
-### ¿Cómo añadir material adicional?
+### 8.2. ¿Cómo añadir material adicional?
 - Arrastra el material adicional desde el árbol y genera un albarán de envío.
 
-### ¿Cómo recibir material parcialmente?
+### 8.3. ¿Cómo recibir material parcialmente?
 - Al generar un albarán, indica las unidades recibidas. Puedes crear múltiples albaranes para un mismo pedido.
-
----
-
-## Contacto
-- **Email**: Para consultas no urgentes.
-- **Teléfono**: Para urgencias.
-- **Soporte Técnico**: Consulta la firma del correo electrónico para obtener los datos de contacto.
 
 ---
 

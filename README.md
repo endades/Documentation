@@ -18,6 +18,10 @@
 
 [3. Sistema de control de stock](PR_Manual_Stock_Control.md)
 
+[4. Proyecto, cliente y proveedores **(EN PROCESO)**](EN_PROCESO.md)<!--(PR_Proyecto_cliente.md)-->
+
+[5. Imprimir informes **(EN PROCESO)**](EN_PROCESO.md)<!--(PR_Informes.md)-->
+
 ## Utilidades
 
 [1. Relación entre fases en ENBLAU y Logikal](UT_Relacion_ENBLAU_Logikal.md)
