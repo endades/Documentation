@@ -1,6 +1,6 @@
 # Configuración Inicial de ENBLAU
 
-## Índice
+<!-- ## Índice
 
 1. [Propósito](#1-propósito)
 2. [Configuración General](#2-configuración-general)
@@ -26,7 +26,7 @@
    - [8.1. Numeraciones](#81-numeraciones)
    - [8.2. Formas de Pago](#82-formas-de-pago)
    - [8.3. Clasificaciones](#83-clasificaciones)
-   - [8.4. Directorios por Defecto](#84-directorios-por-defecto)
+   - [8.4. Directorios por Defecto](#84-directorios-por-defecto) -->
 
 ---
 

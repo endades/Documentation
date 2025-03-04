@@ -12,15 +12,15 @@
 
 ## Procesos
 
-[1. Ventas, compras y producción **(EN PROCESO)**](EN_PROCESO.md)<!--(Presupuesto_Compras.md)-->
+[1. Ventas, compras y producción](PR_Ventas_Compras.md)
 
 [2. Facturación](PR_Facturas.md)
 
 [3. Sistema de control de stock](PR_Manual_Stock_Control.md)
 
-[4. Proyecto, cliente y proveedores **(EN PROCESO)**](EN_PROCESO.md)<!--(PR_Proyecto_cliente.md)-->
+[4. Proyecto, cliente y proveedores](PR_Proyecto_cliente.md)
 
-[5. Imprimir informes **(EN PROCESO)**](EN_PROCESO.md)<!--(PR_Informes.md)-->
+[5. Imprimir informes](PR_Informes.md)
 
 ## Utilidades
 
