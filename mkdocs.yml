@@ -1,0 +1,19 @@
+site_name: Documentos
+
+theme:
+  name: readthedocs
+  # logo: img/endades2.png
+  highlightjs: true
+
+
+# Change font style
+extra_css:
+  - stylesheets/custom.css
+
+# Hide logos and copy rights
+extra:
+  hide:
+    github: true
+    edit_page: true
+
+copyright: " "
