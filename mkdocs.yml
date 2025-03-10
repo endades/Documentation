@@ -10,6 +10,9 @@ theme:
 extra_css:
   - stylesheets/custom.css
 
+extra_javascript:
+  - assets/javascripts/search-highlight.js
+
 # Hide logos and copy rights
 extra:
   hide:
@@ -17,3 +20,4 @@ extra:
     edit_page: true
 
 copyright: " "
+
