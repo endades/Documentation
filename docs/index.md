@@ -1,7 +1,7 @@
 **Manual de usuario**
 
 ¿Qué es este manual y por qué es importante?
-Este manual ha sido diseñado para ayudarte a comprender y utilizar correctamente las apps de Endades en el proceso de ventas, compras y control de stock. Aquí encontrarás información detallada sobre su funcionamiento, configuración y solución de problemas.
+Este manual ha sido diseñado para ayudarte a comprender y utilizar correctamente las apps de Endades. Aquí encontrarás información detallada sobre su funcionamiento, configuración y solución de problemas.
 
 Antes de comenzar a usar el producto, es importante que leas esta guía para:
 
