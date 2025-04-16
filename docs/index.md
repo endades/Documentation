@@ -15,4 +15,7 @@ Antes de comenzar a usar el producto, es importante que leas esta guía para:
 
 Sigue estas indicaciones y disfruta de una experiencia óptima con Endades. ¡Comencemos! 🚀
 
+**Para más información, no dude en contactarnos por correo electrónico:**  
+📧 [soporte@endades.com](mailto:soporte@endades.com)
+
 ![Manual usuario](Imagenes/manual_usuario.gif)
