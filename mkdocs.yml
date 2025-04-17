@@ -1,4 +1,4 @@
-site_name: Documentos
+site_name: Endades Documentation
 
 theme:
   name: readthedocs
@@ -20,4 +20,13 @@ extra:
     edit_page: true
 
 copyright: " "
+
+# nav:
+#   - Home: index.md
+#   - CONFIGURACIONES:
+#       - Configuración Inicial de ENBLAU: Configuraciones/1. CO_Configuracion_Inicial_ENBLAU.md
+#       - Configuración Inicial de enCONTROL: Configuraciones/2. CO_Configuracion_Inicial_enCONTROL.md
+#   - PROCESOS:
+#       - Ventas y Compras: Procesos/1.PR_Ventas_Compras.md
+
 
