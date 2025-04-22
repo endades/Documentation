@@ -13,9 +13,9 @@ Antes de comenzar a usar el producto, es importante que leas esta guía para:
 
 🔹 Garantizar un uso seguro y eficiente.
 
-Sigue estas indicaciones y disfruta de una experiencia óptima con Endades. ¡Comencemos! 🚀
+Sigue estas indicaciones y disfruta de una experiencia óptima con Endades. ¡Comencemos!
 
 **Para más información, no dude en contactarnos por correo electrónico:**  
-📧 [soporte@endades.com](mailto:soporte@endades.com)
+[soporte@endades.com](mailto:soporte@endades.com)
 
 ![Manual usuario](Imagenes/manual_usuario.gif)
