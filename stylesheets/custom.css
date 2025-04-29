@@ -1,7 +1,7 @@
 
 /* Mantener el color de la sección superior (Documentos y Search docs) */
 .wy-side-nav-search {
-    background-color: #00c39e; /* Color original del tema readthedocs */
+    background-color: #ffffff; /* Color original del tema readthedocs */
 }
 
 /* Cambiar el color de fondo de la cinta lateral */
@@ -42,7 +42,7 @@
 
 
 .wy-nav-content-wrap .rst-footer-buttons a {
-    background-color: #0098da !important; /* Cambia el color de fondo */
+    background-color: #00c39e !important; /* Cambia el color de fondo */
     color: #ffffff !important; /* Cambia el color del texto de los enlaces */
 }
 
@@ -69,7 +69,7 @@ footer {
 }
 
   /* Desactiva el clic en el logo (lo hace estático) */
-  /* .wy-side-nav-search > a {
+  .wy-side-nav-search > a {
     pointer-events: none;
     cursor: default;
     background-image: url("/images/endades2.png");
@@ -79,5 +79,5 @@ footer {
     height: 80px;
     display: block;
     line-height: 80px;
-    color: transparent; 
-  }*/
+    color: transparent;
+  }
