@@ -28,5 +28,5 @@ Sigue estas indicaciones y disfruta de una experiencia óptima con Endades. ¡Co
 
 <!-- ![Manual usuario](Images/manual_usuario.gif) -->
 
-<img src="Images/manual_usuario.gif" alt="Manual usuario" style="width: 800px; height: auto;">
+<!-- <img src="Images/manual_usuario.gif" alt="Manual usuario" style="width: 800px; height: auto;"> -->
 
