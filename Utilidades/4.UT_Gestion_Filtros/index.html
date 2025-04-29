@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>4. Gestión de Filtros - Documentos</title>
+    <title>4. Gestión de filtros - Endades Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "4. Gesti\u00f3n de Filtros";
+        var mkdocs_page_name = "4. Gesti\u00f3n de filtros";
         var mkdocs_page_input_path = "Utilidades\\4.UT_Gestion_Filtros.md";
         var mkdocs_page_url = null;
       </script>
@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="../.." class="icon icon-home"> Documentos
+          <a href="../.." class="icon icon-home"> Endades Documentation
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -46,9 +46,9 @@
               </ul>
               <p class="caption"><span class="caption-text">Configuraciones</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">1. Configuración Inicial de ENBLAU</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">1. Configuración inicial de ENBLAU</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración Inicial de enCONTROL</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración inicial de enCONTROL</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Procesos</span></p>
@@ -57,11 +57,13 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../Procesos/2.PR_Facturas/">2. Facturación</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/3.PR_Manual_Stock_Control/">3. Sistema de control de stock (EN PROCESO)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/3.PR_Manual_Stock_ENBLAU/">3. Sistema de control de stock ENBLAU (EN PROCESO...)</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/4.PR_Proyecto_cliente/">4. Proyectos, Clientes y Proveedores</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/4.PR_Manual_Stock_enCONTROL/">4. Sistema de control de stock enCONTROL (EN PROCESO...)</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../Procesos/5.PR_Informes/">5. Informes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/6.PR_Proyecto_cliente/">6. Proyectos, Clientes y Proveedores</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Utilidades</span></p>
@@ -70,17 +72,19 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales proprios en enMATERIALES</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">3. Creación y Edición de Informes Personalizados</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">3. Creación y edición de informes personalizados</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">4. Gestión de Filtros</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">4. Gestión de filtros</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-gestion-de-filtros-en-listados">2. Gestión de Filtros en Listados</a>
+    <li class="toctree-l2"><a class="reference internal" href="#2-gestion-de-filtros-en-listados">2. Gestión de filtros en listados</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#21-acceder-a-los-filtros">2.1. Acceder a los Filtros</a>
+    <li class="toctree-l3"><a class="reference internal" href="#21-acceder-a-los-filtros">2.1. Acceder a los filtros</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#22-guardar-filtros-personalizados">2.2. Guardar Filtros Personalizados</a>
+    <li class="toctree-l3"><a class="reference internal" href="#22-guardar-filtros-personalizados">2.2. Guardar filtros personalizados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-guardar-vista">2.3. Guardar vista</a>
     </li>
         </ul>
     </li>
@@ -94,7 +98,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../..">Documentos</a>
+          <a href="../..">Endades Documentation</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -102,7 +106,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Utilidades</li>
-      <li class="breadcrumb-item active">4. Gestión de Filtros</li>
+      <li class="breadcrumb-item active">4. Gestión de filtros</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -111,7 +115,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="4-gestion-de-filtros">4. Gestión de Filtros</h1>
+                <h1 id="4-gestion-de-filtros">4. Gestión de filtros</h1>
 <!-- ## Índice
 1. [Introducción](#1-introducción)
 2. [Gestión de Filtros en Listados](#2-gestión-de-filtros-en-listados)
@@ -121,9 +125,9 @@
 <hr />
 <h2 id="1-introduccion">1. Introducción</h2>
 <p>Este manual está diseñado para orientar a los usuarios en el uso de filtros y filtros personalizados. Su función principal es optimizar la velocidad de búsqueda y mejorar la organización de la vista en todos los listados de los aplicativos.</p>
-<h2 id="2-gestion-de-filtros-en-listados">2. Gestión de Filtros en Listados</h2>
+<h2 id="2-gestion-de-filtros-en-listados">2. Gestión de filtros en listados</h2>
 <p>Los filtros permiten personalizar la visualización de los documentos en los listados. Sigue estos pasos:</p>
-<h3 id="21-acceder-a-los-filtros">2.1. Acceder a los Filtros</h3>
+<h3 id="21-acceder-a-los-filtros">2.1. Acceder a los filtros</h3>
 <ul>
 <li>En la cabecera de los listados, utiliza los filtros para definir qué columnas y datos deseas ver.</li>
 </ul>
@@ -144,7 +148,7 @@
 <li>Usa <code>Ctrl + F</code> para buscar en el listado.</li>
 </ul>
 <p><img alt="Buscar" src="../Imagenes/UT_Gestion_Filtros/buscar.jpg" /></p>
-<h3 id="22-guardar-filtros-personalizados">2.2. Guardar Filtros Personalizados</h3>
+<h3 id="22-guardar-filtros-personalizados">2.2. Guardar filtros personalizados</h3>
 <ul>
 <li>Organiza las columnas según tus necesidades. Puedes eliminar, añadir y cambiar la posición de las columnas haciendo clic derecho sobre cualquier cabecera.</li>
 </ul>
@@ -161,14 +165,20 @@
 <li>Guarda el filtro con un nombre específico (ej. "Presupuesto 2").</li>
 </ul>
 <p><img alt="Nuevo filtro" src="../Imagenes/UT_Gestion_Filtros/nuevo_filtro2.jpg" /></p>
+<h3 id="23-guardar-vista">2.3. Guardar vista</h3>
+<ul>
+<li>Desde cualquier documento o desde un proyecto se puede organizar las columnas o los filtros y luego guardar la vista desde Configuración ventana - <strong>Guardar vista</strong>:</li>
+</ul>
+<p><img alt="Nuevo filtro" src="../Imagenes/UT_Gestion_Filtros/guardar_vista.jpg" /></p>
+<p>Cada vez que vuelvas a entrar se vera la vista que se habia guardado</p>
 <blockquote>
-<p><strong>Nota:</strong> Cada usuario puede tener sus propios filtros guardados.</p>
+<p><strong>Nota:</strong> Cada usuario puede tener sus propios filtros y vistas guardados.</p>
 </blockquote>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../3.UT_Editar_Informes/" class="btn btn-neutral float-left" title="3. Creación y Edición de Informes Personalizados"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3.UT_Editar_Informes/" class="btn btn-neutral float-left" title="3. Creación y edición de informes personalizados"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
