@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>3. Sistema de control de stock ENBLAU (EN PROCESO...) - Endades Documentation</title>
+    <title>3. Sistema de control de stock ENBLAU - Endades Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "3. Sistema de control de stock ENBLAU (EN PROCESO...)";
+        var mkdocs_page_name = "3. Sistema de control de stock ENBLAU";
         var mkdocs_page_input_path = "Procesos\\3.PR_Manual_Stock_ENBLAU.md";
         var mkdocs_page_url = null;
       </script>
@@ -57,7 +57,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">2. Facturación</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Sistema de control de stock ENBLAU (EN PROCESO...)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Sistema de control de stock ENBLAU</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#1-proposito">1. Propósito</a>
     </li>
@@ -126,7 +126,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Procesos</li>
-      <li class="breadcrumb-item active">3. Sistema de control de stock ENBLAU (EN PROCESO...)</li>
+      <li class="breadcrumb-item active">3. Sistema de control de stock ENBLAU</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -135,7 +135,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="3-sistema-de-control-de-stock-enblau-en-proceso">3. Sistema de control de stock ENBLAU (EN PROCESO...)</h1>
+                <h1 id="3-sistema-de-control-de-stock-enblau">3. Sistema de control de stock ENBLAU</h1>
 <hr />
 <h2 id="1-proposito">1. Propósito</h2>
 <p>El presente manual está diseñado para usuarios nuevos en el sistema de control de stock utilizado por los Clientes y Endades. El objetivo principal es proporcionar una guía detallada para la gestión eficiente de proyectos, desde la creación de pedidos hasta la optimización del proceso de producción en ENBLAU. Este documento abarca los pasos necesarios para realizar las operaciones clave del sistema y está estructurado de forma secuencial para facilitar su comprensión.</p>
@@ -232,19 +232,19 @@
 <li>En el apartado de <strong>Almacenes - Stock</strong> tienes el listado con las opciones <strong>Resumen, Resumen con ubicacion y Detallado</strong>:</li>
 </ul>
 <p><img alt="Stock" src="../Imagenes/PR_Stock_Control/stock.jpg" /></p>
-<p><img alt="Listado" src="Imagenes/PR_Stock_Control/listado.jpg" /></p>
+<p><img alt="Listado" src="../Imagenes/PR_Stock_Control/listado.jpg" /></p>
 <ul>
 <li>
-<p><strong>Resumen:</strong> En ese listado podras ver de una manera resumida un material agrupado por proyecto asignado:</p>
-<p><img alt="Resumen" src="Imagenes/PR_Stock_Control/resumen.jpg" /></p>
+<p><strong>Resumen:</strong> En ese listado podras ver de una manera resumida un material agrupado por proyecto asignado. Se mostrará los totales de unidades, Unidades pendientes y unidades reservadas.</p>
+<!-- <img alt="Resumen" src="Imagenes/PR_Stock_Control/resumen.jpg" /> -->
 </li>
 <li>
-<p><strong>Resumen con ubicación:</strong> En ese listado podras ver de una manera resumida un material agrupado por proyecto asignado y su ubicación:</p>
-<p><img alt="Resumen con ubicacion" src="Imagenes/PR_Stock_Control/resumen_ubicacion.jpg" /></p>
+<p><strong>Resumen con ubicación:</strong> En ese listado podras ver de una manera resumida un material agrupado por proyecto asignado y su ubicación.</p>
+<!-- <img alt="Resumen con ubicacion" src="Imagenes/PR_Stock_Control/resumen_ubicacion.jpg" /> -->
 </li>
 <li>
-<p><strong>Detallado:</strong> En ese listado podras ver de una manera mas detallada donde muestra un material con su proyecto de compra, proyecto asignado, ubicacion en almacén y separado por documento de albaran de compra:</p>
-<p><img alt="Resumen con ubicacion" src="Imagenes/PR_Stock_Control/detallado.jpg" /></p>
+<p><strong>Detallado:</strong> En ese listado podras ver de una manera mas detallada donde muestra un material con su proyecto de compra, proyecto asignado, ubicacion en almacén y separado por documento de albaran de compra. Ademas permite descontar, traspasar y asignar articulos.  </p>
+<!-- <img alt="Resumen con ubicacion" src="Imagenes/PR_Stock_Control/detallado.jpg" /> -->
 </li>
 </ul>
 <h3 id="33-movimientos-en-almacen">3.3. Movimientos en almacén</h3>
@@ -280,6 +280,12 @@
 <p>Abrira una ventana <strong>Movimiento de devolución</strong> donde indicas las unidades y la ubicacion que quieres devolver del material, por defecto es la ubicacion de donde has dado salida a ese material:</p>
 <pre><code>![Devolver](Imagenes/PR_Stock_Control/devolver2.jpg)
 </code></pre>
+<ul>
+<li>
+<p>La opción <strong>Abrir</strong> desde el listado detallado, abre el albara (columna numeración) de la linea y articulo selecionado:</p>
+<p><img alt="Abrir" src="../Imagenes/PR_Stock_Control/abrir.jpg" /></p>
+</li>
+</ul>
 <h3 id="34-informes-de-almacenes-inventario">3.4. Informes de almacenes (inventario)</h3>
 <ul>
 <li>
@@ -294,11 +300,13 @@
 <p><img alt="Inventario por fecha" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
 </li>
 <li>
-<p><strong>Resumen con ubicación:</strong></p>
+<p><strong>Resumen con ubicación:</strong> Hay un informe <strong>Inventario detallado</strong>.</p>
+<p><strong>Inventario detallado</strong> muestra un informe de inventario, seguún los filtros aplicado en el listado de almacén detallado. Incluye Ubicación almacén, Artículo, Descrpción y Unidades. inventario_detallado_resumen</p>
+<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
 </li>
 <li>
 <p><strong>Detallado:</strong> Hay un informe <strong>Inventario detallado</strong>.</p>
-<p><strong>Inventario detallado</strong> muestra un informe de inventario, seguún los filtros aplicado en el listado de almacén detallado. Incluye Proyecto, Número del albaran de compra, Ubicacion almacén, Artículo, Descrpción y Unidades. </p>
+<p><strong>Inventario detallado</strong> muestra un informe de inventario, seguún los filtros aplicado en el listado de almacén detallado. Incluye Proyecto, Número del albaran de compra, Ubicación almacén, Artículo, Descrpción y Unidades agrupada por referencia y longitud. </p>
 <p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
 </li>
 <li>
