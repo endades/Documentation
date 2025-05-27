@@ -63,6 +63,12 @@
     <li class="toctree-l2"><a class="reference internal" href="#3-gestion-de-usuarios">3. Gestión de usuarios</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#4-configuracion-de-cuentas-de-email">4. Configuración de cuentas de email</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-configuracion-general-de-emails">4.1. Configuración general de emails</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-posibles-errores-de-autenticacion-microsoft">4.2. Posibles errores de autenticación Microsoft</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#5-gestion-de-empresas">5. Gestión de empresas</a>
     </li>
@@ -250,13 +256,40 @@
 <hr />
 <h2 id="4-configuracion-de-cuentas-de-email">4. Configuración de cuentas de email</h2>
 <ul>
-<li>Para configurar las cuentas de correo de cada usuario, accede a <strong>Cuentas de Email</strong>.</li>
+<li>Para configurar la cuenta de correo del usuario, accede a <strong>Email usuario:</strong> </li>
 </ul>
-<p><img alt="cuentas_email" src="../Imagenes/CO_Config_ENBLAU/cuentas_email.png" /></p>
-<p><img alt="cuentas_email2" src="../Imagenes/CO_Config_ENBLAU/cuentas_email2.png" /></p>
+<p><img alt="email" src="../Imagenes/CO_Config_ENBLAU/email.png" /></p>
+<p><img alt="email2" src="../Imagenes/CO_Config_ENBLAU/email2.png" /></p>
+<ul>
+<li>Para configurar las cuentas de correos de cada usuario, accede a <strong>Cuentas de email:</strong> </li>
+</ul>
+<p><img alt="cuentas email" src="../Imagenes/CO_Config_ENBLAU/cuentas_email.png" /></p>
+<p><img alt="cuentas email2" src="../Imagenes/CO_Config_ENBLAU/cuentas_email2.png" /></p>
+<ul>
+<li>Desde de cada apartado puedes configurar el correo, nombre de usuario, firma y Servidor de entrada y salida de IMAP y SMTP. La configuración del servidor de entrada/salida y los puertos tienen que estar bien definida según el proveedor que usáis. De esa manera se podrá mandar y recibir correos desde informes o desde notificación según como tengas configurado.</li>
+</ul>
+<h3 id="41-configuracion-general-de-emails">4.1. Configuración general de emails</h3>
+<ul>
+<li>Desde el apartado de <strong>General</strong> - <strong>Emails</strong> tienes la opción de definir por defecto copias, asunto y modo de envío de emails.</li>
+</ul>
+<p><img alt="general" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<p><img alt="configuracion email" src="../Imagenes/CO_Config_ENBLAU/conf_email.png" />  </p>
+<h3 id="42-posibles-errores-de-autenticacion-microsoft">4.2. Posibles errores de autenticación Microsoft</h3>
+<ul>
+<li>Al intentar enviar un correo, podemos encontrarnos con este tipo de error</li>
+</ul>
+<p><img alt="email error" src="../Imagenes/CO_Config_ENBLAU/email_error.png" /></p>
+<p><strong>LOG</strong>
+    Error: 535: 5.7.139 Authentication unsuccessful, SmtpClientAuthentication is disabled for the Tenant. Visit https://learn.microsoft.com/es-es/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission for more information.</p>
+<p>El error es de autenticación con la cuenta de email. Eso puede pasar por un cambio de protocolo de seguridad de Microsoft 365.</p>
+<ul>
+<li><strong>Solución:</strong> Contactar con la persona encargada y que tenga permisos desde el centro de administración de Microsoft 365, hay que revisar siguiendo los pasos del enlace que aparece arriba de Microsoft para configurar la cuenta de Outlook para que puedas sincronizar los correos desde otra app.</li>
+</ul>
+<p><img alt="adimn 365" src="../Imagenes/CO_Config_ENBLAU/adimn_365.png" /></p>
 <blockquote>
-<p><strong>Importante</strong> La configuración del servidor de entrada/salida y los puertos tienen que estar bien definida según el proveedor que usáis. De esa manera se podrá mandar y recibir correos desde informes o desde notificación según como tengas configurado.</p>
+<p><strong>Nota:</strong> Para correos de Microsoft se recomendá en modo de envío de emails en el apartado de General que esté la opción <strong>Modo de envío 2</strong>.</p>
 </blockquote>
+<p><img alt="modo envio" src="../Imagenes/CO_Config_ENBLAU/modo_envio.png" /></p>
 <hr />
 <h2 id="5-gestion-de-empresas">5. Gestión de empresas</h2>
 <ul>
