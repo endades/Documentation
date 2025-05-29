@@ -111,6 +111,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#8-confirmacion-de-factura-proforma">8. Confirmación de factura (Proforma)</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-facturacion-electronica-facturae">9. Facturación electrónica (FACTURAE)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#10-consideraciones-finales">10. Consideraciones finales</a>
     </li>
     </ul>
@@ -480,15 +482,62 @@ Los filtros permiten personalizar la visualización de los documentos en los lis
 <p>Abajo en la pestaña “Detalles de facturas” podrás ver todas las posiciones de cada pedido y desde la cinta de arriba Exportar detalle tienes la opción de exportar en .pdf o .xls: </p>
 <p><img alt="Factura proforma" src="../Imagenes/PR_Facturas/factura_proforma4.png" /></p>
 <ul>
-<li>Como ejemplo veras en PDF: </li>
+<li>Como ejemplo verás en PDF: </li>
 </ul>
 <p><img alt="Factura proforma" src="../Imagenes/PR_Facturas/factura_proforma5.png" /></p>
 </li>
 </ul>
 <hr />
 <blockquote>
-<p><strong>Gestion de filtros</strong> Usar filtros y filtros personalizados para optimizar la busqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros">4. Gestión de filtros</a></p>
+<p><strong>Gestión de filtros</strong> Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros">4. Gestión de filtros</a></p>
 </blockquote>
+<hr />
+<h2 id="9-facturacion-electronica-facturae">9. Facturación electrónica (FACTURAE)</h2>
+<ul>
+<li>
+<p>Para generar una factura electrónica desde ENBLAU, es necesario que tanto el Cliente como la Empresa tengan completados ciertos campos obligatorios.</p>
+<p><strong>Empresa:</strong> Los campos son CIF, Dirección, localidad, CP, Provincia y País.</p>
+<p><img alt="Facturae empresa" src="../Imagenes/PR_Facturas/facturae_empresa.png" /></p>
+<p><strong>Clientes:</strong> Los campos son Nombre comercial, NIF/CIF, Código de país y Tipo de persona (<strong>J</strong>: Jurídica, <strong>F</strong>: Física).</p>
+<p><img alt="Facturae cliente" src="../Imagenes/PR_Facturas/facturae_cliente.png" /></p>
+</li>
+<li>
+<p>A continuación, desde el apartado de <strong>Documentos de venta</strong>, deben seguirse los siguientes pasos:</p>
+<ul>
+<li>
+<p><strong>1-</strong> Abre la factura que deseas emitir como factura electrónica.</p>
+</li>
+<li>
+<p><strong>2-</strong> En la cinta superior de la factura, haz clic en el botón <strong>Facturación</strong> y selecciona la opción <strong>Exportar para Facturae</strong> del menú desplegable.</p>
+</li>
+</ul>
+<p><img alt="Factura eletronica" src="../Imagenes/PR_Facturas/facturae.png" /></p>
+<ul>
+<li><strong>3-</strong> Indica la ruta donde se guardará la factura electrónica en formato XML.</li>
+</ul>
+<p><img alt="Factura XML" src="../Imagenes/PR_Facturas/facturae_xml.png" /></p>
+<ul>
+<li><strong>4-</strong> Al guardar, se abrirá una ventana para que selecciones una firma certificada válida. Si es necesario, haz clic en Más opciones, selecciona el certificado correspondiente y haz clic en Aceptar.</li>
+</ul>
+<p><img alt="Factura certificado" src="../Imagenes/PR_Facturas/facturae_certificado.png" /></p>
+<p><img alt="Factura certificado" src="../Imagenes/PR_Facturas/facturae_firma.png" /></p>
+<ul>
+<li>Al hacer clic en Aceptar, se mostrará un mensaje indicando que la exportación se realizó correctamente en la ruta especificada.</li>
+</ul>
+<p><img alt="Factura mensaje" src="../Imagenes/PR_Facturas/facturae_msg.png" /></p>
+<blockquote>
+<p><strong>¡Importante!</strong> Una vez que la factura electrónica haya sido exportada, no podrá ser eliminada ni modificada.</p>
+</blockquote>
+<ul>
+<li><strong>5-</strong> Una vez exportada la factura electrónica en formato XML, accede a la página del <a href="https://face.gob.es/es/facturas/validar-visualizar-facturas">Validador y visualizador de facturas</a> para subir el archivo y validar su contenido.</li>
+</ul>
+<p><img alt="Factura mensaje" src="../Imagenes/PR_Facturas/facturae_validar.png" /></p>
+<ul>
+<li>Activa las opciones Formato Facturae y Firma de la factura para proceder con la validación.</li>
+</ul>
+<p><img alt="Factura mensaje" src="../Imagenes/PR_Facturas/facturae_validar2.png" /></p>
+</li>
+</ul>
 <hr />
 <h2 id="10-consideraciones-finales">10. Consideraciones finales</h2>
 <ul>
