@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>6. Conectar una Unidad de Red - Endades Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "6. Conectar una Unidad de Red";
+        var mkdocs_page_input_path = "Utilidades\\6.UT_Unidad_Red.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuraciones</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">1. Configuración inicial de ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración inicial de enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procesos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/1.PR_Ventas_Compras/">1. Ventas y Compras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/2.PR_Facturas/">2. Facturación</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/3.PR_Manual_Stock_ENBLAU/">3. Sistema de control de stock ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/4.PR_Manual_Stock_enCONTROL/">4. Sistema de control de stock enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/5.PR_Informes/">5. Informes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/6.PR_Proyecto_cliente/">6. Proyectos, Clientes y Proveedores</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales propios en enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">3. Creación y edición de informes personalizados</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.UT_Gestion_Filtros/">4. Gestión de filtros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.UT_Actualizar_ENBLAU/">5. Actualización ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">6. Conectar una Unidad de Red</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-compartir-las-carpetas-desde-el-servidor">2. Compartir las carpetas desde el servidor</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-requisitos-previos">3. Requisitos previos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-conectar-la-unidad-de-red">4. Conectar la unidad de red</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-abrir-el-explorador-de-archivos">4.1. Abrir el explorador de archivos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-acceder-a-este-equipo">4.2. Acceder a "Este equipo"</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-conectar-a-unidad-de-red">4.3. Conectar a unidad de red</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#44-elegir-una-letra-de-unidad">4.4. Elegir una letra de unidad</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#45-ingresar-la-ruta-de-la-carpeta-compartida">4.5. Ingresar la ruta de la carpeta compartida</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#46-ingresar-credenciales-si-se-solicita">4.6. Ingresar credenciales (si se solicita)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#47-finalizar">4.7. Finalizar</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-verificacion">5. Verificación</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Utilidades</li>
+      <li class="breadcrumb-item active">6. Conectar una Unidad de Red</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="6-conectar-una-unidad-de-red">6. Conectar una Unidad de Red</h1>
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual explica paso a paso cómo conectar una unidad de red compartida en un equipo con sistema operativo Windows, utilizando las carpetas compartidas de <strong>ENBLAU</strong> y <strong>Enblau Documentos</strong>.</p>
+<blockquote>
+<p><strong>¿Qué es una unidad de red?</strong><br />
+Una unidad de red es una carpeta compartida en otro equipo o servidor dentro de una red local, que puedes mapear como si fuera una unidad más de tu equipo (como el disco C: o D:).</p>
+</blockquote>
+<hr />
+<h2 id="2-compartir-las-carpetas-desde-el-servidor">2. Compartir las carpetas desde el servidor</h2>
+<ol>
+<li>En el servidor, comparte las carpetas <strong>ENBLAU</strong> y <strong>Enblau Documentos</strong> con todos los usuarios de la red.</li>
+</ol>
+<p><img alt="Propiedades" src="../Imagenes/UT_Unidad_red/propriedades.jpg" /></p>
+<ol>
+<li>Ve a la pestaña <strong>Compartir</strong> y haz clic en el botón <strong>Compartir...</strong>.</li>
+</ol>
+<p><img alt="Compartir" src="../Imagenes/UT_Unidad_red/compartir.jpg" /></p>
+<ol>
+<li>En la ventana <strong>Acceso a la red</strong>, selecciona <strong>Todos</strong> en el listado de usuarios (si no aparece, escríbelo manualmente) y haz clic en <strong>Agregar</strong>.<br />
+   Asegúrate de que tenga permiso de <strong>Lectura y escritura</strong> y luego haz clic en <strong>Compartir</strong>.</li>
+</ol>
+<p><img alt="Acceso a red" src="../Imagenes/UT_Unidad_red/acceso_red.jpg" /></p>
+<p><img alt="Carpeta compartida" src="../Imagenes/UT_Unidad_red/carpeta_compartida.jpg" /></p>
+<hr />
+<h2 id="3-requisitos-previos">3. Requisitos previos</h2>
+<p>Antes de comenzar, asegúrate de cumplir con lo siguiente:</p>
+<ul>
+<li>Estar conectado a la red local o corporativa.</li>
+<li>Tener la dirección de la carpeta compartida (por ejemplo: <code>\\servidor\carpeta</code>).</li>
+<li>Contar con los permisos de acceso necesarios.</li>
+<li>Disponer del usuario y contraseña si la carpeta lo requiere.</li>
+</ul>
+<hr />
+<h2 id="4-conectar-la-unidad-de-red">4. Conectar la unidad de red</h2>
+<h3 id="41-abrir-el-explorador-de-archivos">4.1. Abrir el explorador de archivos</h3>
+<ul>
+<li>Presiona <code>Windows + E</code> o haz clic en el icono de la carpeta desde la barra de tareas.</li>
+</ul>
+<h3 id="42-acceder-a-este-equipo">4.2. Acceder a "Este equipo"</h3>
+<ul>
+<li>En el panel lateral izquierdo, selecciona <strong>Este equipo</strong>.</li>
+</ul>
+<p><img alt="Este equipo" src="../Imagenes/UT_Unidad_red/este_equipo.jpg" /></p>
+<h3 id="43-conectar-a-unidad-de-red">4.3. Conectar a unidad de red</h3>
+<ul>
+<li>En la parte superior, haz clic en la pestaña <strong>Equipo</strong>, luego en <strong>Conectar a unidad de red</strong>.</li>
+</ul>
+<p><img alt="Conectar unidad red" src="../Imagenes/UT_Unidad_red/conectar_unidad.jpg" /></p>
+<h3 id="44-elegir-una-letra-de-unidad">4.4. Elegir una letra de unidad</h3>
+<ul>
+<li>Selecciona una letra disponible (por ejemplo: <code>Y:</code>).</li>
+</ul>
+<p><img alt="Unidad red" src="../Imagenes/UT_Unidad_red/unidad.jpg" /></p>
+<h3 id="45-ingresar-la-ruta-de-la-carpeta-compartida">4.5. Ingresar la ruta de la carpeta compartida</h3>
+<ul>
+<li>En el campo <strong>Carpeta</strong>, escribe la ruta en formato UNC (por ejemplo: <code>\\servidor\carpeta</code>).</li>
+</ul>
+<p><img alt="Servidor carpeta" src="../Imagenes/UT_Unidad_red/servidor_carpeta.jpg" /></p>
+<ul>
+<li>Marca la opción <strong>Conectar de nuevo al iniciar sesión</strong> si deseas mantener la conexión tras reiniciar el equipo.</li>
+</ul>
+<p><img alt="Conectar" src="../Imagenes/UT_Unidad_red/conectar.jpg" /></p>
+<h3 id="46-ingresar-credenciales-si-se-solicita">4.6. Ingresar credenciales (si se solicita)</h3>
+<ul>
+<li>Introduce el nombre de usuario y la contraseña con acceso a la carpeta compartida.</li>
+</ul>
+<h3 id="47-finalizar">4.7. Finalizar</h3>
+<ul>
+<li>Haz clic en <strong>Finalizar</strong>. Si todo está correcto, se abrirá la unidad de red como una carpeta más en el Explorador.</li>
+</ul>
+<p><img alt="Finalizar" src="../Imagenes/UT_Unidad_red/finalizar.jpg" /></p>
+<hr />
+<h2 id="5-verificacion">5. Verificación</h2>
+<ul>
+<li>Verifica que la unidad de red esté disponible en <strong>Este equipo</strong>, bajo la letra que seleccionaste.</li>
+</ul>
+<blockquote>
+<p><strong>Si no se conecta:</strong></p>
+<ul>
+<li>
+<p>Revisa que la ruta esté correctamente escrita.</p>
+</li>
+<li>
+<p>Asegúrate de que las credenciales sean válidas.</p>
+</li>
+<li>
+<p>Confirma que tienes conexión a la red.</p>
+</li>
+</ul>
+</blockquote>
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../5.UT_Actualizar_ENBLAU/" class="btn btn-neutral float-left" title="5. Actualización ENBLAU"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../5.UT_Actualizar_ENBLAU/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
