@@ -111,9 +111,25 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#8-confirmacion-de-factura-proforma">8. Confirmación de factura (Proforma)</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#9-facturacion-electronica-facturae">9. Facturación electrónica (FACTURAE)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#9-descuento-pronto-pago">9. Descuento pronto pago</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#91-aplicacion-recomendada">9.1. Aplicación recomendada</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#10-consideraciones-finales">10. Consideraciones finales</a>
+    <li class="toctree-l3"><a class="reference internal" href="#92-calculo-del-descuento">9.2. Cálculo del descuento</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-facturacion-de-albaranes-facturacion_albaranes">10. Facturación de albaranes facturacion_albaranes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#101-compras">10.1 Compras</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#102-ventas">10.2 Ventas</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-facturacion-electronica-facturae">11. Facturación electrónica (FACTURAE)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-consideraciones-finales">12. Consideraciones finales</a>
     </li>
     </ul>
                   </li>
@@ -139,6 +155,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/5.UT_Actualizar_ENBLAU/">5. Actualización ENBLAU</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/6.UT_Unidad_Red/">6. Conectar una Unidad de Red</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/7.UT_Divisas/">7. Divisas</a>
                   </li>
               </ul>
       </div>
@@ -496,7 +514,51 @@ Los filtros permiten personalizar la visualización de los documentos en los lis
 <p><strong>Gestión de filtros</strong> Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros">4. Gestión de filtros</a></p>
 </blockquote>
 <hr />
-<h2 id="9-facturacion-electronica-facturae">9. Facturación electrónica (FACTURAE)</h2>
+<h2 id="9-descuento-pronto-pago">9. Descuento pronto pago</h2>
+<p>El <strong>descuento por pronto pago</strong> es una reducción que se aplica al importe total de una factura cuando el cliente realiza el pago en un plazo corto previamente establecido. Su finalidad es incentivar el pago anticipado y facilitar el flujo de caja del proveedor.</p>
+<h3 id="91-aplicacion-recomendada">9.1. Aplicación recomendada</h3>
+<p>Se recomienda <strong>incluir el descuento desde el pedido</strong>, en el apartado <strong>"Estados y observaciones"</strong>, para que se refleje correctamente en la factura final, ya sea esta generada a partir del <strong>pedido</strong> o del <strong>albarán</strong>.</p>
+<p><img alt="Descuento pronto pago" src="../Imagenes/PR_Facturas/pp.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante</strong>: Aplicar el descuento directamente desde la factura puede generar <strong>descuadres en informes</strong> como <em>"Estado de factura y cobros"</em>, ya que el importe facturado no coincidirá con los valores previstos originalmente.</p>
+</blockquote>
+<h3 id="92-calculo-del-descuento">9.2. Cálculo del descuento</h3>
+<p>Existe un <strong>check de configuración</strong> que determina cómo se aplica el descuento:</p>
+<ul>
+<li>Si el check está <strong>activado</strong>, el descuento se aplica <strong>sobre el total con IVA incluido</strong>.</li>
+<li>
+<p>Si el check está <strong>desactivado</strong>, el descuento se aplica <strong>solo sobre la base imponible</strong>, y luego se calcula el IVA sobre el importe neto.</p>
+<p><img alt="Descuento pronto pago" src="../Imagenes/PR_Facturas/pp_check.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="10-facturacion-de-albaranes-facturacion_albaranes">10. Facturación de albaranes facturacion_albaranes</h2>
+<h3 id="101-compras">10.1 Compras</h3>
+<p>Desde el apartado <strong>Documentos de compra</strong>, existe una opción específica para la <strong>Facturación de albaranes</strong>.<br />
+Al seleccionarla:</p>
+<ul>
+<li>Se abre una ventana donde puedes <strong>escoger el proveedor</strong>.</li>
+<li>A continuación, se muestra un <strong>listado de albaranes</strong>, donde es posible:</li>
+<li><strong>Filtrar</strong> por proyecto, fechas, documentos, etc.</li>
+<li>
+<p><strong>Seleccionar</strong> los albaranes que deseas facturar, marcando la casilla correspondiente en la columna <strong>Seleccionar</strong>.</p>
+<p><img alt="Facturacion Albaranes compra" src="../Imagenes/PR_Facturas/facturacion_albaranes.png" /></p>
+</li>
+</ul>
+<h3 id="102-ventas">10.2 Ventas</h3>
+<p>En el módulo de <strong>Documentos de venta</strong>, hay una opción similar para la facturación de albaranes.<br />
+Al acceder:</p>
+<ul>
+<li>Se abre una ventana donde puedes <strong>indicar el proyecto y/o el cliente</strong>.</li>
+<li>El sistema mostrará el listado de albaranes correspondientes.</li>
+<li>
+<p>Con un <strong>doble clic</strong> sobre la casilla de la columna <strong>“A facturar”</strong>, podrás seleccionar fácilmente los documentos que deseas incluir en la factura.</p>
+<p><img alt="Facturacion Albaranes compra" src="../Imagenes/PR_Facturas/facturacion_albaranes2.png" /></p>
+<p><img alt="Facturacion Albaranes compra" src="../Imagenes/PR_Facturas/facturacion_albaranes3.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="11-facturacion-electronica-facturae">11. Facturación electrónica (FACTURAE)</h2>
 <ul>
 <li>
 <p>Para generar una factura electrónica desde ENBLAU, es necesario que tanto el Cliente como la Empresa tengan completados ciertos campos obligatorios.</p>
@@ -548,7 +610,7 @@ Los filtros permiten personalizar la visualización de los documentos en los lis
 </li>
 </ul>
 <hr />
-<h2 id="10-consideraciones-finales">10. Consideraciones finales</h2>
+<h2 id="12-consideraciones-finales">12. Consideraciones finales</h2>
 <ul>
 <li>
 <p><strong>Mantén los pedidos actualizados</strong>:<br />

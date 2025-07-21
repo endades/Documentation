@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>1. Relación entre fases en ENBLAU y Logikal - Endades Documentation</title>
+    <title>7. Divisas - Endades Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "1. Relaci\u00f3n entre fases en ENBLAU y Logikal";
-        var mkdocs_page_input_path = "Utilidades\\1.UT_Relacion_ENBLAU_Logikal.md";
+        var mkdocs_page_name = "7. Divisas";
+        var mkdocs_page_input_path = "Utilidades\\7.UT_Divisas.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -68,17 +68,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Utilidades</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1. Relación entre fases en ENBLAU y Logikal</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-fases-ejemplos">2. Fases - Ejemplos</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#crear-un-presupuesto-desde-enblau">Crear un presupuesto desde ENBLAU</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales propios en enMATERIALS</a>
                   </li>
@@ -90,7 +80,21 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">6. Conectar una Unidad de Red</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../7.UT_Divisas/">7. Divisas</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">7. Divisas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-definicion-de-divisas">2. Definición de divisas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-aplicacion-en-los-informes">3. Aplicación en los informes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-divisa-utilizada">4. Divisa utilizada</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#como-usarla">¿Cómo usarla?</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                   </li>
               </ul>
       </div>
@@ -108,7 +112,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Utilidades</li>
-      <li class="breadcrumb-item active">1. Relación entre fases en ENBLAU y Logikal</li>
+      <li class="breadcrumb-item active">7. Divisas</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -117,67 +121,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="1-relacion-entre-fases-en-enblau-y-logikal">1. Relación entre fases en ENBLAU y Logikal</h1>
-<!-- 1. [Introducción](#1-introduccion)
-2. [Fases - Ejemplos](#2-fases-ejemplos) -->
-
+                <h1 id="7-divisas">7. Divisas</h1>
 <h2 id="1-introduccion">1. Introducción</h2>
-<p>Explicación de la relación entre las fases de un proyecto en ENBLAU y Logikal.</p>
+<p>Este manual explica paso a paso cómo utilizar divisas en ENBLAU y cómo reflejarlas correctamente en los informes, respetando la paridad de cada moneda.</p>
 <hr />
-<h2 id="2-fases-ejemplos">2. Fases - Ejemplos</h2>
-<h3 id="crear-un-presupuesto-desde-enblau">Crear un presupuesto desde ENBLAU</h3>
+<h2 id="2-definicion-de-divisas">2. Definición de divisas</h2>
+<p>Desde el apartado <strong>Divisa</strong>, puedes definir la paridad entre monedas.<br />
+Por ejemplo:</p>
+<ul>
+<li><strong>Divisa de aplicación: EUR</strong></li>
+<li><strong>Paridad definida:</strong> 1 € = 0.86 £ (<strong>GBP</strong>)</li>
+</ul>
+<p>Esto permite trabajar con múltiples monedas en los documentos de ventas.</p>
+<p><img alt="Definición de divisas" src="../Imagenes/UT_Divisas/divisas.jpg" /><br />
+<img alt="Configuración adicional" src="../Imagenes/UT_Divisas/divisas2.jpg" /></p>
+<hr />
+<h2 id="3-aplicacion-en-los-informes">3. Aplicación en los informes</h2>
+<p>Para utilizar una divisa en documentos de venta (como un pedido):</p>
 <ol>
-<li>
-<p><strong>Versión 1</strong>  </p>
-<ul>
-<li>Al crear un presupuesto en ENBLAU, esta versión se reflejará en Logikal en "Posiciones sin Fase Asignada" dentro del mismo proyecto.<br />
-<img alt="Version" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Pedido</strong>  </p>
-<ul>
-<li>Al confirmar el pedido en ENBLAU, se generará un pedido y luego una fase en Logikal denominada "Presupuesto aceptado".<br />
-<img alt="Pedido" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Producción 1</strong>  </p>
-<ul>
-<li>Desde el pedido en ENBLAU, al crear una producción, se generará una nueva fase en Logikal llamada "nº presupuesto P1".<br />
-<img alt="Producción 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Medición 1</strong>  </p>
-<ul>
-<li>Desde el pedido en ENBLAU, al crear una medición, se generará una nueva fase en Logikal denominada "nº presupuesto M1".<br />
-<img alt="Medición 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Producción 2</strong>  </p>
-<ul>
-<li>Desde la medición en ENBLAU, al crear una producción (considerando los cambios en la medición), se generará una nueva fase en Logikal con el nombre "nº presupuesto P2".<br />
-<img alt="Producción 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></li>
-</ul>
-</li>
+<li>Selecciona la <strong>divisa deseada</strong> (ej. GBP – Libra esterlina).</li>
+<li>Opcionalmente, elige también el <strong>idioma</strong> del documento.</li>
+<li>Imprime el informe.</li>
 </ol>
+<p>El sistema aplicará automáticamente la conversión de valores según la paridad definida en ese momento.</p>
+<p><img alt="Informe con divisa aplicada" src="../Imagenes/UT_Divisas/divisa_informe.jpg" /><br />
+<img alt="Ejemplo de visualización" src="../Imagenes/UT_Divisas/divisa_informe2.jpg" /></p>
+<hr />
+<h2 id="4-divisa-utilizada">4. Divisa utilizada</h2>
+<p>La opción <strong>Divisa utilizada</strong> permite conservar un histórico de las paridades aplicadas en cada documento.</p>
+<p>Esto resulta útil para:</p>
+<ul>
+<li>Mantener la paridad original sin necesidad de modificarla manualmente.</li>
+<li>Asegurar coherencia en documentos históricos, incluso si la tasa de cambio ha cambiado posteriormente.</li>
+</ul>
+<h3 id="como-usarla">¿Cómo usarla?</h3>
+<ol>
+<li>Abre un documento de venta (ej. un pedido).</li>
+<li>Ve al apartado: <strong>Datos → Divisa utilizada</strong>.</li>
+<li>Se abrirá la ventana <strong>Divisas del documento</strong>.</li>
+<li>Marca la casilla en la columna <strong>Utilizada</strong> para aplicar la paridad correspondiente a la fecha seleccionada.</li>
+</ol>
+<p><img alt="Gestión de divisa utilizada" src="../Imagenes/UT_Divisas/divisa_utilizada.jpg" /></p>
 <hr />
 <blockquote>
-<p><strong>Nota:</strong><br />
-Al crear un presupuesto en ENBLAU y luego añadir una posición de Logikal, esta se vinculará a un proyecto en Logikal o, en su defecto, se creará uno nuevo.</p>
+<p><strong>Nota:</strong> Esta funcionalidad es especialmente útil para documentos con fechas antiguas o para operaciones que requieren conservar la tasa de cambio original.</p>
 </blockquote>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>
-<hr />
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../Procesos/6.PR_Proyecto_cliente/" class="btn btn-neutral float-left" title="6. Proyectos, Clientes y Proveedores"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../2.UT_Crear_Materiales_enMATERIAL/" class="btn btn-neutral float-right" title="2. Creación de materiales propios en enMATERIALS">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../6.UT_Unidad_Red/" class="btn btn-neutral float-left" title="6. Conectar una Unidad de Red"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -201,10 +194,8 @@ Al crear un presupuesto en ENBLAU y luego añadir una posición de Logikal, esta
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../Procesos/6.PR_Proyecto_cliente/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../6.UT_Unidad_Red/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../2.UT_Crear_Materiales_enMATERIAL/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
