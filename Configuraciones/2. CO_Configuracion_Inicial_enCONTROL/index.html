@@ -62,11 +62,13 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#3-configuracion-de-produccion-en-enblau">3. Configuración de producción en ENBLAU</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#31-clasificaciones-de-produccion">3.1. Clasificaciones de producción</a>
+    <li class="toctree-l3"><a class="reference internal" href="#31-configuracion-del-layout-de-produccion">3.1. Configuración del layout de producción</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#32-informes-de-produccion-logikal">3.2. Informes de Producción Logikal</a>
+    <li class="toctree-l3"><a class="reference internal" href="#32-clasificaciones-de-produccion">3.2. Clasificaciones de producción</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#33-informacion-adicional">3.3. Información adicional</a>
+    <li class="toctree-l3"><a class="reference internal" href="#33-informes-de-produccion-logikal">3.3. Informes de Producción Logikal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-informacion-adicional">3.4. Información adicional</a>
     </li>
         </ul>
     </li>
@@ -143,10 +145,16 @@
 <li><strong>Mostrar columna barra en mecanizados</strong></li>
 </ul>
 <p><img alt="barra mecanizados" src="../Imagenes/CO_Config_enCONTROL/barra_mecanizados.jpg" /></p>
+<ul>
+<li>
 <p>Si el valor es <strong>Sí</strong> te mostrará la columna de barra en el monitor.</p>
 <p><img alt="barra mecanizados" src="../Imagenes/CO_Config_enCONTROL/barra_mecanizados2.jpg" /></p>
+</li>
+<li>
 <p>Si el valor es <strong>No</strong> solo mostrará la columna de pendientes de mecanizar en el monitor.</p>
 <p><img alt="barra mecanizados" src="../Imagenes/CO_Config_enCONTROL/barra_mecanizados3.jpg" /></p>
+</li>
+</ul>
 <blockquote>
 <p><strong>Nota:</strong> Por defecto ese valor estará a Sí.</p>
 </blockquote>
@@ -154,8 +162,14 @@
 <li><strong>Cortar barra entera en monitor de corte</strong></li>
 </ul>
 <p><img alt="cortar barra" src="../Imagenes/CO_Config_enCONTROL/cortar_barra.jpg" /></p>
+<ul>
+<li>
 <p>Si el valor es <strong>Sí</strong>, al cortar la barra en el monitor se hará de manera automática el corte de las posiciones de la barra indicada, sin necesidad de cortar cada posición. </p>
+</li>
+<li>
 <p>Si el valor es <strong>No</strong>, al cortar la barra en el monitor se hará por cada hará posición.</p>
+</li>
+</ul>
 <blockquote>
 <p><strong>Nota:</strong> Por defecto ese valor estará a Sí.</p>
 </blockquote>
@@ -179,8 +193,10 @@
 <li>
 <p><strong>Descontar del proyecto, en su defecto de cualquier zona</strong>: Se descuenta del proyecto y de cualquier zona.</p>
 </li>
-</ul>
+<li>
 <p>En <strong>Ruta de documentación genérica</strong> puedes indicar documentaciones como información del sistema, entre otros, que se pueda ver desde enCONTROL y los puestos.</p>
+</li>
+</ul>
 <p><img alt="Ruta Documentación" src="../Imagenes/CO_Config_enCONTROL/ruta_doc.jpg" /></p>
 <p>Ejemplo en un puesto:</p>
 <p><img alt="Ruta Documentación" src="../Imagenes/CO_Config_enCONTROL/ruta_doc2.jpg" /></p>
@@ -192,7 +208,54 @@
 <p><img alt="Puestos" src="../Imagenes/CO_Config_enCONTROL/puestos.jpg" /></p>
 <hr />
 <h2 id="3-configuracion-de-produccion-en-enblau">3. Configuración de producción en ENBLAU</h2>
-<h3 id="31-clasificaciones-de-produccion">3.1. Clasificaciones de producción</h3>
+<h3 id="31-configuracion-del-layout-de-produccion">3.1. Configuración del layout de producción</h3>
+<p>La configuración del <strong>layout de producción</strong> permite definir la estructura organizativa de la planta dentro del módulo <strong>enCONTROL</strong>, incluyendo plantas, líneas de producción y puestos de trabajo.</p>
+<ul>
+<li>Accede al menú: <strong>Configuración → Producción → Configuración Layout</strong>.</li>
+</ul>
+<p><img alt="Layout de producción" src="../Imagenes/CO_Config_enCONTROL/layout_produccion.jpg" /></p>
+<ul>
+<li>
+<p>Desde la interfaz de <strong>Layout de Producción</strong>, puedes añadir:</p>
+</li>
+<li>
+<p><strong>Planta</strong></p>
+</li>
+<li><strong>Línea de producción</strong></li>
+<li><strong>Puestos de trabajo</strong></li>
+</ul>
+<p><img alt="Gestión de layout" src="../Imagenes/CO_Config_enCONTROL/layout_produccion2.jpg" /></p>
+<ul>
+<li>
+<p>Al seleccionar una línea de producción, se mostrará en el lateral derecho el apartado <strong>Horario de la línea</strong>. Aquí puedes configurar:</p>
+</li>
+<li>
+<p>Días de la semana operativos.</p>
+</li>
+<li>Hora de inicio y fin de cada turno.</li>
+</ul>
+<p><img alt="Horario de línea" src="../Imagenes/CO_Config_enCONTROL/layout_produccion3.jpg" /></p>
+<ul>
+<li>
+<p>Al añadir un nuevo puesto, se deben definir los siguientes campos:</p>
+</li>
+<li>
+<p><strong>Tipo</strong>: Indica el tipo de puesto que deseas añadir (por ejemplo: Corte, Montaje, Mecanizado, etc.).</p>
+</li>
+<li>
+<p><strong>Orden</strong>: Define el orden secuencial de los puestos dentro de la línea.</p>
+<p><img alt="Configuración de puesto" src="../Imagenes/CO_Config_enCONTROL/layout_produccion4.jpg" /></p>
+</li>
+<li>
+<p>En el campo <strong>Usuario</strong>, se puede asignar al responsable del puesto. Este usuario será el encargado de operar o supervisar dicho puesto dentro del flujo de producción.</p>
+</li>
+</ul>
+<p><img alt="Asignación de usuario" src="../Imagenes/CO_Config_enCONTROL/layout_produccion5.jpg" /></p>
+<blockquote>
+<p><strong>Recomendación:</strong> Mantén siempre actualizada esta configuración para garantizar un control de producción preciso y alineado con la realidad operativa de la planta.</p>
+</blockquote>
+<hr />
+<h3 id="32-clasificaciones-de-produccion">3.2. Clasificaciones de producción</h3>
 <p>Las clasificaciones en producción se usan de manera informativa al crear una producción para que se refleje en las líneas del puesto en enCONTROL.</p>
 <ul>
 <li>Accede al apartado de Ventas - Configuración - <strong>Clasificaciones</strong>.</li>
@@ -207,15 +270,21 @@
 </ul>
 <p><img alt="Clasificaciones" src="../Imagenes/CO_Config_enCONTROL/clasificasiones3.jpg" /></p>
 <hr />
-<h3 id="32-informes-de-produccion-logikal">3.2. Informes de Producción Logikal</h3>
-<p>Informes que se requieran y que se generan automáticamente, guardándose como documentación de Logikal en producción. Estos documentos se verán en la ruta de documentación en los puestos de enCONTROL.</p>
+<h3 id="33-informes-de-produccion-logikal">3.3. Informes de Producción Logikal</h3>
 <ul>
-<li>En el presupuesto (producción), accede al apartado de Logikal - <strong>Informes para producción</strong>. Desde allí, marca los informes que quieras que se guarden en producción como documentación en la columna <strong>Para documentación</strong>.</li>
+<li>
+<p>Informes que se requieran y que se generan automáticamente, guardándose como documentación de Logikal en producción. Estos documentos se verán en la ruta de documentación en los puestos de enCONTROL.</p>
+</li>
+<li>
+<p>En el presupuesto (producción), accede al apartado de Logikal - <strong>Informes para producción</strong>. Desde allí, marca los informes que quieras que se guarden en producción como documentación en la columna <strong>Para documentación</strong>.</p>
+</li>
 </ul>
 <p><img alt="Informes Producción" src="../Imagenes/CO_Config_enCONTROL/informes_produccion.jpg" /></p>
+<blockquote>
 <p><strong>Nota:</strong> Para el tema de la documentación, no cambies nada en las columnas <strong>Exportación</strong> y <strong>Gestión</strong>.</p>
+</blockquote>
 <hr />
-<h3 id="33-informacion-adicional">3.3. Información adicional</h3>
+<h3 id="34-informacion-adicional">3.4. Información adicional</h3>
 <p>La información adicional es un campo informativo para cuando la producción pase a cola del taller en enCONTROL, de modo que el responsable de taller pueda consultarla.</p>
 <ul>
 <li>Accede al apartado de Ventas - Configuración - <strong>Información adicional producción</strong>.</li>
