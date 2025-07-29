@@ -69,6 +69,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#23-materiales-reservados">2.3. Materiales reservados</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-reposicion-de-stock">2.4. Reposición de stock</a>
+    </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#3-gestion-de-almacenes-y-movimientos">3. Gestión de almacenes y movimientos</a>
@@ -92,16 +94,18 @@
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#6-producto-terminado">6. Producto terminado</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-ubicacion-de-productos">6.1. Ubicación de productos</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#61-ubicacion-de-productos">6.1. Ubicación de productos</a>
+    <li class="toctree-l3"><a class="reference internal" href="#62-movimientos-de-producto">6.2. Movimientos de producto</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#62-movimientos-de-producto">6.2. Movimientos de producto</a>
+        </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#6-control-de-stock-y-reportes">6. Control de stock y reportes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#7-control-de-stock-y-reportes">7. Control de stock y reportes</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#7-resolucion-de-problemas-comunes">7. Resolución de problemas comunes</a>
+    <li class="toctree-l2"><a class="reference internal" href="#8-resolucion-de-problemas-comunes">8. Resolución de problemas comunes</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#8-conclusion">8. Conclusión</a>
+    <li class="toctree-l2"><a class="reference internal" href="#9-conclusion">9. Conclusión</a>
     </li>
     </ul>
                   </li>
@@ -184,7 +188,7 @@
 </ul>
 <p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir2.jpg" /></p>
 <blockquote>
-<p><strong>Nota:</strong> Para información más detalladas sobre pedido de compras, sigue este enlace: <a href="../1.PR_Ventas_Compras/#4-compras">Pedidos de Compras</a></p>
+<p><strong>Nota:</strong> Para información más detallada sobre pedido de compras, sigue este enlace: <a href="../1.PR_Ventas_Compras/#4-compras">Pedidos de Compras</a></p>
 <p>⚠️ <strong>¡Importante!</strong> Para hacer el pedido de materiales en el documento de venta, en algunos casos se requieren permisos especiales para realizar compras. Este permiso también es necesario para fabricar o instalar.</p>
 </blockquote>
 <p><img alt="Permisos especiales" src="../Imagenes/PR_Stock_Control/permisos_especiales.jpg" /></p>
@@ -220,11 +224,16 @@
 <blockquote>
 <p><strong>Nota:</strong> El uso de material reservado es algo visual, eso no impedirá que se usen los materiales aunque estén reservados. Se recomienda el uso de <a href="#22-asignar-materiales-a-proyecto">Asignar materiales a proyecto</a> si quieres tener un mejor control de stock.</p>
 </blockquote>
-<ul>
-<li>En <strong>Compras</strong> hay una opción más en el desplegable de almacén llamada <strong>Reposición de stock</strong>, donde se mostrará un listado de bajo mínimo y bajo habitual.</li>
-</ul>
+<h3 id="24-reposicion-de-stock">2.4. Reposición de stock</h3>
+<p>En <strong>Compras</strong> hay una opción más en el desplegable de almacén llamada <strong>Reposición de stock</strong>, donde se mostrará un listado de los materiales que hay que pedir bajo mínimo y bajo habitual. </p>
 <p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock.jpg" /></p>
+<ul>
+<li>Marcar la casilla <strong>A importar</strong> a los materiales que sea necesario pedir. Después seleccionar el botón <strong>Importar</strong> para añadir al pedido de compra.</li>
+</ul>
 <p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock2.jpg" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Para más información sobre como definir para cada material el stock mínimo, stock máximo y stock habitual ir al apartado <a href="#51-configuracion-de-materiales">Configuración de materiales</a>.</p>
+</blockquote>
 <hr />
 <h2 id="3-gestion-de-almacenes-y-movimientos">3. Gestión de almacenes y movimientos</h2>
 <h3 id="31-almacenes-layout">3.1. Almacenes Layout</h3>
@@ -370,11 +379,12 @@
 <li>
 <p><strong>Stock mínimo</strong>, <strong>stock máximo</strong> y <strong>stock habitual</strong>:<br />
   Puedes definir los valores de referencia para la gestión de existencias, lo cual es útil para alertas, reposiciones automáticas o planificación.</p>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/material_importado.jpg" /></p>
+<p>En el apartado de <a href="#24-reposicion-de-stock">Reposición de stock</a> en compras se puede sacar un listado de Bajo mínimo y Bajo habitual según como este definido el stock mínimo, máximo y habitual para cada material.</p>
 </li>
 </ul>
-<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/material_importado.jpg" /></p>
 <blockquote>
-<p><strong>Nota:</strong> La correcta configuración de estos campos mejora significativamente el control de inventario, la planificación de compras y la trazabilidad de materiales durante la producción.</p>
+<p><strong>Nota:</strong> La correcta configuración de estos campos mejora significativamente el control de inventario, la planificación de compras y la trazabilidad de materiales durante la producción. En el apartado </p>
 </blockquote>
 <hr />
 <h2 id="6-producto-terminado">6. Producto terminado</h2>
@@ -386,7 +396,7 @@
 </ul>
 <p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado.jpg" /></p>
 <hr />
-<h2 id="61-ubicacion-de-productos">6.1. Ubicación de productos</h2>
+<h3 id="61-ubicacion-de-productos">6.1. Ubicación de productos</h3>
 <ul>
 <li>En el listado de <strong>Ubicación de productos</strong> se muestra la información y la localización actual del producto terminado, tal como se haya definido desde el puesto de <strong>Comprobación final</strong> en <strong>enCONTROL</strong>.</li>
 </ul>
@@ -403,7 +413,7 @@
 </ul>
 <p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado3.jpg" /></p>
 <hr />
-<h2 id="62-movimientos-de-producto">6.2. Movimientos de producto</h2>
+<h3 id="62-movimientos-de-producto">6.2. Movimientos de producto</h3>
 <ul>
 <li>
 <p>En el apartado <strong>Movimientos de producto</strong> se registran todas las operaciones realizadas con los productos terminados, incluyendo:</p>
@@ -438,21 +448,21 @@
 <p><strong>Nota:</strong> La correcta gestión del producto terminado garantiza un mejor control del inventario, facilita la trazabilidad y agiliza la preparación de expediciones o entregas.</p>
 </blockquote>
 <hr />
-<h2 id="6-control-de-stock-y-reportes">6. Control de stock y reportes</h2>
+<h2 id="7-control-de-stock-y-reportes">7. Control de stock y reportes</h2>
 <ul>
 <li>Monitorea el stock necesario desde la sección "Producción".</li>
 <li>Identifica materiales reservados y pendientes en tiempo real.</li>
 <li>Genera reportes de inventarios para evaluar el uso de materiales y planificar futuras compras.</li>
 </ul>
 <hr />
-<h2 id="7-resolucion-de-problemas-comunes">7. Resolución de problemas comunes</h2>
+<h2 id="8-resolucion-de-problemas-comunes">8. Resolución de problemas comunes</h2>
 <ul>
 <li><strong>Error al importar referencias</strong>: Verifica que las referencias estén configuradas en la base de datos.</li>
 <li><strong>Materiales sobrantes o faltantes</strong>: Asegúrate de registrar correctamente las ubicaciones y cantidades al recibir materiales.</li>
 <li><strong>Problemas con el layout del almacén</strong>: Revisa la configuración de zonas y ajusta según sea necesario.</li>
 </ul>
 <hr />
-<h2 id="8-conclusion">8. Conclusión</h2>
+<h2 id="9-conclusion">9. Conclusión</h2>
 <p>Este manual ofrece una guía paso a paso para los procesos principales en el sistema de control de stock. Siguiendo estas instrucciones, los usuarios podrán gestionar eficientemente los inventarios, mejorar la producción y optimizar la relación con proveedores. Para soporte adicional, contacte al administrador del sistema.</p>
               
             </div>
