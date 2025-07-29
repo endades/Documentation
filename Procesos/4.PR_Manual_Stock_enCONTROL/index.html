@@ -112,6 +112,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/7.UT_Divisas/">7. Divisas</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/8.UT_Importacion_Contabilidad/">8. Requerimiento para importación programa de contabilidad</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -218,7 +220,7 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>Nota:</strong> Para información más detalladas sobre crear fase de produccion en ENBLAU, sigue este enlace: <a href="../1.PR_Ventas_Compras/#35-produccion">3.5. Producción</a></p>
+<p><strong>Nota:</strong> Para información más detallada sobre crear fase de producción en ENBLAU, sigue este enlace: <a href="../1.PR_Ventas_Compras/#35-produccion">3.5. Producción</a></p>
 </blockquote>
 <h3 id="62-encontrol">6.2. enCONTROL</h3>
 <ul>
@@ -244,7 +246,7 @@
 </li>
 </ul>
 <p><img alt="planificacion_produccion" src="../Imagenes/PR_Stock_Control/planificacion_produccion.jpg" /></p>
-<p>Para quitar el proyecto asignado, hay que selecionar el responsable selecionar el proyecto y usar ctrl + suprimir.</p>
+<p>Para quitar el proyecto asignado, hay que seleccionar el responsable seleccionar el proyecto y usar ctrl + suprimir.</p>
 <ul>
 <li>En la pestaña Calendario de producción se muestra un diagrama Gantt con base en los tiempos de Logikal (en el ejemplo) fechas de entrada y salida de producción.</li>
 </ul>
@@ -254,135 +256,176 @@
 </ul>
 <p><img alt="seleccion_puesto" src="../Imagenes/PR_Stock_Control/seleccion_puesto.jpg" /></p>
 <ul>
-<li>Al entrar en cualquier puesto te abrira la pantalla con el boton <strong>Iniciar</strong>:</li>
+<li>Al entrar en cualquier puesto te abrirá la pantalla con el botón <strong>Iniciar</strong>:</li>
 </ul>
 <p><img alt="iniciar" src="../Imagenes/PR_Stock_Control/iniciar.jpg" /></p>
 <p>Al iniciar se cuenta el tiempo hasta que se pause o se finalice el trabajo.</p>
 <ul>
 <li>
-<p>Todas las pantallas tienen algunos campos en comun:</p>
+<p>Todas las pantallas tienen algunos campos en común:</p>
 <ul>
-<li>
-<p>Comentario - Se puede añadir comentario y escoger una severidad en el desplegable. El último comentario bueno es el que desbloquea.</p>
+<li>Comentario - Se puede añadir comentario y escoger una severidad en el desplegable. El último comentario bueno es el que desbloquea.</li>
+</ul>
 <p><img alt="comentario" src="../Imagenes/PR_Stock_Control/comentario.jpg" /></p>
 <p><img alt="comentario" src="../Imagenes/PR_Stock_Control/comentario2.jpg" /></p>
-</li>
-<li>
-<p>Pausar - Al pausar el trabajo te obliga indicar desde el listado el motivo de la pausa. Luego se puede reanudar inicando otra vez el mismo puesto.</p>
+<ul>
+<li>Pausar - Al pausar el trabajo te obliga indicar desde el listado el motivo de la pausa. Luego se puede reanudar indicando otra vez el mismo puesto.</li>
+</ul>
 <p><img alt="pausar" src="../Imagenes/PR_Stock_Control/pausar.jpg" /></p>
-</li>
-<li>
-<p>Finalizar - Se finaliza cuando acabas el trabajo en ese puesto. Luego se puede reanudar inicando otra vez el mismo puesto.</p>
+<ul>
+<li>Finalizar - Se finaliza cuando acabas el trabajo en ese puesto. Luego se puede reanudar inicando otra vez el mismo puesto.</li>
+</ul>
 <p><img alt="finalizar" src="../Imagenes/PR_Stock_Control/finalizar.jpg" /></p>
-</li>
-<li>
-<p>Documentación - Desde el apartado de documentación se podrá ver los documentos de producción exportados desde Logikal en el visor de documentación. También se puede añadir una ruta genérica para añadir lo que quiera. Catálogo, manuales, etc.</p>
+<ul>
+<li>Documentación - Desde el apartado de documentación se podrá ver los documentos de producción exportados desde Logikal en el visor de documentación. También se puede añadir una ruta genérica para añadir lo que quiera. Catálogo, manuales, etc.</li>
+</ul>
 <p><img alt="documentacion" src="../Imagenes/PR_Stock_Control/documentacion.jpg" /></p>
 </li>
 </ul>
-</li>
-</ul>
 <h4 id="621-puestos-de-trabajo">6.2.1 Puestos de trabajo</h4>
-<ul>
-<li>
-<p><strong>Preparación de Material</strong></p>
+<p><strong>1. Preparación de Material</strong></p>
 <ul>
 <li>Todo preparado – Marca los materiales con un check en verde indicando que está preparado.</li>
 <li>Nada Preparado – Marca los materiales con una X en rojo indicando que no está preparado.</li>
-<li>Ubicación Material – Según lo tengas configurado enCONTROL, se podría indicar donde ubicar los materiales. Para que se descuente ese material solo de esa ubicación. </li>
-</ul>
+<li>
+<p>Ubicación Material – Según lo tengas configurado enCONTROL, se podría indicar donde ubicar los materiales. Para que se descuente ese material solo de esa ubicación. </p>
 <p><img alt="preparacion" src="../Imagenes/PR_Stock_Control/preparacion.jpg" /></p>
 </li>
-<li>
-<p><strong>Corte</strong></p>
-<ul>
-<li>En corte se indica la longitud de la barra y el desperdicio de retales. Se abre una ventana de retales y puede cambiar la longitud según sé necesario.</li>
 </ul>
+<p><strong>2. Corte</strong></p>
+<ul>
+<li>
+<p>En corte se indica la longitud de la barra y el desperdicio de retales. Se abre una ventana de retales y puede cambiar la longitud según sé necesario.</p>
 <p><img alt="corte" src="../Imagenes/PR_Stock_Control/corte.jpg" /></p>
 <p><img alt="desperdicio" src="../Imagenes/PR_Stock_Control/desperdicio.jpg" /></p>
-<ul>
-<li>Luego en ENBLAU <strong>Movimientos</strong> de almacén se reflejará una salida de la barra total ej. 6500 y luego una entrada de la del mismo material de ej. 4100 según había indicado en el puesto de corte.</li>
-</ul>
+</li>
+<li>
+<p>Luego en ENBLAU <strong>Movimientos</strong> de almacén se reflejará una salida de la barra total ej. 6500 y luego una entrada de la del mismo material de ej. 4100 según había indicado en el puesto de corte.</p>
 <p><img alt="movimientos barra" src="../Imagenes/PR_Stock_Control/movimientos_barra.jpg" /></p>
-<ul>
-<li>En el apartado <strong>Cortados</strong> la parte derecha del monitor se muestra el listado de cortes realizados y se puede imprimir las etiquetas de cada barra.</li>
-</ul>
+</li>
+<li>
+<p>En el apartado <strong>Cortados</strong> la parte derecha del monitor se muestra el listado de cortes realizados y se puede imprimir las etiquetas de cada barra.</p>
 <p><img alt="cortados" src="../Imagenes/PR_Stock_Control/cortados.jpg" /></p>
 </li>
-<li>
-<p><strong>Mecanizado</strong></p>
-<ul>
-<li>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real.</li>
 </ul>
+<p><strong>3. Mecanizado</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real.</p>
 <p><img alt="mecanizado" src="../Imagenes/PR_Stock_Control/mecanizado.jpg" /></p>
 </li>
-<li>
-<p><strong>Montaje</strong></p>
-<ul>
-<li>Se descuenta materiales (accesorios) por cada posición de cuadro.</li>
 </ul>
+<p><strong>4. Montaje</strong></p>
+<ul>
+<li>
+<p>Se descuenta materiales (accesorios) por cada posición de cuadro.</p>
 <p><img alt="montaje" src="../Imagenes/PR_Stock_Control/montaje.jpg" /></p>
 </li>
 <li>
-<p><strong>Ajunquillado</strong></p>
+<p>En el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>.</p>
+</li>
+</ul>
+<p><img alt="montaje" src="../Imagenes/PR_Stock_Control/montaje_2.jpg" /></p>
+<p><strong>5. Ajunquillado</strong></p>
 <ul>
-<li>Se descuenta materiales (Juntas, calzos, espuma, etc..) por cuadro.</li>
+<li>Se descuenta materiales (Juntas, calzos, espuma, etc.) por cuadro.</li>
 </ul>
 <p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado.jpg" /></p>
-</li>
+<ul>
 <li>
-<p><strong>Ensamblado</strong></p>
+<p>En el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>.</p>
+<p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado_2.jpg" /></p>
+</li>
+</ul>
+<p><strong>6. Ensamblado</strong></p>
 <ul>
 <li>Información del cuadro, pero no se descuenta materiales.</li>
 </ul>
 <p><img alt="ensamblado" src="../Imagenes/PR_Stock_Control/ensamblado.jpg" /></p>
+<p><strong>7. Herraje</strong></p>
+<ul>
+<li>
+<p>Se descuenta materiales (herraje) por hoja.</p>
+<p><img alt="herraje" src="../Imagenes/PR_Stock_Control/herraje.jpg" /></p>
 </li>
 <li>
-<p><strong>Herraje</strong></p>
-<ul>
-<li>Se descuenta materiales (herraje) por hoja.</li>
-</ul>
-<p><img alt="herraje" src="../Imagenes/PR_Stock_Control/mecanizado.jpg" /></p>
+<p>En el listado de materiales tienes la opción de indicar los herrajes que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>.</p>
+<p><img alt="herraje" src="../Imagenes/PR_Stock_Control/herraje_2.jpg" /></p>
 </li>
-<li>
-<p><strong>Comprobación final</strong></p>
-<ul>
-<li>No se descuenta materiales. Pero, una vez finalice la comprobación se puede ubicar en Almacen y luego imprimir una etiqueta del producto acabado.</li>
 </ul>
+<p><strong>8. Soldado</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real. </p>
+<p><img alt="soldado" src="../Imagenes/PR_Stock_Control/soldado.jpg" /></p>
+</li>
+</ul>
+<p><strong>9. Comprobación final</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales. Pero, una vez finalice la comprobación se puede ubicar en Almacen y luego imprimir una etiqueta del producto acabado.</p>
 <p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion.jpg" /> </p>
 <p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_ubicacion.jpg" /></p>
 <p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_etiqueta.jpg" /></p>
-<ul>
+</li>
 <li>
 <p>Desde ENBLAU en el apartado de Almacenes en el apartado de <strong>Producto terminado</strong> hay dos listados:</p>
-<p><strong>Ubicación de productos:</strong> Muestra donde esta ubicado el producto terminado de cada proyecto y producción. Desde ese listado se puede dar salida, mover de ubicación y abrir el documento de producción, selecionando sobre la posición con el botón derecho.</p>
+<p><strong>Ubicación de productos:</strong> Muestra donde está ubicado el producto terminado de cada proyecto y producción. Desde ese listado se puede dar salida, mover de ubicación y abrir el documento de producción, seleccionando sobre la posición con el botón derecho.</p>
 <p><img alt="ubicacion producto" src="../Imagenes/PR_Stock_Control/ubicacion_producto.jpg" /></p>
-<p><strong>Movimientos de productos:</strong> Muestra los movimientos del producto terminado como entrada, traspaso, salida y devolución. Desde ese listado se puede hacer una devolución, selecionando sobre la posición de salida con el botón derecho.</p>
+<p><strong>Movimientos de productos:</strong> Muestra los movimientos del producto terminado como entrada, traspaso, salida y devolución. Desde ese listado se puede hacer una devolución, seleccionando sobre la posición de salida con el botón derecho.</p>
 <p><img alt="movimientos producto" src="../Imagenes/PR_Stock_Control/movimientos_producto.jpg" /></p>
 </li>
 </ul>
+<p><strong>10. Transformación</strong></p>
+<ul>
+<li>
+<p>Ese puesto puedes indicar un grupo de materiales o escandallo para transformar en un producto, ejemplo: Barandilla. </p>
+<p><img alt="transformacion" src="../Imagenes/PR_Stock_Control/transformacion.jpg" /></p>
 </li>
 <li>
-<p><strong>Pizarra</strong></p>
-<ul>
-<li>Muestra la evolución de cada proyecto y su estado.</li>
+<p>Así como en otros puestos en el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>. Además de luego poder imprimir la etiqueta y ubicar el producto.</p>
+</li>
 </ul>
+<p><strong>11. Limpieza</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real.</p>
+<p><img alt="limpieza" src="../Imagenes/PR_Stock_Control/limpieza.jpg" /></p>
+</li>
+</ul>
+<p><strong>12. Picking</strong></p>
+<ul>
+<li>
+<p>El puesto muestra el listado de los materiales marcados previamente en otros puestos que se montará en destino.</p>
+<p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking.jpg" /></p>
+</li>
+<li>
+<p>Puedes crear los paquetes y asignar para cada material. Y luego imprimir la etiqueta para el paquete.</p>
+<p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking_paquete.jpg" /></p>
+<ul>
+<li>Indicar la ubicación de picking para cada material.</li>
+</ul>
+<p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking_ubicacion.jpg" /></p>
+</li>
+</ul>
+<p><strong>13. Pizarra</strong></p>
+<ul>
+<li>
+<p>Muestra la evolución de cada proyecto y su estado.</p>
 <p><img alt="pizarra" src="../Imagenes/PR_Stock_Control/pizarra.jpg" /></p>
 </li>
-<li>
-<p><strong>Control</strong></p>
-<ul>
-<li>Abre el monitor Control de proyectos. Donde tambien se puede ver el estado de cada proyecto que esta en fabrica.</li>
 </ul>
-<p><img alt="control estados" src="../Imagenes/PR_Stock_Control/control_estados.jpg" /></p>
-</li>
+<p><strong>14. Control</strong></p>
+<ul>
 <li>
-<p>Asigne prioridades y recursos para asegurar la fluidez en la producción.</p>
+<p>Abre el monitor Control de proyectos. Donde también se puede ver el estado de cada proyecto que está en fábrica.</p>
+<p><img alt="control estados" src="../Imagenes/PR_Stock_Control/control_estados.jpg" /></p>
 </li>
 </ul>
 <blockquote>
+<p><strong>Nota</strong>: Asigne prioridades y recursos para asegurar la fluidez en la producción.</p>
 <p><strong>Configuración enCONTROL</strong> - Configurar enCONTROL previamente. Para más información, sigue este enlace: <a href="/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración Inicial de enCONTROL</a> :</p>
-<p><strong>Gestion de filtros</strong> - Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros/">4. Gestión de filtros</a></p>
+<p><strong>Gestión de filtros</strong> - Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros/">4. Gestión de filtros</a></p>
 </blockquote>
 <hr />
 <h2 id="7-control-de-stock-y-reportes">7. Control de stock y reportes</h2>
