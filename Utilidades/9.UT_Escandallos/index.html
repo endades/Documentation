@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>1. Relación entre fases en ENBLAU y Logikal - Endades Documentation</title>
+    <title>9. Escandallos (Agrupación de materiales) - Endades Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "1. Relaci\u00f3n entre fases en ENBLAU y Logikal";
-        var mkdocs_page_input_path = "Utilidades\\1.UT_Relacion_ENBLAU_Logikal.md";
+        var mkdocs_page_name = "9. Escandallos (Agrupaci\u00f3n de materiales)";
+        var mkdocs_page_input_path = "Utilidades\\9.UT_Escandallos.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -68,17 +68,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Utilidades</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1. Relación entre fases en ENBLAU y Logikal</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-fases-ejemplos">2. Fases - Ejemplos</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#crear-un-presupuesto-desde-enblau">Crear un presupuesto desde ENBLAU</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales propios en enMATERIALS</a>
                   </li>
@@ -94,7 +84,21 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">8. Importación programa de contabilidad</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">9. Escandallos (Agrupación de materiales)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">9. Escandallos (Agrupación de materiales)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-escandallos">2. Escandallos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-creacion-de-escandallos">2.1. Creación de Escandallos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-agrupar-materiales">2.2. Agrupar materiales</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-como-usar-escandallos">3. Cómo usar escandallos</a>
+    </li>
+    </ul>
                   </li>
               </ul>
       </div>
@@ -112,7 +116,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Utilidades</li>
-      <li class="breadcrumb-item active">1. Relación entre fases en ENBLAU y Logikal</li>
+      <li class="breadcrumb-item active">9. Escandallos (Agrupación de materiales)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -121,65 +125,108 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="1-relacion-entre-fases-en-enblau-y-logikal">1. Relación entre fases en ENBLAU y Logikal</h1>
+                <h1 id="9-escandallos-agrupacion-de-materiales">9. Escandallos (Agrupación de materiales)</h1>
 <hr />
 <h2 id="1-introduccion">1. Introducción</h2>
-<p>Explicación de la relación entre las fases de un proyecto en ENBLAU y Logikal.</p>
+<p>Este manual explica paso a paso cómo utilizar la funcionalidad de <strong>Escandallos</strong>.<br />
+Los escandallos se definen desde <strong>ENBLAU</strong>, agrupando materiales propios creados desde <strong>enMATERIALS</strong>.<br />
+Además, se pueden agrupar esos materiales y generar las unidades necesarias según diversas condiciones, como las dimensiones, la ubicación de los tramos, la distancia o mediante fórmulas.</p>
 <hr />
-<h2 id="2-fases-ejemplos">2. Fases - Ejemplos</h2>
-<h3 id="crear-un-presupuesto-desde-enblau">Crear un presupuesto desde ENBLAU</h3>
+<h2 id="2-escandallos">2. Escandallos</h2>
+<ul>
+<li>Acceder a los escandallos desde <strong>Almacenes → Escandallos</strong>.</li>
+</ul>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos.png" /></p>
+<hr />
+<h3 id="21-creacion-de-escandallos">2.1. Creación de Escandallos</h3>
+<ul>
+<li>
+<p>Para crear un escandallo, sigue estos pasos:</p>
+</li>
+<li>
+<p>Desde el listado de escandallos, selecciona el botón <strong>Nuevo</strong> para crear un nuevo escandallo.</p>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos2.png" /></p>
+</li>
+<li>
+<p>Se abrirá una ventana donde debes definir los siguientes campos:</p>
+<ul>
+<li><strong>Nombre</strong>: Define el nombre del escandallo que estás creando.  </li>
+<li><strong>Familia</strong>: Campo opcional donde se indican las carpetas y subcarpetas en las que se desea añadir el escandallo. Este campo se reflejará posteriormente en el árbol de escandallos dentro del apartado de <strong>Documentos de ventas</strong>.  </li>
+<li><strong>Descripción</strong>: Breve descripción del escandallo.  </li>
+<li><strong>Descripción ventas</strong>: Indica si la descripción para ventas es distinta de la descripción general del escandallo.  </li>
+<li><strong>Imagen</strong>: Permite añadir una imagen o captura representativa del escandallo.</li>
+</ul>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos3.png" /></p>
+</li>
+</ul>
+<hr />
+<h3 id="22-agrupar-materiales">2.2. Agrupar materiales</h3>
+<ul>
+<li>
+<p>Una vez creado el escandallo, los pasos siguientes permiten <strong>agrupar y generar los materiales</strong> correspondientes:</p>
 <ol>
 <li>
-<p><strong>Versión 1</strong>  </p>
-<ul>
-<li>Al crear un presupuesto en ENBLAU, esta versión se reflejará en Logikal en "Posiciones sin Fase Asignada" dentro del mismo proyecto.<br />
-<img alt="Version" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></li>
-</ul>
+<p>Desde el árbol de artículos, ubicado a la derecha, arrastra los materiales que se deben generar para ese escandallo.</p>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos4.png" /></p>
 </li>
 <li>
-<p><strong>Pedido</strong>  </p>
+<p>Luego define las siguientes condiciones según sea necesario:</p>
 <ul>
-<li>Al confirmar el pedido en ENBLAU, se generará un pedido y luego una fase en Logikal denominada "Presupuesto aceptado".<br />
-<img alt="Pedido" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></li>
+<li><strong>Unidades</strong>: Indica las unidades que se deben generar del material.  </li>
+<li><strong>Distancia</strong>: Especifica cada cuánto tramo se debe generar el material.<br />
+  Ejemplo: <em>1 tornillo cada 100 mm de tramo.</em>  </li>
+<li><strong>Desde</strong>: Define, junto con la distancia, a partir de qué punto se comienza a contar.  </li>
+<li><strong>Ubicación</strong>: Despliega un listado para indicar la ubicación del tramo donde se debe generar el material.<br />
+  Ejemplo: <em>Superior, inferior, derecha, izquierda.</em>  </li>
+<li><strong>Largo</strong>: Permite indicar una longitud fija o usar una fórmula.<br />
+  Ejemplo: <em>L-50 → calcula la longitud de la barra menos 50 mm.</em>  </li>
+<li><strong>Alto</strong>: Permite indicar una altura fija o usar una fórmula.<br />
+  Ejemplo: <em>A-50 → calcula la altura de la superficie menos 50 mm.</em>  </li>
+<li><strong>Corte A</strong>: Define el tipo de corte del lado <strong>A</strong> de la barra.<br />
+  Ejemplo: <em>Corte a 90° o 45°.</em>  </li>
+<li><strong>Corte B</strong>: Define el tipo de corte del lado <strong>B</strong> de la barra.<br />
+  Ejemplo: <em>Corte a 90° o 45°.</em></li>
 </ul>
-</li>
-<li>
-<p><strong>Producción 1</strong>  </p>
-<ul>
-<li>Desde el pedido en ENBLAU, al crear una producción, se generará una nueva fase en Logikal llamada "nº presupuesto P1".<br />
-<img alt="Producción 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Medición 1</strong>  </p>
-<ul>
-<li>Desde el pedido en ENBLAU, al crear una medición, se generará una nueva fase en Logikal denominada "nº presupuesto M1".<br />
-<img alt="Medición 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Producción 2</strong>  </p>
-<ul>
-<li>Desde la medición en ENBLAU, al crear una producción (considerando los cambios en la medición), se generará una nueva fase en Logikal con el nombre "nº presupuesto P2".<br />
-<img alt="Producción 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></li>
-</ul>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos5.png" /></p>
 </li>
 </ol>
-<hr />
+</li>
+</ul>
 <blockquote>
-<p><strong>Nota:</strong><br />
-Al crear un presupuesto en ENBLAU y luego añadir una posición de Logikal, esta se vinculará a un proyecto en Logikal o, en su defecto, se creará uno nuevo.</p>
+<p><strong>Nota:</strong> Los campos se activan dependiendo del tipo de cálculo del material (pieza, barra, junta o superficie).</p>
 </blockquote>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>
 <hr />
+<h2 id="3-como-usar-escandallos">3. Cómo usar escandallos</h2>
+<ul>
+<li>
+<p>Desde cualquier documento de ventas (<strong>Presupuesto</strong>, <strong>Pedido</strong>, <strong>Producción</strong>, etc.), accede al apartado <strong>Escandallos</strong>, ubicado en la parte derecha del documento.<br />
+  A continuación, sigue los pasos:</p>
+<ol>
+<li>
+<p>Arrastra un escandallo a la posición del documento.</p>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos_ventas.png" /></p>
+</li>
+<li>
+<p>Se abrirá una ventana del editor de escandallos, donde podrás editar los valores antes de aceptar.</p>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos_ventas2.png" /></p>
+</li>
+<li>
+<p>Una vez aceptado, podrás modificar las medidas, precios y descuentos.<br />
+  Si los materiales tienen asociada una tarifa de venta, el precio se calculará automáticamente por despiece.</p>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos_ventas3.png" /></p>
+</li>
+<li>
+<p>Accede a <strong>Material necesario</strong> para listar los materiales con las unidades definidas según las condiciones del escandallo y realizar el pedido de compra al proveedor.</p>
+<p><img alt="Escandallos" src="../Imagenes/UT_Escandallos/escandallos_ventas4.png" /></p>
+</li>
+</ol>
+</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../Procesos/6.PR_Proyecto_cliente/" class="btn btn-neutral float-left" title="6. Proyectos, Clientes y Proveedores"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../2.UT_Crear_Materiales_enMATERIAL/" class="btn btn-neutral float-right" title="2. Creación de materiales propios en enMATERIALS">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../8.UT_Importacion_Contabilidad/" class="btn btn-neutral float-left" title="8. Importación programa de contabilidad"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -203,10 +250,8 @@ Al crear un presupuesto en ENBLAU y luego añadir una posición de Logikal, esta
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../Procesos/6.PR_Proyecto_cliente/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../8.UT_Importacion_Contabilidad/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../2.UT_Crear_Materiales_enMATERIAL/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
