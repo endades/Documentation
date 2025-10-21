@@ -2,6 +2,7 @@ site_name: Endades Documentation
 
 theme:
   name: readthedocs
+  # logo: img/endades2.png
   highlightjs: true
 
 
@@ -9,7 +10,8 @@ theme:
 extra_css:
   - stylesheets/custom.css
 
-
+#extra_javascript:
+#  - assets/javascripts/search-highlight.js
 
 # Hide logos and copy rights
 extra:
@@ -19,11 +21,7 @@ extra:
 
 copyright: " "
 
-nav:
-
-- index.md
-- 1. CO_Configuracion_Inicial_ENBLAU.md
-
+# nav:
 #   - Home: index.md
 #   - CONFIGURACIONES:
 #       - Configuración Inicial de ENBLAU: Configuraciones/1. CO_Configuracion_Inicial_ENBLAU.md
