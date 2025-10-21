@@ -1,30 +1,14 @@
 site_name: Endades Documentation
 
-plugins:
-  - i18n:
-      default_language: es
-      docs_structure: folder
-      languages:
-        - locale: es
-          name: Español
-          default: true
-          build: true
-        - locale: en
-          name: English
-          build: true
-
 theme:
   name: readthedocs
   highlightjs: true
-  custom_dir: overrides
 
 
 # Change font style
 extra_css:
   - stylesheets/custom.css
 
-extra_javascript:
- - js/lang-switcher.js 
 
 
 # Hide logos and copy rights
