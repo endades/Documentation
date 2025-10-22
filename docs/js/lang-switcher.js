@@ -1,13 +1,25 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const langBtn = document.getElementById('lang-btn');
-  const langSwitcher = document.getElementById('lang-switcher');
+document.addEventListener("DOMContentLoaded", function() {
+  const langMap = {
+    "es": "/es/",
+    "en": "/en/"
+  };
+  
+  const langSelector = document.createElement("select");
+  langSelector.id = "lang-switcher";
+  langSelector.style.marginLeft = "1rem";
 
-  langBtn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    langSwitcher.classList.toggle('active');
+  for (const [key, val] of Object.entries(langMap)) {
+    const opt = document.createElement("option");
+    opt.value = val;
+    opt.textContent = key.toUpperCase();
+    if (window.location.pathname.startsWith(val)) opt.selected = true;
+    langSelector.appendChild(opt);
+  }
+
+  langSelector.addEventListener("change", e => {
+    window.location.href = langSelector.value;
   });
 
-  document.addEventListener('click', function() {
-    langSwitcher.classList.remove('active');
-  });
+  const nav = document.querySelector(".wy-nav-side");
+  if (nav) nav.insertBefore(langSelector, nav.firstChild);
 });
