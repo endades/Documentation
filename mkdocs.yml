@@ -10,9 +10,17 @@ plugins:
           name: Español
           default: true
           build: true
+          nav:
+            - Inicio: index.md
+            - Configuraciones:
+              - Configuración Inicial: Configuraciones/1. CO_Configuracion_Inicial_ENBLAU.md
         - locale: en
           name: English
           build: true
+          nav:
+            - Home: index.md
+            - Configurations:
+              - Initial Configuration: Configurations/1. CO_Configuracion_Inicial_ENBLAU.md
 
 theme:
   name: readthedocs
@@ -31,7 +39,3 @@ extra:
     edit_page: true
 
 copyright: " "
-
-nav:
-  - index.md
-  - 1. CO_Configuracion_Inicial_ENBLAU.md
