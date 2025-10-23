@@ -13,14 +13,32 @@ plugins:
           nav:
             - Inicio: index.md
             - Configuraciones:
-              - Configuración Inicial: Configuraciones/1. CO_Configuracion_Inicial_ENBLAU.md
+              - Configuración Inicial ENBLAU: Configuraciones/1. CO_Configuracion_Inicial_ENBLAU.md
+              - Configuración Inicial enCONTROL: Configuraciones/2. CO_Configuracion_Inicial_enCONTROL.md
         - locale: en
           name: English
           build: true
           nav:
             - Home: index.md
             - Configurations:
-              - Initial Configuration: Configurations/1. CO_Configuracion_Inicial_ENBLAU.md
+              - Initial Configuration ENBLAU: Configurations/1. CO_Configuracion_Inicial_ENBLAU.md
+              - Initial Configuration enCONTROL: Configurations/2. CO_Configuracion_Inicial_enCONTROL.md
+        - locale: it
+          name: Italiano
+          build: true
+          nav:
+            - Home: index.md
+            - Configurazioni:
+              - Configurazione iniziale ENBLAU: Configurazioni/1. CO_Configuracion_Inicial_ENBLAU.md
+              - Configurazione iniziale enCONTROL: Configurazioni/2. CO_Configuracion_Inicial_enCONTROL.md
+        - locale: pt
+          name: Português
+          build: true
+          nav:
+            - Home: index.md
+            - Configurações:
+              - Configuração inicial ENBLAU: Configurações/1. CO_Configuracion_Inicial_ENBLAU.md
+              - Configuração inicial enCONTROL: Configurações/2. CO_Configuracion_Inicial_enCONTROL.md
 
 theme:
   name: readthedocs

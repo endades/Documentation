@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
   const langMap = {
     "es": "/es/",
-    "en": "/en/"
+    "en": "/en/",
+    "it": "/it/",
+    "pt": "/pt/"
   };
   
   const langSelector = document.createElement("select");
