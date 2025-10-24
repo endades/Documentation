@@ -15,6 +15,23 @@ plugins:
             - Configuraciones:
               - Configuración Inicial ENBLAU: Configuraciones/1. CO_Configuracion_Inicial_ENBLAU.md
               - Configuración Inicial enCONTROL: Configuraciones/2. CO_Configuracion_Inicial_enCONTROL.md
+            - Procesos:
+              - Ventas y Compras: Procesos/1.PR_Ventas_Compras.md
+              - Facturación: Procesos/2.PR_Facturas.md
+              - Géstion de control de stock ENBLAU: Procesos/3.PR_Manual_Stock_ENBLAU.md
+              - Géstion de control de stock enCONTROL: Procesos/4.PR_Manual_Stock_enCONTROL.md
+              - Informes: Procesos/5.PR_Informes.md
+              - Proyectos, Clientes y Proveedores: Procesos/6.PR_Proyecto_cliente.md
+            - Utilidades:
+              - Relación entre fases en ENBLAU y Logikal: Utilidades/1.UT_Relacion_ENBLAU_Logikal.md
+              - Creación de materiales propios en enMATERIALS: Utilidades/2.UT_Crear_Materiales_enMATERIAL.md
+              - Creación y edición de informes personalizados: Utilidades/3.UT_Editar_Informes.md
+              - Gestión de filtros: Utilidades/4.UT_Gestion_Filtros.md
+              - Actualización ENBLAU: Utilidades/5.UT_Actualizar_ENBLAU.md
+              - Conectar una Unidad de Red: Utilidades/6.UT_Unidad_Red.md
+              - Divisas: Utilidades/7.UT_Divisas.md
+              - Importación programa de contabilidad: Utilidades/8.UT_Importacion_Contabilidad.md
+              - Escandallos (Agrupación de materiales): Utilidades/9.UT_Escandallos.md
         - locale: en
           name: English
           build: true
@@ -23,6 +40,8 @@ plugins:
             - Configurations:
               - Initial Configuration ENBLAU: Configurations/1. CO_Configuracion_Inicial_ENBLAU.md
               - Initial Configuration enCONTROL: Configurations/2. CO_Configuracion_Inicial_enCONTROL.md
+            - Processes:
+            - Utilities:
         - locale: it
           name: Italiano
           build: true
@@ -31,6 +50,8 @@ plugins:
             - Configurazioni:
               - Configurazione iniziale ENBLAU: Configurazioni/1. CO_Configuracion_Inicial_ENBLAU.md
               - Configurazione iniziale enCONTROL: Configurazioni/2. CO_Configuracion_Inicial_enCONTROL.md
+            - Processi:
+            - Utilità:
         - locale: pt
           name: Português
           build: true
@@ -39,6 +60,8 @@ plugins:
             - Configurações:
               - Configuração inicial ENBLAU: Configurações/1. CO_Configuracion_Inicial_ENBLAU.md
               - Configuração inicial enCONTROL: Configurações/2. CO_Configuracion_Inicial_enCONTROL.md
+            - Processos:
+            - Utilidades:
 
 theme:
   name: readthedocs
