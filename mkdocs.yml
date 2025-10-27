@@ -41,7 +41,22 @@ plugins:
               - Initial Configuration ENBLAU: Configurations/1. CO_Configuracion_Inicial_ENBLAU.md
               - Initial Configuration enCONTROL: Configurations/2. CO_Configuracion_Inicial_enCONTROL.md
             - Processes:
+              - Sales and Purchases: Processes/1.PR_Ventas_Compras.md
+              - Invoicing: Processes/2.PR_Facturas.md
+              - Stock Control Management ENBLAU: Processes/3.PR_Manual_Stock_ENBLAU.md
+              - Stock Control Management enCONTROL: Processes/4.PR_Manual_Stock_enCONTROL.md
+              - Reports: Processes/5.PR_Informes.md
+              - Projects, Clients and Suppliers: Processes/6.PR_Proyecto_cliente.md
             - Utilities:
+              - Relationship between phases in ENBLAU and Logikal: Utilities/1.UT_Relacion_ENBLAU_Logikal.md
+              - Creation of custom materials in enMATERIALS: Utilities/2.UT_Crear_Materiales_enMATERIAL.md
+              - Creation and editing of custom reports: Utilities/3.UT_Editar_Informes.md
+              - Filter management: Utilities/4.UT_Gestion_Filtros.md
+              - ENBLAU update: Utilities/5.UT_Actualizar_ENBLAU.md
+              - Connect a Network Unit: Utilities/6.UT_Unidad_Red.md
+              - Currencies: Utilities/7.UT_Divisas.md
+              - Import accounting program: Utilities/8.UT_Importacion_Contabilidad.md
+              - Bill of materials (Grouping of materials): Utilities/9.UT_Escandallos.md
         - locale: it
           name: Italiano
           build: true
@@ -51,7 +66,22 @@ plugins:
               - Configurazione iniziale ENBLAU: Configurazioni/1. CO_Configuracion_Inicial_ENBLAU.md
               - Configurazione iniziale enCONTROL: Configurazioni/2. CO_Configuracion_Inicial_enCONTROL.md
             - Processi:
+              - Vendite e Acquisti: Processi/1.PR_Ventas_Compras.md
+              - Fatturazione: Processi/2.PR_Facturas.md
+              - Gestione del controllo delle scorte ENBLAU: Processi/3.PR_Manual_Stock_ENBLAU.md
+              - Gestione del controllo delle scorte enCONTROL: Processi/4.PR_Manual_Stock_enCONTROL.md
+              - Rapporti: Processi/5.PR_Informes.md
+              - Progetti, Clienti e Fornitori: Processi/6.PR_Proyecto_cliente.md
             - Utilità:
+              - Relazione tra fasi in ENBLAU e Logikal: Utilita/1.UT_Relacion_ENBLAU_Logikal.md
+              - Creazione di materiali propri in enMATERIALS: Utilita/2.UT_Crear_Materiales_enMATERIAL.md
+              - Creazione e modifica di rapporti personalizzati: Utilita/3.UT_Editar_Informes.md
+              - Gestione dei filtri: Utilita/4.UT_Gestion_Filtros.md
+              - Aggiornamento ENBLAU: Utilita/5.UT_Actualizar_ENBLAU.md
+              - Connessione di un'Unità di Rete: Utilita/6.UT_Unidad_Red.md
+              - Valute: Utilita/7.UT_Divisas.md
+              - Importazione programma di contabilità: Utilita/8.UT_Importacion_Contabilidad.md
+              - Bill of materials (Grouping of materials): Utilita/9.UT_Escandallos.md
         - locale: pt
           name: Português
           build: true
@@ -61,7 +91,22 @@ plugins:
               - Configuração inicial ENBLAU: Configurações/1. CO_Configuracion_Inicial_ENBLAU.md
               - Configuração inicial enCONTROL: Configurações/2. CO_Configuracion_Inicial_enCONTROL.md
             - Processos:
+              - Vendas e Compras: Processos/1.PR_Ventas_Compras.md
+              - Facturação: Processos/2.PR_Facturas.md
+              - Gestão de controlo de stock ENBLAU: Processos/3.PR_Manual_Stock_ENBLAU.md
+              - Gestão de controlo de stock enCONTROL: Processos/4.PR_Manual_Stock_enCONTROL.md
+              - Relatórios: Processos/5.PR_Informes.md
+              - Projetos, Clientes e Fornecedores: Processos/6.PR_Proyecto_cliente.md
             - Utilidades:
+              - Relação entre fases em ENBLAU e Logikal: Utilidades/1.UT_Relacion_ENBLAU_Logikal.md
+              - Criação de materiais próprios em enMATERIALS: Utilidades/2.UT_Crear_Materiales_enMATERIAL.md
+              - Criação e edição de relatórios personalizados: Utilidades/3.UT_Editar_Informes.md
+              - Gestão de filtros: Utilidades/4.UT_Gestion_Filtros.md
+              - Atualização ENBLAU: Utilidades/5.UT_Actualizar_ENBLAU.md
+              - Conectar uma Unidade de Rede: Utilidades/6.UT_Unidad_Red.md
+              - Moedas: Utilidades/7.UT_Divisas.md
+              - Importação programa de contabilidade: Utilidades/8.UT_Importacion_Contabilidad.md
+              - Escandallos (Agrupación de materiales): Utilidades/9.UT_Escandallos.md
 
 theme:
   name: readthedocs
