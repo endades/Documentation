@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Actualización ENBLAU - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Actualizaci\u00f3n ENBLAU";
+        var mkdocs_page_input_path = "es\\Utilidades\\5.UT_Actualizar_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+      <li class="breadcrumb-item active">Actualización ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="actualizacion-enblau">Actualización ENBLAU</h1>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual está diseñado para orientar a los usuarios en el proceso de actualización de ENBLAU a la última versión disponible.</p>
+<hr />
+<h2 id="2-pasos-para-la-actualizacion">2. Pasos para la actualización</h2>
+<blockquote>
+<p>⚠️ <strong>¡Importante!</strong> Antes de comenzar, asegúrate de que <strong>ningún usuario esté conectado a ENBLAU</strong>. Desde <strong>Herramientas administrativas - Administración de equipos - Carpetas compartidas - Archivos abiertos</strong> podrás averiguar si hay alguien conectado a la app. </p>
+</blockquote>
+<p><img alt="Nueva versión" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/herramientas_admin.jpg" /></p>
+<p><img alt="Nueva versión" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/administracion_equipos.jpg" /></p>
+<blockquote>
+<p>Si ENBLAU está instalado en un servidor, la actualización debe realizarse <strong>desde ese servidor</strong> y <strong>nunca</strong> desde un equipo conectado por unidad de red.</p>
+</blockquote>
+<h3 id="21-enblau">2.1. ENBLAU</h3>
+<ol>
+<li>Accede a ENBLAU (desde el servidor, si aplica).</li>
+<li>En la parte inferior de la pantalla de inicio, haz clic en <strong>"Nueva versión disponible"</strong> (aparecerá en rojo junto con el número de la última versión disponible).</li>
+</ol>
+<p><img alt="Nueva versión" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/nueva_version.jpg" /></p>
+<ol>
+<li>Se abrirá una ventana llamada <strong>"Nueva versión"</strong>, donde podrás ver las novedades antes de instalar. Haz clic en el botón <strong>"Abrir enUPDATE"</strong> para continuar.</li>
+</ol>
+<p><img alt="Ventana de nueva versión" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/nueva_version2.jpg" /></p>
+<h3 id="22-enupdate">2.2. enUPDATE</h3>
+<ol>
+<li>Al abrir <em>enUPDATE</em> desde ENBLAU, se mostrará la ventana correspondiente. Ese proceso se puede hacer directamente desde enUPDATE sin la necesidad de abrir primero ENBLAU.</li>
+<li>En la parte superior de la cinta, haz clic en <strong>"Descargar e instalar"</strong>. Esto descargará automáticamente la última versión de ENBLAU (podrás ver el progreso en la barra).</li>
+</ol>
+<p><img alt="enUPDATE" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/enupdate.jpg" /></p>
+<ol>
+<li>Al finalizar la descarga, aparecerá un mensaje confirmando que fue exitosa y solicitando permiso para proceder con la instalación.</li>
+</ol>
+<p><img alt="Descargar e instalar" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/descarga_inst.jpg" /></p>
+<h3 id="23-instalacion">2.3. Instalación</h3>
+<blockquote>
+<p>⚠️ <strong>¡Importante!</strong> Asegúrate de que ENBLAU esté <strong>completamente cerrado</strong> antes de comenzar la instalación.</p>
+</blockquote>
+<ol>
+<li>
+<p>Al confirmar la instalación, se abrirá la ventana del <strong>Endades Suite Setup</strong>. Sigue los pasos a continuación:</p>
+<p><img alt="Setup paso 1" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/setup.jpg" /></p>
+</li>
+<li>
+<p>Acepta los términos de la licencia marcando la casilla correspondiente y continúa.</p>
+<p><img alt="Setup paso 2" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/setup2.jpg" /></p>
+</li>
+<li>
+<p>Verifica que la ruta de instalación de ENBLAU sea la correcta.</p>
+<p><img alt="Setup paso 3" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/setup3.jpg" />  </p>
+</li>
+<li>
+<p>Haz clic en <strong>"Instalar"</strong> para comenzar.</p>
+<p><img alt="Instalar" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/install.jpg" /></p>
+</li>
+<li>
+<p>Finaliza la instalación.</p>
+<p><img alt="Finalizar" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/finish.jpg" /></p>
+</li>
+</ol>
+<h3 id="24-actualizacion-de-la-base-de-datos">2.4. Actualización de la base de datos</h3>
+<ol>
+<li>Una vez finalizada la instalación, abre ENBLAU desde el equipo donde realizaste la actualización.</li>
+<li>Al iniciar, el sistema solicitará actualizar la base de datos. Haz clic en <strong>"Sí"</strong> para continuar.</li>
+</ol>
+<p><img alt="Actualizar base de datos" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/update_db.jpg" /></p>
+<hr />
+<p>¡Listo! Ya puedes trabajar con la <strong>última versión actualizada de ENBLAU</strong>.</p>
+<hr />
+<h2 id="3-desinstalar-e-instalar-enblau">3. Desinstalar e instalar ENBLAU</h2>
+<p>En caso de que la actualización de ENBLAU no se haya completado correctamente —por ejemplo, si había usuarios conectados o se produjo algún otro error— será necesario desinstalar el programa por completo y realizar una nueva instalación.</p>
+<h3 id="31-desinstalar-endades-suite">3.1. Desinstalar Endades Suite</h3>
+<ol>
+<li>En el equipo donde está instalado ENBLAU, abre el menú de inicio de Windows y busca <strong>"Agregar o quitar programas"</strong> (el nombre puede variar según la versión del sistema operativo).</li>
+</ol>
+<p><img alt="Agregar o quitar programas" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/agregar_quitar.jpg" /></p>
+<ol>
+<li>
+<p>Se abrirá la ventana de configuración. En el apartado <strong>Aplicaciones y características</strong>, busca <strong>Endades Suite</strong>.</p>
+</li>
+<li>
+<p>Haz clic sobre la aplicación y selecciona <strong>Desinstalar</strong>. El procedimiento es el habitual para cualquier aplicación instalada en Windows.</p>
+</li>
+</ol>
+<p><img alt="Desinstalar" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/desinstalar.jpg" /></p>
+<p><img alt="Confirmar desinstalación" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/desinstalar2.jpg" /></p>
+<h3 id="32-instalar-enblau">3.2. Instalar ENBLAU</h3>
+<ol>
+<li>
+<p>Una vez desinstalada la aplicación, accede a la carpeta de instalación de ENBLAU. Por ejemplo:<br />
+<strong><code>C:\ENBLAU</code></strong></p>
+</li>
+<li>
+<p>Dentro de esa carpeta, abre el directorio <strong>Downloads</strong>.</p>
+</li>
+</ol>
+<p><img alt="Carpeta Downloads" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/downloads.jpg" /></p>
+<ol>
+<li>Ahí encontrarás varias versiones del instalador. Puedes ordenar los archivos por nombre o por fecha para localizar la <strong>última versión disponible</strong>.</li>
+</ol>
+<p><img alt="Versiones descargadas" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/version_download.jpg" /></p>
+<ol>
+<li>Abre la carpeta correspondiente a la última versión y ejecuta el archivo <strong><code>Installer.msi</code></strong> haciendo doble clic.</li>
+</ol>
+<p><img alt="Instalador" src="../../../Utilidades/Imagenes/UT_Actualizar_ENBLAU/installer.jpg" /></p>
+<ol>
+<li>Se abrirá la ventana del instalador <strong>Endades Suite Setup</strong>. Sigue los mismos pasos detallados en la sección <a href="#23-instalacion">2.3. Instalación</a>.</li>
+</ol>
+<hr />
+<p>📌 <strong>Nota</strong>: Si después de reinstalar ENBLAU el sistema solicita actualizar la base de datos, sigue el procedimiento indicado en <a href="#24-actualizacion-de-la-base-de-datos">2.4. Actualización de la base de datos</a>.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Configuración inicial de enCONTROL - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configuraci\u00f3n inicial de enCONTROL";
+        var mkdocs_page_input_path = "es\\Configuraciones\\2. CO_Configuracion_Inicial_enCONTROL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Configuración inicial de enCONTROL</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="configuracion-inicial-de-encontrol">Configuración inicial de enCONTROL</h1>
+<hr />
+<h2 id="1-proposito">1. Propósito</h2>
+<p>El presente manual está diseñado para guiar a los nuevos usuarios en la configuración inicial de enCONTROL. Esta configuración incluye todo lo necesario para poner en marcha la producción.</p>
+<hr />
+<h2 id="2-configuracion-en-encontrol">2. Configuración en enCONTROL</h2>
+<p>Acceder a la configuración de enCONTROL (F10) como usuario administrador. Este proceso puede tardar un poco debido a la cantidad de puestos que haya que conectar en red.</p>
+<h3 id="21-varios">2.1. Varios</h3>
+<ul>
+<li><strong>Mostrar columna barra en mecanizados</strong></li>
+</ul>
+<p><img alt="barra mecanizados" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/barra_mecanizados.jpg" /></p>
+<ul>
+<li>
+<p>Si el valor es <strong>Sí</strong> te mostrará la columna de barra en el monitor.</p>
+<p><img alt="barra mecanizados" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/barra_mecanizados2.jpg" /></p>
+</li>
+<li>
+<p>Si el valor es <strong>No</strong> solo mostrará la columna de pendientes de mecanizar en el monitor.</p>
+<p><img alt="barra mecanizados" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/barra_mecanizados3.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Por defecto ese valor estará a Sí.</p>
+</blockquote>
+<ul>
+<li><strong>Cortar barra entera en monitor de corte</strong></li>
+</ul>
+<p><img alt="cortar barra" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/cortar_barra.jpg" /></p>
+<ul>
+<li>
+<p>Si el valor es <strong>Sí</strong>, al cortar la barra en el monitor se hará de manera automática el corte de las posiciones de la barra indicada, sin necesidad de cortar cada posición. </p>
+</li>
+<li>
+<p>Si el valor es <strong>No</strong>, al cortar la barra en el monitor se hará por cada hará posición.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Por defecto ese valor estará a Sí.</p>
+</blockquote>
+<ul>
+<li>Se define el modo en que se descontará del stock los perfiles, herrajes y accesorios según avanza la producción.</li>
+</ul>
+<p><img alt="Modo stock" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/varios_modo.jpg" /></p>
+<ul>
+<li>
+<p><strong>No descontar</strong>: No se descuenta de ningún sitio.</p>
+</li>
+<li>
+<p><strong>Descontar del proyecto</strong>: Se descuenta solo del proyecto, independientemente de la zona.</p>
+</li>
+<li>
+<p><strong>Descontar de la zona, en su defecto del proyecto</strong>: Se descuenta de la zona indicada y del proyecto.</p>
+</li>
+<li>
+<p><strong>Descontar de la zona</strong>: Solo se descuenta de la zona indicada, independientemente del proyecto.</p>
+</li>
+<li>
+<p><strong>Descontar del proyecto, en su defecto de cualquier zona</strong>: Se descuenta del proyecto y de cualquier zona.</p>
+</li>
+<li>
+<p>En <strong>Ruta de documentación genérica</strong> puedes indicar documentaciones como información del sistema, entre otros, que se pueda ver desde enCONTROL y los puestos.</p>
+</li>
+</ul>
+<p><img alt="Ruta Documentación" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/ruta_doc.jpg" /></p>
+<p>Ejemplo en un puesto:</p>
+<p><img alt="Ruta Documentación" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/ruta_doc2.jpg" /></p>
+<hr />
+<h3 id="22-puestos">2.2. Puestos</h3>
+<ul>
+<li>En "<strong>Puestos</strong>" definirás los equipos asociados para cada puesto que esté conectado a la red.</li>
+</ul>
+<p><img alt="Puestos" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/puestos.jpg" /></p>
+<hr />
+<h2 id="3-configuracion-de-produccion-en-enblau">3. Configuración de producción en ENBLAU</h2>
+<h3 id="31-configuracion-del-layout-de-produccion">3.1. Configuración del layout de producción</h3>
+<p>La configuración del <strong>layout de producción</strong> permite definir la estructura organizativa de la planta dentro del módulo <strong>enCONTROL</strong>, incluyendo plantas, líneas de producción y puestos de trabajo.</p>
+<ul>
+<li>Accede al menú: <strong>Configuración → Producción → Configuración Layout</strong>.</li>
+</ul>
+<p><img alt="Layout de producción" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/layout_produccion.jpg" /></p>
+<ul>
+<li>
+<p>Desde la interfaz de <strong>Layout de Producción</strong>, puedes añadir:</p>
+</li>
+<li>
+<p><strong>Planta</strong></p>
+</li>
+<li><strong>Línea de producción</strong></li>
+<li><strong>Puestos de trabajo</strong></li>
+</ul>
+<p><img alt="Gestión de layout" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/layout_produccion2.jpg" /></p>
+<ul>
+<li>
+<p>Al seleccionar una línea de producción, se mostrará en el lateral derecho el apartado <strong>Horario de la línea</strong>. Aquí puedes configurar:</p>
+</li>
+<li>
+<p>Días de la semana operativos.</p>
+</li>
+<li>Hora de inicio y fin de cada turno.</li>
+</ul>
+<p><img alt="Horario de línea" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/layout_produccion3.jpg" /></p>
+<ul>
+<li>
+<p>Al añadir un nuevo puesto, se deben definir los siguientes campos:</p>
+</li>
+<li>
+<p><strong>Tipo</strong>: Indica el tipo de puesto que deseas añadir (por ejemplo: Corte, Montaje, Mecanizado, etc.).</p>
+</li>
+<li>
+<p><strong>Orden</strong>: Define el orden secuencial de los puestos dentro de la línea.</p>
+<p><img alt="Configuración de puesto" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/layout_produccion4.jpg" /></p>
+</li>
+<li>
+<p>En el campo <strong>Usuario</strong>, se puede asignar al responsable del puesto. Este usuario será el encargado de operar o supervisar dicho puesto dentro del flujo de producción.</p>
+</li>
+</ul>
+<p><img alt="Asignación de usuario" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/layout_produccion5.jpg" /></p>
+<blockquote>
+<p><strong>Recomendación:</strong> Mantén siempre actualizada esta configuración para garantizar un control de producción preciso y alineado con la realidad operativa de la planta.</p>
+</blockquote>
+<hr />
+<h3 id="32-clasificaciones-de-produccion">3.2. Clasificaciones de producción</h3>
+<p>Las clasificaciones en producción se usan de manera informativa al crear una producción para que se refleje en las líneas del puesto en enCONTROL.</p>
+<ul>
+<li>Accede al apartado de Ventas - Configuración - <strong>Clasificaciones</strong>.</li>
+</ul>
+<p><img alt="Clasificaciones" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/clasificasiones.jpg" /></p>
+<ul>
+<li>Desde "Clasificaciones", crea las clasificaciones que sean necesarias e indica la línea y los puestos de enCONTROL.</li>
+</ul>
+<p><img alt="Clasificaciones" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/clasificasiones2.jpg" /></p>
+<ul>
+<li>Al crear una producción desde un pedido de venta, verás que hay un desplegable de clasificaciones donde puedes indicar la clasificación para esa producción.</li>
+</ul>
+<p><img alt="Clasificaciones" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/clasificasiones3.jpg" /></p>
+<hr />
+<h3 id="33-informes-de-produccion-logikal">3.3. Informes de Producción Logikal</h3>
+<ul>
+<li>
+<p>Informes que se requieran y que se generan automáticamente, guardándose como documentación de Logikal en producción. Estos documentos se verán en la ruta de documentación en los puestos de enCONTROL.</p>
+</li>
+<li>
+<p>En el presupuesto (producción), accede al apartado de Logikal - <strong>Informes para producción</strong>. Desde allí, marca los informes que quieras que se guarden en producción como documentación en la columna <strong>Para documentación</strong>.</p>
+</li>
+</ul>
+<p><img alt="Informes Producción" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/informes_produccion.jpg" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Para el tema de la documentación, no cambies nada en las columnas <strong>Exportación</strong> y <strong>Gestión</strong>.</p>
+</blockquote>
+<hr />
+<h3 id="34-informacion-adicional">3.4. Información adicional</h3>
+<p>La información adicional es un campo informativo para cuando la producción pase a cola del taller en enCONTROL, de modo que el responsable de taller pueda consultarla.</p>
+<ul>
+<li>Accede al apartado de Ventas - Configuración - <strong>Información adicional producción</strong>.</li>
+</ul>
+<p><img alt="Información adicional" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/info_adicional.jpg" /></p>
+<ul>
+<li>Desde "Información adicional producción", crea las informaciones adicionales que sean necesarias.</li>
+</ul>
+<p><img alt="Información adicional" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/info_adicional1.jpg" /></p>
+<ul>
+<li>Al crear una producción desde un pedido de venta, verás que hay un desplegable de información adicional donde puedes indicar cómo quieres que llegue esa información a la cola de producción.</li>
+</ul>
+<p><img alt="Información adicional" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/info_adicional2.jpg" /></p>
+<p><img alt="Información adicional" src="../../../Configuraciones/Imagenes/CO_Config_enCONTROL/info_adicional3.jpg" /></p>
+<hr />
+<h2 id="4-conclusion">4. Conclusión</h2>
+<p>Siguiendo este manual, podrás realizar una configuración inicial de enCONTROL para el uso en la creación de producción.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

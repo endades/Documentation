@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Stock Control Management ENBLAU - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Stock Control Management ENBLAU";
+        var mkdocs_page_input_path = "en\\Processes\\3.PR_Manual_Stock_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Stock Control Management ENBLAU</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-purchase-order-management">2. Purchase order management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-purchase-orders">2.1 Purchase orders</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-assigning-materials-to-a-project">2.2 Assigning materials to a project</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-reserved-materials">2.3 Reserved materials</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-stock-replenishment">2.4 Stock replenishment</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-warehouse-management-and-movements">3. Warehouse management and movements</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-warehouse-layout">3.1 Warehouse layout</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-stock">3.2 Stock</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-warehouse-movements">3.3 Warehouse movements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-warehouse-reports-inventory">3.4 Warehouse reports (inventory)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-inventories">4. Inventories</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-new-inventory">4.1 New inventory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-stock-counting-and-reconciliation">4.2 Stock counting and reconciliation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-inventory-reconciliation-report">4.3 Inventory reconciliation report</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-required-stock-stock-needed">5. Required stock (Stock needed)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-imported-materials">6. Imported materials</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-material-configuration">6.1 Material configuration</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-finished-product">7. Finished product</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-product-locations">7.1 Product locations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-product-movements">7.2 Product movements</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-stock-control-and-reporting">8. Stock control and reporting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-troubleshooting-common-issues">9. Troubleshooting common issues</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-conclusion">10. Conclusion</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Processes</li>
+      <li class="breadcrumb-item active">Stock Control Management ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="enblau-stock-control-system">ENBLAU Stock Control System</h1>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This manual is intended for new users of the stock control system used by Endades and our Customers. Its main goal is to provide a step-by-step guide for managing projects efficiently — from creating orders to optimizing production workflows in ENBLAU. The document covers the key operations and is organized sequentially to make it easy to follow.</p>
+<hr />
+<h2 id="2-purchase-order-management">2. Purchase order management</h2>
+<h3 id="21-purchase-orders">2.1 Purchase orders</h3>
+<ul>
+<li>From the main menu go to <strong>Purchasing</strong> and open the "Purchase Orders" section.</li>
+<li>Specify the materials and the required quantities.</li>
+<li>If references change, add them manually provided they are configured in the database.</li>
+<li>
+<p>From a sales order (under <strong>Sales</strong>) select the document and open the <strong>Material needed</strong> tab to generate the material list for that order.</p>
+<ul>
+<li>
+<p>Lines shown in <span style="color:green;">green</span> indicate the material is available in stock for that project or for the project configured as <strong>Stock</strong>. Lines shown in <span style="color:red;">red</span> indicate material is not available for that project or in stock.</p>
+</li>
+<li>
+<p>You can choose whether to purchase each item (for example, if you already have it in the warehouse). For each material the system shows: units in stock, reserved units, and outstanding units.</p>
+</li>
+</ul>
+<p><img alt="material_necesario" src="../Imagenes/PR_Stock_Control/material_necesario.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p>⚠️ Important: To assign a project as the stock project, go to General → Configuration → <strong>Purchasing and Warehouse</strong>, and set the <strong>Project for stock</strong> dropdown to a previously created project used for stock management.</p>
+</blockquote>
+<p><img alt="material_necesario" src="../Imagenes/PR_Stock_Control/proyecto_stock.jpg" /></p>
+<ul>
+<li>
+<p>Confirm with <strong>Request material</strong> and send the order to the corresponding supplier.</p>
+</li>
+<li>
+<p>In <strong>Warehouses</strong> there is an option called <strong>Pending to receive</strong> which shows a list of materials pending receipt by project and purchase order.</p>
+</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir.jpg" /></p>
+<ul>
+<li>Right-clicking a material line lets you open the purchase order for that item:</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir2.jpg" /></p>
+<blockquote>
+<p>ℹ️ Note: For more detailed information about purchase orders see: <a href="../1.PR_Ventas_Compras/#4-compras">Purchase Orders</a></p>
+<p>⚠️ Important: Creating material requests from a sales document may require special permissions in some cases. This permission can also be required for manufacturing or installation operations.</p>
+</blockquote>
+<p><img alt="Permisos especiales" src="../Imagenes/PR_Stock_Control/permisos_especiales.jpg" /></p>
+<h3 id="22-assigning-materials-to-a-project">2.2 Assigning materials to a project</h3>
+<ul>
+<li>From the Material needed view you can reassign items from another project to the current project. Right-click the line in the locations section and choose <strong>Assign</strong>:</li>
+</ul>
+<p><img alt="Asignar articulos" src="../Imagenes/PR_Stock_Control/asignar.jpg" /></p>
+<ul>
+<li>Select the destination project (defaults to the current project) and the quantity (defaults to the quantity required):</li>
+</ul>
+<p><img alt="Asignar articulos" src="../Imagenes/PR_Stock_Control/asignar2.jpg" /></p>
+<ul>
+<li>When an item is assigned to the destination project, the stock units are transferred: the destination project’s stock increases by the assigned quantity and the origin project’s stock decreases. The item will be shown in green.</li>
+</ul>
+<blockquote>
+<p>⚠️ Important: Ensure materials are allowed to be used from the project you are transferring from.</p>
+</blockquote>
+<h3 id="23-reserved-materials">2.3 Reserved materials</h3>
+<ul>
+<li>You can reserve materials for a project from <strong>Sales</strong>, <strong>Purchasing</strong>, or <strong>Projects</strong> by selecting <strong>Reserved materials</strong> and choosing the warehouse from the dropdown.</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado.jpg" /></p>
+<ul>
+<li>A Reserved Material window opens and from <strong>Project materials</strong> you can drag items from supplier orders:</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_2.jpg" /></p>
+<ul>
+<li>The Warehouses area shows all reserved materials for a project:</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_3.jpg" /></p>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_4.jpg" /></p>
+<blockquote>
+<p>ℹ️ Note: Reserving material is primarily visual and does not prevent usage of the items. For stricter control use <a href="#22-assigning-materials-to-a-project">Assigning materials to a project</a>.</p>
+</blockquote>
+<h3 id="24-stock-replenishment">2.4 Stock replenishment</h3>
+<p>In <strong>Purchasing</strong> there is a <strong>Stock replenishment</strong> option in the warehouse dropdown that lists materials below minimum or below typical stock levels.</p>
+<p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock.jpg" /></p>
+<ul>
+<li>
+<p>Materials marked in <strong>red</strong> are below the <strong>minimum</strong> or below the <strong>typical</strong> threshold.</p>
+<ul>
+<li><strong>Units in stock</strong> shows the quantity currently available.  </li>
+<li><strong>Units to order</strong> indicates how many units are needed to reach the configured maximum stock.  </li>
+<li>Materials that meet the minimum or typical level <strong>do not appear</strong> in the replenishment list.</li>
+</ul>
+</li>
+<li>
+<p>Materials marked in <strong>green</strong> are those without a defined maximum stock.</p>
+<ul>
+<li>By default, one unit is considered for items configured as below minimum or below typical so they show up in the replenishment list.</li>
+</ul>
+</li>
+<li>
+<p>Check the <strong>To import</strong> box for materials you want to include, then click <strong>Import</strong> to add them to a purchase order.</p>
+</li>
+</ul>
+<p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock2.jpg" /></p>
+<blockquote>
+<p>ℹ️ Note: To learn how to define minimum, maximum and typical stock values for a material, see <a href="#51-material-configuration">Material configuration</a>.</p>
+</blockquote>
+<hr />
+<h2 id="3-warehouse-management-and-movements">3. Warehouse management and movements</h2>
+<h3 id="31-warehouse-layout">3.1 Warehouse layout</h3>
+<ul>
+<li>In the main menu go to <strong>Warehouses → Stock</strong> to add or edit warehouses.</li>
+</ul>
+<p><img alt="almacenes" src="../Imagenes/PR_Stock_Control/almacen.jpg" /></p>
+<ul>
+<li>Configure the warehouse layout at ENBLAU → Configuration → <strong>Warehouse</strong> → <strong>Layout</strong>:</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout.jpg" /></p>
+<ul>
+<li>Create floors, zones, racks and positions to keep the warehouse organized. The layout is displayed as a tree view.</li>
+<li>
+<p>Associate each position with its storage area. Examples:</p>
+<ul>
+<li><strong>Add Floor</strong>: add a floor and indicate the warehouse.</li>
+<li><strong>Add Zone/SubZone</strong>: add a zone or subzone under the selected location.</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout2.jpg" /></p>
+</li>
+</ul>
+<h3 id="32-stock">3.2 Stock</h3>
+<ul>
+<li>Under <strong>Warehouses → Stock</strong> you can view listings with <strong>Summary</strong>, <strong>Summary with location</strong> and <strong>Detailed</strong> views:</li>
+</ul>
+<p><img alt="Stock" src="../Imagenes/PR_Stock_Control/stock.jpg" /></p>
+<p><img alt="Listado" src="../Imagenes/PR_Stock_Control/listado.jpg" /></p>
+<ul>
+<li>
+<p><strong>Summary:</strong> shows materials grouped by assigned project with totals for units, outstanding units and reserved units.</p>
+</li>
+<li>
+<p><strong>Summary with location:</strong> shows materials grouped by project and their storage location.</p>
+</li>
+<li>
+<p><strong>Detailed:</strong> provides a detailed view showing purchase project, assigned project, warehouse location and breakdown by purchase delivery note. This view also allows you to decrement, transfer and assign items.</p>
+</li>
+</ul>
+<h3 id="33-warehouse-movements">3.3 Warehouse movements</h3>
+<ul>
+<li>Perform material movements between zones and projects:</li>
+<li>In <strong>Warehouses → Stock → Detailed</strong>, right-click the material you want to transfer, decrement or assign.</li>
+</ul>
+<p><img alt="Detallado" src="../Imagenes/PR_Stock_Control/movimientos_detallado.jpg" /></p>
+<ul>
+<li>Select the material from the project.</li>
+<li>
+<p><strong>Decrement</strong>: indicate the project, order number, responsible person and quantity (bars and pieces) or length (joints).</p>
+<p><img alt="Movimiento" src="../Imagenes/PR_Stock_Control/descontar.jpg" /></p>
+</li>
+<li>
+<p><strong>Transfer</strong>: indicate the origin and destination location and the quantity (bars and pieces) or length (joints).</p>
+<p><img alt="Traspaso" src="../Imagenes/PR_Stock_Control/asignar3.jpg" /></p>
+</li>
+<li>
+<p><strong>Assign</strong>: indicate the destination project, responsible person and quantity (bars and pieces) or length (joints). This matches the function described in Material needed → <a href="#22-assigning-materials-to-a-project">Assigning materials to a project</a>.</p>
+<p><img alt="Asignar" src="../Imagenes/PR_Stock_Control/traspaso.jpg" /> </p>
+</li>
+<li>
+<p>Entry, exit, transfer and assignment movements are recorded on the delivery note. You can view entries and exits under <strong>Warehouse → Movements</strong>.</p>
+<p><img alt="Movimentos del almacen" src="../Imagenes/PR_Stock_Control/movimentos_almacen.jpg" /></p>
+<p><img alt="Movimentos del almacen" src="../Imagenes/PR_Stock_Control/movimentos_almacen2.jpg" /></p>
+</li>
+<li>
+<p>The Movements section includes a <strong>Return</strong> function. Right-click an exit movement and select <strong>Return</strong>:</p>
+<p><img alt="Devolver" src="../Imagenes/PR_Stock_Control/devolver.jpg" /></p>
+<p>A <strong>Return movement</strong> window opens where you indicate the units and the location to return the material to (by default the original location):</p>
+<p><img alt="Devolver" src="../Imagenes/PR_Stock_Control/devolver2.jpg" /></p>
+</li>
+<li>
+<p>The <strong>Open</strong> option in the detailed list opens the delivery note (number column) for the selected line and item:</p>
+<p><img alt="Abrir" src="../Imagenes/PR_Stock_Control/abrir.jpg" /></p>
+</li>
+</ul>
+<h3 id="34-warehouse-reports-inventory">3.4 Warehouse reports (inventory)</h3>
+<ul>
+<li>
+<p>In <strong>Warehouses → Stock</strong> you can print different types of reports:</p>
+</li>
+<li>
+<p><strong>Summary:</strong> includes two reports: <strong>Inventory</strong> and <strong>Inventory by date</strong>.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
+<p><strong>Inventory</strong> shows stock according to the filters applied in the warehouse listing. Columns include Item, Project Units, Outstanding Units and Reserved Units.</p>
+<p><img alt="Inventario" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
+<p><strong>Inventory by date</strong> shows inventory as of a chosen date, including columns Item, Description, Units and Amount.</p>
+<p><img alt="Inventario por fecha" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
+</li>
+<li>
+<p><strong>Summary with location:</strong> includes the <strong>Detailed inventory</strong> report.</p>
+<p><strong>Detailed inventory</strong> provides inventory grouped by filters applied in the detailed warehouse list. It includes Warehouse location, Item, Description and Units.</p>
+<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
+</li>
+<li>
+<p><strong>Detailed:</strong> the <strong>Detailed inventory</strong> report shows Project, Purchase delivery note number, Warehouse location, Item, Description and Units grouped by reference and length.</p>
+<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
+</li>
+<li>
+<p>In <strong>Warehouses → Warehouse movements</strong> you can print movement reports:</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
+<p><strong>Movements</strong> lists the movements shown in the movements view and includes Date, Responsible, Assigned Project, Warehouse location, Item, Description, Units and Movement type.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
+<p><strong>Movements I</strong> provides a detailed list including Movement type, Date, Responsible, Document, Units, Amount, Item and Description.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
+</li>
+</ul>
+<h2 id="4-inventories">4. Inventories</h2>
+<ul>
+<li>Under <strong>Warehouses → Inventories</strong> you can perform stock normalization taking into account real-time stock levels.</li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios.jpg" /></p>
+<h3 id="41-new-inventory">4.1 New inventory</h3>
+<ul>
+<li>
+<p>To create a new inventory, open Inventories and click <strong>New</strong>.</p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios2.jpg" /></p>
+</li>
+</ul>
+<h3 id="42-stock-counting-and-reconciliation">4.2 Stock counting and reconciliation</h3>
+<ol>
+<li>
+<p>From an inventory, select the <strong>Project</strong> defined as <strong>Stock</strong>.  </p>
+</li>
+<li>
+<p>Click <strong>Get stock</strong> to load the list of materials for the Stock project:<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios3.jpg" />
+    <img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios4.jpg" />  </p>
+</li>
+<li>
+<p>In the <strong>Counted units</strong> column enter the actual counted quantity for the item at the warehouse location.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios5.jpg" />  </p>
+</li>
+<li>
+<p>After entering counted units, item lines that changed will appear in red. Click <strong>Update warehouse</strong> to apply the reconciliation based on counted units.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios6.jpg" />  </p>
+</li>
+<li>
+<p>After updating the warehouse, the lines will appear in green.</p>
+</li>
+<li>
+<p>The <strong>Stock units</strong> and <strong>Counted units</strong> columns will reflect the updated values.  </p>
+</li>
+<li>The <strong>Counted</strong> column will display a checkbox.  </li>
+<li>
+<p>The <strong>Counted date</strong> column will show the reconciliation date.  </p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios7.jpg" />    </p>
+</li>
+<li>
+<p>This process generates a reconciliation movement (entry or exit) in the warehouse:  </p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios13.jpg" />  </p>
+<blockquote>
+<p>ℹ️ Note: The inventory list only shows <strong>entries</strong> and <strong>exits</strong>. Transfer movements cannot be performed from this listing.</p>
+</blockquote>
+</li>
+<li>
+<p>You can also add new items from the trees:</p>
+</li>
+<li>
+<p><strong>Items (ENBLAU materials)</strong></p>
+</li>
+<li>
+<p><strong>Imported items (Logikal materials)</strong></p>
+<p>To add an item:
+- Drag the item into the inventory list.
+- Specify <strong>units</strong>, <strong>dimensions</strong> (if applicable: bar, surface, joint), <strong>stock location</strong>, and <strong>price</strong>.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios8.jpg" />  </p>
+<blockquote>
+<p>ℹ️ Note: When adding a new item to the inventory you must always specify a <strong>location</strong>, otherwise it will not update stock.</p>
+</blockquote>
+</li>
+<li>
+<p>Use <strong>Refresh stock units</strong> to update the current units for each inventory line.  </p>
+</li>
+</ol>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios9.jpg" />  </p>
+<hr />
+<h3 id="43-inventory-reconciliation-report">4.3 Inventory reconciliation report</h3>
+<ul>
+<li>You can <strong>Print</strong> the inventory listing which shows columns: Item, Description, Last check date, Units in stock, Counted units and Location.  </li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios10.jpg" /></p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios11.jpg" />  </p>
+<ul>
+<li>This report helps with manual stock counting before updating the inventory listing. The <strong>Counted units</strong> column should contain the real quantity counted for each item.  </li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios12.jpg" />  </p>
+<h2 id="5-required-stock-stock-needed">5. Required stock (Stock needed)</h2>
+<ul>
+<li>After creating production and sending items to the workshop, you can view and decrement materials manually.</li>
+</ul>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/stock_necesario.jpg" /></p>
+<ul>
+<li>A Stock needed window shows which warehouses contain the material and which workstation (monitor) will have the material decremented. To decrement material, check the box in the <strong>Stock to decrement</strong> column for the item.</li>
+</ul>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/stock_necesario2.jpg" /></p>
+<blockquote>
+<p>⚠️ Important: If the material is not in stock it will not be decremented.</p>
+<p>ℹ️ Note: For more precise stock control we recommend using the mobile app enSITE to perform material decrements. For more information about the app see <a href="../4.PR_Manual_Stock_enCONTROL/#21-recepcion-en-ensite">2.1 Receiving in enSITE</a></p>
+</blockquote>
+<hr />
+<h2 id="6-imported-materials">6. Imported materials</h2>
+<p>The <strong>Warehouses → Imported materials</strong> section lists all materials imported from <strong>Logikal</strong>.</p>
+<hr />
+<h3 id="61-material-configuration">6.1 Material configuration</h3>
+<p>From this section you can define default settings for each item that affect purchasing and production:</p>
+<ul>
+<li>
+<p><strong>Buy</strong>: If checked, the material will be proposed by default as "to buy" when listed from <strong>Material needed</strong>.</p>
+</li>
+<li>
+<p><strong>Assembled at destination</strong>: If checked, the material will be assembled at destination during the Picking step in <strong>enCONTROL</strong>.</p>
+</li>
+<li>
+<p><strong>Stock control</strong>: If enabled, the material will be considered for automatic decrement during production.</p>
+</li>
+<li>
+<p><strong>Minimum stock</strong>, <strong>maximum stock</strong>, and <strong>typical stock</strong>: Define reference values useful for alerts, replenishment and planning.</p>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/material_importado.jpg" /></p>
+<p>In the <a href="#24-stock-replenishment">Stock replenishment</a> section you can generate a list of items below minimum or below typical levels according to the configured values for each material.</p>
+</li>
+</ul>
+<blockquote>
+<p>ℹ️ Note: Properly configuring these fields significantly improves inventory control, purchase planning and material traceability during production.</p>
+</blockquote>
+<hr />
+<h2 id="7-finished-product">7. Finished product</h2>
+<p>The <strong>finished product</strong> is an item that has been fully manufactured and passed through the <strong>Final inspection</strong> workstation in <strong>enCONTROL</strong>.</p>
+<p>Under <strong>Warehouses → Finished product</strong> there are two main listings:</p>
+<ul>
+<li><strong>Product locations</strong></li>
+<li><strong>Product movements</strong></li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado.jpg" /></p>
+<hr />
+<h3 id="71-product-locations">7.1 Product locations</h3>
+<ul>
+<li>The Product locations list shows the current information and location for each finished product as defined by the Final inspection step in <strong>enCONTROL</strong>.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado2.jpg" /></p>
+<ul>
+<li>
+<p>From this view, right-click a line to perform actions:</p>
+</li>
+<li>
+<p>Move the product to another location.</p>
+</li>
+<li>Issue the product out of stock.</li>
+<li>Open the production document associated with the product.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado3.jpg" /></p>
+<hr />
+<h3 id="72-product-movements">7.2 Product movements</h3>
+<ul>
+<li>
+<p>Product movements records include all operations performed on finished goods such as:</p>
+</li>
+<li>
+<p>Entry</p>
+</li>
+<li>Exit</li>
+<li>Transfer</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado4.jpg" /></p>
+<ul>
+<li>Right-clicking a line whose <strong>movement type</strong> is an <strong>exit</strong> enables the <strong>Return</strong> option.</li>
+</ul>
+<p><img alt="Devolver producto terminado" src="../Imagenes/PR_Stock_Control/producto_terminado5.jpg" /></p>
+<ul>
+<li>
+<p>Selecting this option opens the <strong>Return finished product</strong> window where you must:</p>
+</li>
+<li>
+<p>Specify the new <strong>location</strong> for the product.</p>
+</li>
+<li>Accept the operation.</li>
+</ul>
+<p><img alt="Devolver producto terminado" src="../Imagenes/PR_Stock_Control/producto_terminado6.jpg" /></p>
+<p>After completion the system records a new <strong>Entry</strong> movement in the product history.</p>
+<blockquote>
+<p>ℹ️ Note: This feature is helpful for managing internal returns, rejected products or logistical reassignments in the warehouse.</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>ℹ️ Note: Proper finished product management ensures better inventory control, traceability and faster order dispatch preparation.</p>
+</blockquote>
+<hr />
+<h2 id="8-stock-control-and-reporting">8. Stock control and reporting</h2>
+<ul>
+<li>Monitor stock needed from the Production area.</li>
+<li>Identify reserved and pending materials in real time.</li>
+<li>Generate inventory reports to assess material usage and plan future purchases.</li>
+</ul>
+<hr />
+<h2 id="9-troubleshooting-common-issues">9. Troubleshooting common issues</h2>
+<ul>
+<li>Error importing references: verify references are configured in the database.</li>
+<li>Excess or missing materials: ensure locations and quantities are recorded correctly when receiving materials.</li>
+<li>Warehouse layout issues: review zone configuration and adjust as needed.</li>
+</ul>
+<hr />
+<h2 id="10-conclusion">10. Conclusion</h2>
+<p>This manual provides a step-by-step guide for the main processes in the stock control system. By following these instructions users can manage inventories effectively, improve production and optimize supplier relationships. For additional support contact your system administrator.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2.PR_Facturas/" class="btn btn-neutral float-left" title="Invoicing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4.PR_Manual_Stock_enCONTROL/" class="btn btn-neutral float-right" title="Stock Control Management enCONTROL">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2.PR_Facturas/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4.PR_Manual_Stock_enCONTROL/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

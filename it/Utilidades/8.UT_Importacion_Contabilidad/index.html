@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Importación programa de contabilidad - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Importaci\u00f3n programa de contabilidad";
+        var mkdocs_page_input_path = "es\\Utilidades\\8.UT_Importacion_Contabilidad.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+      <li class="breadcrumb-item active">Importación programa de contabilidad</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="importacion-programa-de-contabilidad">Importación programa de contabilidad</h1>
+<h2 id="1-objetivo">1. Objetivo</h2>
+<p>Establecer los requerimientos técnicos necesarios para que ENBLAU pueda generar archivos compatibles con el programa de contabilidad, utilizando transformación de datos mediante <strong>XSLT</strong> y exportación a formatos específicos, con las codificaciones aceptadas.</p>
+<hr />
+<h2 id="2-requerimientos-generales">2. Requerimientos generales</h2>
+<h3 id="21-formato-de-entrada">2.1. Formato de Entrada</h3>
+<ul>
+<li>El sistema externo deberá generar archivos en formato <strong>XML</strong> como base para la transformación.</li>
+<li>El archivo XML debe cumplir con la estructura establecida en el esquema XSD (si aplica).</li>
+<li>Se debe proporcionar un protocolo claro de mapeo de campos.</li>
+</ul>
+<h3 id="22-transformacion">2.2. Transformación</h3>
+<ul>
+<li>La transformación del XML a formato de importación será realizada mediante un archivo <strong>XSLT</strong> proporcionado por el proveedor o desarrollado internamente.</li>
+<li>El archivo XSLT debe cumplir con la especificación 1.0 o 2.0 según compatibilidad con el motor XSLT del sistema.</li>
+</ul>
+<h3 id="23-formato-de-exportacion">2.3. Formato de exportación</h3>
+<ul>
+<li>El resultado de la transformación debe generarse en uno de los siguientes formatos, según lo definido para cada tipo de operación contable:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tipo de Archivo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.dat</code></td>
+<td>Formato de texto plano estructurado</td>
+</tr>
+<tr>
+<td><code>.txt</code></td>
+<td>Texto delimitado (ej. tabulador, coma)</td>
+</tr>
+<tr>
+<td><code>.xml</code></td>
+<td>Estructura XML compatible</td>
+</tr>
+<tr>
+<td><code>.xlsx</code></td>
+<td>Hoja de cálculo (Excel)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-codificacion-de-texto">2.4. Codificación de texto</h3>
+<ul>
+<li>La codificación de los archivos debe ser una de las siguientes, según el tipo de archivo:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Codificación</th>
+<th>Recomendado para</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ANSI</td>
+<td><code>.txt</code>, <code>.dat</code> antiguos</td>
+</tr>
+<tr>
+<td>UTF-8</td>
+<td><code>.xml</code>, <code>.txt</code> modernos</td>
+</tr>
+<tr>
+<td>UTF-16</td>
+<td><code>.xml</code> con caracteres especiales</td>
+</tr>
+<tr>
+<td>UNICODE</td>
+<td>General para archivos multilenguaje</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-protocolo-de-integracion">3. Protocolo de integración</h2>
+<h3 id="31-enlace-de-la-plantilla-xslt">3.1. Enlace de la plantilla XSLT</h3>
+<p>El proveedor del sistema contable deberá proporcionar el archivo XSLT base y la documentación con el protocolo con el formato del fichero para realizar la transformación. </p>
+<h3 id="32-especificacion-de-mapeo-de-campos">3.2. Especificación de Mapeo de Campos</h3>
+<p>Debe entregarse un documento que detalle:</p>
+<ul>
+<li>Nombre del campo en el sistema origen</li>
+<li>Posiciones</li>
+<li>Longitud (caracteres)</li>
+<li>Tipo de dato (numérico, texto, fecha)</li>
+<li>Formato requerido (ej: <code>dd/MM/yyyy</code>, <code>#,##0.00</code>, etc.)</li>
+</ul>
+<p><strong>Ejemplo de tabla de mapeo:</strong></p>
+<p>A continuación se detalla la estructura esperada para el archivo de importación según el <strong>Tipo de registro = 0</strong>, correspondiente a <strong>Alta de Apuntes sin IVA</strong>.</p>
+<pre><code>| Posiciones | Longitud (caracteres)  | Descripción del Campo     | Comentarios                                                               |
+|------------|------------------------|--------------------------|----------------------------------------------------------------------------|
+| 1          | 1                      | Tipo de Formato          | Constante `5`                                                              |
+| 2 a 6      | 5                      | Código de empresa        | Valores entre `00001` y `99999`                                            |
+| 7 a 14     | 8                      | Fecha del apunte         | Formato `aaaammdd` (Ejemplo: 1 de febrero de 2000 → `20000201`)            |
+| 15         | 1                      | Tipo de Registro         | Constante `0`                                                              |
+| 16 a 27    | 12                     | Cuenta                   | Nivel 6 a 12. Si no existe la cuenta, se dará de alta automáticamente.     |
+</code></pre>
+<blockquote>
+<p><strong>Observaciones</strong>:</p>
+</blockquote>
+<ul>
+<li>Este formato debe generarse como un archivo de texto plano (<code>.txt</code> o <code>.dat</code>) con codificación <strong>ANSI</strong>.</li>
+<li>Los campos deben ocupar exactamente las posiciones indicadas. No debe haber delimitadores.</li>
+<li>Todos los registros deben cumplir con la estructura de longitud fija para ser válidos.</li>
+</ul>
+<hr />
+<h2 id="4-transformacion-desde-xml-con-xslt">4. Transformación desde XML con XSLT</h2>
+<p>La estructura anterior puede generarse a partir de un archivo XML de entrada, transformado con una plantilla XSLT. Se recomienda que el archivo XML tenga los siguientes nodos mínimos:</p>
+<p><img alt="Contabilidad" src="../../../Utilidades/Imagenes/UT_Importacion_Contabilidad/xml.png" /></p>
+<h3 id="41-ejemplo-de-archivo-generado">4.1. Ejemplo de Archivo Generado</h3>
+<p>A continuación se muestra un ejemplo de línea generada para el archivo <code>.dat</code> con formato de ancho fijo según los campos definidos:</p>
+<ol>
+<li>
+<p><strong>Valores de ejemplo:</strong></p>
+<ul>
+<li>Tipo de Formato: <code>5</code></li>
+<li>Código de Empresa: <code>00001</code></li>
+<li>Fecha del Apunte: <code>20250728</code> (28 de julio de 2025)</li>
+<li>Tipo de Registro: <code>0</code></li>
+<li>Cuenta: <code>430000000001</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Resultado en el archivo <code>.dat</code>:</strong></p>
+</li>
+</ol>
+<p>500001202507280430000000001</p>
+<ul>
+<li>
+<p><strong>Detalle por secciones:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Posiciones</th>
+<th>Contenido</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>5</code></td>
+<td>Tipo de Formato</td>
+</tr>
+<tr>
+<td>2 a 6</td>
+<td><code>00001</code></td>
+<td>Código de empresa</td>
+</tr>
+<tr>
+<td>7 a 14</td>
+<td><code>20250728</code></td>
+<td>Fecha del apunte</td>
+</tr>
+<tr>
+<td>15</td>
+<td><code>0</code></td>
+<td>Tipo de Registro</td>
+</tr>
+<tr>
+<td>16 a 27</td>
+<td><code>430000000001</code></td>
+<td>Cuenta</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>¡Importante!</strong> <br />
+- No se deben incluir separadores, espacios adicionales, ni saltos de línea entre campos.<br />
+- Cada línea representa un registro. Si hay múltiples apuntes, deben ir en líneas separadas, una por registro.</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>Ejemplo con varios registros:</strong></p>
+<p>500001202507280430000000001</p>
+<p>500002202507280410000000010</p>
+<p>500003202507280460000000050</p>
+</li>
+</ul>
+<hr />
+<h2 id="5-validaciones-previas">5. Validaciones previas</h2>
+<ul>
+<li>El archivo XML debe pasar validación estructural (bien formado y, si aplica, válido contra XSD).</li>
+<li>La salida del XSLT debe revisarse para asegurar compatibilidad con el formato de importación contable.</li>
+</ul>
+<hr />
+<h2 id="6-proceso-de-importacion-y-exportacion-desde-enblau">6. Proceso de importación y exportación desde ENBLAU</h2>
+<ol>
+<li>
+<p>Descarga los dos archivos .xls (ventas y compras) proporcionado por Endades, guárdalos en la siguiente ruta: <strong>Enblau Documentos\Documentos\Contabilidad</strong>. (Recomendamos esta ubicación porque es una carpeta compartida). Si la carpeta Contabilidad dentro de Documentos no existe, créala.</p>
+<p><img alt="Contabilidad" src="../../../Utilidades/Imagenes/UT_Importacion_Contabilidad/contabilidad.png" /></p>
+</li>
+<li>
+<p>Abre ENBLAU y dirígete a:</p>
+<ul>
+<li>
+<p>Ventas → Documento de venta → Exportar → <strong>Contabilidad</strong>.</p>
+<p><img alt="Contabilidad" src="../../../Utilidades/Imagenes/UT_Importacion_Contabilidad/contabilidad2.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Se abrirá una ventana de Contabilidad.</p>
+<ul>
+<li>Haz clic en Añadir una línea.</li>
+<li>
+<p>Se abrirá el explorador de archivos para seleccionar la ruta donde se encuentra el archivo ejemplo: <strong>transform_ventas.xls</strong>.</p>
+<p><img alt="Contabilidad" src="../../../Utilidades/Imagenes/UT_Importacion_Contabilidad/contabilidad3.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Se generará automáticamente una línea con el nombre Contabilidad 1 (puedes editarlo, por ejemplo, Contabilidad Ventas).</p>
+</li>
+<li>Seleccionar los parámetros:<ul>
+<li>Extensión: .dat, .xlsx, .txt o .xml. </li>
+<li>Codificación: ANSI, UNICODE, UTF-8 o UTF-16.</li>
+</ul>
+</li>
+<li>
+<p>Se mostrará la ruta donde se exportará el archivo en el formato de la extensión escogida.</p>
+<p><img alt="Contabilidad" src="../../../Utilidades/Imagenes/UT_Importacion_Contabilidad/contabilidad4.png" /></p>
+</li>
+<li>
+<p>Luego Exportar el fichero:</p>
+<p><img alt="Contabilidad" src="../../../Utilidades/Imagenes/UT_Importacion_Contabilidad/contabilidad5.png" /></p>
+<ul>
+<li>En la ruta de exportación (en este caso, la misma que la del fichero de exportación), verás que se ha generado un archivo con la información de la factura de venta.</li>
+<li>Si tienes algún filtro aplicado en el listado de documentos de ventas, solo aparecerán los datos que cumplan con ese filtro.</li>
+<li>
+<p>El archivo exportado tendrá el formato según la extensión seleccionada y el fichero .xsl que aplica la transformación del archivo (en la ruta fichero de explotación). Ejemplo:</p>
+<p><img alt="Contabilidad" src="../../../Utilidades/Imagenes/UT_Importacion_Contabilidad/contabilidad6.png" /></p>
+</li>
+<li>
+<p>Una vez hayas exportado el fichero en el formato correcto desde ENBLAU, el siguiente paso es importarlo en el programa de contabilidad que estéis utilizando.</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<p><strong>Observaciones</strong></p>
+<ul>
+<li>Cualquier cambio en el formato fuente XML o en la estructura del archivo XSLT debe ser documentado y validado antes de ser implementado en producción.</li>
+<li>Es recomendable mantener un control de versiones tanto de los XSLT como de los esquemas XML.</li>
+</ul>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

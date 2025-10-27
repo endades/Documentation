@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Valute - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Valute";
+        var mkdocs_page_input_path = "it\\Utilita\\7.UT_Divisas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Valute</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduzione">1. Introduzione</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-definizione-delle-valute">2. Definizione delle valute</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-applicazione-nei-report">3. Applicazione nei report</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-valuta-utilizzata">4. Valuta utilizzata</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#come-utilizzarla">Come utilizzarla?</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+          <li class="breadcrumb-item">Utilità</li>
+      <li class="breadcrumb-item active">Valute</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="valute">Valute</h1>
+<hr />
+<h2 id="1-introduzione">1. Introduzione</h2>
+<p>Questo manuale spiega passo dopo passo come utilizzare le valute in ENBLAU e come rifletterle correttamente nei report, rispettando la parità di ogni moneta.</p>
+<hr />
+<h2 id="2-definizione-delle-valute">2. Definizione delle valute</h2>
+<p>Dalla sezione <strong>Valuta</strong>, è possibile definire la parità tra le monete.<br />
+Per esempio:</p>
+<ul>
+<li><strong>Valuta di applicazione: EUR</strong></li>
+<li><strong>Parità definita:</strong> 1 € = 0.86 £ (<strong>GBP</strong>)</li>
+</ul>
+<p>Questo permette di lavorare con più valute nei documenti di vendita.</p>
+<p><img alt="Definizione delle valute" src="../Imagenes/UT_Divisas/divisas.jpg" /><br />
+<img alt="Configurazione aggiuntiva" src="../Imagenes/UT_Divisas/divisas2.jpg" /></p>
+<hr />
+<h2 id="3-applicazione-nei-report">3. Applicazione nei report</h2>
+<p>Per utilizzare una valuta nei documenti di vendita (come un ordine):</p>
+<ol>
+<li>Seleziona la <strong>valuta desiderata</strong> (es. GBP – Sterlina britannica).</li>
+<li>Opzionalmente, scegli anche la <strong>lingua</strong> del documento.</li>
+<li>Stampa il report.</li>
+</ol>
+<p>Il sistema applicherà automaticamente la conversione dei valori secondo la parità definita in quel momento.</p>
+<p><img alt="Report con valuta applicata" src="../Imagenes/UT_Divisas/divisa_informe.jpg" /><br />
+<img alt="Esempio di visualizzazione" src="../Imagenes/UT_Divisas/divisa_informe2.jpg" /></p>
+<hr />
+<h2 id="4-valuta-utilizzata">4. Valuta utilizzata</h2>
+<p>L'opzione <strong>Valuta utilizzata</strong> permette di conservare uno storico delle parità applicate in ogni documento.</p>
+<p>Questo è utile per:</p>
+<ul>
+<li>Mantenere la parità originale senza necessità di modificarla manualmente.</li>
+<li>Assicurare coerenza nei documenti storici, anche se il tasso di cambio è cambiato successivamente.</li>
+</ul>
+<h3 id="come-utilizzarla">Come utilizzarla?</h3>
+<ol>
+<li>Apri un documento di vendita (es. un ordine).</li>
+<li>Vai alla sezione: <strong>Dati → Valuta utilizzata</strong>.</li>
+<li>Si aprirà la finestra <strong>Valute del documento</strong>.</li>
+<li>Spunta la casella nella colonna <strong>Utilizzata</strong> per applicare la parità corrispondente alla data selezionata.</li>
+</ol>
+<p><img alt="Gestione della valuta utilizzata" src="../Imagenes/UT_Divisas/divisa_utilizada.jpg" /></p>
+<hr />
+<blockquote>
+<p><strong>Nota:</strong> Questa funzionalità è particolarmente utile per documenti con date precedenti o per operazioni che richiedono di conservare il tasso di cambio originale.</p>
+</blockquote>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigazione a pié di pagina">
+        <a href="../6.UT_Unidad_Red/" class="btn btn-neutral float-left" title="Connessione di un'Unità di Rete"><span class="icon icon-circle-arrow-left"></span> Precedente</a>
+        <a href="../8.UT_Importacion_Contabilidad/" class="btn btn-neutral float-right" title="Importazione programma di contabilità">Successivo <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../6.UT_Unidad_Red/" style="color: #fcfcfc">&laquo; Precedente</a></span>
+    
+    
+      <span><a href="../8.UT_Importacion_Contabilidad/" style="color: #fcfcfc">Successivo &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

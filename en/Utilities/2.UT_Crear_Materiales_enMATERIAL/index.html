@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Creation of custom materials in enMATERIALS - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Creation of custom materials in enMATERIALS";
+        var mkdocs_page_input_path = "en\\Utilities\\2.UT_Crear_Materiales_enMATERIAL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Creation of custom materials in enMATERIALS</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduction">1. Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-material-definition">2. Material definition</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-material-types">2.1 Material types</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-items-and-colors">2.2 Items and colors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-creating-materials">3. Creating materials</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-define-an-item">3.1 Define an item</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-creating-colors">3.2 Creating colors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-creating-a-base-material">3.3 Creating a base material</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-supplier-management">4. Supplier management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-commercial-and-stock">5. Commercial and stock</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-purchase-data-and-suppliers">5.1 Purchase data and suppliers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-reference-assignment">5.2 Reference assignment</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-material-typology-and-additional-data">6. Material typology and additional data</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-pieces">6.1 Pieces</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-bars">6.2 Bars</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#63-surfaces">6.3 Surfaces</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#64-seals-gaskets-juntas">6.4 Seals / Gaskets (Juntas)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-standards-to-follow">7. Standards to follow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-creating-enblau-purchase-documents">8. Creating ENBLAU purchase documents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-conclusion">9. Conclusion</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Utilities</li>
+      <li class="breadcrumb-item active">Creation of custom materials in enMATERIALS</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="creating-custom-materials-in-enmaterials">Creating custom materials in enMATERIALS</h1>
+<hr />
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This guide explains how to create and manage custom materials in enMATERIALS. Follow the steps carefully to ensure materials are defined and organized correctly.</p>
+<hr />
+<h2 id="2-material-definition">2. Material definition</h2>
+<p>Materials can be classified into different types according to their properties. The main types are described below:</p>
+<h3 id="21-material-types">2.1 Material types</h3>
+<ul>
+<li><strong>Pieces</strong>: Calculated per unit; the most common and easiest materials to define.</li>
+<li><strong>Bars</strong>: Calculated per linear meter and require additional information such as length.</li>
+<li><strong>Surfaces</strong>: Calculated per square meter and may include extra attributes.</li>
+<li><strong>Seals / Gaskets (Juntas)</strong>: Calculated per linear meter and have special application specifications.</li>
+</ul>
+<h3 id="22-items-and-colors">2.2 Items and colors</h3>
+<p>Materials are defined in the <strong>Items</strong> section; finishes are managed in <strong>Colors</strong> and raw materials in <strong>Materials</strong>.</p>
+<p><img alt="Artículos y Colores" src="../Imagenes/UT_Crear_Material/articulos_colores.png" /></p>
+<hr />
+<h2 id="3-creating-materials">3. Creating materials</h2>
+<p>To register a material, follow these steps:</p>
+<h3 id="31-define-an-item">3.1 Define an item</h3>
+<ol>
+<li>Go to the <strong>Items</strong> section.</li>
+</ol>
+<p><img alt="Artículos" src="../Imagenes/UT_Crear_Material/articulos.png" />
+   <img alt="Nuevo Artículo" src="../Imagenes/UT_Crear_Material/nuevo_articulo.png" /></p>
+<ol>
+<li>In the <strong>General</strong> tab assign a reference, a calculation type and a material.</li>
+</ol>
+<p><img alt="Referencia" src="../Imagenes/UT_Crear_Material/referencia.png" /></p>
+<ol>
+<li>Organize items using classification fields such as "Family1", "Family2", etc.</li>
+</ol>
+<p><img alt="Familias Artículo" src="../Imagenes/UT_Crear_Material/familias_articulo.png" /></p>
+<ol>
+<li>Complete the purchase description (for suppliers) and the sales description (for customers).</li>
+</ol>
+<p><img alt="Descripción Artículo" src="../Imagenes/UT_Crear_Material/descripcion_articulo.png" /></p>
+<ol>
+<li>Assign a base material by dragging it from the materials tree on the right pane.</li>
+</ol>
+<p><img alt="Material" src="../Imagenes/UT_Crear_Material/material.png" /></p>
+<ol>
+<li>Add images to the item. Optimize images to avoid database performance issues.</li>
+</ol>
+<p><img alt="Imagen" src="../Imagenes/UT_Crear_Material/imagen.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> The <strong>General</strong> section is common to all calculation types.</p>
+</blockquote>
+<h3 id="32-creating-colors">3.2 Creating colors</h3>
+<ol>
+<li>Go to the <strong>Colors</strong> section.</li>
+</ol>
+<p><img alt="Colores" src="../Imagenes/UT_Crear_Material/colores.png" />
+   <img alt="Nuevo Color" src="../Imagenes/UT_Crear_Material/nuevo_color.png" /></p>
+<ol>
+<li>Assign a reference, name and a color or texture.</li>
+</ol>
+<p><img alt="Crear Color" src="../Imagenes/UT_Crear_Material/crear_color.png" /></p>
+<ol>
+<li>Assign a supplier from the <strong>Supplier</strong> tab by dragging the supplier from the right pane.</li>
+</ol>
+<p><img alt="Proveedor Color" src="../Imagenes/UT_Crear_Material/proveedor_color.png" /></p>
+<h3 id="33-creating-a-base-material">3.3 Creating a base material</h3>
+<ol>
+<li>Go to the <strong>Materials</strong> section.</li>
+</ol>
+<p><img alt="Materiales" src="../Imagenes/UT_Crear_Material/materiales.png" />
+   <img alt="Nuevo Material" src="../Imagenes/UT_Crear_Material/nuevo_material.png" /></p>
+<ol>
+<li>Enter the name, color and check the <strong>Material</strong> box to mark it as a raw material.</li>
+</ol>
+<p><img alt="Crear Material" src="../Imagenes/UT_Crear_Material/crear_material.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> To automatically generate RAL color swatches and base materials, select <strong>Essentials</strong> on the Home ribbon.</p>
+</blockquote>
+<p><img alt="Esenciales" src="../Imagenes/UT_Crear_Material/esenciales.png" /></p>
+<p><img alt="RAL" src="../Imagenes/UT_Crear_Material/ral.png" />
+   <img alt="Material Artículo" src="../Imagenes/UT_Crear_Material/material_articulo.png" /></p>
+<hr />
+<h2 id="4-supplier-management">4. Supplier management</h2>
+<p>Before registering a material, verify whether the supplier already exists in ENBLAU under Purchases → Suppliers. If not, create the supplier following the defined standards.</p>
+<p><img alt="Proveedores ENBLAU" src="../Imagenes/UT_Crear_Material/proveedores_enblau.png" /></p>
+<hr />
+<h2 id="5-commercial-and-stock">5. Commercial and stock</h2>
+<p>After defining the material, complete its commercial and stock information.</p>
+<h3 id="51-purchase-data-and-suppliers">5.1 Purchase data and suppliers</h3>
+<p>Assign suppliers, units and purchase prices per color of the material.</p>
+<p><img alt="Asignar Proveedor" src="../Imagenes/UT_Crear_Material/asignar_proveedor.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> You can add a supplier reference if it differs from the one in the database.</p>
+</blockquote>
+<h3 id="52-reference-assignment">5.2 Reference assignment</h3>
+<p>Each color/material will have a unique reference <em>(Item Reference + Color Reference)</em>. Drag one or more colors from the Colors tab on the right pane.</p>
+<p><img alt="Asignar Color" src="../Imagenes/UT_Crear_Material/asignar_color.png" /></p>
+<hr />
+<h2 id="6-material-typology-and-additional-data">6. Material typology and additional data</h2>
+<h3 id="61-pieces">6.1 Pieces</h3>
+<ul>
+<li>Individual materials managed per unit (accessories, screws, etc.).</li>
+<li>Priced per unit.</li>
+<li>In the <strong>Common Properties</strong> tab you can add custom fields if needed.</li>
+</ul>
+<p><img alt="Propiedades Comunes" src="../Imagenes/UT_Crear_Material/articulos_propriedades.png" /></p>
+<h3 id="62-bars">6.2 Bars</h3>
+<ul>
+<li>Materials defined by length and other technical attributes.</li>
+<li>Priced per linear meter.</li>
+<li>In the <strong>Common Properties</strong> tab indicate the bar length (mandatory).</li>
+</ul>
+<p><img alt="Barra Propiedades" src="../Imagenes/UT_Crear_Material/barra_propriedades.png" /></p>
+<ul>
+<li>For profiles, add optional information such as safety distance and minimum/maximum remnant length.</li>
+</ul>
+<p><img alt="Perfil" src="../Imagenes/UT_Crear_Material/perfil.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> Sections like Typology, Role, Technical Data, Discounts and Rules are not required for creating custom materials — they are relevant only to drawn materials.</p>
+</blockquote>
+<h3 id="63-surfaces">6.3 Surfaces</h3>
+<ul>
+<li>Materials defined per square meter (glass, sheets, etc.).</li>
+<li>Priced per m².</li>
+<li>In the <strong>Common Properties</strong> tab indicate the height and width of the surface.</li>
+</ul>
+<p><img alt="Superficie Propiedades" src="../Imagenes/UT_Crear_Material/superficie_propriedades.png" /> </p>
+<ul>
+<li>In the <strong>Valuation and technical data</strong> tab enter details depending on the surface type and requirements. For example: thickness, surface type, prices per m² (check <strong>m² by supplier</strong> if price varies by supplier), etc.</li>
+</ul>
+<p><img alt="Valoracion Tecnica" src="../Imagenes/UT_Crear_Material/valoracion_tecnica.png" /> </p>
+<h3 id="64-seals-gaskets-juntas">6.4 Seals / Gaskets (Juntas)</h3>
+<ul>
+<li>Materials defined per linear meter.</li>
+<li>Priced per linear meter.</li>
+<li>In the <strong>Common Properties</strong> tab you can indicate the length if necessary.</li>
+</ul>
+<p><img alt="Junta Propiedades" src="../Imagenes/UT_Crear_Material/junta_propriedades.png" /></p>
+<hr />
+<h2 id="7-standards-to-follow">7. Standards to follow</h2>
+<p>To ensure correct management follow these standards:</p>
+<ul>
+<li>Use uppercase for names and references.</li>
+<li>Verify suppliers and materials exist before registering them.</li>
+<li>Keep a consistent format for material and color references.</li>
+<li>Always save changes.</li>
+</ul>
+<hr />
+<h2 id="8-creating-enblau-purchase-documents">8. Creating ENBLAU purchase documents</h2>
+<p>To check whether an item is registered open ENBLAU and create a purchase document:</p>
+<ol>
+<li>Create a purchase order and select the supplier.</li>
+<li>In the purchase order find and add the material from the right pane. Drag and select the associated color.</li>
+</ol>
+<p><img alt="Articulo Compra" src="../Imagenes/UT_Crear_Material/articulo_compra.png" /></p>
+<ol>
+<li>Validate the price assigned to the supplier.</li>
+</ol>
+<p><img alt="Precio Proveedor" src="../Imagenes/UT_Crear_Material/precio_proveedor.png" /></p>
+<ul>
+<li>If the material has more than one supplier assigned you can select the desired supplier by double‑clicking it.</li>
+</ul>
+<hr />
+<h2 id="9-conclusion">9. Conclusion</h2>
+<p>Following this guide you will be able to register and manage materials efficiently in the system, ensuring correct organization and optimization of purchasing and sales processes.</p>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1.UT_Relacion_ENBLAU_Logikal/" class="btn btn-neutral float-left" title="Relationship between phases in ENBLAU and Logikal"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3.UT_Editar_Informes/" class="btn btn-neutral float-right" title="Creation and editing of custom reports">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1.UT_Relacion_ENBLAU_Logikal/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../3.UT_Editar_Informes/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

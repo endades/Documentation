@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Projects, Clients and Suppliers - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Projects, Clients and Suppliers";
+        var mkdocs_page_input_path = "en\\Processes\\6.PR_Proyecto_cliente.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Projects, Clients and Suppliers</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduction">1. Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-projects">2. Projects</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-creating-projects">2.1 Creating projects</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#211-new-project">2.1.1 New project</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#212-project-details">2.1.2 Project details</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#213-vat-and-withholding">2.1.3 VAT and withholding</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#214-project-documentation">2.1.4 Project documentation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-related-documents">2.2 Related documents</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#221-sales-and-purchase-documents">2.2.1 Sales and purchase documents</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#222-task-scheduling">2.2.2 Task scheduling</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-customers">3. Customers</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-creating-a-customer">3.1 Creating a customer</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#311-new-customer">3.1.1 New customer</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#312-customer-details">3.1.2 Customer details</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#313-other-details">3.1.3 Other details</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#314-documentation">3.1.4 Documentation</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-suppliers">4. Suppliers</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-creating-a-supplier">4.1 Creating a supplier</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#411-new-supplier">4.1.1 New supplier</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#412-supplier-details">4.1.2 Supplier details</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#413-other-details">4.1.3 Other details</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#414-documentation">4.1.4 Documentation</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Processes</li>
+      <li class="breadcrumb-item active">Projects, Clients and Suppliers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="projects-customers-and-suppliers">Projects, Customers and Suppliers</h1>
+<hr />
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This guide explains how to create Projects, Customers and Suppliers in ENBLAU so they can be assigned correctly to sales and purchase documents.</p>
+<hr />
+<h2 id="2-projects">2. Projects</h2>
+<p>A project is similar to a "job" or "site". Multiple sales and purchase documents can be associated with a single project.</p>
+<h3 id="21-creating-projects">2.1 Creating projects</h3>
+<ul>
+<li>From the <strong>Sales</strong> area you can access <strong>Projects</strong>.</li>
+</ul>
+<p><img alt="Proyectos" src="../Imagenes/PR_Proyecto_cliente/proyectos.jpg" /></p>
+<h4 id="211-new-project">2.1.1 New project</h4>
+<ul>
+<li>Create a project using the <strong>New</strong> button.</li>
+</ul>
+<p><img alt="Nuevo proyecto" src="../Imagenes/PR_Proyecto_cliente/nuevo_proyecto.jpg" /></p>
+<ul>
+<li>Assign a name and select the customer.</li>
+</ul>
+<p><img alt="Nombre proyecto" src="../Imagenes/PR_Proyecto_cliente/nombre_proyecto.jpg" /></p>
+<h4 id="212-project-details">2.1.2 Project details</h4>
+<ul>
+<li>From the <strong>General</strong> tab you can set:</li>
+<li>Company</li>
+<li>Site engineer</li>
+<li>Sales representative</li>
+<li>Purchasing manager</li>
+<li>Billing manager</li>
+<li>Etc.</li>
+</ul>
+<p><img alt="Detalles" src="../Imagenes/PR_Proyecto_cliente/proyecto_detalles.jpg" /></p>
+<h4 id="213-vat-and-withholding">2.1.3 VAT and withholding</h4>
+<ul>
+<li>You can confirm VAT and withholding with the customer for the project to avoid invoice errors.</li>
+</ul>
+<p><img alt="IVA" src="../Imagenes/PR_Proyecto_cliente/proyecto_iva.jpg" /></p>
+<h4 id="214-project-documentation">2.1.4 Project documentation</h4>
+<ul>
+<li>From <strong>Project documentation</strong> you can upload documents, manuals, etc. related to the project.</li>
+</ul>
+<p><img alt="Documentación proyecto" src="../Imagenes/PR_Proyecto_cliente/documentacion_proyecto.jpg" /></p>
+<ul>
+<li>Double‑clicking the root folder opens the path where the project ID is stored.</li>
+</ul>
+<p><img alt="Documentación proyecto" src="../Imagenes/PR_Proyecto_cliente/documentacion_proyecto2.jpg" /></p>
+<ul>
+<li>Subfolders can be created directly on the path or configured in Projects → <strong>Default directories</strong>.</li>
+</ul>
+<p><img alt="Directorio proyecto" src="../Imagenes/PR_Proyecto_cliente/directorio_proyecto.jpg" /></p>
+<h3 id="22-related-documents">2.2 Related documents</h3>
+<h4 id="221-sales-and-purchase-documents">2.2.1 Sales and purchase documents</h4>
+<ul>
+<li>All documents related to the project are grouped here.</li>
+</ul>
+<p><img alt="Documentos relacionados" src="../Imagenes/PR_Proyecto_cliente/documentos_relacionados.jpg" /></p>
+<h4 id="222-task-scheduling">2.2.2 Task scheduling</h4>
+<ul>
+<li>Manage tasks associated with the project. Tasks can be assigned per document.</li>
+</ul>
+<p><img alt="Tarea" src="../Imagenes/PR_Proyecto_cliente/proyecto_tarea.jpg" />
+  <img alt="Tarea" src="../Imagenes/PR_Proyecto_cliente/proyecto_tarea2.jpg" />
+  <img alt="Tarea" src="../Imagenes/PR_Proyecto_cliente/proyecto_tarea3.jpg" /></p>
+<hr />
+<h2 id="3-customers">3. Customers</h2>
+<p>A customer can be associated with one or more projects.</p>
+<h3 id="31-creating-a-customer">3.1 Creating a customer</h3>
+<ul>
+<li>From the <strong>Sales</strong> area you can access <strong>Customers</strong>.</li>
+</ul>
+<p><img alt="Clientes" src="../Imagenes/PR_Proyecto_cliente/clientes.jpg" /></p>
+<h4 id="311-new-customer">3.1.1 New customer</h4>
+<ul>
+<li>Create a customer using the <strong>New</strong> button.</li>
+</ul>
+<p><img alt="Nuevo cliente" src="../Imagenes/PR_Proyecto_cliente/nuevo_cliente.jpg" /></p>
+<h4 id="312-customer-details">3.1.2 Customer details</h4>
+<ul>
+<li>Enter a name and fill in required customer fields:</li>
+<li>Name</li>
+<li>Trade name</li>
+<li>Address</li>
+<li>Tax ID (NIF/CIF)</li>
+<li>Etc.</li>
+</ul>
+<p><img alt="Nombre cliente" src="../Imagenes/PR_Proyecto_cliente/cliente_detalle.jpg" /></p>
+<h4 id="313-other-details">3.1.3 Other details</h4>
+<ul>
+<li>Additional customer information can be filled in other tabs:</li>
+<li>Contact details</li>
+<li>Other contacts</li>
+<li>Bank details</li>
+<li>Commercial information</li>
+<li>Etc.</li>
+</ul>
+<p><img alt="Otros datos" src="../Imagenes/PR_Proyecto_cliente/otros_datos.jpg" /></p>
+<h4 id="314-documentation">3.1.4 Documentation</h4>
+<ul>
+<li>From <strong>Documentation</strong> you can upload files related to the customer.</li>
+</ul>
+<p><img alt="Documentación cliente" src="../Imagenes/PR_Proyecto_cliente/documentacion_cliente.jpg" /></p>
+<ul>
+<li>Double‑clicking the root folder opens the path where the customer code is stored.</li>
+</ul>
+<p><img alt="Documentación cliente" src="../Imagenes/PR_Proyecto_cliente/documentacion_cliente2.jpg" /></p>
+<hr />
+<h2 id="4-suppliers">4. Suppliers</h2>
+<p>A supplier can be associated with one or more projects.</p>
+<h3 id="41-creating-a-supplier">4.1 Creating a supplier</h3>
+<ul>
+<li>From the <strong>Purchasing</strong> area you can access <strong>Suppliers</strong>.</li>
+</ul>
+<p><img alt="Proveedor" src="../Imagenes/PR_Proyecto_cliente/proveedor.jpg" /></p>
+<h4 id="411-new-supplier">4.1.1 New supplier</h4>
+<ul>
+<li>Create a supplier using the <strong>New</strong> button.</li>
+</ul>
+<p><img alt="Nuevo proveedor" src="../Imagenes/PR_Proyecto_cliente/nuevo_proveedor.jpg" /></p>
+<h4 id="412-supplier-details">4.1.2 Supplier details</h4>
+<ul>
+<li>Enter a name and fill in the required supplier fields:</li>
+<li>Name</li>
+<li>Trade name</li>
+<li>Address</li>
+<li>Tax ID (NIF/CIF)</li>
+<li>Etc.</li>
+</ul>
+<p><img alt="Nombre proveedor" src="../Imagenes/PR_Proyecto_cliente/proveedor_detalle.jpg" /></p>
+<h4 id="413-other-details">4.1.3 Other details</h4>
+<ul>
+<li>Additional supplier information can be filled in other tabs:</li>
+<li>Contact details</li>
+<li>Other contacts</li>
+<li>Bank details</li>
+<li>Commercial information</li>
+<li>Etc.</li>
+</ul>
+<p><img alt="Otros datos" src="../Imagenes/PR_Proyecto_cliente/otros_proveedor.jpg" /></p>
+<h4 id="414-documentation">4.1.4 Documentation</h4>
+<ul>
+<li>From <strong>Documentation</strong> you can upload files related to the supplier.</li>
+</ul>
+<p><img alt="Documentación proveedor" src="../Imagenes/PR_Proyecto_cliente/documentacion_proveedor.jpg" /></p>
+<ul>
+<li>Double‑clicking the root folder opens the path where the supplier code is stored.</li>
+</ul>
+<p><img alt="Documentación proveedor" src="../Imagenes/PR_Proyecto_cliente/documentacion_proveedor2.jpg" /></p>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../5.PR_Informes/" class="btn btn-neutral float-left" title="Reports"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/" class="btn btn-neutral float-right" title="Relationship between phases in ENBLAU and Logikal">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../5.PR_Informes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

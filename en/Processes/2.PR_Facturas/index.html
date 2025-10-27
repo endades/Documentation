@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Invoicing - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Invoicing";
+        var mkdocs_page_input_path = "en\\Processes\\2.PR_Facturas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Invoicing</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduction">1. Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-creating-invoices-from-quotes">2. Creating invoices from quotes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-create-a-quote">2.1 Create a quote</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-generate-the-invoice">2.2 Generate the invoice</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-send-the-invoice-to-the-customer">2.3 Send the invoice to the customer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-status-notes">2.4 Status &amp; notes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-managing-receipts-payments">3. Managing receipts (payments)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-mark-invoices-as-paid">3.1 Mark invoices as paid</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-payment-reports">3.2 Payment reports</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-invoicing-from-orders">4. Invoicing from orders</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-invoicing-from-an-order">4.1 Invoicing from an order</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-invoicing-from-delivery-notes">5. Invoicing from delivery notes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-create-delivery-notes-from-orders">5.1 Create delivery notes from orders</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-invoice-from-delivery-notes">5.2 Invoice from delivery notes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-payment-methods-and-modes">6. Payment methods and modes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-payment-methods">6.1 Payment methods</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-payment-modes">6.2 Payment modes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-corrections-and-cancellations">7. Corrections and cancellations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-newly-created-invoices">7.1 Newly created invoices</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-already-sent-invoices">7.2 Already sent invoices</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-invoice-confirmation-proforma">8. Invoice confirmation (Proforma)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-prompt-payment-discount">9. Prompt payment discount</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#91-recommended-application">9.1 Recommended application</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#92-discount-calculation">9.2 Discount calculation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-delivery-note-invoicing">10. Delivery note invoicing</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#101-purchases">10.1 Purchases</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#102-sales">10.2 Sales</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-electronic-invoicing-facturae">11. Electronic Invoicing (FACTURAE)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-final-considerations">12. Final considerations</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Processes</li>
+      <li class="breadcrumb-item active">Invoicing</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="invoicing">Invoicing</h1>
+<hr />
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This guide explains how to create, edit, and manage invoices. You will learn how to use filters, create invoices from quotes, manage receipts, and perform necessary adjustments.</p>
+<hr />
+<h2 id="2-creating-invoices-from-quotes">2. Creating invoices from quotes</h2>
+<p>To create invoices from quotes, follow these steps:</p>
+<h3 id="21-create-a-quote">2.1 Create a quote</h3>
+<ul>
+<li>Add line items with products or services (e.g., windows, sheets).</li>
+<li>
+<p>Define quantities and prices.</p>
+<p><img alt="Quote" src="../Imagenes/PR_Facturas/presupuesto.png" /></p>
+</li>
+</ul>
+<h3 id="22-generate-the-invoice">2.2 Generate the invoice</h3>
+<ul>
+<li>Go to the invoicing section.</li>
+<li>
+<p>Select "Create invoice" from the quote.</p>
+<p><img alt="Create invoice" src="../Imagenes/PR_Facturas/crear_factura.png" /></p>
+</li>
+<li>
+<p>Choose the invoice type:</p>
+<ul>
+<li>
+<p><strong>Advance invoice</strong>: Allows you to charge a partial amount now and invoice the remainder later.</p>
+<p><img alt="Advance invoice" src="../Imagenes/PR_Facturas/anticipo_factura.png" /></p>
+</li>
+<li>
+<p><strong>Unit-based invoice</strong>: Invoices only the specified units you want to bill. The system will require you to continue invoicing in the same mode (this is the default selection).</p>
+<p><img alt="Unit invoice" src="../Imagenes/PR_Facturas/unidades_factura.png" /></p>
+</li>
+<li>
+<p><strong>Enter amount to invoice</strong>: Lets you charge a specific amount of the invoice total and continues invoicing in the same mode.</p>
+<p><img alt="Amount invoice" src="../Imagenes/PR_Facturas/importe_factura.png" /></p>
+</li>
+<li>
+<p><strong>Enter percentage to invoice</strong>: Lets you charge a percentage of the total invoice and continues invoicing in the same mode.</p>
+</li>
+</ul>
+<p><img alt="Percentage invoice" src="../Imagenes/PR_Facturas/porcentage_factura.png" /></p>
+<ul>
+<li><strong>Invoice to origin</strong> is an invoice by certificate.</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-send-the-invoice-to-the-customer">2.3 Send the invoice to the customer</h3>
+<ul>
+<li>
+<p>Once created, you can preview the invoice before sending or printing it.</p>
+<p><img alt="Invoice" src="../Imagenes/PR_Facturas/factura.png" /></p>
+<p><img alt="Preview" src="../Imagenes/PR_Facturas/vista_previa.png" /></p>
+<p><img alt="Preview" src="../Imagenes/PR_Facturas/vista_previa2.png" /></p>
+</li>
+<li>
+<p>Send the invoice to the customer by email or print it.</p>
+<p><img alt="Print/email" src="../Imagenes/PR_Facturas/imprimir_email.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> An invoice can be generated from a quote, order, or delivery note. It's recommended to consistently generate invoices from the same source document (for example, from the order if that is what's agreed with the customer) for better management and traceability.</p>
+</blockquote>
+<h3 id="24-status-notes">2.4 Status &amp; notes</h3>
+<ul>
+<li>When creating the invoice, the <strong>Status &amp; notes</strong> tab shows fields such as Date, Due dates, Withholding, Special Regime (RE), and Prompt Payment Discount.</li>
+</ul>
+<hr />
+<h2 id="3-managing-receipts-payments">3. Managing receipts (payments)</h2>
+<p>To manage invoice receipts:</p>
+<h3 id="31-mark-invoices-as-paid">3.1 Mark invoices as paid</h3>
+<ul>
+<li>
+<p>From the invoice document itself you can mark the invoice as paid.</p>
+<p><img alt="Invoice paid" src="../Imagenes/PR_Facturas/cobrado_factura.png" /></p>
+</li>
+<li>
+<p>Another option is to access the due list from "Sales documents."</p>
+<p><img alt="Due list filter" src="../Imagenes/PR_Facturas/listado_vencimento.png" /></p>
+</li>
+<li>
+<p>Filter invoices pending payment.</p>
+<p><img alt="Filter payments" src="../Imagenes/PR_Facturas/filtrar_cobrado.png" /></p>
+</li>
+<li>
+<p>Select invoices and mark them as paid. To select multiple invoices use <strong>Ctrl + Click</strong> or <strong>Ctrl + A</strong> to select all.</p>
+<p><img alt="Select payments" src="../Imagenes/PR_Facturas/selecionar_cobro.png" /></p>
+</li>
+<li>
+<p>Indicate the payment method (transfer, promissory note, etc.), payment date, and the date of deposit to the account. Fields highlighted in red are required. These fields can be preconfigured in the "Payment methods" section.</p>
+<p><img alt="Payment method" src="../Imagenes/PR_Facturas/modo_cobro.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> Filters are available in this and other document lists as needed.</p>
+</blockquote>
+</li>
+<li>
+<p>In the sales documents list, the quote traceability will reflect the invoice status as "Paid."</p>
+<p><img alt="Paid status" src="../Imagenes/PR_Facturas/cobrado_estado.png" /></p>
+</li>
+</ul>
+<h3 id="32-payment-reports">3.2 Payment reports</h3>
+<ul>
+<li>
+<p>Accept the quote so that it generates an order (if you invoiced from the quote).</p>
+<p><img alt="Accept quote" src="../Imagenes/PR_Facturas/acceptar_presupuesto.png" /></p>
+</li>
+<li>
+<p>Use the "Invoicing and receipts status" report to view invoice statuses (paid, pending, billing percentage, etc.). Filter by the quote you want to display.</p>
+<p><img alt="Invoicing status report" src="../Imagenes/PR_Facturas/estado_facturacion.png" /></p>
+<p><img alt="Invoicing status report" src="../Imagenes/PR_Facturas/estado_facturacion2.png" /></p>
+</li>
+<li>
+<p>Use the invoice list report to see invoice details (date, customer, taxable base, VAT, invoice total, etc.). This report can be generated for a date range or by checking a box to apply only to filtered invoices.</p>
+<p><img alt="Invoice list" src="../Imagenes/PR_Facturas/listado_factura.png" /></p>
+<p><img alt="Invoice list" src="../Imagenes/PR_Facturas/listado_factura2.png" /></p>
+<p><img alt="Invoice list" src="../Imagenes/PR_Facturas/listado_factura3.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="4-invoicing-from-orders">4. Invoicing from orders</h2>
+<p>To invoice from orders, follow these steps:</p>
+<h3 id="41-invoicing-from-an-order">4.1 Invoicing from an order</h3>
+<ul>
+<li>
+<p>You can invoice directly from "Order" following the same steps as for a quote.</p>
+</li>
+<li>
+<p>Another option is to create a production from an order and indicate how many units (e.g., windows) should be in that production phase.</p>
+<p><img alt="Create production" src="../Imagenes/PR_Facturas/crear_produccion.png" /></p>
+<p><img alt="Production phase" src="../Imagenes/PR_Facturas/fase_produccion.png" /></p>
+<p><img alt="Production 1" src="../Imagenes/PR_Facturas/produccion_1.png" /></p>
+</li>
+<li>
+<p>Once you confirm the produced units in a phase like "Production 1", go to the order and create an invoice indicating the quantity to bill.</p>
+<p><img alt="Invoice from order" src="../Imagenes/PR_Facturas/fase_produccion.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> It is recommended to invoice from the order since that typically reflects what was agreed with the customer.</p>
+</blockquote>
+<ul>
+<li>
+<p>If you subtract the entire invoice amount (unit) and you previously issued and collected an advance invoice, when confirming the invoice you will be prompted to confirm whether to apply the advance.</p>
+<p><img alt="Apply advance discount" src="../Imagenes/PR_Facturas/descontar_anticipo.png" /></p>
+</li>
+<li>
+<p>On confirmation, the advance will be deducted from the invoice.</p>
+<p><img alt="Advance amount" src="../Imagenes/PR_Facturas/importe_anticipo.png" /></p>
+</li>
+<li>
+<p>When generating the invoice to send to the customer, you'll see details of amounts charged and discounts applied.</p>
+<p><img alt="Invoice report" src="../Imagenes/PR_Facturas/informe_factura.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="5-invoicing-from-delivery-notes">5. Invoicing from delivery notes</h2>
+<p>If you work with delivery notes, follow these steps:</p>
+<h3 id="51-create-delivery-notes-from-orders">5.1 Create delivery notes from orders</h3>
+<ul>
+<li>
+<p>Generate delivery notes for completed productions.</p>
+<p><img alt="Create delivery note" src="../Imagenes/PR_Facturas/crear_albaran.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Make sure prices and descriptions are correct.</p>
+</blockquote>
+<h3 id="52-invoice-from-delivery-notes">5.2 Invoice from delivery notes</h3>
+<ul>
+<li>Access the corresponding order.</li>
+<li>
+<p>Select "Create invoice" from the delivery note and follow the same steps as before.</p>
+<p><img alt="Invoice from delivery note" src="../Imagenes/PR_Facturas/factura_albaran.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Verify that prices and units match what was agreed with the customer, as production changes (e.g., dimension changes) can affect pricing and result in a different invoice amount than the order.</p>
+</blockquote>
+<hr />
+<h2 id="6-payment-methods-and-modes">6. Payment methods and modes</h2>
+<p>Configure payment methods and modes according to your needs:</p>
+<p><img alt="Configuration" src="../Imagenes/PR_Facturas/configuracion_venta.png" /></p>
+<h3 id="61-payment-methods">6.1 Payment methods</h3>
+<ul>
+<li>
+<p>Define payment terms (e.g., 30 days, 60 days, 90 days). You can create multiple methods with different settings.</p>
+<p><img alt="Create payment methods" src="../Imagenes/PR_Facturas/crear_formas.png" /></p>
+</li>
+<li>
+<p>Configure whether payment method, actual due date, deposit date, and bank are required. This configuration will be reflected in the due list when marking an invoice as paid and required fields appear in red.</p>
+<p><img alt="New payment methods" src="../Imagenes/PR_Facturas/nueva_formas.png" /></p>
+</li>
+<li>
+<p>Set the number of due installments and payment percentages.</p>
+<p><img alt="Payment method details" src="../Imagenes/PR_Facturas/forma_pago.png" /></p>
+</li>
+</ul>
+<h3 id="62-payment-modes">6.2 Payment modes</h3>
+<ul>
+<li>
+<p>Indicate how payment will be made (transfer, promissory note, cash).</p>
+<p><img alt="Payment mode" src="../Imagenes/PR_Facturas/modo_pago.png" /></p>
+</li>
+<li>
+<p>Configure whether to require payment date, bank, or deposit date.</p>
+<p><img alt="New payment mode" src="../Imagenes/PR_Facturas/nuevo_modo.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="7-corrections-and-cancellations">7. Corrections and cancellations</h2>
+<p>If you need to correct or cancel an invoice:</p>
+<h3 id="71-newly-created-invoices">7.1 Newly created invoices</h3>
+<ul>
+<li>
+<p>If the invoice has not been sent, delete it and recreate it with the same numbering. There are different ways to delete the invoice:</p>
+<ul>
+<li>
+<p>From the sales list, find the invoice, right-click the row and select "Delete."</p>
+<p><img alt="Delete invoice" src="../Imagenes/PR_Facturas/eliminar_factura.png" /></p>
+</li>
+<li>
+<p>From the invoice, open it and delete it from the "Invoice" tab by right-clicking and selecting "Delete."</p>
+<p><img alt="Delete invoice" src="../Imagenes/PR_Facturas/eliminar_factura2.png" /></p>
+</li>
+<li>
+<p>From the invoice, click the ENBLAU logo at the top-left and choose "Delete."</p>
+<p><img alt="Delete invoice" src="../Imagenes/PR_Facturas/eliminar_factura3.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="72-already-sent-invoices">7.2 Already sent invoices</h3>
+<ul>
+<li>
+<p>If the invoice has already been sent, issue a corrective invoice.</p>
+<p><img alt="Corrective invoice" src="../Imagenes/PR_Facturas/factura_retificada.png" /></p>
+</li>
+<li>
+<p>Ensure it complies with tax authority requirements.</p>
+</li>
+</ul>
+<h2 id="8-invoice-confirmation-proforma">8. Invoice confirmation (Proforma)</h2>
+<ul>
+<li>
+<p>To generate a confirmation document (proforma) before issuing the invoice to the customer, go to: <strong>Sales Documents → Invoicing → Order Invoicing</strong>.</p>
+<p><img alt="Proforma" src="../Imagenes/PR_Facturas/factura_proforma.png" /></p>
+</li>
+<li>
+<p>A <strong>New invoice</strong> window will open where you can search for the customer to generate the proforma for:</p>
+<p><img alt="Proforma" src="../Imagenes/PR_Facturas/factura_proforma2.png" /></p>
+</li>
+<li>
+<p>At the bottom you will see pending orders for that customer under the "Invoice type and header" tab. In the <strong>Invoice</strong> column double-click to select the orders you want to include.</p>
+<p><img alt="Proforma" src="../Imagenes/PR_Facturas/factura_proforma3.png" /></p>
+</li>
+<li>
+<p>Choose the "Invoicing type" for how the document should be generated:</p>
+<p><img alt="Proforma options" src="../Imagenes/PR_Facturas/factura_proforma6.png" /></p>
+</li>
+<li>
+<p>In the "Invoice details" tab you can see all line items for each order and use the top ribbon Export detail option to export to PDF or XLS:</p>
+<p><img alt="Proforma export" src="../Imagenes/PR_Facturas/factura_proforma4.png" /></p>
+<ul>
+<li>Example PDF view:</li>
+</ul>
+<p><img alt="Proforma PDF" src="../Imagenes/PR_Facturas/factura_proforma5.png" /></p>
+</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>Filter management</strong> Use filters and custom filters to optimize searches in lists. For more information see: <a href="/Utilidades/4.UT_Gestion_Filtros">4. Filter management</a></p>
+</blockquote>
+<hr />
+<h2 id="9-prompt-payment-discount">9. Prompt payment discount</h2>
+<p>The <strong>prompt payment discount</strong> is a reduction applied to the invoice total when a customer pays within a short pre-established period. Its purpose is to encourage early payment and help the supplier's cash flow.</p>
+<h3 id="91-recommended-application">9.1 Recommended application</h3>
+<p>It is recommended to <strong>apply the discount from the order</strong> in the <strong>"Status &amp; notes"</strong> section so it correctly appears on the final invoice, whether generated from the <strong>order</strong> or the <strong>delivery note</strong>.</p>
+<p><img alt="Prompt payment discount" src="../Imagenes/PR_Facturas/pp.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Important</strong>: Applying the discount directly on the invoice can cause <strong>mismatches in reports</strong> such as "Invoicing and receipts status" because the invoiced amount may not match originally expected values.</p>
+</blockquote>
+<h3 id="92-discount-calculation">9.2 Discount calculation</h3>
+<p>There is a configuration checkbox that determines how the discount is applied:</p>
+<ul>
+<li>If the checkbox is <strong>enabled</strong>, the discount applies <strong>to the total including VAT</strong>.</li>
+<li>
+<p>If the checkbox is <strong>disabled</strong>, the discount applies <strong>only to the taxable base</strong>, and VAT is then calculated on the net amount.</p>
+<p><img alt="Discount checkbox" src="../Imagenes/PR_Facturas/pp_check.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="10-delivery-note-invoicing">10. Delivery note invoicing</h2>
+<h3 id="101-purchases">10.1 Purchases</h3>
+<p>In the <strong>Purchase Documents</strong> area there is a specific option for <strong>Delivery Note Invoicing</strong>.
+When selected:</p>
+<ul>
+<li>A window opens where you can <strong>choose the supplier</strong>.</li>
+<li>A <strong>list of delivery notes</strong> is displayed where you can:</li>
+<li><strong>Filter</strong> by project, dates, documents, etc.</li>
+<li>
+<p><strong>Select</strong> the delivery notes to invoice by checking the box in the <strong>Select</strong> column.</p>
+<p><img alt="Purchase delivery invoicing" src="../Imagenes/PR_Facturas/facturacion_albaranes.png" /></p>
+</li>
+</ul>
+<h3 id="102-sales">10.2 Sales</h3>
+<p>In the <strong>Sales Documents</strong> module there is a similar option for delivery note invoicing.
+When accessed:</p>
+<ul>
+<li>A window opens where you can <strong>specify the project and/or customer</strong>.</li>
+<li>The system will list the corresponding delivery notes.</li>
+<li>
+<p>Double-click the <strong>"To invoice"</strong> checkbox to easily select the documents to include in the invoice.</p>
+<p><img alt="Sales delivery invoicing" src="../Imagenes/PR_Facturas/facturacion_albaranes2.png" /></p>
+<p><img alt="Sales delivery invoicing" src="../Imagenes/PR_Facturas/facturacion_albaranes3.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="11-electronic-invoicing-facturae">11. Electronic Invoicing (FACTURAE)</h2>
+<ul>
+<li>
+<p>To generate an electronic invoice from ENBLAU, it is necessary that certain mandatory fields are completed in <strong>Companies</strong>, <strong>Customers</strong>, and <strong>Payment Methods</strong>.</p>
+<p><strong>Company:</strong> The fields are VAT number, Address, City, Postal Code, Province, and Country. From the menu: Configuration - General - <strong>Company</strong>.</p>
+<p><img alt="Facturae company" src="../Imagenes/PR_Facturas/facturae_empresa2.png" /></p>
+<p><img alt="Facturae company" src="../Imagenes/PR_Facturas/facturae_empresa.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> If no company is created in the <strong>Company</strong> section, create it with the same information as in Configuration - <strong>General</strong>.</p>
+</blockquote>
+<p><strong>Customers:</strong> The fields are Trade Name, VAT/Tax ID, Country Code, and Type of Person (<strong>J</strong>: Legal entity, <strong>F</strong>: Individual). From the menu: Sales - <strong>Customers</strong>.</p>
+<p><img alt="Facturae customer" src="../Imagenes/PR_Facturas/facturae_cliente2.png" /></p>
+<p><img alt="Facturae customer" src="../Imagenes/PR_Facturas/facturae_cliente.png" /></p>
+<p><strong>Payment Methods:</strong> The field Legal Code. From the menu: Sales - Sales Documents - Configuration - <strong>Payment Methods</strong>.</p>
+<p><img alt="Facturae payment" src="../Imagenes/PR_Facturas/facturae_formasdepago.png" /></p>
+<p><img alt="Facturae payment" src="../Imagenes/PR_Facturas/facturae_formasdepago2.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> The legal code for payment methods is a code provided by the company's accounting or management office.</p>
+</blockquote>
+</li>
+<li>
+<p>Then, from the <strong>Sales Documents</strong> area follow these steps:</p>
+<ul>
+<li>
+<p><strong>1.</strong> Open the invoice you want to export as an electronic invoice.</p>
+</li>
+<li>
+<p><strong>2.</strong> On the invoice ribbon click <strong>Invoicing</strong> and select <strong>Export for Facturae</strong> from the dropdown.</p>
+</li>
+</ul>
+<p><img alt="Electronic invoicing" src="../Imagenes/PR_Facturas/facturae.png" /></p>
+<ul>
+<li><strong>3.</strong> Indicate the path where the electronic invoice will be saved in XML format.</li>
+</ul>
+<p><img alt="Facturae XML" src="../Imagenes/PR_Facturas/facturae_xml.png" /></p>
+<ul>
+<li><strong>4.</strong> When saving, a dialog will open to select a valid signing certificate. If needed, click More options, choose the certificate and click Accept.</li>
+</ul>
+<p><img alt="Facturae certificate" src="../Imagenes/PR_Facturas/facturae_certificado.png" /></p>
+<p><img alt="Facturae signature" src="../Imagenes/PR_Facturas/facturae_firma.png" /></p>
+<ul>
+<li>After clicking Accept a message will confirm that the export completed successfully to the specified path.</li>
+</ul>
+<p><img alt="Facturae message" src="../Imagenes/PR_Facturas/facturae_msg.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Important!</strong> Once an electronic invoice has been exported it cannot be deleted or modified.</p>
+</blockquote>
+<ul>
+<li><strong>5.</strong> After exporting the XML electronic invoice, go to the <a href="https://face.gob.es/es/facturas/validar-visualizar-facturas">Invoice validator and viewer</a> to upload and validate the file.</li>
+</ul>
+<p><img alt="Facturae validate" src="../Imagenes/PR_Facturas/facturae_validar.png" /></p>
+<ul>
+<li>Enable the Facturae format and signature options to proceed with validation.</li>
+</ul>
+<p><img alt="Facturae validate 2" src="../Imagenes/PR_Facturas/facturae_validar2.png" /></p>
+<ul>
+<li>When printing a report of an electronic invoice from ENBLAU, a QR code appears at the top-right containing invoice details such as Tax ID, name, address, customer, invoice number, and other data.</li>
+</ul>
+<p><img alt="Facturae QR" src="../Imagenes/PR_Facturas/facturae_qr.png" /></p>
+<p><img alt="Facturae QR" src="../Imagenes/PR_Facturas/facturae_qr2.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="12-final-considerations">12. Final considerations</h2>
+<ul>
+<li>
+<p><strong>Keep orders up to date</strong>: All documents should be linked to an order to facilitate cost control and invoicing.</p>
+</li>
+<li>
+<p><strong>Accounting export</strong>: At month end, export data for accounting from the sales or purchase listings.</p>
+</li>
+<li>
+<p><strong>Questions and support</strong>: If you have questions, email the support team for a quick resolution.</p>
+</li>
+</ul>
+<hr />
+<p>This guide will help you manage invoicing efficiently and avoid common errors.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1.PR_Ventas_Compras/" class="btn btn-neutral float-left" title="Sales and Purchases"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3.PR_Manual_Stock_ENBLAU/" class="btn btn-neutral float-right" title="Stock Control Management ENBLAU">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1.PR_Ventas_Compras/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../3.PR_Manual_Stock_ENBLAU/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

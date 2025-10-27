@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Gestione del controllo delle scorte ENBLAU - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Gestione del controllo delle scorte ENBLAU";
+        var mkdocs_page_input_path = "it\\Processi\\3.PR_Manual_Stock_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Gestione del controllo delle scorte ENBLAU</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-scopo">1. Scopo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-gestione-degli-ordini-di-acquisto">2. Gestione degli ordini di acquisto</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-ordini-di-acquisto">2.1. Ordini di acquisto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-assegnare-materiali-a-un-progetto">2.2. Assegnare materiali a un progetto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-materiali-riservati">2.3. Materiali riservati</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-ripristino-delle-scorte">2.4. Ripristino delle scorte</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-gestione-dei-magazzini-e-dei-movimenti">3. Gestione dei magazzini e dei movimenti</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-layout-dei-magazzini">3.1. Layout dei magazzini</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-stock">3.2. Stock</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-movimenti-in-magazzino">3.3. Movimenti in magazzino</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-report-di-magazzino-inventario">3.4. Report di magazzino (inventario)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-inventari">4. Inventari</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-nuovo-inventario">4.1. Nuovo inventario</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-rilevazione-dello-stock">4.2. Rilevazione dello stock</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-report-di-rettifica-dellinventario">4.3. Report di rettifica dell'inventario</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-stock-necessario">5. Stock necessario</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-materiali-importati">6. Materiali importati</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-configurazione-dei-materiali">6.1. Configurazione dei materiali</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-prodotto-finito">7. Prodotto finito</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-ubicazione-prodotti">7.1. Ubicazione prodotti</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-movimenti-di-prodotto">7.2. Movimenti di prodotto</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-controllo-dello-stock-e-report">8. Controllo dello stock e report</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-risoluzione-dei-problemi-comuni">9. Risoluzione dei problemi comuni</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-conclusione">10. Conclusione</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+          <li class="breadcrumb-item">Processi</li>
+      <li class="breadcrumb-item active">Gestione del controllo delle scorte ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="sistema-di-controllo-delle-scorte-enblau">Sistema di controllo delle scorte ENBLAU</h1>
+<hr />
+<h2 id="1-scopo">1. Scopo</h2>
+<p>Questo manuale è pensato per gli utenti nuovi al sistema di controllo delle scorte utilizzato dai Clienti e da Endades. L'obiettivo principale è fornire una guida dettagliata per la gestione efficiente dei progetti, dalla creazione degli ordini fino all'ottimizzazione del processo di produzione in ENBLAU. Il documento descrive i passaggi necessari per eseguire le operazioni chiave del sistema ed è strutturato in modo sequenziale per facilitarne la comprensione.</p>
+<hr />
+<h2 id="2-gestione-degli-ordini-di-acquisto">2. Gestione degli ordini di acquisto</h2>
+<h3 id="21-ordini-di-acquisto">2.1. Ordini di acquisto</h3>
+<ul>
+<li>Dal menu principale <strong>Acquisti</strong>, vai alla sezione "Ordini di acquisto".</li>
+<li>Specifica i materiali richiesti e la quantità.</li>
+<li>In caso di variazioni nelle referenze, aggiungile manualmente se sono già configurate nel database.</li>
+<li>
+<p>Nell'ordine di vendita (sezione <strong>Vendite</strong>) seleziona il documento e vai alla scheda <strong>Materiale necessario</strong> per ottenere l'elenco dei materiali dell'ordine.</p>
+<ul>
+<li>
+<p>Le righe degli articoli evidenziate in <span style="color:green;">verde</span> indicano che c'è materiale in stock per quel progetto o per il progetto impostato come <strong>Stock</strong>. Le righe evidenziate in <span style="color:red;">rosso</span> indicano che non ci sono materiali per quel progetto o non sono presenti in magazzino.</p>
+</li>
+<li>
+<p>Puoi indicare se vuoi o meno acquistare un articolo, nel caso in cui sia già presente in magazzino. Per ogni materiale verranno mostrate: unità in stock, unità riservate e unità in sospeso.</p>
+</li>
+</ul>
+<p><img alt="material_necesario" src="../Imagenes/PR_Stock_Control/material_necesario.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Per assegnare un progetto di tipo stock vai in Generale - Configurazione - <strong>Acquisti e magazzino</strong> e imposta nel menu a tendina <strong>Progetto per stock</strong> un progetto creato in precedenza per la gestione dello stock.</p>
+</blockquote>
+<p><img alt="material_necesario" src="../Imagenes/PR_Stock_Control/proyecto_stock.jpg" /></p>
+<ul>
+<li>
+<p>Conferma con <strong>Richiedi materiale</strong> e invia l'ordine al fornitore corrispondente.</p>
+</li>
+<li>
+<p>Nella sezione <strong>Magazzini</strong> è disponibile l'opzione <strong>In attesa di ricevimento</strong>, dove viene mostrato l'elenco dei materiali pendenti per ciascun progetto e ordine di acquisto.</p>
+</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir.jpg" /></p>
+<ul>
+<li>Facendo clic con il tasto destro sulla riga dell'articolo puoi aprire l'ordine di acquisto relativo a quel materiale:</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir2.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Per informazioni più dettagliate sugli ordini di acquisto, segui questo link: <a href="../1.PR_Ventas_Compras/#4-compras">Ordini di acquisto</a></p>
+<p>⚠️ <strong>Importante!</strong> Per effettuare l'ordine dei materiali da un documento di vendita, in alcuni casi sono necessari permessi speciali per eseguire acquisti. Questo permesso è richiesto anche per fabbricare o installare.</p>
+</blockquote>
+<p><img alt="Permisos especiales" src="../Imagenes/PR_Stock_Control/permisos_especiales.jpg" /></p>
+<h3 id="22-assegnare-materiali-a-un-progetto">2.2. Assegnare materiali a un progetto</h3>
+<ul>
+<li>Dalla vista <strong>Materiale necessario</strong>, durante il processo di elenco e richiesta materiali, è possibile assegnare articoli provenienti da un altro progetto al progetto in cui ti trovi. Nella sezione delle ubicazioni fai clic destro sulla riga - <strong>Assegna</strong>:</li>
+</ul>
+<p><img alt="Asignar articulos" src="../Imagenes/PR_Stock_Control/asignar.jpg" /></p>
+<ul>
+<li>Indica il progetto di destinazione a cui assegnare (per impostazione predefinita è quello in cui ti trovi) e la quantità (per impostazione predefinita quella necessaria per il progetto):</li>
+</ul>
+<p><img alt="Asignar articulos" src="../Imagenes/PR_Stock_Control/asignar2.jpg" /></p>
+<ul>
+<li>Assegnando l'articolo al progetto di destinazione, l'unità di stock verrà automaticamente trasferita al progetto di destinazione sommando la quantità assegnata, mentre dal progetto di origine verrà sottratta. L'articolo verrà mostrato in verde.</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Assicurati che sia possibile utilizzare materiali dal progetto da cui desideri trasferire gli articoli.</p>
+</blockquote>
+<h3 id="23-materiali-riservati">2.3. Materiali riservati</h3>
+<ul>
+<li>Da un documento di <strong>Vendite</strong>, <strong>Acquisti</strong> o dalla sezione <strong>Progetti</strong> è possibile riservare materiali per il progetto, selezionandoli in <strong>Materiali riservati</strong> dal menu a tendina <strong>Magazzino</strong>.</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado.jpg" /></p>
+<ul>
+<li>Si aprirà una finestra di materiali riservati e dalla sezione <strong>Materiale di progetto</strong> puoi trascinare i materiali dagli ordini al fornitore:</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_2.jpg" /></p>
+<ul>
+<li>Successivamente, nella sezione Magazzini è possibile visualizzare tutti i materiali riservati per un progetto:</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_3.jpg" /></p>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_4.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> L'uso del materiale riservato è puramente informativo: non impedirà l'utilizzo dei materiali anche se sono riservati. Si raccomanda l'uso di <a href="#22-assegnare-materiali-a-un-progetto">Assegnare materiali a un progetto</a> se desideri un controllo dello stock più accurato.</p>
+</blockquote>
+<h3 id="24-ripristino-delle-scorte">2.4. Ripristino delle scorte</h3>
+<p>Nella sezione <strong>Acquisti</strong> c'è l'opzione <strong>Ripristino delle scorte</strong>, che mostra l'elenco dei materiali da ordinare quando sono sotto il livello minimo o sotto il livello abituale.</p>
+<p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock.jpg" /></p>
+<ul>
+<li>
+<p>I materiali <strong>segnalati in rosso</strong> sono quelli al di sotto del <strong>minimo</strong> o dell'<strong>abituale</strong>. </p>
+<ul>
+<li>La colonna <strong>Unità in stock</strong> mostra la quantità disponibile del materiale.  </li>
+<li>La colonna <strong>Unità da ordinare</strong> indica quanto manca per raggiungere il <strong>massimo in stock</strong>.  </li>
+<li>Se il materiale soddisfa il minimo o l'abituale, <strong>non apparirà nell'elenco</strong>.</li>
+</ul>
+</li>
+<li>
+<p>I materiali <strong>segnalati in verde</strong> sono quelli che non hanno un massimo definito in magazzino.  </p>
+<ul>
+<li>Per impostazione predefinita viene aggiunta <strong>una unità</strong> per sotto minimo e sotto abituale affinché compaiano nell'elenco di ripristino delle scorte.</li>
+</ul>
+</li>
+<li>
+<p>Seleziona la casella <strong>Da importare</strong> per i materiali che devono essere ordinati. Poi premi il pulsante <strong>Importa</strong> per aggiungerli all'ordine di acquisto.</p>
+</li>
+</ul>
+<p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock2.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Per maggiori informazioni su come definire per ogni materiale il livello minimo, massimo e abituale, consulta la sezione <a href="#61-configurazione-dei-materiali">Configurazione dei materiali</a>.</p>
+</blockquote>
+<hr />
+<h2 id="3-gestione-dei-magazzini-e-dei-movimenti">3. Gestione dei magazzini e dei movimenti</h2>
+<h3 id="31-layout-dei-magazzini">3.1. Layout dei magazzini</h3>
+<ul>
+<li>Dal menu principale <strong>Magazzini</strong> - <strong>Stock</strong>, puoi aggiungere o modificare i magazzini.</li>
+</ul>
+<p><img alt="almacenes" src="../Imagenes/PR_Stock_Control/almacen.jpg" /></p>
+<ul>
+<li>Configura il layout del magazzino dalla pagina iniziale: <strong>ENBLAU</strong> – <strong>Configurazione</strong> – <strong>Magazzino</strong> – <strong>Layout</strong>:</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout.jpg" /></p>
+<ul>
+<li>Crea zone, scaffalature e posizioni nel sistema per una chiara organizzazione. Verrà mostrato come una vista ad albero.</li>
+<li>
+<p>Associa ogni posizione alla corrispondente area di stoccaggio. Esempio:</p>
+<ul>
+<li><strong>Aggiungi piano</strong>: Aggiungi un piano e puoi indicare il magazzino.</li>
+<li><strong>Aggiungi zona/sottzona</strong>: Aggiungi una zona o sottzona sotto la posizione selezionata.</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout2.jpg" /></p>
+</li>
+</ul>
+<h3 id="32-stock">3.2. Stock</h3>
+<ul>
+<li>Nella sezione <strong>Magazzini - Stock</strong> trovi l'elenco con le opzioni <strong>Riepilogo, Riepilogo con ubicazione</strong> e <strong>Dettagliato</strong>:</li>
+</ul>
+<p><img alt="Stock" src="../Imagenes/PR_Stock_Control/stock.jpg" /></p>
+<p><img alt="Listado" src="../Imagenes/PR_Stock_Control/listado.jpg" /></p>
+<ul>
+<li>
+<p><strong>Riepilogo:</strong> In questo elenco puoi vedere in modo sintetico un materiale raggruppato per progetto assegnato. Verranno mostrati i totali di unità, unità pendenti e unità riservate.</p>
+<!-- <img alt="Resumen" src="Imagenes/PR_Stock_Control/resumen.jpg" /> -->
+</li>
+<li>
+<p><strong>Riepilogo con ubicazione:</strong> In questo elenco potrai vedere in modo sintetico un materiale raggruppato per progetto assegnato e la sua ubicazione.</p>
+<!-- <img alt="Resumen con ubicacion" src="Imagenes/PR_Stock_Control/resumen_ubicacion.jpg" /> -->
+</li>
+<li>
+<p><strong>Dettagliato:</strong> In questo elenco vedrai in modo più dettagliato dove si trova un materiale con il suo progetto di acquisto, progetto assegnato, ubicazione in magazzino e separato per documento di bolla di consegna. Inoltre, permette di scalare, trasferire ed assegnare articoli.  </p>
+<!-- <img alt="Resumen con ubicacion" src="Imagenes/PR_Stock_Control/detallado.jpg" /> -->
+</li>
+</ul>
+<h3 id="33-movimenti-in-magazzino">3.3. Movimenti in magazzino</h3>
+<ul>
+<li>Esegui i movimenti dei materiali tra zone e progetti:</li>
+<li>In <strong>Magazzini</strong> - <strong>Stock</strong> – <strong>Dettagliato</strong>, fai clic destro sul materiale che vuoi trasferire, scalare o assegnare.</li>
+</ul>
+<p><img alt="Detallado" src="../Imagenes/PR_Stock_Control/movimientos_detallado.jpg" /></p>
+<ul>
+<li>Seleziona il materiale dal progetto.</li>
+<li>
+<p><strong>Scalare</strong>: Indica il progetto, il numero dell'ordine, il responsabile e la quantità (barre e pezzi) o la lunghezza (giunti).</p>
+<p><img alt="Movimiento" src="../Imagenes/PR_Stock_Control/descontar.jpg" /></p>
+</li>
+<li>
+<p><strong>Trasferimento</strong>: Indica la posizione di origine, destinazione, quantità (barre e pezzi) o lunghezza (giunti).</p>
+<p><img alt="Traspaso" src="../Imagenes/PR_Stock_Control/asignar3.jpg" /></p>
+</li>
+<li>
+<p><strong>Assegna</strong>: Indica il progetto di destinazione, il responsabile, la quantità (barre e pezzi) o la lunghezza (giunti). Questa funzione è la stessa della sezione Materiale necessario -<a href="#22-assegnare-materiali-a-un-progetto">Assegnare materiali a un progetto</a>.</p>
+<p><img alt="Asignar" src="../Imagenes/PR_Stock_Control/traspaso.jpg" /> </p>
+</li>
+<li>
+<p>I movimenti di ingresso, uscita, trasferimento e assegnazione di ogni materiale verranno registrati nella <strong>bolla di consegna</strong>. Puoi visualizzare gli ingressi e le uscite in <strong>Magazzini – Movimenti</strong>.</p>
+<p><img alt="Movimentos del almacen" src="../Imagenes/PR_Stock_Control/movimentos_almacen.jpg" /></p>
+<p><img alt="Movimentos del almacen" src="../Imagenes/PR_Stock_Control/movimentos_almacen2.jpg" /></p>
+</li>
+<li>
+<p>Dalla sezione Movimenti è disponibile la funzione <strong>Restituisci</strong>. Fai clic con il tasto destro sul movimento di uscita che desideri annullare e apparirà l'opzione di restituzione:</p>
+<p><img alt="Devolver" src="../Imagenes/PR_Stock_Control/devolver.jpg" /></p>
+<p>Si aprirà la finestra <strong>Movimento di restituzione</strong> dove indicherai le unità e la posizione da cui vuoi restituire il materiale; per impostazione predefinita è la posizione da cui è stato emesso il materiale:</p>
+<p><img alt="Devolver" src="../Imagenes/PR_Stock_Control/devolver2.jpg" /></p>
+</li>
+<li>
+<p>L'opzione <strong>Apri</strong> dall'elenco dettagliato apre la bolla (colonna numerazione) della riga e dell'articolo selezionato:</p>
+<p><img alt="Abrir" src="../Imagenes/PR_Stock_Control/abrir.jpg" /></p>
+</li>
+</ul>
+<h3 id="34-report-di-magazzino-inventario">3.4. Report di magazzino (inventario)</h3>
+<ul>
+<li>
+<p>Nella sezione <strong>Magazzini</strong> - <strong>Movimenti</strong> è possibile stampare diversi tipi di report:</p>
+</li>
+<li>
+<p><strong>Riepilogo:</strong> Ci sono due report <strong>Inventario</strong> e <strong>Inventario per data</strong>.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
+<p><strong>Inventario</strong> mostra un report di inventario, secondo i filtri applicati nell'elenco del magazzino. Include le colonne Articolo, Progetto Unità, Unità pendenti e Unità riservate.</p>
+<p><img alt="Inventario" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
+<p><strong>Inventario per data</strong> mostra un report di inventario alla data scelta. Include le colonne Articolo, Descrizione, Unità e Importo.</p>
+<p><img alt="Inventario por fecha" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
+</li>
+<li>
+<p><strong>Riepilogo con ubicazione:</strong> Esiste il report <strong>Inventario dettagliato</strong>.</p>
+<p><strong>Inventario dettagliato</strong> mostra un report di inventario, secondo i filtri applicati nella vista dettagliata del magazzino. Include Ubicazione magazzino, Articolo, Descrizione e Unità.</p>
+<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
+</li>
+<li>
+<p><strong>Dettagliato:</strong> C'è il report <strong>Inventario dettagliato</strong>.</p>
+<p><strong>Inventario dettagliato</strong> mostra un report di inventario, secondo i filtri della vista dettagliata del magazzino. Include Progetto, Numero della bolla d'acquisto, Ubicazione magazzino, Articolo, Descrizione e Unità raggruppate per referenza e lunghezza. </p>
+<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
+</li>
+<li>
+<p>Nella sezione <strong>Magazzini</strong> - <strong>Movimenti</strong> è possibile stampare vari report:</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
+<p><strong>Movimenti</strong> mostra un elenco dei movimenti visualizzati nella lista dei movimenti. Include Data del movimento, Responsabile, Progetto assegnato, Ubicazione magazzino, Articolo, Descrizione, Unità e Tipo di movimento.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
+<p><strong>Movimenti I</strong> mostra un elenco dei movimenti visualizzati. Include le colonne Tipo di movimento, Data del movimento, Responsabile, Documento, Unità, Importo, Articolo e Descrizione.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
+</li>
+</ul>
+<h2 id="4-inventari">4. Inventari</h2>
+<ul>
+<li>Nella sezione <strong>Magazzini</strong> - <strong>Inventari</strong> è possibile normalizzare il magazzino tenendo conto dello stock in tempo reale.</li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios.jpg" /></p>
+<h3 id="41-nuovo-inventario">4.1. Nuovo inventario</h3>
+<ul>
+<li>
+<p>Per creare un inventario accedi alla sezione Inventari e seleziona <strong>Nuovo</strong>.</p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios2.jpg" /></p>
+</li>
+</ul>
+<h3 id="42-rilevazione-dello-stock">4.2. Rilevazione dello stock</h3>
+<p><strong>1.</strong> Dall'inventario, seleziona il <strong>Progetto</strong> definito come <strong>Stock</strong>.  </p>
+<p><strong>2.</strong> Clicca su <strong>Ottieni stock</strong> per caricare l'elenco dei materiali del progetto <strong>Stock</strong>:<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios3.jpg" />
+    <img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios4.jpg" /></p>
+<p><strong>3.</strong> Nella colonna <strong>Unità contabilizzate</strong>, inserisci le unità fisiche effettive presenti in magazzino per ciascun articolo, in base al conteggio effettuato nella posizione del magazzino.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios5.jpg" />  </p>
+<p><strong>4.</strong> Dopo aver indicato le unità nella colonna <strong>Unidades contabilizzate</strong>, le righe degli articoli verranno evidenziate in rosso, indicando una discrepanza nelle unità. Poi clicca su <strong>Aggiorna magazzino</strong> per registrare la rettifica in base alle unità contabilizzate.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios6.jpg" />  </p>
+<p><strong>5.</strong> Dopo l'aggiornamento del magazzino, le righe verranno mostrate in verde.  </p>
+<ul>
+<li>Nelle colonne <strong>Unidades Stock</strong> e <strong>Unidades contabilizzate</strong> saranno visibili le quantità aggiornate.  </li>
+<li>Nella colonna <strong>Contabilizzato</strong> verrà marcata una casella.  </li>
+<li>
+<p>Nella colonna <strong>Fecha contabilizada</strong> verrà registrata la data della rettifica.  </p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios7.jpg" />    </p>
+</li>
+<li>
+<p>Questo processo genera un movimento di rettifica (entrata o uscita) in magazzino:  </p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios13.jpg" />  </p>
+<blockquote>
+<p>ℹ️ <strong>Nota</strong>: Nell'elenco dell'inventario sono visibili solo <strong>entrate</strong> e <strong>uscite</strong>.<br />
+Non è possibile effettuare movimenti di tipo <strong>trasferimento</strong> da questo elenco.  </p>
+</blockquote>
+</li>
+</ul>
+<p><strong>6.</strong> Puoi anche aggiungere nuovi articoli dai rami:</p>
+<ul>
+<li><strong>Articoli (materiali ENBLAU)</strong>  </li>
+<li>
+<p><strong>Articoli importati (materiali di Logikal)</strong>  </p>
+<p>Per farlo:<br />
+- Trascina l'articolo nell'elenco dell'inventario.<br />
+- Indica le <strong>unità</strong>, le <strong>dimensioni</strong> (se si tratta di barra, superficie o giunto), la <strong>posizione in magazzino</strong> e il <strong>prezzo</strong>.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios8.jpg" />  </p>
+<blockquote>
+<p>ℹ️ <strong>Nota</strong>: Quando aggiungi un articolo nuovo all'inventario, è obbligatorio indicare una <strong>ubicazione</strong>. Altrimenti, non verrà aggiornato nello stock.  </p>
+</blockquote>
+</li>
+</ul>
+<p><strong>7.</strong> Con il pulsante <strong>Aggiorna unità in stock</strong> si aggiornano le unità correnti per ciascuna riga dell'inventario.  </p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios9.jpg" />  </p>
+<hr />
+<h3 id="43-report-di-rettifica-dellinventario">4.3. Report di rettifica dell'inventario</h3>
+<ul>
+<li>È possibile <strong>Stampare</strong> l'elenco dell'inventario, che mostra le colonne:<br />
+<strong>Articolo</strong>, <strong>Descrizione</strong>, <strong>Data ultima verifica</strong>, <strong>Unità in stock</strong>, <strong>Unità contabilizzate</strong> e <strong>Ubicazione</strong>.  </li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios10.jpg" /></p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios11.jpg" />  </p>
+<ul>
+<li>Questo report è pensato per agevolare il conto manuale dello stock in magazzino prima di procedere all'aggiornamento nell'elenco dell'inventario. Nella colonna <strong>Unità contabilizzate</strong> va indicata la quantità reale di ogni articolo in stock.  </li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios12.jpg" />  </p>
+<hr />
+<h2 id="5-stock-necessario">5. Stock necessario</h2>
+<ul>
+<li>Una volta che una produzione è stata creata e inoltrata alla produzione (taller), è possibile visualizzare e scalare i materiali manualmente.</li>
+</ul>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/stock_necesario.jpg" /></p>
+<ul>
+<li>Si aprirà una finestra "Stock necessario" che indica se il materiale è disponibile e in quali magazzini, e a quale postazione verrà scalato quel materiale. Per scalare il materiale è necessario selezionare la casella nella colonna <strong>Stock a scalare</strong> per il materiale.</li>
+</ul>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/stock_necesario2.jpg" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Se il materiale non è presente in magazzino, non verrà scalato.</p>
+<p>ℹ️ <strong>Nota:</strong> Per un controllo più granulare dello stock, si consiglia di utilizzare l'app mobile enSITE per effettuare questo tipo di scalatura. Per maggiori informazioni sull'app vedere <a href="../4.PR_Manual_Stock_enCONTROL/#21-recepcion-en-ensite">2.1. Ricezione in enSITE</a></p>
+</blockquote>
+<hr />
+<h2 id="6-materiali-importati">6. Materiali importati</h2>
+<p>Nella sezione <strong>Magazzini → Materiale importato</strong> è presente l'elenco di tutti i materiali importati da <strong>Logikal</strong>.</p>
+<hr />
+<h3 id="61-configurazione-dei-materiali">6.1. Configurazione dei materiali</h3>
+<p>In questa sezione puoi definire, per ciascun articolo, una serie di valori predefiniti che influenzano la gestione degli acquisti e della produzione:</p>
+<ul>
+<li>
+<p><strong>Acquistare</strong>:<br />
+  Se questa casella è selezionata, il materiale verrà proposto di default come "da acquistare" quando viene elencato nella sezione <strong>Materiale necessario</strong>.</p>
+</li>
+<li>
+<p><strong>Montaggio a destinazione</strong>:<br />
+  Se selezionata, il materiale verrà montato a destinazione durante il processo nel posto <strong>Picking</strong> all'interno di <strong>enCONTROL</strong>.</p>
+</li>
+<li>
+<p><strong>Controllo di stock</strong>:<br />
+  Se attivato, il materiale verrà considerato per lo sconto automatico durante il processo di produzione.</p>
+</li>
+<li>
+<p><strong>Stock minimo</strong>, <strong>stock massimo</strong> e <strong>stock abituale</strong>:<br />
+  Puoi definire i valori di riferimento per la gestione delle giacenze, utile per avvisi, ripristini o pianificazione.</p>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/material_importado.jpg" /></p>
+<p>Nella sezione <a href="#24-ripristino-delle-scorte">Ripristino delle scorte</a> in Acquisti puoi ottenere un elenco di articoli sotto minimo o sotto abituale a seconda di come sono stati definiti i valori minimi, massimi e abituali per ciascun materiale.</p>
+</li>
+</ul>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> La corretta configurazione di questi campi migliora significativamente il controllo dell'inventario, la pianificazione degli acquisti e la tracciabilità dei materiali durante la produzione.</p>
+</blockquote>
+<hr />
+<h2 id="7-prodotto-finito">7. Prodotto finito</h2>
+<p>Il <strong>prodotto finito</strong> è quello completamente fabbricato e verificato nella postazione di <strong>Controllo finale</strong> in <strong>enCONTROL</strong>.</p>
+<p>Nella sezione <strong>Magazzini → Prodotto finito</strong> si trovano due elenchi principali:</p>
+<ul>
+<li><strong>Ubicazione prodotti</strong></li>
+<li><strong>Movimenti prodotto</strong></li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado.jpg" /></p>
+<hr />
+<h3 id="71-ubicazione-prodotti">7.1. Ubicazione prodotti</h3>
+<ul>
+<li>Nell'elenco <strong>Ubicazione prodotti</strong> viene mostrata la posizione attuale del prodotto finito, così come è stata definita dalla postazione di <strong>Controllo finale</strong> in <strong>enCONTROL</strong>.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado2.jpg" /></p>
+<ul>
+<li>
+<p>Da questa vista, cliccando con il tasto destro su una riga, è possibile:</p>
+</li>
+<li>
+<p>Spostare il prodotto in un'altra ubicazione.</p>
+</li>
+<li>Effettuare l'uscita del prodotto.</li>
+<li>Aprire il documento di produzione associato a quel prodotto.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado3.jpg" /></p>
+<hr />
+<h3 id="72-movimenti-di-prodotto">7.2. Movimenti di prodotto</h3>
+<ul>
+<li>
+<p>Nella sezione <strong>Movimenti prodotto</strong> vengono registrate tutte le operazioni sui prodotti finiti, tra cui:</p>
+</li>
+<li>
+<p>Entrata.</p>
+</li>
+<li>Uscita.</li>
+<li>Trasferimento.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado4.jpg" /></p>
+<ul>
+<li>Facendo clic destro su una riga con <strong>tipo di movimento</strong> uguale a <strong>uscita</strong>, viene abilitata l'opzione <strong>Restituire</strong>.</li>
+</ul>
+<p><img alt="Devolver producto terminado" src="../Imagenes/PR_Stock_Control/producto_terminado5.jpg" /></p>
+<ul>
+<li>
+<p>Selezionando questa opzione si aprirà la finestra <strong>Restituzione prodotto finito</strong>, dove bisogna:</p>
+</li>
+<li>
+<p>Indicare la nuova <strong>ubicazione</strong> del prodotto.</p>
+</li>
+<li>Confermare l'operazione.</li>
+</ul>
+<p><img alt="Devolver producto terminado" src="../Imagenes/PR_Stock_Control/producto_terminado6.jpg" /></p>
+<p>Al termine del processo, il sistema registrerà un nuovo movimento di tipo <strong>Entrata</strong> nello storico del prodotto.</p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Questa funzionalità è utile per gestire restituzioni interne, prodotti rifiutati o riassegnazioni logistiche all'interno del magazzino.</p>
+</blockquote>
+<hr />
+<h2 id="8-controllo-dello-stock-e-report">8. Controllo dello stock e report</h2>
+<ul>
+<li>Monitora lo stock necessario dalla sezione "Produzione".</li>
+<li>Identifica materiali riservati e pendenti in tempo reale.</li>
+<li>Genera report di inventario per valutare l'uso dei materiali e pianificare gli acquisti futuri.</li>
+</ul>
+<hr />
+<h2 id="9-risoluzione-dei-problemi-comuni">9. Risoluzione dei problemi comuni</h2>
+<ul>
+<li><strong>Errore durante l'import delle referenze</strong>: Verifica che le referenze siano configurate nel database.</li>
+<li><strong>Materiali in eccesso o mancanti</strong>: Assicurati di registrare correttamente le ubicazioni e le quantità al ricevimento dei materiali.</li>
+<li><strong>Problemi con il layout del magazzino</strong>: Controlla la configurazione delle zone e adatta le impostazioni secondo necessità.</li>
+</ul>
+<hr />
+<h2 id="10-conclusione">10. Conclusione</h2>
+<p>Questo manuale fornisce una guida passo-passo per i processi principali del sistema di controllo delle scorte. Seguendo queste istruzioni, gli utenti saranno in grado di gestire efficacemente gli inventari, migliorare la produzione e ottimizzare la relazione con i fornitori. Per supporto aggiuntivo, contatta l'amministratore di sistema.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigazione a pié di pagina">
+        <a href="../2.PR_Facturas/" class="btn btn-neutral float-left" title="Fatturazione"><span class="icon icon-circle-arrow-left"></span> Precedente</a>
+        <a href="../4.PR_Manual_Stock_enCONTROL/" class="btn btn-neutral float-right" title="Gestione del controllo delle scorte enCONTROL">Successivo <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2.PR_Facturas/" style="color: #fcfcfc">&laquo; Precedente</a></span>
+    
+    
+      <span><a href="../4.PR_Manual_Stock_enCONTROL/" style="color: #fcfcfc">Successivo &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

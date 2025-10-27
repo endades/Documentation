@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Creazione e modifica di rapporti personalizzati - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Creazione e modifica di rapporti personalizzati";
+        var mkdocs_page_input_path = "it\\Utilita\\3.UT_Editar_Informes.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Creazione e modifica di rapporti personalizzati</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduzione">1. Introduzione</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-creazione-di-un-report-personalizzato">2. Creazione di un report personalizzato</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_1"></a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-modifica-del-report">3. Modifica del report</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-eliminazione-di-elementi-aggiuntivi">4. Eliminazione di elementi aggiuntivi</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-utilizzo-del-nuovo-modello">5. Utilizzo del nuovo modello</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-considerazioni-finali">6. Considerazioni finali</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+          <li class="breadcrumb-item">Utilità</li>
+      <li class="breadcrumb-item active">Creazione e modifica di rapporti personalizzati</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="creazione-e-modifica-di-report-personalizzati">Creazione e modifica di report personalizzati</h1>
+<hr />
+<h2 id="1-introduzione">1. Introduzione</h2>
+<p>Questo manuale ha lo scopo di guidare gli utenti nella creazione e nella modifica di nuovi modelli di report personalizzati senza la necessità di configurare un modello da zero. Il processo è pensato per essere semplice e chiaro, permettendo agli utenti di adattare i report alle proprie esigenze in modo efficiente.</p>
+<hr />
+<h2 id="2-creazione-di-un-report-personalizzato">2. Creazione di un report personalizzato</h2>
+<p>Per generare un report basato su uno esistente, segui questi passaggi:</p>
+<ol>
+<li>
+<p><strong>Individuare il report di base</strong>:  </p>
+<ul>
+<li>Naviga fino al report che desideri utilizzare come base per il tuo nuovo report personalizzato.</li>
+</ul>
+</li>
+<li>
+<p><strong>Creare una copia del report</strong>:  </p>
+<ul>
+<li>Seleziona l'opzione per creare un nuovo report a partire da quello esistente. Verrà generata una copia esatta del report originale, che potrai modificare senza alterare il report base.</li>
+</ul>
+<p><img alt="Nuovo" src="../Imagenes/UT_Editar_Informes/nuevo.png" /></p>
+<h2 id="_1"><img alt="Nuovo report" src="../Imagenes/UT_Editar_Informes/nuevo_informe.png" /></h2>
+</li>
+</ol>
+<h2 id="3-modifica-del-report">3. Modifica del report</h2>
+<p>Una volta creata la copia del report, segui questi passi per personalizzarlo:</p>
+<ol>
+<li>
+<p><strong>Individuare il report appena creato</strong>:  </p>
+<ul>
+<li>Accedi al report che hai appena copiato.</li>
+</ul>
+</li>
+<li>
+<p><strong>Accedere all'opzione di modifica</strong>:  </p>
+<ul>
+<li>Seleziona l'opzione di modifica per iniziare a effettuare i cambiamenti.</li>
+</ul>
+<p><img alt="Modifica" src="../Imagenes/UT_Editar_Informes/editar.png" /></p>
+</li>
+<li>
+<p><strong>Apportare le modifiche necessarie</strong>:  </p>
+<ul>
+<li>Modifica i campi, le sezioni o i dati necessari. Puoi aggiungere, eliminare o adattare le informazioni secondo le tue esigenze. Usa le risorse di modifica disponibili per editare il modello:</li>
+</ul>
+<p><img alt="Modifica report" src="../Imagenes/UT_Editar_Informes/editar_informe.png" /></p>
+</li>
+<li>
+<p><strong>Salvare il report</strong>:  </p>
+</li>
+<li>
+<p>Una volta effettuate le modifiche, salva il documento per completare l'operazione.</p>
+<p><img alt="Salva" src="../Imagenes/UT_Editar_Informes/guardar.png" /> </p>
+</li>
+</ol>
+<hr />
+<h2 id="4-eliminazione-di-elementi-aggiuntivi">4. Eliminazione di elementi aggiuntivi</h2>
+<p>Se il report richiede modifiche più profonde, puoi rimuovere sezioni o dati non necessari prima di salvare la versione finale. Per farlo:</p>
+<ol>
+<li><strong>Identificare elementi non necessari</strong>:  </li>
+<li>
+<p>Rivedi il report e determina quali sezioni o dati non sono rilevanti per il tuo scopo.</p>
+</li>
+<li>
+<p><strong>Rimuovere elementi</strong>:  </p>
+</li>
+<li>
+<p>Usa l'opzione di eliminazione per togliere gli elementi non desiderati.</p>
+<p><img alt="Modifica report" src="../Imagenes/UT_Editar_Informes/editar_informe2.png" /></p>
+<ul>
+<li>Per alcuni report (ad esempio la bolla di consegna), è necessario rimuovere parte dello script. Accedi alla sezione Script:</li>
+</ul>
+<p><img alt="Script" src="../Imagenes/UT_Editar_Informes/scripts.png" /> </p>
+<ul>
+<li>Se quelle righe sono presenti nello script, eliminale:</li>
+</ul>
+<p><img alt="Script" src="../Imagenes/UT_Editar_Informes/scripts2.png" /></p>
+<p><img alt="Script" src="../Imagenes/UT_Editar_Informes/scripts3.png" /> </p>
+<ul>
+<li>Torna quindi alla sezione Designer:</li>
+</ul>
+<p><img alt="Designer" src="../Imagenes/UT_Editar_Informes/designer.png" />     </p>
+</li>
+<li>
+<p><strong>Salvare le modifiche</strong>:<br />
+   Assicurati di salvare il report dopo aver effettuato le eliminazioni.</p>
+</li>
+</ol>
+<hr />
+<h2 id="5-utilizzo-del-nuovo-modello">5. Utilizzo del nuovo modello</h2>
+<p>Una volta creato il nuovo report, selezionalo e vai su "Anteprima":</p>
+<p><img alt="Anteprima" src="../Imagenes/UT_Editar_Informes/vista_previa.png" /></p>
+<p><img alt="Report" src="../Imagenes/UT_Editar_Informes/informe.png" />   </p>
+<hr />
+<h2 id="6-considerazioni-finali">6. Considerazioni finali</h2>
+<ul>
+<li>
+<p><strong>Non è necessario configurare un nuovo modello</strong>:<br />
+  Questo processo ti permette di modificare i report senza dover creare un modello da zero.</p>
+</li>
+<li>
+<p><strong>Processo rapido e semplice</strong>:<br />
+  La clonazione e la modifica dei report è un metodo efficiente per personalizzare i documenti.</p>
+</li>
+<li>
+<p><strong>Revisione finale</strong>:<br />
+  Prima di salvare il report, assicurati di rivederlo attentamente per garantire che soddisfi i requisiti desiderati.</p>
+</li>
+</ul>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigazione a pié di pagina">
+        <a href="../2.UT_Crear_Materiales_enMATERIAL/" class="btn btn-neutral float-left" title="Creazione di materiali propri in enMATERIALS"><span class="icon icon-circle-arrow-left"></span> Precedente</a>
+        <a href="../4.UT_Gestion_Filtros/" class="btn btn-neutral float-right" title="Gestione dei filtri">Successivo <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2.UT_Crear_Materiales_enMATERIAL/" style="color: #fcfcfc">&laquo; Precedente</a></span>
+    
+    
+      <span><a href="../4.UT_Gestion_Filtros/" style="color: #fcfcfc">Successivo &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

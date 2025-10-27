@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Sales and Purchases - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sales and Purchases";
+        var mkdocs_page_input_path = "en\\Processes\\1.PR_Ventas_Compras.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Sales and Purchases</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduction">1. Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-process-overview">2. Process Overview</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-sales">2.1 Sales</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-purchasing">2.2 Purchasing</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-sales">3. Sales</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-sales-documents">3.1 Sales Documents</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#311-document-types">3.1.1 Document types</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-quote">3.2 Quote</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#321-document-data">3.2.1 Document data</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#322-details">3.2.2 Details</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#323-logikal">3.2.3 Logikal</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-order">3.3 Order</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#331-create-order">3.3.1 Create order</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#332-edit-line">3.3.2 Edit line</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#333-delivery-note">3.3.3 Delivery note</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-measurement">3.4 Measurement</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#341-create-measurement">3.4.1 Create measurement</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#342-select-lines">3.4.2 Select lines</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#343-measurement-phase">3.4.3 Measurement phase</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#344-delivery-note">3.4.4 Delivery note</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#35-production">3.5 Production</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#351-create-production">3.5.1 Create production</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#352-select-lines">3.5.2 Select lines</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#353-production-phase">3.5.3 Production phase</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#354-delivery-note">3.5.4 Delivery note</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-purchasing">4. Purchasing</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-purchase-orders">4.1 Purchase orders</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#411-from-a-quote">4.1.1 From a quote</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#412-required-materials">4.1.2 Required materials</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#413-generate-purchase-order">4.1.3 Generate purchase order</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#414-purchase-order">4.1.4 Purchase order</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#415-export-to-cortizo-center">4.1.5 Export to Cortizo Center</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#416-claims">4.1.6 Claims</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#417-purchase-documents">4.1.7 Purchase documents</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#418-items-and-imported-items">4.1.8 Items and Imported Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-material-reception">4.2 Material reception</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#421-goods-received-note">4.2.1 Goods received note</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#422-units-received">4.2.2 Units received</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-additional-material-and-breakages">5. Additional material and breakages</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-additional-material">5.1 Additional material</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#511-add-material">5.1.1 Add material</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#512-costs">5.1.2 Costs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#52-breakages">5.2 Breakages</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#521-add-to-breakages">5.2.1 Add to breakages</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-traceability">6. Traceability</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-traceability-tree">6.1 Traceability tree</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-view">6.2 View</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-frequently-asked-questions">7. Frequently asked questions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-how-do-i-handle-post-sale-issues">7.1 How do I handle post-sale issues?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-how-do-i-add-additional-material">7.2 How do I add additional material?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#73-how-do-i-receive-materials-partially">7.3 How do I receive materials partially?</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Processes</li>
+      <li class="breadcrumb-item active">Sales and Purchases</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="sales-and-purchases">Sales and Purchases</h1>
+<hr />
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This guide is designed to help users work with ENBLAU's sales and purchasing system. Based on the training provided, it covers the key processes from creating projects through managing orders, purchases, and production.</p>
+<hr />
+<h2 id="2-process-overview">2. Process Overview</h2>
+<p>Once you are in the module, you'll see two main sections:</p>
+<h3 id="21-sales">2.1 Sales</h3>
+<ul>
+<li><strong>Sales documents</strong>: Management and listing of quotes, orders, delivery notes, and invoices. Creation of projects and customers.</li>
+</ul>
+<p><img alt="Sales" src="../Imagenes/PR_Ventas_Compras/ventas.jpg" /></p>
+<h3 id="22-purchasing">2.2 Purchasing</h3>
+<ul>
+<li><strong>Purchase documents</strong>: Management and listing of purchase orders and material receipts. Creation of suppliers.</li>
+</ul>
+<p><img alt="Purchasing" src="../Imagenes/PR_Ventas_Compras/compras.jpg" /></p>
+<blockquote>
+<p><strong>Note:</strong> To create sales and purchase documents, you must have <strong>projects, customers, and suppliers</strong> set up. For more information see: <a href="../6.PR_Proyecto_cliente/">4. Project, customer and suppliers</a>.</p>
+</blockquote>
+<hr />
+<h2 id="3-sales">3. Sales</h2>
+<p>In the Sales area you will find Projects, Sales Documents, and Customers.</p>
+<h3 id="31-sales-documents">3.1 Sales Documents</h3>
+<ul>
+<li>When you open <strong>Sales Documents</strong>, a list of all sales-related documents will appear.</li>
+</ul>
+<p><img alt="Sales list" src="../Imagenes/PR_Ventas_Compras/ventas2.jpg" /></p>
+<h4 id="311-document-types">3.1.1 Document types</h4>
+<ul>
+<li>To create a new document, click <strong>New</strong> on the top ribbon.</li>
+</ul>
+<p><img alt="New Sales" src="../Imagenes/PR_Ventas_Compras/ventas_nuevo.jpg" /></p>
+<ul>
+<li>A <strong>New sales document</strong> window will open.</li>
+</ul>
+<p><img alt="New sales document" src="../Imagenes/PR_Ventas_Compras/ventas_doc.jpg" /></p>
+<ul>
+<li>From here you can create different types of sales documents such as Quote, Order, Delivery Note, or Invoice.</li>
+</ul>
+<p><img alt="Document type" src="../Imagenes/PR_Ventas_Compras/ventas_tipo.jpg" /></p>
+<ul>
+<li>When you select the document type some fields may be auto-filled (Salesperson, Responsible, Numbering, etc.). These fields are editable.</li>
+</ul>
+<p><img alt="Sales fields" src="../Imagenes/PR_Ventas_Compras/ventas_campos.jpg" /></p>
+<ul>
+<li>Other fields like Project and Customer can be configured to auto-fill based on the project.</li>
+</ul>
+<p><img alt="Sales fields 2" src="../Imagenes/PR_Ventas_Compras/ventas_campos2.jpg" /></p>
+<ul>
+<li>On the top ribbon you can change the customer or add a new customer or project.</li>
+</ul>
+<p><img alt="Top ribbon" src="../Imagenes/PR_Ventas_Compras/venta_cinta.jpg" /></p>
+<h3 id="32-quote">3.2 Quote</h3>
+<ul>
+<li>When creating a new quote, a window will open showing the sales quote number.</li>
+</ul>
+<p><img alt="Quote" src="../Imagenes/PR_Ventas_Compras/presupuesto.jpg" /></p>
+<h4 id="321-document-data">3.2.1 Document data</h4>
+<ul>
+<li>In this section you can view and modify certain fields of the quote.</li>
+</ul>
+<p><img alt="Quote document data" src="../Imagenes/PR_Ventas_Compras/presupuesto_datos.jpg" /></p>
+<h4 id="322-details">3.2.2 Details</h4>
+<ul>
+<li>Add line items for the quote version here.</li>
+</ul>
+<p><img alt="Quote details" src="../Imagenes/PR_Ventas_Compras/presupuesto_detalle.jpg" /></p>
+<ul>
+<li>You can add an empty line item or add one from Logikal (make sure you're connected to the factory).</li>
+</ul>
+<p><img alt="Add line" src="../Imagenes/PR_Ventas_Compras/presupuesto_posicion.jpg" /></p>
+<ul>
+<li>If you add a line from Logikal, the Logikal <strong>Line type</strong> configuration window will open.</li>
+</ul>
+<p><img alt="Logikal line type" src="../Imagenes/PR_Ventas_Compras/presupuesto_logikal.jpg" /></p>
+<blockquote>
+<p>⚠️ <strong>Important</strong>: To add a line from Logikal, ensure you are connected to the factory.</p>
+</blockquote>
+<p><img alt="Factory connection" src="../Imagenes/PR_Ventas_Compras/conexion_fabrica.jpg" /></p>
+<ul>
+<li>Once configured, the line will be added in ENBLAU.</li>
+</ul>
+<p><img alt="Line in ENBLAU" src="../Imagenes/PR_Ventas_Compras/presupuesto_logikal2.jpg" /></p>
+<h4 id="323-logikal">3.2.3 Logikal</h4>
+<ul>
+<li>From here you can create a project or link an existing Logikal project.</li>
+</ul>
+<p><img alt="Link Logikal project" src="../Imagenes/PR_Ventas_Compras/presupuesto_logikal3.jpg" /></p>
+<ul>
+<li>When linking a project, a window will open showing the available projects in Logikal.</li>
+</ul>
+<p><img alt="Select Logikal project" src="../Imagenes/PR_Ventas_Compras/presupuesto_logikal4.jpg" /></p>
+<ul>
+<li>You can create different versions of the quote. Right-click the <em>Version 1</em> tab or use the Quote dropdown on the top ribbon.</li>
+</ul>
+<p><img alt="Quote version" src="../Imagenes/PR_Ventas_Compras/presupuesto_version.jpg" />
+  <img alt="Quote version options" src="../Imagenes/PR_Ventas_Compras/presupuesto_version2.jpg" /></p>
+<ul>
+<li>A <strong>New quote version</strong> window will open where you can choose to copy the lines from the active version or start a blank version.</li>
+</ul>
+<p><img alt="New quote version" src="../Imagenes/PR_Ventas_Compras/presupuesto_version3.jpg" /></p>
+<ul>
+<li>To edit a Logikal line, press <strong>Ctrl + double-click</strong> on the line you want to edit.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Version tab names are editable — right-click the tab and choose <em>Rename version</em> to change it.</p>
+<p>⚠️ <strong>Important</strong>: To create or link a project from Logikal, make sure you are connected to the factory.</p>
+</blockquote>
+<p><img alt="Factory connection" src="../Imagenes/PR_Ventas_Compras/conexion_fabrica.jpg" /></p>
+<h3 id="33-order">3.3 Order</h3>
+<h4 id="331-create-order">3.3.1 Create order</h4>
+<ul>
+<li>Once a quote version is created and accepted, the next step is to convert it to a customer order.</li>
+</ul>
+<p><img alt="Order" src="../Imagenes/PR_Ventas_Compras/pedido.jpg" />
+  <img alt="Order details" src="../Imagenes/PR_Ventas_Compras/pedido2.jpg" /></p>
+<h4 id="332-edit-line">3.3.2 Edit line</h4>
+<ul>
+<li>From the order you can edit or add lines, list materials, create measurements, productions, etc.</li>
+</ul>
+<p><img alt="Edit order line" src="../Imagenes/PR_Ventas_Compras/pedido3.jpg" /></p>
+<h4 id="333-delivery-note">3.3.3 Delivery note</h4>
+<ul>
+<li>From the Order stage you can create a delivery note and indicate the units to be delivered.</li>
+</ul>
+<p><img alt="Delivery note" src="../Imagenes/PR_Ventas_Compras/albaran.jpg" /></p>
+<blockquote>
+<p><strong>Note:</strong> Order document fields can be modified, just like other sales documents.</p>
+</blockquote>
+<h3 id="34-measurement">3.4 Measurement</h3>
+<h4 id="341-create-measurement">3.4.1 Create measurement</h4>
+<ul>
+<li>You can create a measurement from the order.</li>
+</ul>
+<p><img alt="Measurement" src="../Imagenes/PR_Ventas_Compras/medicion.jpg" /></p>
+<h4 id="342-select-lines">3.4.2 Select lines</h4>
+<ul>
+<li>When creating a measurement, the <strong>New measurement phase</strong> window opens where you can select lines for the measurement phase.</li>
+</ul>
+<p><img alt="New measurement phase" src="../Imagenes/PR_Ventas_Compras/fase_medicion.jpg" /></p>
+<h4 id="343-measurement-phase">3.4.3 Measurement phase</h4>
+<ul>
+<li>A measurement phase is created where you can edit measurements without affecting the order.</li>
+</ul>
+<p><img alt="Edit measurement phase" src="../Imagenes/PR_Ventas_Compras/fase_medicion2.jpg" /></p>
+<h4 id="344-delivery-note">3.4.4 Delivery note</h4>
+<ul>
+<li>From the Measurement phase you can create a delivery note and indicate the units to be delivered, same as from the order.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Measurement document fields can also be modified.</p>
+</blockquote>
+<h3 id="35-production">3.5 Production</h3>
+<h4 id="351-create-production">3.5.1 Create production</h4>
+<ul>
+<li>The production phase can be created from the order or from a measurement.</li>
+</ul>
+<p><img alt="Create production" src="../Imagenes/PR_Ventas_Compras/crear_produccion.jpg" /></p>
+<h4 id="352-select-lines">3.5.2 Select lines</h4>
+<ul>
+<li>When creating a production, the <strong>New production phase</strong> window opens where you can select lines for production.</li>
+</ul>
+<p><img alt="New production phase" src="../Imagenes/PR_Ventas_Compras/fase_produccion.jpg" /></p>
+<ul>
+<li>When you accept, a prompt will ask if you want to send the job to production.</li>
+</ul>
+<p><img alt="Send to production prompt" src="../Imagenes/PR_Ventas_Compras/pregunta_enviar.jpg" /></p>
+<h4 id="353-production-phase">3.5.3 Production phase</h4>
+<ul>
+<li>A production phase is created where you can edit the line before sending it to production without affecting the order.</li>
+</ul>
+<p><img alt="Production phase" src="../Imagenes/PR_Ventas_Compras/fase_produccion2.jpg" /></p>
+<h4 id="354-delivery-note">3.5.4 Delivery note</h4>
+<ul>
+<li>From the Production phase you can create a delivery note and indicate the units to be delivered, the same way as from the order.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Production document fields can be modified as with other sales documents.</p>
+</blockquote>
+<hr />
+<h2 id="4-purchasing">4. Purchasing</h2>
+<h3 id="41-purchase-orders">4.1 Purchase orders</h3>
+<h4 id="411-from-a-quote">4.1.1 From a quote</h4>
+<ul>
+<li>Accept a quote to generate a customer order.</li>
+</ul>
+<h4 id="412-required-materials">4.1.2 Required materials</h4>
+<ul>
+<li>Go to the "Material Needed" tab to list required materials.</li>
+</ul>
+<p><img alt="Material needed" src="../Imagenes/PR_Ventas_Compras/material_necesario.jpg" /></p>
+<ul>
+<li>When listing materials you will see the Items and Units to purchase columns highlighted in green and red. Green indicates there is enough stock for that project; red indicates there is not enough.</li>
+</ul>
+<p><img alt="List materials" src="../Imagenes/PR_Ventas_Compras/material_necesario.jpg" /></p>
+<ul>
+<li>You can choose whether to purchase items by checking or unchecking the <em>Buy</em> checkbox.</li>
+</ul>
+<p><img alt="Buy material" src="../Imagenes/PR_Ventas_Compras/material_comprar.gif" /></p>
+<blockquote>
+<p>⚠️ <strong>Important</strong>: To list materials from a Logikal project, make sure you are connected to the factory.</p>
+</blockquote>
+<p><img alt="Factory connection" src="../Imagenes/PR_Ventas_Compras/conexion_fabrica.jpg" /></p>
+<h4 id="413-generate-purchase-order">4.1.3 Generate purchase order</h4>
+<ul>
+<li>Select materials and generate the purchase order using <strong>Request material</strong>. A <strong>New purchase document</strong> window opens where you can change some default fields and select the supplier.</li>
+</ul>
+<p><img alt="Request material" src="../Imagenes/PR_Ventas_Compras/pedir_material.jpg" /></p>
+<ul>
+<li>Assign a supplier and send the order.</li>
+</ul>
+<p><img alt="Select supplier" src="../Imagenes/PR_Ventas_Compras/buscar_proveedor.jpg" /></p>
+<h4 id="414-purchase-order">4.1.4 Purchase order</h4>
+<ul>
+<li>Once the purchase order is created you can review and modify it as needed (supplier, project, quantities, etc.).</li>
+</ul>
+<p><img alt="Purchase order detail" src="../Imagenes/PR_Ventas_Compras/pedidoc_detalle.jpg" /></p>
+<h4 id="415-export-to-cortizo-center">4.1.5 Export to Cortizo Center</h4>
+<ul>
+<li>After creating the purchase order you can export it to Excel format so it can be uploaded to Cortizo Center.</li>
+</ul>
+<p><img alt="Export Cortizo" src="../Imagenes/PR_Ventas_Compras/export_cortizo.jpg" /></p>
+<h4 id="416-claims">4.1.6 Claims</h4>
+<p>Once a <strong>purchase order</strong> has been generated, you have the option to manage <strong>Claims</strong> directly from the system.</p>
+<ul>
+<li>You can add a claim associated with the order from its card:</li>
+</ul>
+<p><img alt="Claims" src="../Imagenes/PR_Ventas_Compras/reclamaciones.jpg" /></p>
+<ul>
+<li>It is also possible to <strong>send the claim automatically by email</strong>, speeding up communication with the supplier:</li>
+</ul>
+<p><img alt="Send by email" src="../Imagenes/PR_Ventas_Compras/reclamaciones2.jpg" /></p>
+<ul>
+<li>The system stores an <strong>automatic history</strong> of claims. You can also add manual entries to document the <strong>follow-up</strong> of the claim.</li>
+</ul>
+<p><img alt="Claims history" src="../Imagenes/PR_Ventas_Compras/reclamaciones3.jpg" /></p>
+<p><strong>Note:</strong> Properly tracking claims improves traceability of incidents with suppliers and helps purchasing quality management.</p>
+<h4 id="417-purchase-documents">4.1.7 Purchase documents</h4>
+<ul>
+<li>From the Purchasing area you can access the purchase list and Suppliers.</li>
+</ul>
+<p><img alt="Purchase documents" src="../Imagenes/PR_Ventas_Compras/compras_documentos.jpg" /></p>
+<p><img alt="Purchase list" src="../Imagenes/PR_Ventas_Compras/lista_compra.jpg" /></p>
+<h4 id="418-items-and-imported-items">4.1.8 Items and Imported Items</h4>
+<ul>
+<li>
+<p>In the purchase order under the <strong>Detail</strong> tab on the right-hand ribbon, you'll find sections at the bottom called <strong>Items</strong> and <strong>Imported Items</strong>. Items can be added to the purchase order by dragging the material into the list.</p>
+</li>
+<li>
+<p><strong>Items</strong>: Materials created locally in the <strong>MATERIAL</strong> module.</p>
+</li>
+</ul>
+<p><img alt="Items" src="../Imagenes/PR_Ventas_Compras/articulos.jpg" /></p>
+<ul>
+<li><strong>Imported Items</strong>: Materials imported from Logikal projects. These materials are stored and updated each time materials are listed from Material Needed. They are the same materials also found in Warehouse <strong>Imported Materials</strong>.</li>
+</ul>
+<p><img alt="Imported items" src="../Imagenes/PR_Ventas_Compras/articulos_importados.jpg" /></p>
+<h3 id="42-material-reception">4.2 Material reception</h3>
+<h4 id="421-goods-received-note">4.2.1 Goods received note</h4>
+<ul>
+<li>Generate a goods received note when receiving materials.</li>
+</ul>
+<p><img alt="Generate goods note" src="../Imagenes/PR_Ventas_Compras/generar_albaran.jpg" /></p>
+<h4 id="422-units-received">4.2.2 Units received</h4>
+<ul>
+<li>Indicate the units received in the <em>Units to deliver</em> column.</li>
+</ul>
+<p><img alt="Units received" src="../Imagenes/PR_Ventas_Compras/unidades_recibidas.jpg" /></p>
+<hr />
+<h2 id="5-additional-material-and-breakages">5. Additional material and breakages</h2>
+<h3 id="51-additional-material">5.1 Additional material</h3>
+<ul>
+<li>Additional materials can be added to an order, measurement, or production. You can add locally created materials from enMATERIALS or imported items from Logikal. For more information on creating local materials, see: <a href="/Utilidades/2.UT_Crear_Materiales_enMATERIAL">2. Creating own materials in enMATERIALS</a>.</li>
+</ul>
+<p><img alt="Additional material" src="../Imagenes/PR_Ventas_Compras/material_adicional.jpg" /></p>
+<h4 id="511-add-material">5.1.1 Add material</h4>
+<ul>
+<li>Drag additional material from the Items tree (materials created in enMATERIAL).</li>
+</ul>
+<p><img alt="Drag to add" src="../Imagenes/PR_Ventas_Compras/a%C3%B1adir_articulo.gif" /></p>
+<ul>
+<li>You can also drag from <strong>Imported Items</strong> from Logikal.</li>
+</ul>
+<p><img alt="Add imported" src="../Imagenes/PR_Ventas_Compras/a%C3%B1adir_importado.jpg" /></p>
+<ul>
+<li>Add text lines as needed.</li>
+</ul>
+<p><img alt="Add line" src="../Imagenes/PR_Ventas_Compras/a%C3%B1adir_linea.jpg" /></p>
+<ul>
+<li>After adding additional materials you can generate a purchase order to the supplier.</li>
+</ul>
+<p><img alt="Additional purchase" src="../Imagenes/PR_Ventas_Compras/adicional_pedido.jpg" /></p>
+<ul>
+<li>You can generate a shipping delivery note for additional material.</li>
+</ul>
+<p><img alt="Shipping note" src="../Imagenes/PR_Ventas_Compras/albaran_envio.jpg" /></p>
+<h4 id="512-costs">5.1.2 Costs</h4>
+<ul>
+<li>Additional material is recorded as a project cost but is not budgeted to the customer.</li>
+</ul>
+<h3 id="52-breakages">5.2 Breakages</h3>
+<h4 id="521-add-to-breakages">5.2.1 Add to breakages</h4>
+<ul>
+<li>From the "Material Needed" section, right-click the material and select <strong>Add to breakages</strong>.</li>
+</ul>
+<p><img alt="Add breakages" src="../Imagenes/PR_Ventas_Compras/a%C3%B1adir_roturas.jpg" /></p>
+<ul>
+<li>The material will be added to the <strong>Breakages</strong> section. In the <em>Concept</em> column you can indicate the reason for the breakage by selecting from a predefined list configured in <a href="/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/#75-conceptos-de-roturas">7.5. Breakage concepts</a>.</li>
+</ul>
+<p><img alt="Breakage" src="../Imagenes/PR_Ventas_Compras/rotura.jpg" /></p>
+<ul>
+<li>As with Additional Material you can add Items (local materials) and Imported Items. You can also generate a purchase order and delivery note.</li>
+</ul>
+<p><img alt="Breakage item" src="../Imagenes/PR_Ventas_Compras/rotura_articulo.jpg" /></p>
+<ul>
+<li>Ensure that the classification for breakages is correctly configured in <a href="/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/#83-clasificaciones">8.3. Classifications</a>.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> The process to add and request additional materials or breakages can also be done from the Projects area.</p>
+</blockquote>
+<hr />
+<h2 id="6-traceability">6. Traceability</h2>
+<h3 id="61-traceability-tree">6.1 Traceability tree</h3>
+<ul>
+<li>Shows the full traceability of a document from the quote through to production. For example, from a quote (e.g., #483) to its production release.</li>
+</ul>
+<p><img alt="Traceability" src="../Imagenes/PR_Ventas_Compras/trazabilidad.jpg" /></p>
+<h3 id="62-view">6.2 View</h3>
+<ul>
+<li>Click any document to view its traceability in the right-hand panel.</li>
+</ul>
+<p><img alt="Traceability view" src="../Imagenes/PR_Ventas_Compras/trazabilidad_vizualizacion.gif" /></p>
+<hr />
+<blockquote>
+<p><strong>Filter management</strong> Use filters and custom filters to optimize searches in lists. For more information, see: <a href="/Utilidades/4.UT_Gestion_Filtros/">4. Filter management</a></p>
+</blockquote>
+<hr />
+<h2 id="7-frequently-asked-questions">7. Frequently asked questions</h2>
+<h3 id="71-how-do-i-handle-post-sale-issues">7.1 How do I handle post-sale issues?</h3>
+<ul>
+<li><strong>Option 1</strong>: Create a new quote.</li>
+<li><strong>Option 2</strong>: Create a customer order with a zero amount and send it to production.</li>
+</ul>
+<h3 id="72-how-do-i-add-additional-material">7.2 How do I add additional material?</h3>
+<ul>
+<li>Drag the additional material from the tree and generate a shipping delivery note.</li>
+</ul>
+<h3 id="73-how-do-i-receive-materials-partially">7.3 How do I receive materials partially?</h3>
+<ul>
+<li>When generating a delivery note, indicate the units received. You can create multiple delivery notes for the same order.</li>
+</ul>
+<hr />
+<p>This guide is intended to help you navigate and use ENBLAU's sales and purchasing system efficiently. For more details, watch the training video or contact technical support.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/" class="btn btn-neutral float-left" title="Initial Configuration enCONTROL"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.PR_Facturas/" class="btn btn-neutral float-right" title="Invoicing">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2.PR_Facturas/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

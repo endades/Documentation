@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Creación de materiales propios en enMATERIALS - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Creaci\u00f3n de materiales propios en enMATERIALS";
+        var mkdocs_page_input_path = "es\\Utilidades\\2.UT_Crear_Materiales_enMATERIAL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+      <li class="breadcrumb-item active">Creación de materiales propios en enMATERIALS</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="creacion-de-materiales-propios-en-enmaterials">Creación de materiales propios en enMATERIALS</h1>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual tiene como objetivo guiar al usuario en el proceso de alta y gestión de materiales propios en enMATERIALS. Asegúrate de seguir las instrucciones detalladas para garantizar una correcta definición y organización de los materiales.</p>
+<hr />
+<h2 id="2-definicion-de-materiales">2. Definición de materiales</h2>
+<p>Los materiales pueden clasificarse en diferentes tipos según sus propiedades y características. A continuación, se describen los principales tipos:</p>
+<h3 id="21-tipos-de-materiales">2.1. Tipos de materiales</h3>
+<ul>
+<li><strong>Piezas</strong>: Se calculan por unidad y son los materiales más comunes y sencillos de definir.</li>
+<li><strong>Barras</strong>: Se calculan por metro lineal y requieren información adicional, como longitud.</li>
+<li><strong>Superficies</strong>: Se calculan por metro cuadrado y pueden incluir características adicionales.</li>
+<li><strong>Juntas</strong>: Se calculan por metro lineal y tienen especificaciones especiales para su aplicación.</li>
+</ul>
+<h3 id="22-articulos-y-colores">2.2. Artículos y colores</h3>
+<p>Los materiales se definen dentro de la sección "Artículos", mientras que los acabados se gestionan en "Colores" y la materia prima en "Materiales".</p>
+<p><img alt="Artículos y Colores" src="../../../Utilidades/Imagenes/UT_Crear_Material/articulos_colores.png" /></p>
+<hr />
+<h2 id="3-creacion-de-materiales">3. Creación de materiales</h2>
+<p>Para dar de alta un material, sigue estos pasos:</p>
+<h3 id="31-definir-un-articulo">3.1. Definir un artículo</h3>
+<ol>
+<li>Accede a la sección de "Artículos".</li>
+</ol>
+<p><img alt="Artículos" src="../../../Utilidades/Imagenes/UT_Crear_Material/articulos.png" />
+   <img alt="Nuevo Artículo" src="../../../Utilidades/Imagenes/UT_Crear_Material/nuevo_articulo.png" /></p>
+<ol>
+<li>Desde la pestaña <strong>General</strong> Asigna una referencia, un tipo de cálculo y un material.</li>
+</ol>
+<p><img alt="Referencia" src="../../../Utilidades/Imagenes/UT_Crear_Material/referencia.png" /></p>
+<ol>
+<li>Organiza los artículos por niveles utilizando los campos "Familia1", "Familia2", etc.</li>
+</ol>
+<p><img alt="Familias Artículo" src="../../../Utilidades/Imagenes/UT_Crear_Material/familias_articulo.png" /></p>
+<ol>
+<li>Completa la descripción de compra (para proveedores) y la de venta (para clientes).</li>
+</ol>
+<p><img alt="Descripción Artículo" src="../../../Utilidades/Imagenes/UT_Crear_Material/descripcion_articulo.png" /></p>
+<ol>
+<li>Asigna un material base arrastrando un material desde el árbol de materiales en la cinta derecha.</li>
+</ol>
+<p><img alt="Material" src="../../../Utilidades/Imagenes/UT_Crear_Material/material.png" /></p>
+<ol>
+<li>Añade imágenes al material. Asegúrate de optimizar las imágenes para evitar lentitud en la base de datos.</li>
+</ol>
+<p><img alt="Imagen" src="../../../Utilidades/Imagenes/UT_Crear_Material/imagen.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> El apartado "General" del artículo es igual para todos los tipos de cálculo.</p>
+</blockquote>
+<h3 id="32-creacion-de-colores">3.2. Creación de colores</h3>
+<ol>
+<li>Accede a la sección de "Colores".</li>
+</ol>
+<p><img alt="Colores" src="../../../Utilidades/Imagenes/UT_Crear_Material/colores.png" />
+   <img alt="Nuevo Color" src="../../../Utilidades/Imagenes/UT_Crear_Material/nuevo_color.png" /></p>
+<ol>
+<li>Asigna una referencia, nombre y un color o textura.</li>
+</ol>
+<p><img alt="Crear Color" src="../../../Utilidades/Imagenes/UT_Crear_Material/crear_color.png" /></p>
+<ol>
+<li>Asigna un proveedor desde la pestaña "Proveedor" arrastrando el proveedor desde la ventana derecha.</li>
+</ol>
+<p><img alt="Proveedor Color" src="../../../Utilidades/Imagenes/UT_Crear_Material/proveedor_color.png" /></p>
+<h3 id="33-creacion-de-un-material-base">3.3. Creación de un material Base</h3>
+<ol>
+<li>Accede a la sección de "Materiales".</li>
+</ol>
+<p><img alt="Materiales" src="../../../Utilidades/Imagenes/UT_Crear_Material/materiales.png" />
+   <img alt="Nuevo Material" src="../../../Utilidades/Imagenes/UT_Crear_Material/nuevo_material.png" /></p>
+<ol>
+<li>Indica el nombre, color y marca el check "Material" para que aparezca como materia prima.</li>
+</ol>
+<p><img alt="Crear Material" src="../../../Utilidades/Imagenes/UT_Crear_Material/crear_material.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Para generar automáticamente la carta RAL de colores y material base, selecciona el botón <strong>Esenciales</strong> en la barra de "Inicio".</p>
+</blockquote>
+<p><img alt="Esenciales" src="../../../Utilidades/Imagenes/UT_Crear_Material/esenciales.png" /></p>
+<p><img alt="RAL" src="../../../Utilidades/Imagenes/UT_Crear_Material/ral.png" />
+   <img alt="Material Artículo" src="../../../Utilidades/Imagenes/UT_Crear_Material/material_articulo.png" /></p>
+<hr />
+<h2 id="4-gestion-de-proveedores">4. Gestión de proveedores</h2>
+<p>Antes de dar de alta un material, verifica si el proveedor ya está registrado en ENBLAU en la sección "Compras &gt; Proveedores". Si no está registrado, créalo siguiendo los estándares definidos.</p>
+<p><img alt="Proveedores ENBLAU" src="../../../Utilidades/Imagenes/UT_Crear_Material/proveedores_enblau.png" /></p>
+<hr />
+<h2 id="5-comercial-y-stock">5. Comercial y stock</h2>
+<p>Una vez definido el material, completa su información en las secciones de comercial y stock.</p>
+<h3 id="51-datos-de-compra-y-proveedores">5.1. Datos de compra y proveedores</h3>
+<p>Asigna proveedores, unidades y precios de compra según cada color del material.</p>
+<p><img alt="Asignar Proveedor" src="../../../Utilidades/Imagenes/UT_Crear_Material/asignar_proveedor.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Puedes añadir una referencia de proveedor si es distinta de la registrada en la base de datos.</p>
+</blockquote>
+<h3 id="52-asignacion-de-referencias">5.2. Asignación de referencias</h3>
+<p>Cada color y material tendrá una referencia única <em>(Referencia Artículo + Referencia Color)</em>. Arrastra uno o más colores desde la pestaña de colores en la ventana derecha.</p>
+<p><img alt="Asignar Color" src="../../../Utilidades/Imagenes/UT_Crear_Material/asignar_color.png" /></p>
+<hr />
+<h2 id="6-tipologia-de-materiales-y-deatos-adicionales">6. Tipología de materiales y deatos adicionales</h2>
+<h3 id="61-piezas">6.1. Piezas</h3>
+<ul>
+<li>Materiales individuales gestionados por unidad (accesorios, tornillos, etc.).</li>
+<li>Se valoran por unidad.</li>
+<li>En la pestaña "Propiedades Comunes", puedes añadir campos adicionales si es necesario.</li>
+</ul>
+<p><img alt="Propiedades Comunes" src="../../../Utilidades/Imagenes/UT_Crear_Material/articulos_propriedades.png" /></p>
+<h3 id="62-barras">6.2. Barras</h3>
+<ul>
+<li>Materiales definidos por longitud y otros atributos técnicos.</li>
+<li>Se valoran por metro lineal.</li>
+<li>En la pestaña "Propiedades Comunes", indica la longitud de la barra (obligatorio).</li>
+</ul>
+<p><img alt="Barra Propiedades" src="../../../Utilidades/Imagenes/UT_Crear_Material/barra_propriedades.png" /></p>
+<ul>
+<li>Para perfiles, añade información adicional como distancia de seguridad y retal mínimo/máximo. Ese tipo de información son opcionales.</li>
+</ul>
+<p><img alt="Perfil" src="../../../Utilidades/Imagenes/UT_Crear_Material/perfil.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Los apartados como Tipología, Rol, Datos Técnicos, Descuentos y Reglas no son necesarios para creación de materiales propios, ya que son información relevante únicamente para los materiales dibujados.</p>
+</blockquote>
+<h3 id="63-superficies">6.3. Superficies</h3>
+<ul>
+<li>Materiales definidos por metro cuadrado (vidrios, chapas, etc.).</li>
+<li>Se valora por M2.</li>
+<li>En la pestaña "Propiedades Comunes", indica el alto y ancho de la superficie.</li>
+</ul>
+<p><img alt="Superficie Propiedades" src="../../../Utilidades/Imagenes/UT_Crear_Material/superficie_propriedades.png" /> </p>
+<ul>
+<li>En la pestaña "Valoración y datos técnicos", indica algunos datos dependiendo del tipo de la superficie y su necesidad. Por ejemplo: Espesor, tipo de superficie, precios por M2 (marcar el check "M2 por proveedor" si el precio se calcula por proveedor), etc. </li>
+</ul>
+<p><img alt="Valoracion Tecnica" src="../../../Utilidades/Imagenes/UT_Crear_Material/valoracion_tecnica.png" /> </p>
+<h3 id="64-juntas">6.4. Juntas</h3>
+<ul>
+<li>Materiales definidos por metro lineal.</li>
+<li>Se valora por metro lineal.</li>
+<li>En la pestaña "Propiedades Comunes", se puede indicar la longitud si lo ves necesario.</li>
+</ul>
+<p><img alt="Junta Propiedades" src="../../../Utilidades/Imagenes/UT_Crear_Material/junta_propriedades.png" /></p>
+<hr />
+<h2 id="7-estandares-a-seguir">7. Estándares a seguir</h2>
+<p>Para garantizar una correcta gestión, sigue estos estándares:</p>
+<ul>
+<li>Usa mayúsculas en nombres y referencias.</li>
+<li>Verifica la existencia de proveedores y materiales antes de darlos de alta.</li>
+<li>Mantén un formato uniforme en referencias de materiales y colores.</li>
+<li>Guardar siempre los cambio.</li>
+</ul>
+<hr />
+<h2 id="8-creacion-de-documentos-de-compra-enblau">8. Creación de documentos de compra ENBLAU</h2>
+<p>Para comprobar si el artículo está dado de alta abrir ENBLAU y crear un documento de compra:</p>
+<ol>
+<li>Crea un pedido de compra y selecciona el proveedor.</li>
+<li>En el pedido de compra busca y agrega el material desde la ventana derecha. Arrastra y selecciona el color asociado.</li>
+</ol>
+<p><img alt="Articulo Compra" src="../../../Utilidades/Imagenes/UT_Crear_Material/articulo_compra.png" /></p>
+<ol>
+<li>Válida el precio asignado al proveedor.</li>
+</ol>
+<p><img alt="Precio Proveedor" src="../../../Utilidades/Imagenes/UT_Crear_Material/precio_proveedor.png" /></p>
+<ul>
+<li>Si el material tiene más de un proveedor asignado, puedes seleccionar el proveedor deseado con un doble clic sobre el proveedor.</li>
+</ul>
+<hr />
+<h2 id="9-conclusion">9. Conclusión</h2>
+<p>Siguiendo este manual, podrás dar de alta y gestionar materiales de manera eficiente en el sistema, asegurando una correcta organización y optimización de los procesos de compra y venta.</p>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

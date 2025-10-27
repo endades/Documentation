@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="es" >
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>5. Actualización ENBLAU - Endades Documentation</title>
+    <title>Actualización ENBLAU - Endades Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "5. Actualizaci\u00f3n ENBLAU";
-        var mkdocs_page_input_path = "Utilidades\\5.UT_Actualizar_ENBLAU.md";
+        var mkdocs_page_name = "Actualizaci\u00f3n ENBLAU";
+        var mkdocs_page_input_path = "es\\Utilidades\\5.UT_Actualizar_ENBLAU.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -22,7 +22,63 @@
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -34,49 +90,49 @@
           <a href="../.." class="icon icon-home"> Endades Documentation
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" title="Escriba el término de búsqueda aquí" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegación">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Inicio</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Configuraciones</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">1. Configuración inicial de ENBLAU</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">Configuración Inicial ENBLAU</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración inicial de enCONTROL</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">Configuración Inicial enCONTROL</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Procesos</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/1.PR_Ventas_Compras/">1. Ventas y Compras</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/1.PR_Ventas_Compras/">Ventas y Compras</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/2.PR_Facturas/">2. Facturación</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/2.PR_Facturas/">Facturación</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/3.PR_Manual_Stock_ENBLAU/">3. Sistema de control de stock ENBLAU</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/3.PR_Manual_Stock_ENBLAU/">Géstion de control de stock ENBLAU</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/4.PR_Manual_Stock_enCONTROL/">4. Sistema de control de stock enCONTROL</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/4.PR_Manual_Stock_enCONTROL/">Géstion de control de stock enCONTROL</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/5.PR_Informes/">5. Informes</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/5.PR_Informes/">Informes</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/6.PR_Proyecto_cliente/">6. Proyectos, Clientes y Proveedores</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Procesos/6.PR_Proyecto_cliente/">Proyectos, Clientes y Proveedores</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Utilidades</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">1. Relación entre fases en ENBLAU y Logikal</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">Relación entre fases en ENBLAU y Logikal</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">2. Creación de materiales propios en enMATERIALS</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">Creación de materiales propios en enMATERIALS</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">3. Creación y edición de informes personalizados</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">Creación y edición de informes personalizados</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../4.UT_Gestion_Filtros/">4. Gestión de filtros</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.UT_Gestion_Filtros/">Gestión de filtros</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">5. Actualización ENBLAU</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Actualización ENBLAU</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
     </li>
@@ -102,13 +158,13 @@
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">6. Conectar una Unidad de Red</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">Conectar una Unidad de Red</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../7.UT_Divisas/">7. Divisas</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../7.UT_Divisas/">Divisas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">8. Importación programa de contabilidad</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">Importación programa de contabilidad</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">9. Escandallos (Agrupación de materiales)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">Escandallos (Agrupación de materiales)</a>
                   </li>
               </ul>
       </div>
@@ -116,7 +172,7 @@
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menú de navegación en móvil">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../..">Endades Documentation</a>
         
@@ -124,9 +180,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+    <li><a href="../.." class="icon icon-home" aria-label="Documentos"></a></li>
           <li class="breadcrumb-item">Utilidades</li>
-      <li class="breadcrumb-item active">5. Actualización ENBLAU</li>
+      <li class="breadcrumb-item active">Actualización ENBLAU</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -135,7 +191,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="5-actualizacion-enblau">5. Actualización ENBLAU</h1>
+  
+                <h1 id="actualizacion-enblau">Actualización ENBLAU</h1>
 <hr />
 <h2 id="1-introduccion">1. Introducción</h2>
 <p>Este manual está diseñado para orientar a los usuarios en el proceso de actualización de ENBLAU a la última versión disponible.</p>
@@ -246,11 +303,33 @@
 <hr />
 <p>📌 <strong>Nota</strong>: Si después de reinstalar ENBLAU el sistema solicita actualizar la base de datos, sigue el procedimiento indicado en <a href="#24-actualizacion-de-la-base-de-datos">2.4. Actualización de la base de datos</a>.</p>
               
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../4.UT_Gestion_Filtros/" class="btn btn-neutral float-left" title="4. Gestión de filtros"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../6.UT_Unidad_Red/" class="btn btn-neutral float-right" title="6. Conectar una Unidad de Red">Next <span class="icon icon-circle-arrow-right"></span></a>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navegación de pie de página">
+        <a href="../4.UT_Gestion_Filtros/" class="btn btn-neutral float-left" title="Gestión de filtros"><span class="icon icon-circle-arrow-left"></span> Anterior</a>
+        <a href="../6.UT_Unidad_Red/" class="btn btn-neutral float-right" title="Conectar una Unidad de Red">Siguiente <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -260,7 +339,7 @@
       <p> </p>
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Construído con <a href="https://www.mkdocs.org/">MkDocs</a> usando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> provisto por <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>
@@ -270,27 +349,46 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="Versions">
+  <div class="rst-versions" role="note" aria-label="Versiones">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../4.UT_Gestion_Filtros/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../4.UT_Gestion_Filtros/" style="color: #fcfcfc">&laquo; Anterior</a></span>
     
     
-      <span><a href="../6.UT_Unidad_Red/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../6.UT_Unidad_Red/" style="color: #fcfcfc">Siguiente &raquo;</a></span>
     
   </span>
 </div>
+  
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script>var base_url = "../..";</script>
     <script src="../../js/theme_extra.js"></script>
     <script src="../../js/theme.js"></script>
+      <script src="../../js/lang-switcher.js"></script>
       <script src="../../search/main.js"></script>
     <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
         });
     </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
 
 </body>
 </html>

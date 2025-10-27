@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Facturación - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Facturaci\u00f3n";
+        var mkdocs_page_input_path = "es\\Procesos\\2.PR_Facturas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+      <li class="breadcrumb-item active">Facturación</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="facturacion">Facturación</h1>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual explica el proceso de creación, edición y gestión de facturas. Aprenderás a utilizar filtros, crear facturas desde presupuestos, gestionar cobros y realizar ajustes necesarios.</p>
+<hr />
+<h2 id="2-creacion-de-facturas-desde-presupuestos">2. Creación de facturas desde presupuestos</h2>
+<p>Para crear facturas a partir de presupuestos, sigue estos pasos:</p>
+<h3 id="21-crear-un-presupuesto">2.1. Crear un presupuesto:</h3>
+<ul>
+<li>Añade líneas con los productos o servicios (ej. ventanas, chapas).</li>
+<li>
+<p>Define cantidades y precios.</p>
+<p><img alt="Presupuesto" src="../../../Procesos/Imagenes/PR_Facturas/presupuesto.png" /></p>
+</li>
+</ul>
+<h3 id="22-generar-la-factura">2.2. Generar la factura:</h3>
+<ul>
+<li>Accede al apartado de facturación.</li>
+<li>
+<p>Selecciona "Crear factura" desde el presupuesto.</p>
+<p><img alt="Crear factura" src="../../../Procesos/Imagenes/PR_Facturas/crear_factura.png" /> </p>
+</li>
+<li>
+<p>Elige el tipo de factura:</p>
+<ul>
+<li>
+<p><strong>Factura de anticipo</strong>: Permite cobrar un importe parcial y facturar el resto más adelante.</p>
+<p><img alt="Factura anticipo" src="../../../Procesos/Imagenes/PR_Facturas/anticipo_factura.png" /></p>
+</li>
+<li>
+<p><strong>Factura por unidades</strong>: Factura solo las unidades indicadas que quieras facturar. Luego obliga a continuar facturando en el mismo modo (está marcada por defecto).</p>
+<p><img alt="Factura unidades" src="../../../Procesos/Imagenes/PR_Facturas/unidades_factura.png" /></p>
+</li>
+<li>
+<p><strong>Introducir importe a facturar</strong>: Permite cobrar un importe específico del total de la factura. Luego obliga a continuar facturando en el mismo modo.</p>
+<p><img alt="Factura importe" src="../../../Procesos/Imagenes/PR_Facturas/importe_factura.png" /></p>
+</li>
+<li>
+<p><strong>Introducir porcentaje a facturar</strong>: Permite cobrar un porcentaje específico del total de la factura. Luego obliga a continuar facturando en el mismo modo.</p>
+</li>
+</ul>
+<p><img alt="Factura porcentaje" src="../../../Procesos/Imagenes/PR_Facturas/porcentage_factura.png" /></p>
+</li>
+<li>
+<p><strong>Factura a origen</strong> es factura por certificado.</p>
+</li>
+</ul>
+<h3 id="23-enviar-la-factura-al-cliente">2.3. Enviar la factura al cliente:</h3>
+<ul>
+<li>
+<p>Una vez creada, puedes ver la factura en vista previa antes de enviarla o imprimirla.</p>
+<p><img alt="Factura" src="../../../Procesos/Imagenes/PR_Facturas/factura.png" /></p>
+<p><img alt="Vista previa" src="../../../Procesos/Imagenes/PR_Facturas/vista_previa.png" /></p>
+<p><img alt="Vista previa" src="../../../Procesos/Imagenes/PR_Facturas/vista_previa2.png" /> </p>
+</li>
+<li>
+<p>Envía la factura al cliente por correo electrónico o imprímela.</p>
+<p><img alt="Imprimir email" src="../../../Procesos/Imagenes/PR_Facturas/imprimir_email.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> La factura se puede generar desde el presupuesto, pedido o albarán. Es recomendable generar las facturas siempre desde el mismo documento, es decir, si haces desde el pedido (el pedido normalmente es el que se acuerda con el cliente), seguir generando las facturas siempre desde ahí para una mejor gestión y trazabilidad.</p>
+</blockquote>
+<h3 id="24-estados-observaciones">2.4. Estados observaciones</h3>
+<ul>
+<li>Al crear la factura en la pestaña <strong>Estados observaciones</strong> te mostrará campos como Fecha, Vencimientos, retención, RE, Descuento P.P.</li>
+</ul>
+<hr />
+<h2 id="3-gestion-de-cobros">3. Gestión de cobros</h2>
+<p>Para gestionar los cobros de las facturas:</p>
+<h3 id="31-marcar-facturas-como-cobradas">3.1. Marcar facturas como cobradas:</h3>
+<ul>
+<li>
+<p>Desde el propio documento de la factura, se puede marcar que la factura está cobrada.</p>
+<p><img alt="Factura cobrada" src="../../../Procesos/Imagenes/PR_Facturas/cobrado_factura.png" /></p>
+</li>
+<li>
+<p>Otra opción es acceder al listado de vencimientos desde "Documentos de ventas".</p>
+<p><img alt="Filtrar vencimiento" src="../../../Procesos/Imagenes/PR_Facturas/listado_vencimento.png" /></p>
+</li>
+<li>
+<p>Filtra las facturas pendientes de cobro.</p>
+<p><img alt="Filtrar cobro" src="../../../Procesos/Imagenes/PR_Facturas/filtrar_cobrado.png" /></p>
+</li>
+<li>
+<p>Selecciona las facturas y márcalas como cobradas. Para seleccionar más de una factura, usa la tecla <strong>Ctrl + Click</strong> o <strong>Ctrl + A</strong> para seleccionar todas las facturas.</p>
+<p><img alt="Seleccionar cobro" src="../../../Procesos/Imagenes/PR_Facturas/selecionar_cobro.png" /></p>
+</li>
+<li>
+<p>Indica el modo de pago (transferencia, pagaré, etc.), la fecha de cobro y la fecha de ingreso en cuenta. Los campos marcados en rojo son obligatorios. Estos campos se pueden configurar previamente en el apartado "Formas de pago".</p>
+<p><img alt="Modo cobro" src="../../../Procesos/Imagenes/PR_Facturas/modo_cobro.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> En este apartado, como en otros listados de documentos, se pueden utilizar los filtros según sea necesario.</p>
+</blockquote>
+</li>
+<li>
+<p>En el listado de documentos de ventas, aparecerá en la trazabilidad del presupuesto el estado de la factura como "Cobrado".</p>
+<p><img alt="Cobro estado" src="../../../Procesos/Imagenes/PR_Facturas/cobrado_estado.png" /></p>
+</li>
+</ul>
+<h3 id="32-informes-de-cobros">3.2. Informes de cobros:</h3>
+<ul>
+<li>
+<p>Acepta el presupuesto para que genere un pedido (en el caso de que hayas facturado desde el presupuesto).</p>
+<p><img alt="Aceptar presupuesto" src="../../../Procesos/Imagenes/PR_Facturas/acceptar_presupuesto.png" /></p>
+</li>
+<li>
+<p>Utiliza el informe "Estado de facturación y cobros" para ver el estado de las facturas (cobradas, pendientes, porcentaje de facturación, etc.). Filtra por el presupuesto que quieras que se muestre.</p>
+<p><img alt="Estado facturación y cobros" src="../../../Procesos/Imagenes/PR_Facturas/estado_facturacion.png" /></p>
+<p><img alt="Estado facturación y cobros" src="../../../Procesos/Imagenes/PR_Facturas/estado_facturacion2.png" /></p>
+</li>
+<li>
+<p>Utiliza el informe de listado de facturas para ver la información de la factura (fecha, cliente, base imponible, IVA, total de la factura, etc.). Este informe se puede listar desde un rango de fechas o marcando un check que indica que se aplique solo a las facturas que estén en el filtrado del listado.</p>
+<p><img alt="Listado facturas" src="../../../Procesos/Imagenes/PR_Facturas/listado_factura.png" /></p>
+<p><img alt="Listado facturas" src="../../../Procesos/Imagenes/PR_Facturas/listado_factura2.png" /></p>
+<p><img alt="Listado facturas" src="../../../Procesos/Imagenes/PR_Facturas/listado_factura3.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="4-facturacion-desde-pedidos">4. Facturación desde pedidos</h2>
+<p>Para facturar desde pedidos, sigue estos pasos:</p>
+<h3 id="41-facturacion-desde-pedido">4.1. Facturación desde pedido</h3>
+<ul>
+<li>
+<p>Se puede facturar directamente desde "Pedido", siguiendo los mismos pasos que en el presupuesto. </p>
+</li>
+<li>
+<p>Otra manera de facturar sería crear una producción desde un pedido e indicar la cantidad de ventanas que quieres que estén en esta fase de producción. </p>
+<p><img alt="Crear producción" src="../../../Procesos/Imagenes/PR_Facturas/crear_produccion.png" /></p>
+<p><img alt="Fase producción" src="../../../Procesos/Imagenes/PR_Facturas/fase_produccion.png" /></p>
+<p><img alt="Producción 1" src="../../../Procesos/Imagenes/PR_Facturas/produccion_1.png" /></p>
+</li>
+<li>
+<p>Una vez confirmes que se han fabricado las ventanas indicadas en la fase de "Producción 1", por ejemplo, puedes ir al pedido y crear una factura indicando la cantidad a facturar.</p>
+<p><img alt="Factura pedido" src="../../../Procesos/Imagenes/PR_Facturas/fase_produccion.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Se recomienda siempre facturar desde el pedido, ya que es lo que se acuerda con el cliente para aceptar el presupuesto.</p>
+</blockquote>
+<ul>
+<li>
+<p>En el caso de que descuentes el total de la factura (unidad) y hayas emitido y cobrado una factura de anticipo, al intentar confirmar la factura, te aparecerá un mensaje para confirmar o no que descuentes el anticipo.</p>
+<p><img alt="Descuento anticipo" src="../../../Procesos/Imagenes/PR_Facturas/descontar_anticipo.png" /></p>
+</li>
+<li>
+<p>Al confirmar, se descontará el anticipo de la factura.</p>
+<p><img alt="Importe anticipo" src="../../../Procesos/Imagenes/PR_Facturas/importe_anticipo.png" /></p>
+</li>
+<li>
+<p>Al generar la factura para enviar al cliente, verás en detalle lo que se ha cobrado y descontado.</p>
+<p><img alt="Informe factura" src="../../../Procesos/Imagenes/PR_Facturas/informe_factura.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="5-facturacion-desde-albaranes">5. Facturación desde albaranes</h2>
+<p>Si trabajas con albaranes, sigue estos pasos:</p>
+<h3 id="51-crear-albaranes-desde-pedidos">5.1. Crear albaranes desde pedidos:</h3>
+<ul>
+<li>
+<p>Genera albaranes para las producciones realizadas.</p>
+<p><img alt="Crear albarán" src="../../../Procesos/Imagenes/PR_Facturas/crear_albaran.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Asegúrate de que los precios y descripciones sean correctos.</p>
+</blockquote>
+<h3 id="52-facturar-desde-albaranes">5.2. Facturar desde albaranes:</h3>
+<ul>
+<li>Accede al pedido correspondiente.</li>
+<li>
+<p>Selecciona "Crear factura" desde el albarán y sigue los mismos pasos anteriores.</p>
+<p><img alt="Factura albarán" src="../../../Procesos/Imagenes/PR_Facturas/factura_albaran.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Verifica que los precios y las unidades coincidan con lo acordado con el cliente, ya que puede variar dependiendo si hay alguna modificación en la producción (ej. cambiar la medida de la ventana) y que puede afectar el precio y facturar con un precio distinto del pedido.</p>
+</blockquote>
+<hr />
+<h2 id="6-formas-y-modos-de-pago">6. Formas y modos de pago</h2>
+<p>Configura las formas y modos de pago según tus necesidades:</p>
+<p><img alt="Configuración" src="../../../Procesos/Imagenes/PR_Facturas/configuracion_venta.png" /></p>
+<h3 id="61-formas-de-pago">6.1. Formas de pago:</h3>
+<ul>
+<li>
+<p>Define cómo se pagará (ej. 30 días, 60 días, 90 días). Se pueden crear tantas formas como se necesiten con diferentes configuraciones. </p>
+<p><img alt="Crear formas pago" src="../../../Procesos/Imagenes/PR_Facturas/crear_formas.png" /></p>
+</li>
+<li>
+<p>Configura si es necesario exigir el modo de pago, la fecha real de vencimiento, la fecha de ingreso y el banco. Esta configuración se reflejará en el apartado de listado de vencimientos cuando se marque la factura como cobrada y aparezcan los campos en rojo como obligatorios a rellenar. </p>
+<p><img alt="Nuevas formas pago" src="../../../Procesos/Imagenes/PR_Facturas/nueva_formas.png" /></p>
+</li>
+<li>
+<p>Establece el número de vencimientos y los porcentajes de pago.</p>
+<p><img alt="Forma pago" src="../../../Procesos/Imagenes/PR_Facturas/forma_pago.png" /></p>
+</li>
+</ul>
+<h3 id="62-modos-de-pago">6.2. Modos de pago:</h3>
+<ul>
+<li>
+<p>Indica cómo se realizará el pago (transferencia, pagaré, contado).</p>
+<p><img alt="Modo pago" src="../../../Procesos/Imagenes/PR_Facturas/modo_pago.png" /></p>
+</li>
+<li>
+<p>Configura si es necesario exigir la fecha de cobro, el banco o la fecha de ingreso en cuenta.</p>
+<p><img alt="Nuevo modo pago" src="../../../Procesos/Imagenes/PR_Facturas/nuevo_modo.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="7-rectificativas-y-anulaciones">7. Rectificativas y anulaciones</h2>
+<p>Si necesitas corregir o anular una factura:</p>
+<h3 id="71-facturas-recien-creadas">7.1. Facturas recién creadas:</h3>
+<ul>
+<li>
+<p>Si la factura no ha sido enviada, elimínala y vuelve a crearla con la misma numeración. Hay diferentes modos de eliminar la factura:</p>
+<ul>
+<li>
+<p>Desde el listado de ventas, busca la factura, haz clic con el botón derecho sobre la línea y selecciona "Eliminar".</p>
+<p><img alt="Eliminar factura" src="../../../Procesos/Imagenes/PR_Facturas/eliminar_factura.png" /> </p>
+</li>
+<li>
+<p>Desde la factura, abre la factura y elimínala desde la pestaña "Factura", haz clic con el botón derecho y selecciona "Eliminar".</p>
+<p><img alt="Eliminar factura" src="../../../Procesos/Imagenes/PR_Facturas/eliminar_factura2.png" /></p>
+</li>
+<li>
+<p>Desde la factura, arriba a la izquierda, haz clic sobre el logo de ENBLAU y selecciona "Eliminar".</p>
+<p><img alt="Eliminar factura" src="../../../Procesos/Imagenes/PR_Facturas/eliminar_factura3.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="72-facturas-ya-enviadas">7.2. Facturas ya enviadas:</h3>
+<ul>
+<li>
+<p>En el caso de que la factura ya haya sido enviada, emite una factura rectificativa.</p>
+<p><img alt="Factura rectificada" src="../../../Procesos/Imagenes/PR_Facturas/factura_retificada.png" /></p>
+</li>
+<li>
+<p>Asegúrate de que cumpla con los requisitos de Hacienda.</p>
+</li>
+</ul>
+<h2 id="8-confirmacion-de-factura-proforma">8. Confirmación de factura (Proforma)</h2>
+<ul>
+<li>
+<p>Para generar un documento de confirmacion (proforma) antes de emitir la factura al cliente, puedes hacerlo desde: <strong>Documentos de Venta → Facturación → Facturación de Pedidos</strong>.</p>
+<p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma.png" /></p>
+</li>
+<li>
+<p>Te abrirá una ventana <strong>Nueva factura</strong> desde ahí buscar el cliente que quieres generar la proforma: </p>
+<p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma2.png" /></p>
+</li>
+<li>
+<p>En la parte de abajo te aparecerá los pedidos pendientes de facturar de ese cliente en la pestaña “Tipo de factura y cabecera”. Luego en la columna <strong>Facturar</strong> con un doble click seleccionar los pedidos que deseas generar: </p>
+<p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma3.png" /></p>
+</li>
+<li>
+<p>Elegir el "Tipo de facturación" de como se debe generar el documento:</p>
+<p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma6.png" /></p>
+</li>
+<li>
+<p>Abajo en la pestaña “Detalles de facturas” podrás ver todas las posiciones de cada pedido y desde la cinta de arriba Exportar detalle tienes la opción de exportar en .pdf o .xls: </p>
+<p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma4.png" /></p>
+<ul>
+<li>Como ejemplo verás en PDF: </li>
+</ul>
+<p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma5.png" /></p>
+</li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>Gestión de filtros</strong> Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros">4. Gestión de filtros</a></p>
+</blockquote>
+<hr />
+<h2 id="9-descuento-pronto-pago">9. Descuento pronto pago</h2>
+<p>El <strong>descuento por pronto pago</strong> es una reducción que se aplica al importe total de una factura cuando el cliente realiza el pago en un plazo corto previamente establecido. Su finalidad es incentivar el pago anticipado y facilitar el flujo de caja del proveedor.</p>
+<h3 id="91-aplicacion-recomendada">9.1. Aplicación recomendada</h3>
+<p>Se recomienda <strong>incluir el descuento desde el pedido</strong>, en el apartado <strong>"Estados y observaciones"</strong>, para que se refleje correctamente en la factura final, ya sea esta generada a partir del <strong>pedido</strong> o del <strong>albarán</strong>.</p>
+<p><img alt="Descuento pronto pago" src="../../../Procesos/Imagenes/PR_Facturas/pp.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante</strong>: Aplicar el descuento directamente desde la factura puede generar <strong>descuadres en informes</strong> como <em>"Estado de factura y cobros"</em>, ya que el importe facturado no coincidirá con los valores previstos originalmente.</p>
+</blockquote>
+<h3 id="92-calculo-del-descuento">9.2. Cálculo del descuento</h3>
+<p>Existe un <strong>check de configuración</strong> que determina cómo se aplica el descuento:</p>
+<ul>
+<li>Si el check está <strong>activado</strong>, el descuento se aplica <strong>sobre el total con IVA incluido</strong>.</li>
+<li>
+<p>Si el check está <strong>desactivado</strong>, el descuento se aplica <strong>solo sobre la base imponible</strong>, y luego se calcula el IVA sobre el importe neto.</p>
+<p><img alt="Descuento pronto pago" src="../../../Procesos/Imagenes/PR_Facturas/pp_check.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="10-facturacion-de-albaranes">10. Facturación de albaranes</h2>
+<h3 id="101-compras">10.1. Compras</h3>
+<p>Desde el apartado <strong>Documentos de compra</strong>, existe una opción específica para la <strong>Facturación de albaranes</strong>.<br />
+Al seleccionarla:</p>
+<ul>
+<li>Se abre una ventana donde puedes <strong>escoger el proveedor</strong>.</li>
+<li>A continuación, se muestra un <strong>listado de albaranes</strong>, donde es posible:</li>
+<li><strong>Filtrar</strong> por proyecto, fechas, documentos, etc.</li>
+<li>
+<p><strong>Seleccionar</strong> los albaranes que deseas facturar, marcando la casilla correspondiente en la columna <strong>Seleccionar</strong>.</p>
+<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes.png" /></p>
+</li>
+</ul>
+<h3 id="102-ventas">10.2. Ventas</h3>
+<p>En el módulo de <strong>Documentos de venta</strong>, hay una opción similar para la facturación de albaranes.<br />
+Al acceder:</p>
+<ul>
+<li>Se abre una ventana donde puedes <strong>indicar el proyecto y/o el cliente</strong>.</li>
+<li>El sistema mostrará el listado de albaranes correspondientes.</li>
+<li>
+<p>Con un <strong>doble clic</strong> sobre la casilla de la columna <strong>“A facturar”</strong>, podrás seleccionar fácilmente los documentos que deseas incluir en la factura.</p>
+<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes2.png" /></p>
+<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes3.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="11-facturacion-electronica-facturae">11. Facturación electrónica (FACTURAE)</h2>
+<ul>
+<li>
+<p>Para generar una factura electrónica desde ENBLAU, es necesario que en <strong>Empresas</strong>, <strong>Clientes</strong> y <strong>Formas de pago</strong> tengan completados ciertos campos obligatorios.</p>
+<p><strong>Empresa:</strong> Los campos son CIF, Dirección, localidad, CP, Provincia y País. Desde el apartado, Configuración - General - <strong>Empresa</strong>.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/facturae_empresa2.png" /></p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/facturae_empresa.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Si no hay empresa creada en el apartado <strong>Empresa</strong>, crearlo con la misma información que esta en el apartado de Configuración - <strong>General</strong>.</p>
+</blockquote>
+<p><strong>Clientes:</strong> Los campos son Nombre comercial, NIF/CIF, Código de país y Tipo de persona (<strong>J</strong>: Jurídica, <strong>F</strong>: Física). Desde el apartado, Ventas - <strong>Clientes</strong>.</p>
+<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_cliente2.png" /></p>
+<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_cliente.png" /></p>
+<p><strong>Formas de pago:</strong> El campo Código legal. Desde el apartado, Ventas - Documentos de venta - Configuración - <strong>Formas de pago</strong>.</p>
+<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_formasdepago.png" /></p>
+<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_formasdepago2.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> El código legal de formas de pago es un código proporcionado por la gestoría o contabilidad de la empresa.  </p>
+</blockquote>
+</li>
+<li>
+<p>A continuación, desde el apartado de <strong>Documentos de venta</strong>, deben seguirse los siguientes pasos:</p>
+<ul>
+<li>
+<p><strong>1-</strong> Abre la factura que deseas emitir como factura electrónica.</p>
+</li>
+<li>
+<p><strong>2-</strong> En la cinta superior de la factura, haz clic en el botón <strong>Facturación</strong> y selecciona la opción <strong>Exportar para Facturae</strong> del menú desplegable.</p>
+</li>
+</ul>
+<p><img alt="Factura eletronica" src="../../../Procesos/Imagenes/PR_Facturas/facturae.png" /></p>
+<ul>
+<li><strong>3-</strong> Indica la ruta donde se guardará la factura electrónica en formato XML.</li>
+</ul>
+<p><img alt="Factura XML" src="../../../Procesos/Imagenes/PR_Facturas/facturae_xml.png" /></p>
+<ul>
+<li><strong>4-</strong> Al guardar, se abrirá una ventana para que selecciones una firma certificada válida. Si es necesario, haz clic en Más opciones, selecciona el certificado correspondiente y haz clic en Aceptar.</li>
+</ul>
+<p><img alt="Factura certificado" src="../../../Procesos/Imagenes/PR_Facturas/facturae_certificado.png" /></p>
+<p><img alt="Factura certificado" src="../../../Procesos/Imagenes/PR_Facturas/facturae_firma.png" /></p>
+<ul>
+<li>Al hacer clic en Aceptar, se mostrará un mensaje indicando que la exportación se realizó correctamente en la ruta especificada.</li>
+</ul>
+<p><img alt="Factura mensaje" src="../../../Procesos/Imagenes/PR_Facturas/facturae_msg.png" /></p>
+<blockquote>
+<p>⚠️ <strong>¡Importante!</strong> Una vez que la factura electrónica haya sido exportada, no podrá ser eliminada ni modificada.</p>
+</blockquote>
+<ul>
+<li><strong>5-</strong> Una vez exportada la factura electrónica en formato XML, accede a la página del <a href="https://face.gob.es/es/facturas/validar-visualizar-facturas">Validador y visualizador de facturas</a> para subir el archivo y validar su contenido.</li>
+</ul>
+<p><img alt="Factura mensaje" src="../../../Procesos/Imagenes/PR_Facturas/facturae_validar.png" /></p>
+<ul>
+<li>Activa las opciones Formato Facturae y Firma de la factura para proceder con la validación.</li>
+</ul>
+<p><img alt="Factura mensaje" src="../../../Procesos/Imagenes/PR_Facturas/facturae_validar2.png" /></p>
+</li>
+<li>
+<p>Al imprimir el informe de una factura electrónica desde ENBLAU, verás que en la parte superior derecha se muestra un código QR. Este QR contiene información relevante de la factura, como el NIF, nombre, dirección, cliente, número de factura, entre otros datos.</p>
+<p><img alt="Factura QR" src="../../../Procesos/Imagenes/PR_Facturas/facturae_qr.png" /></p>
+<p><img alt="Factura QR" src="../../../Procesos/Imagenes/PR_Facturas/facturae_qr2.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="12-consideraciones-finales">12. Consideraciones finales</h2>
+<ul>
+<li>
+<p><strong>Mantén los pedidos actualizados</strong>:<br />
+  Todos los documentos deben estar vinculados a un pedido para facilitar el control de costes y facturación.</p>
+</li>
+<li>
+<p><strong>Exportación contable</strong>:<br />
+  Al finalizar el mes, exporta los datos para contabilidad desde el listado de ventas o compras.</p>
+</li>
+<li>
+<p><strong>Dudas y soporte</strong>:<br />
+  Si surge alguna duda, envía un correo al equipo de soporte para resolverla rápidamente.</p>
+</li>
+</ul>
+<hr />
+<p>Este manual te permitirá gestionar la facturación de manera eficiente y evitar errores comunes.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

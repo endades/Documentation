@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Gestão de filtros - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Gest\u00e3o de filtros";
+        var mkdocs_page_input_path = "pt\\Utilidades\\4.UT_Gestion_Filtros.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurações</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configura%C3%A7%C3%B5es/1.%20CO_Configuracion_Inicial_ENBLAU/">Configuração inicial ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configura%C3%A7%C3%B5es/2.%20CO_Configuracion_Inicial_enCONTROL/">Configuração inicial enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processos</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processos/1.PR_Ventas_Compras/">Vendas e Compras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processos/2.PR_Facturas/">Facturação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processos/3.PR_Manual_Stock_ENBLAU/">Gestão de controlo de stock ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processos/4.PR_Manual_Stock_enCONTROL/">Gestão de controlo de stock enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processos/5.PR_Informes/">Relatórios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processos/6.PR_Proyecto_cliente/">Projetos, Clientes e Fornecedores</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">Relação entre fases em ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">Criação de materiais próprios em enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">Criação e edição de relatórios personalizados</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Gestão de filtros</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introducao">1. Introdução</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-gestao-de-filtros-em-listas">2. Gestão de filtros em listas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-acessar-os-filtros">2.1. Acessar os filtros</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-salvar-filtros-personalizados">2.2. Salvar filtros personalizados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-salvar-visualizacao">2.3. Salvar visualização</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.UT_Actualizar_ENBLAU/">Atualização ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">Conectar uma Unidade de Rede</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7.UT_Divisas/">Moedas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">Importação programa de contabilidade</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">Escandallos (Agrupación de materiales)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Utilidades</li>
+      <li class="breadcrumb-item active">Gestão de filtros</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="gestao-de-filtros">Gestão de filtros</h1>
+<hr />
+<h2 id="1-introducao">1. Introdução</h2>
+<p>Este manual foi elaborado para orientar os usuários sobre o uso de filtros e filtros personalizados. Sua função principal é otimizar a velocidade de busca e melhorar a organização da visualização em todas as listas dos aplicativos.</p>
+<h2 id="2-gestao-de-filtros-em-listas">2. Gestão de filtros em listas</h2>
+<p>Os filtros permitem personalizar a visualização dos documentos nas listas. Siga estes passos:</p>
+<h3 id="21-acessar-os-filtros">2.1. Acessar os filtros</h3>
+<ul>
+<li>No cabeçalho das listas, utilize os filtros para definir quais colunas e dados deseja visualizar.</li>
+</ul>
+<p><img alt="Facturas" src="../Imagenes/UT_Gestion_Filtros/cabecera.jpg" /></p>
+<ul>
+<li>Por exemplo, você pode filtrar por "Orçamentos" para exibir apenas as colunas necessárias (empresa, projeto, data de solicitação, status do documento, técnico do projeto, tipo de documento, etc.).</li>
+</ul>
+<p><img alt="Filtros" src="../Imagenes/UT_Gestion_Filtros/filtros2.jpg" /></p>
+<ul>
+<li>No campo de busca abaixo do cabeçalho há um ícone <strong>ABC</strong>, onde é possível selecionar as condições que deseja que sejam atendidas para buscar um valor.</li>
+</ul>
+<p><img alt="Condiciones filtro" src="../Imagenes/UT_Gestion_Filtros/condiciones.jpg" /> </p>
+<ul>
+<li>Para filtrar pelos valores do filtro, clique sobre o funil no cabeçalho e selecione os valores que deseja filtrar.</li>
+</ul>
+<p><img alt="Valores filtros" src="../Imagenes/UT_Gestion_Filtros/valores_filtros.jpg" /></p>
+<ul>
+<li>Use <code>Ctrl + F</code> para buscar na lista.</li>
+</ul>
+<p><img alt="Buscar" src="../Imagenes/UT_Gestion_Filtros/buscar.jpg" /></p>
+<h3 id="22-salvar-filtros-personalizados">2.2. Salvar filtros personalizados</h3>
+<ul>
+<li>Organize as colunas conforme suas necessidades. Você pode remover, adicionar e alterar a posição das colunas clicando com o botão direito sobre qualquer cabeçalho.</li>
+</ul>
+<p><img alt="Organizar filtro" src="../Imagenes/UT_Gestion_Filtros/organizar_filtro.jpg" /></p>
+<ul>
+<li>Outra opção para mudar a posição ou remover colunas é arrastá-las.</li>
+</ul>
+<p><img alt="Eliminar columnas" src="../Imagenes/UT_Gestion_Filtros/eliminar_columnas.gif" /></p>
+<ul>
+<li>Acesse "Filtros", depois "Gestão de filtros" e adicione um novo filtro.</li>
+</ul>
+<p><img alt="Nuevo filtro" src="../Imagenes/UT_Gestion_Filtros/nuevo_filtro.jpg" /></p>
+<ul>
+<li>Salve o filtro com um nome específico (ex.: "Orçamento 2").</li>
+</ul>
+<p><img alt="Nuevo filtro" src="../Imagenes/UT_Gestion_Filtros/nuevo_filtro2.jpg" /></p>
+<h3 id="23-salvar-visualizacao">2.3. Salvar visualização</h3>
+<ul>
+<li>Em qualquer documento ou projeto, você pode organizar as colunas ou filtros e depois salvar a visualização em Configuração da janela - <strong>Salvar visualização</strong>:</li>
+</ul>
+<p><img alt="Nuevo filtro" src="../Imagenes/UT_Gestion_Filtros/guardar_vista.jpg" /></p>
+<p>Cada vez que você entrar novamente, verá a visualização que foi salva.</p>
+<blockquote>
+<p><strong>Nota:</strong> Cada usuário pode ter seus próprios filtros e visualizações salvas.</p>
+</blockquote>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../3.UT_Editar_Informes/" class="btn btn-neutral float-left" title="Criação e edição de relatórios personalizados"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../5.UT_Actualizar_ENBLAU/" class="btn btn-neutral float-right" title="Atualização ENBLAU">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../3.UT_Editar_Informes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../5.UT_Actualizar_ENBLAU/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

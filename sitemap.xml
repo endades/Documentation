@@ -1,3 +1,903 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/"/>
+    </url>
+    <url>
+        <loc>NoneConfiguraciones/1.%20CO_Configuracion_Inicial_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>NoneConfiguraciones/2.%20CO_Configuracion_Inicial_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>NoneProcesos/1.PR_Ventas_Compras/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/1.PR_Ventas_Compras/"/>
+    </url>
+    <url>
+        <loc>NoneProcesos/2.PR_Facturas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/2.PR_Facturas/"/>
+    </url>
+    <url>
+        <loc>NoneProcesos/3.PR_Manual_Stock_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>NoneProcesos/4.PR_Manual_Stock_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>NoneProcesos/5.PR_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/5.PR_Informes/"/>
+    </url>
+    <url>
+        <loc>NoneProcesos/6.PR_Proyecto_cliente/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/6.PR_Proyecto_cliente/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/1.UT_Relacion_ENBLAU_Logikal/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/2.UT_Crear_Materiales_enMATERIAL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/3.UT_Editar_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/3.UT_Editar_Informes/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/4.UT_Gestion_Filtros/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/4.UT_Gestion_Filtros/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/5.UT_Actualizar_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/6.UT_Unidad_Red/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/6.UT_Unidad_Red/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/7.UT_Divisas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/7.UT_Divisas/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/8.UT_Importacion_Contabilidad/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/8.UT_Importacion_Contabilidad/"/>
+    </url>
+    <url>
+        <loc>NoneUtilidades/9.UT_Escandallos/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/9.UT_Escandallos/"/>
+    </url>
+    <url>
+        <loc>Noneen/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="None"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/"/>
+    </url>
+    <url>
+        <loc>Noneen/Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneen/Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneen/Processes/1.PR_Ventas_Compras/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Processes/1.PR_Ventas_Compras/"/>
+    </url>
+    <url>
+        <loc>Noneen/Processes/2.PR_Facturas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Processes/2.PR_Facturas/"/>
+    </url>
+    <url>
+        <loc>Noneen/Processes/3.PR_Manual_Stock_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Processes/3.PR_Manual_Stock_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneen/Processes/4.PR_Manual_Stock_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Processes/4.PR_Manual_Stock_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneen/Processes/5.PR_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Processes/5.PR_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneen/Processes/6.PR_Proyecto_cliente/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Processes/6.PR_Proyecto_cliente/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/1.UT_Relacion_ENBLAU_Logikal/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/1.UT_Relacion_ENBLAU_Logikal/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/2.UT_Crear_Materiales_enMATERIAL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/2.UT_Crear_Materiales_enMATERIAL/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/3.UT_Editar_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/3.UT_Editar_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/4.UT_Gestion_Filtros/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/4.UT_Gestion_Filtros/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/5.UT_Actualizar_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/5.UT_Actualizar_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/6.UT_Unidad_Red/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/6.UT_Unidad_Red/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/7.UT_Divisas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/7.UT_Divisas/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/8.UT_Importacion_Contabilidad/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/8.UT_Importacion_Contabilidad/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilities/9.UT_Escandallos/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilities/9.UT_Escandallos/"/>
+    </url>
+    <url>
+        <loc>Noneen/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneen/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneen/Procesos/1.PR_Ventas_Compras/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/1.PR_Ventas_Compras/"/>
+    </url>
+    <url>
+        <loc>Noneen/Procesos/2.PR_Facturas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/2.PR_Facturas/"/>
+    </url>
+    <url>
+        <loc>Noneen/Procesos/3.PR_Manual_Stock_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneen/Procesos/4.PR_Manual_Stock_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneen/Procesos/5.PR_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/5.PR_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneen/Procesos/6.PR_Proyecto_cliente/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/6.PR_Proyecto_cliente/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/1.UT_Relacion_ENBLAU_Logikal/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/2.UT_Crear_Materiales_enMATERIAL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/3.UT_Editar_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/3.UT_Editar_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/4.UT_Gestion_Filtros/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/4.UT_Gestion_Filtros/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/5.UT_Actualizar_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/6.UT_Unidad_Red/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/6.UT_Unidad_Red/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/7.UT_Divisas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/7.UT_Divisas/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/8.UT_Importacion_Contabilidad/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/8.UT_Importacion_Contabilidad/"/>
+    </url>
+    <url>
+        <loc>Noneen/Utilidades/9.UT_Escandallos/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/9.UT_Escandallos/"/>
+    </url>
+    <url>
+        <loc>Noneit/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="None"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/"/>
+    </url>
+    <url>
+        <loc>Noneit/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneit/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneit/Procesos/1.PR_Ventas_Compras/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/1.PR_Ventas_Compras/"/>
+    </url>
+    <url>
+        <loc>Noneit/Procesos/2.PR_Facturas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/2.PR_Facturas/"/>
+    </url>
+    <url>
+        <loc>Noneit/Procesos/3.PR_Manual_Stock_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneit/Procesos/4.PR_Manual_Stock_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneit/Procesos/5.PR_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/5.PR_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneit/Procesos/6.PR_Proyecto_cliente/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/6.PR_Proyecto_cliente/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/1.UT_Relacion_ENBLAU_Logikal/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/2.UT_Crear_Materiales_enMATERIAL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/3.UT_Editar_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/3.UT_Editar_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/4.UT_Gestion_Filtros/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/4.UT_Gestion_Filtros/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/5.UT_Actualizar_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/6.UT_Unidad_Red/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/6.UT_Unidad_Red/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/7.UT_Divisas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/7.UT_Divisas/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/8.UT_Importacion_Contabilidad/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/8.UT_Importacion_Contabilidad/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilidades/9.UT_Escandallos/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/9.UT_Escandallos/"/>
+    </url>
+    <url>
+        <loc>Noneit/Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneit/Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneit/Processi/1.PR_Ventas_Compras/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Processi/1.PR_Ventas_Compras/"/>
+    </url>
+    <url>
+        <loc>Noneit/Processi/2.PR_Facturas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Processi/2.PR_Facturas/"/>
+    </url>
+    <url>
+        <loc>Noneit/Processi/3.PR_Manual_Stock_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Processi/3.PR_Manual_Stock_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneit/Processi/4.PR_Manual_Stock_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Processi/4.PR_Manual_Stock_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Noneit/Processi/5.PR_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Processi/5.PR_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneit/Processi/6.PR_Proyecto_cliente/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Processi/6.PR_Proyecto_cliente/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/1.UT_Relacion_ENBLAU_Logikal/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/1.UT_Relacion_ENBLAU_Logikal/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/2.UT_Crear_Materiales_enMATERIAL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/2.UT_Crear_Materiales_enMATERIAL/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/3.UT_Editar_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/3.UT_Editar_Informes/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/4.UT_Gestion_Filtros/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/4.UT_Gestion_Filtros/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/5.UT_Actualizar_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/5.UT_Actualizar_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/6.UT_Unidad_Red/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/6.UT_Unidad_Red/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/7.UT_Divisas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/7.UT_Divisas/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/8.UT_Importacion_Contabilidad/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/8.UT_Importacion_Contabilidad/"/>
+    </url>
+    <url>
+        <loc>Noneit/Utilita/9.UT_Escandallos/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilita/9.UT_Escandallos/"/>
+    </url>
+    <url>
+        <loc>Nonept/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="None"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/"/>
+    </url>
+    <url>
+        <loc>Nonept/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Nonept/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneConfiguraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Nonept/Procesos/1.PR_Ventas_Compras/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/1.PR_Ventas_Compras/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/1.PR_Ventas_Compras/"/>
+    </url>
+    <url>
+        <loc>Nonept/Procesos/2.PR_Facturas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/2.PR_Facturas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/2.PR_Facturas/"/>
+    </url>
+    <url>
+        <loc>Nonept/Procesos/3.PR_Manual_Stock_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/3.PR_Manual_Stock_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/3.PR_Manual_Stock_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Nonept/Procesos/4.PR_Manual_Stock_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/4.PR_Manual_Stock_enCONTROL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/4.PR_Manual_Stock_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Nonept/Procesos/5.PR_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/5.PR_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/5.PR_Informes/"/>
+    </url>
+    <url>
+        <loc>Nonept/Procesos/6.PR_Proyecto_cliente/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Procesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneProcesos/6.PR_Proyecto_cliente/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Procesos/6.PR_Proyecto_cliente/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/1.UT_Relacion_ENBLAU_Logikal/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/1.UT_Relacion_ENBLAU_Logikal/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/2.UT_Crear_Materiales_enMATERIAL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/2.UT_Crear_Materiales_enMATERIAL/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/3.UT_Editar_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/3.UT_Editar_Informes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/3.UT_Editar_Informes/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/4.UT_Gestion_Filtros/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/4.UT_Gestion_Filtros/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/4.UT_Gestion_Filtros/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/5.UT_Actualizar_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/5.UT_Actualizar_ENBLAU/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/5.UT_Actualizar_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/6.UT_Unidad_Red/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/6.UT_Unidad_Red/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/6.UT_Unidad_Red/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/7.UT_Divisas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/7.UT_Divisas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/7.UT_Divisas/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/8.UT_Importacion_Contabilidad/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/8.UT_Importacion_Contabilidad/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/8.UT_Importacion_Contabilidad/"/>
+    </url>
+    <url>
+        <loc>Nonept/Utilidades/9.UT_Escandallos/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/Utilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="NoneUtilidades/9.UT_Escandallos/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="Noneit/Utilidades/9.UT_Escandallos/"/>
+    </url>
+    <url>
+        <loc>Nonept/Configura%C3%A7%C3%B5es/1.%20CO_Configuracion_Inicial_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configura%C3%A7%C3%B5es/1.%20CO_Configuracion_Inicial_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Nonept/Configura%C3%A7%C3%B5es/2.%20CO_Configuracion_Inicial_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Configura%C3%A7%C3%B5es/2.%20CO_Configuracion_Inicial_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Nonept/Processos/1.PR_Ventas_Compras/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Processos/1.PR_Ventas_Compras/"/>
+    </url>
+    <url>
+        <loc>Nonept/Processos/2.PR_Facturas/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Processos/2.PR_Facturas/"/>
+    </url>
+    <url>
+        <loc>Nonept/Processos/3.PR_Manual_Stock_ENBLAU/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Processos/3.PR_Manual_Stock_ENBLAU/"/>
+    </url>
+    <url>
+        <loc>Nonept/Processos/4.PR_Manual_Stock_enCONTROL/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Processos/4.PR_Manual_Stock_enCONTROL/"/>
+    </url>
+    <url>
+        <loc>Nonept/Processos/5.PR_Informes/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Processos/5.PR_Informes/"/>
+    </url>
+    <url>
+        <loc>Nonept/Processos/6.PR_Proyecto_cliente/</loc>
+        <lastmod>2025-10-27</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/Processos/6.PR_Proyecto_cliente/"/>
+    </url>
 </urlset>

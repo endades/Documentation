@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Progetti, Clienti e Fornitori - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Progetti, Clienti e Fornitori";
+        var mkdocs_page_input_path = "it\\Processi\\6.PR_Proyecto_cliente.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Progetti, Clienti e Fornitori</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduzione">1. Introduzione</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-progetti">2. Progetti</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-creazione-di-progetti">2.1. Creazione di progetti</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#211-nuovo-progetto">2.1.1. Nuovo progetto</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#212-dettagli-del-progetto">2.1.2. Dettagli del progetto</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#213-iva-e-ritenuta">2.1.3. IVA e ritenuta</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#214-documentazione-del-progetto">2.1.4. Documentazione del progetto</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-documenti-correlati">2.2. Documenti correlati</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#221-documenti-di-vendita-e-acquisto">2.2.1. Documenti di vendita e acquisto</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#222-programmazione-delle-attivita">2.2.2. Programmazione delle Attività</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-clienti">3. Clienti</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-creazione-del-cliente">3.1. Creazione del cliente</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#311-nuovo-cliente">3.1.1. Nuovo cliente</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#312-dettaglio-del-cliente">3.1.2. Dettaglio del cliente</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#313-altri-dati">3.1.3. Altri dati</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#314-documentazione">3.1.4. Documentazione</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-fornitori">4. Fornitori</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-creazione-del-fornitore">4.1. Creazione del fornitore</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#411-nuovo-fornitore">4.1.1. Nuovo fornitore</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#412-dettaglio-del-fornitore">4.1.2. Dettaglio del fornitore</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#413-altri-dati">4.1.3. Altri dati</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#414-documentazione">4.1.4. Documentazione</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+          <li class="breadcrumb-item">Processi</li>
+      <li class="breadcrumb-item active">Progetti, Clienti e Fornitori</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="progetti-clienti-e-fornitori">Progetti, Clienti e Fornitori</h1>
+<hr />
+<h2 id="1-introduzione">1. Introduzione</h2>
+<p>Questo manuale è progettato per guidare gli utenti nella creazione di Progetti, Clienti e Fornitori in ENBLAU. In questo modo, possono essere correttamente assegnati ai documenti di vendita e acquisto.</p>
+<hr />
+<h2 id="2-progetti">2. Progetti</h2>
+<p>Il progetto è come il "cantiere". A un progetto si possono associare tutti i documenti di vendita e acquisto necessari.</p>
+<h3 id="21-creazione-di-progetti">2.1. Creazione di progetti</h3>
+<ul>
+<li>Dalla sezione Vendite, puoi accedere a Progetti.</li>
+</ul>
+<p><img alt="Progetti" src="../Imagenes/PR_Proyecto_cliente/proyectos.jpg" /></p>
+<h4 id="211-nuovo-progetto">2.1.1. Nuovo progetto</h4>
+<ul>
+<li>Crea un progetto dal pulsante "Nuovo".</li>
+</ul>
+<p><img alt="Nuovo progetto" src="../Imagenes/PR_Proyecto_cliente/nuevo_proyecto.jpg" /></p>
+<ul>
+<li>Assegna un nome e seleziona il cliente.</li>
+</ul>
+<p><img alt="Nome progetto" src="../Imagenes/PR_Proyecto_cliente/nombre_proyecto.jpg" /></p>
+<h4 id="212-dettagli-del-progetto">2.1.2. Dettagli del progetto</h4>
+<ul>
+<li>Dalla scheda <strong>Generale</strong>:</li>
+<li>Azienda</li>
+<li>Tecnico di cantiere</li>
+<li>Commerciale</li>
+<li>Responsabile acquisti</li>
+<li>Responsabile fatturazione</li>
+<li>Ecc.</li>
+</ul>
+<p><img alt="Dettagli" src="../Imagenes/PR_Proyecto_cliente/proyecto_detalles.jpg" /></p>
+<h4 id="213-iva-e-ritenuta">2.1.3. IVA e ritenuta</h4>
+<ul>
+<li>Puoi confermare l'IVA e la ritenuta con il cliente per il progetto, il che potrebbe evitare errori nelle fatture.</li>
+</ul>
+<p><img alt="IVA" src="../Imagenes/PR_Proyecto_cliente/proyecto_iva.jpg" /></p>
+<h4 id="214-documentazione-del-progetto">2.1.4. Documentazione del progetto</h4>
+<ul>
+<li>Da <strong>Documentazione del progetto</strong>, puoi caricare documentazioni, manuali, ecc., tutto ciò che è relativo al progetto.</li>
+</ul>
+<p><img alt="Documentazione progetto" src="../Imagenes/PR_Proyecto_cliente/documentacion_proyecto.jpg" /></p>
+<ul>
+<li>Con un doppio clic sulla cartella principale, si apre il percorso dove si trova l'ID del cantiere.</li>
+</ul>
+<p><img alt="Documentazione progetto" src="../Imagenes/PR_Proyecto_cliente/documentacion_proyecto2.jpg" /></p>
+<ul>
+<li>Le sottocartelle possono essere create direttamente nel percorso o precedentemente dalla configurazione nei progetti <strong>Directory predefinite</strong>.</li>
+</ul>
+<p><img alt="Directory progetto" src="../Imagenes/PR_Proyecto_cliente/directorio_proyecto.jpg" /></p>
+<h3 id="22-documenti-correlati">2.2. Documenti correlati</h3>
+<h4 id="221-documenti-di-vendita-e-acquisto">2.2.1. Documenti di vendita e acquisto</h4>
+<ul>
+<li>Tutti i documenti relativi al progetto sono raggruppati qui.</li>
+</ul>
+<p><img alt="Documenti correlati" src="../Imagenes/PR_Proyecto_cliente/documentos_relacionados.jpg" /></p>
+<h4 id="222-programmazione-delle-attivita">2.2.2. Programmazione delle Attività</h4>
+<ul>
+<li>Gestisce le attività associate al progetto. Le attività possono essere assegnate per documento.</li>
+</ul>
+<p><img alt="Attività" src="../Imagenes/PR_Proyecto_cliente/proyecto_tarea.jpg" />
+  <img alt="Attività" src="../Imagenes/PR_Proyecto_cliente/proyecto_tarea2.jpg" />
+  <img alt="Attività" src="../Imagenes/PR_Proyecto_cliente/proyecto_tarea3.jpg" /></p>
+<hr />
+<h2 id="3-clienti">3. Clienti</h2>
+<p>Il cliente è associato a uno o più progetti.</p>
+<h3 id="31-creazione-del-cliente">3.1. Creazione del cliente</h3>
+<ul>
+<li>Dalla sezione Vendite, puoi accedere a Clienti.</li>
+</ul>
+<p><img alt="Clienti" src="../Imagenes/PR_Proyecto_cliente/clientes.jpg" /></p>
+<h4 id="311-nuovo-cliente">3.1.1. Nuovo cliente</h4>
+<ul>
+<li>Crea un cliente dal pulsante "Nuovo".</li>
+</ul>
+<p><img alt="Nuovo cliente" src="../Imagenes/PR_Proyecto_cliente/nuevo_cliente.jpg" /></p>
+<h4 id="312-dettaglio-del-cliente">3.1.2. Dettaglio del cliente</h4>
+<ul>
+<li>Assegna un nome e compila i campi necessari del cliente.</li>
+<li>Nome</li>
+<li>Nome Commerciale</li>
+<li>Indirizzo</li>
+<li>Codice Fiscale/Partita IVA</li>
+<li>Ecc.</li>
+</ul>
+<p><img alt="Nome cliente" src="../Imagenes/PR_Proyecto_cliente/cliente_detalle.jpg" /></p>
+<h4 id="313-altri-dati">3.1.3. Altri dati</h4>
+<ul>
+<li>Si possono compilare altri dati del cliente accedendo ad altre schede.</li>
+<li>Dati di contatto</li>
+<li>Altri contatti</li>
+<li>Dati bancari</li>
+<li>Informazioni commerciali</li>
+<li>Ecc.</li>
+</ul>
+<p><img alt="Altri dati" src="../Imagenes/PR_Proyecto_cliente/otros_datos.jpg" /></p>
+<h4 id="314-documentazione">3.1.4. Documentazione</h4>
+<ul>
+<li>Da <strong>Documentazione</strong>, puoi caricare documentazione relativa al cliente.</li>
+</ul>
+<p><img alt="Documentazione cliente" src="../Imagenes/PR_Proyecto_cliente/documentacion_cliente.jpg" /></p>
+<ul>
+<li>Con un doppio clic sulla cartella principale, si apre il percorso dove si trova il codice del cliente.</li>
+</ul>
+<p><img alt="Documentazione cliente" src="../Imagenes/PR_Proyecto_cliente/documentacion_cliente2.jpg" /></p>
+<hr />
+<h2 id="4-fornitori">4. Fornitori</h2>
+<p>Il fornitore è associato a uno o più progetti.</p>
+<h3 id="41-creazione-del-fornitore">4.1. Creazione del fornitore</h3>
+<ul>
+<li>Dalla sezione Acquisti, puoi accedere a Fornitori.</li>
+</ul>
+<p><img alt="Fornitore" src="../Imagenes/PR_Proyecto_cliente/proveedor.jpg" /></p>
+<h4 id="411-nuovo-fornitore">4.1.1. Nuovo fornitore</h4>
+<ul>
+<li>Crea un fornitore dal pulsante "Nuovo".</li>
+</ul>
+<p><img alt="Nuovo fornitore" src="../Imagenes/PR_Proyecto_cliente/nuevo_proveedor.jpg" /></p>
+<h4 id="412-dettaglio-del-fornitore">4.1.2. Dettaglio del fornitore</h4>
+<ul>
+<li>Assegna un nome e compila i campi necessari del fornitore.</li>
+<li>Nome</li>
+<li>Nome Commerciale</li>
+<li>Indirizzo</li>
+<li>Codice Fiscale/Partita IVA</li>
+<li>Ecc.</li>
+</ul>
+<p><img alt="Nome fornitore" src="../Imagenes/PR_Proyecto_cliente/proveedor_detalle.jpg" /></p>
+<h4 id="413-altri-dati">4.1.3. Altri dati</h4>
+<ul>
+<li>Si possono compilare altri dati del fornitore accedendo ad altre schede.</li>
+<li>Dati di contatto</li>
+<li>Altri contatti</li>
+<li>Dati bancari</li>
+<li>Informazioni commerciali</li>
+<li>Ecc.</li>
+</ul>
+<p><img alt="Altri dati" src="../Imagenes/PR_Proyecto_cliente/otros_proveedor.jpg" /></p>
+<h4 id="414-documentazione">4.1.4. Documentazione</h4>
+<ul>
+<li>Da <strong>Documentazione</strong>, puoi caricare documentazione relativa al fornitore.</li>
+</ul>
+<p><img alt="Documentazione fornitore" src="../Imagenes/PR_Proyecto_cliente/documentacion_proveedor.jpg" /></p>
+<ul>
+<li>Con un doppio clic sulla cartella principale, si apre il percorso dove si trova il codice del fornitore.</li>
+</ul>
+<p><img alt="Documentazione fornitore" src="../Imagenes/PR_Proyecto_cliente/documentacion_proveedor2.jpg" /></p>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigazione a pié di pagina">
+        <a href="../5.PR_Informes/" class="btn btn-neutral float-left" title="Rapporti"><span class="icon icon-circle-arrow-left"></span> Precedente</a>
+        <a href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/" class="btn btn-neutral float-right" title="Relazione tra fasi in ENBLAU e Logikal">Successivo <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../5.PR_Informes/" style="color: #fcfcfc">&laquo; Precedente</a></span>
+    
+    
+      <span><a href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/" style="color: #fcfcfc">Successivo &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

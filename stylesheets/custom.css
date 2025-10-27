@@ -81,3 +81,34 @@ footer {
     line-height: 80px;
     color: transparent;
   }
+
+   /* Desactiva el clic en el logo (lo hace estático) */
+.wy-side-nav-search > a {
+    pointer-events: none;
+    cursor: default;
+    background-image: url("../images/endades2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 35px;
+    height: 80px;
+    display: block;
+    line-height: 80px;
+    color: transparent;
+  }
+
+
+
+/* Contenedor del selector de idioma */
+.lang-switcher {
+  position: fixed;
+  top: 12px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}

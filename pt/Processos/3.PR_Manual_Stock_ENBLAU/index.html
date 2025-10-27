@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Gestão de controlo de stock ENBLAU - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Gest\u00e3o de controlo de stock ENBLAU";
+        var mkdocs_page_input_path = "pt\\Processos\\3.PR_Manual_Stock_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurações</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configura%C3%A7%C3%B5es/1.%20CO_Configuracion_Inicial_ENBLAU/">Configuração inicial ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configura%C3%A7%C3%B5es/2.%20CO_Configuracion_Inicial_enCONTROL/">Configuração inicial enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Vendas e Compras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Facturação</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Gestão de controlo de stock ENBLAU</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-proposito">1. Propósito</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-gestao-de-pedidos-de-compra">2. Gestão de pedidos de compra</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-pedidos-de-compra">2.1. Pedidos de compra</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-atribuir-materiais-a-projeto">2.2. Atribuir materiais a projeto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-materiais-reservados">2.3. Materiais reservados</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-reposicao-de-estoque">2.4. Reposição de estoque</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-gestao-de-armazens-e-movimentos">3. Gestão de armazéns e movimentos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-layout-de-armazens">3.1. Layout de armazéns</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#32-estoque">3.2. Estoque</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#33-movimentos-em-armazem">3.3. Movimentos em armazém</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#34-relatorios-de-armazens-inventario">3.4. Relatórios de armazéns (inventário)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-inventarios">4. Inventários</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-novo-inventario">4.1. Novo inventário</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-contabilizacao-de-estoque">4.2. Contabilização de Estoque</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#43-relatorio-de-regularizacao-do-inventario">4.3. Relatório de regularização do inventário</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-estoque-necessario">5. Estoque necessário</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-materiais-importados">6. Materiais importados</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-configuracao-de-materiais">6.1. Configuração de materiais</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-produto-acabado">7. Produto acabado</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-localizacao-de-produtos">7.1. Localização de produtos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-movimentos-de-produto">7.2. Movimentos de produto</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-controle-de-estoque-e-relatorios">8. Controle de estoque e relatórios</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-resolucao-de-problemas-comuns">9. Resolução de problemas comuns</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-conclusao">10. Conclusão</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Gestão de controlo de stock enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Relatórios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.PR_Proyecto_cliente/">Projetos, Clientes e Fornecedores</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/1.UT_Relacion_ENBLAU_Logikal/">Relação entre fases em ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/2.UT_Crear_Materiales_enMATERIAL/">Criação de materiais próprios em enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/3.UT_Editar_Informes/">Criação e edição de relatórios personalizados</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/4.UT_Gestion_Filtros/">Gestão de filtros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/5.UT_Actualizar_ENBLAU/">Atualização ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/6.UT_Unidad_Red/">Conectar uma Unidade de Rede</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/7.UT_Divisas/">Moedas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/8.UT_Importacion_Contabilidad/">Importação programa de contabilidade</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/9.UT_Escandallos/">Escandallos (Agrupación de materiales)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Processos</li>
+      <li class="breadcrumb-item active">Gestão de controlo de stock ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="sistema-de-controle-de-estoque-enblau">Sistema de controle de estoque ENBLAU</h1>
+<hr />
+<h2 id="1-proposito">1. Propósito</h2>
+<p>Este manual foi desenvolvido para novos usuários do sistema de controle de estoque utilizado pelos Clientes e Endades. O objetivo principal é fornecer um guia detalhado para a gestão eficiente de projetos, desde a criação de pedidos até a otimização do processo de produção no ENBLAU. Este documento abrange os passos necessários para realizar as operações principais do sistema e está estruturado de forma sequencial para facilitar a compreensão.</p>
+<hr />
+<h2 id="2-gestao-de-pedidos-de-compra">2. Gestão de pedidos de compra</h2>
+<h3 id="21-pedidos-de-compra">2.1. Pedidos de compra</h3>
+<ul>
+<li>No menu principal <strong>Compras</strong>, acesse a seção "Pedidos de Compra".</li>
+<li>Especifique os materiais necessários e suas quantidades.</li>
+<li>Em caso de alterações nas referências, adicione-as manualmente se estiverem configuradas na base de dados.</li>
+<li>
+<p>No pedido de venda (na seção <strong>Venda</strong>), selecione o documento e vá para a aba <strong>Material necessário</strong> para gerar a lista de materiais do pedido.</p>
+<ul>
+<li>
+<p>As linhas dos artigos exibidas em <span style="color:green;">verde</span> indicam que há material em estoque para esse projeto ou para o projeto atribuído como <strong>Stock</strong>. As linhas exibidas em <span style="color:red;">vermelho</span> indicam que não há materiais nesse projeto ou em estoque.</p>
+</li>
+<li>
+<p>Você pode indicar se deseja ou não comprar, caso já tenha no depósito. Para cada material será exibida a informação: unidades em estoque, unidades reservadas, unidades pendentes.</p>
+</li>
+</ul>
+<p><img alt="material_necesario" src="../Imagenes/PR_Stock_Control/material_necesario.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Para atribuir um projeto do tipo stock, vá em Geral - Configuração - <strong>Compras e Armazém</strong>, e indique no campo suspenso <strong>Projeto para stock</strong> um projeto previamente criado para gestão de estoque.</p>
+</blockquote>
+<p><img alt="material_necesario" src="../Imagenes/PR_Stock_Control/proyecto_stock.jpg" /></p>
+<ul>
+<li>
+<p>Confirme em <strong>Pedir material</strong> e envie o pedido ao fornecedor correspondente.</p>
+</li>
+<li>
+<p>Na seção <strong>Armazéns</strong>, existe a opção <strong>Pendente de receber</strong>, que mostra uma lista com os materiais pendentes de recebimento para cada projeto e pedido de compra.</p>
+</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir.jpg" /></p>
+<ul>
+<li>Sobre a linha do artigo, clique com o botão direito para abrir o pedido de compra desse material:</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../Imagenes/PR_Stock_Control/pendiente_recibir2.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Para informações detalhadas sobre pedidos de compra, consulte: <a href="../1.PR_Ventas_Compras/#4-compras">Pedidos de Compras</a></p>
+<p>⚠️ <strong>Importante!</strong> Para realizar o pedido de materiais no documento de venda, em alguns casos, são necessárias permissões especiais. Essa permissão também é necessária para fabricar ou instalar.</p>
+</blockquote>
+<p><img alt="Permisos especiales" src="../Imagenes/PR_Stock_Control/permisos_especiales.jpg" /></p>
+<h3 id="22-atribuir-materiais-a-projeto">2.2. Atribuir materiais a projeto</h3>
+<ul>
+<li>No Material necessário, durante o processo de listar e solicitar materiais, você pode, conforme a necessidade, atribuir artigos de outro projeto ao projeto atual. No menu de locais, clique com o botão direito sobre a linha - <strong>Atribuir</strong>:</li>
+</ul>
+<p><img alt="Asignar articulos" src="../Imagenes/PR_Stock_Control/asignar.jpg" /></p>
+<ul>
+<li>Indique o projeto de destino (por padrão é o atual) e a quantidade (por padrão a necessária para o projeto):</li>
+</ul>
+<p><img alt="Asignar articulos" src="../Imagenes/PR_Stock_Control/asignar2.jpg" /></p>
+<ul>
+<li>Ao atribuir o artigo ao projeto atual, a unidade de estoque será automaticamente transferida para o projeto de destino, somando a quantidade atribuída, e será subtraída do projeto de origem. O artigo ficará verde.</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Certifique-se de que os materiais do projeto de origem possam ser utilizados para o traspasse dos artigos.</p>
+</blockquote>
+<h3 id="23-materiais-reservados">2.3. Materiais reservados</h3>
+<ul>
+<li>Em documentos de <strong>Vendas</strong>, <strong>Compras</strong> e <strong>Projetos</strong>, é possível reservar materiais para o projeto, utilizando <strong>Materiais reservados</strong> no menu suspenso de <strong>Armazém</strong>.</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado.jpg" /></p>
+<ul>
+<li>Abrirá uma janela de Material reservado, e na seção <strong>Material do projeto</strong>, você pode arrastar materiais dos pedidos para o fornecedor:</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_2.jpg" /></p>
+<ul>
+<li>Na seção de Armazéns, é possível visualizar todos os materiais reservados de um projeto:</li>
+</ul>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_3.jpg" /></p>
+<p><img alt="material_reservado" src="../Imagenes/PR_Stock_Control/material_reservado_4.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> O uso de material reservado é apenas visual; não impede a utilização dos materiais mesmo que estejam reservados. Recomenda-se o uso de <a href="#22-asignar-materiales-a-proyecto">Atribuir materiais a projeto</a> para melhor controle de estoque.</p>
+</blockquote>
+<h3 id="24-reposicao-de-estoque">2.4. Reposição de estoque</h3>
+<ul>
+<li>Em <strong>Compras</strong>, existe a opção <strong>Reposição de estoque</strong>, que exibirá uma lista de materiais a solicitar quando estiverem abaixo do mínimo ou do habitual.</li>
+</ul>
+<p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock.jpg" /></p>
+<ul>
+<li>
+<p>Materiais <strong>marcados em vermelho</strong> estão abaixo do <strong>mínimo</strong> ou do <strong>habitual</strong>.  </p>
+<ul>
+<li>A coluna <strong>Unidades em estoque</strong> mostra a quantidade disponível.  </li>
+<li>A coluna <strong>Unidades a pedir</strong> indica o que falta para atingir o <strong>máximo em estoque</strong>.  </li>
+<li>Materiais que cumprem o mínimo ou habitual <strong>não aparecem na lista</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Materiais <strong>marcados em verde</strong> não possuem máximo definido.  </p>
+<ul>
+<li>Por padrão, é adicionada <strong>uma unidade</strong> em mínimo e habitual para exibição na lista de reposição.</li>
+</ul>
+</li>
+<li>
+<p>Marque a caixa <strong>A importar</strong> para os materiais a solicitar e depois clique em <strong>Importar</strong> para adicionar ao pedido de compra.</p>
+</li>
+</ul>
+<p><img alt="reposicion_stock" src="../Imagenes/PR_Stock_Control/reposicion_stock2.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Para mais informações sobre como definir mínimo, máximo e estoque habitual, consulte <a href="#51-configuracion-de-materiales">Configuração de materiais</a>.</p>
+</blockquote>
+<hr />
+<h2 id="3-gestao-de-armazens-e-movimentos">3. Gestão de armazéns e movimentos</h2>
+<h3 id="31-layout-de-armazens">3.1. Layout de armazéns</h3>
+<ul>
+<li>No menu principal <strong>Armazéns</strong> - <strong>Estoque</strong>, é possível adicionar ou editar armazéns.</li>
+</ul>
+<p><img alt="almacenes" src="../Imagenes/PR_Stock_Control/almacen.jpg" /></p>
+<ul>
+<li>Configure o layout do armazém em <strong>ENBLAU</strong> – <strong>Configuração</strong> – <strong>Armazém</strong> – <strong>Layout</strong>:</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout.jpg" /></p>
+<ul>
+<li>Crie zonas, prateleiras e posições para organização clara. Exibido em vista de árvore.</li>
+<li>
+<p>Relacione cada posição à área de armazenamento correspondente. Exemplo:</p>
+<ul>
+<li><strong>Adicionar Planta</strong>: Adiciona uma planta e permite indicar o armazém.</li>
+<li><strong>Adicionar Zona/Subzona</strong>: Adiciona zona ou subzona abaixo do local selecionado.</li>
+</ul>
+<p><img alt="almacen_layout" src="../Imagenes/PR_Stock_Control/almacen_layout2.jpg" /></p>
+</li>
+</ul>
+<h3 id="32-estoque">3.2. Estoque</h3>
+<ul>
+<li>Em <strong>Armazéns - Estoque</strong>, você tem a lista com opções <strong>Resumo, Resumo com localização e Detalhado</strong>:</li>
+</ul>
+<p><img alt="Stock" src="../Imagenes/PR_Stock_Control/stock.jpg" /></p>
+<p><img alt="Listado" src="../Imagenes/PR_Stock_Control/listado.jpg" /></p>
+<ul>
+<li>
+<p><strong>Resumo:</strong> Lista resumida de materiais agrupados por projeto. Mostra totais de unidades, unidades pendentes e reservadas.</p>
+</li>
+<li>
+<p><strong>Resumo com localização:</strong> Lista resumida de materiais por projeto e sua localização.</p>
+</li>
+<li>
+<p><strong>Detalhado:</strong> Lista detalhada de materiais com projeto de compra, projeto atribuído, localização e separado por documento de guia de compra. Permite descontar, transferir e atribuir artigos.</p>
+</li>
+</ul>
+<h3 id="33-movimentos-em-armazem">3.3. Movimentos em armazém</h3>
+<ul>
+<li>Realize movimentos de materiais entre zonas e projetos:</li>
+<li>Em <strong>Armazéns - Estoque – Detalhado</strong>, clique com o botão direito sobre o material para transferir, descontar ou atribuir.</li>
+</ul>
+<p><img alt="Detallado" src="../Imagenes/PR_Stock_Control/movimientos_detallado.jpg" /></p>
+<ul>
+<li>Selecione o material do projeto.</li>
+<li>
+<p><strong>Descontar</strong>: Indique projeto, número do pedido, responsável e quantidade (barras e peças) ou comprimento (juntas).</p>
+<p><img alt="Movimiento" src="../Imagenes/PR_Stock_Control/descontar.jpg" /></p>
+</li>
+<li>
+<p><strong>Transferir</strong>: Indique origem, destino, quantidade (barras e peças) ou comprimento (juntas).</p>
+<p><img alt="Traspaso" src="../Imagenes/PR_Stock_Control/asignar3.jpg" /></p>
+</li>
+<li>
+<p><strong>Atribuir</strong>: Indique projeto de destino, responsável, quantidade (barras e peças) ou comprimento (juntas). Função igual à de Material necessário - <a href="#22-asignar-materiales-a-proyecto">Atribuir materiais a projeto</a>.</p>
+<p><img alt="Asignar" src="../Imagenes/PR_Stock_Control/traspaso.jpg" /> </p>
+</li>
+<li>
+<p>Movimentos de entrada, saída, transferência e atribuição são refletidos na <strong>Guia de remessa</strong>. Entradas e saídas podem ser vistas em <strong>Armazém – Movimentos</strong>.</p>
+</li>
+</ul>
+<p><img alt="Movimentos do armazém" src="../Imagenes/PR_Stock_Control/movimentos_almacen.jpg" /></p>
+<p><img alt="Movimentos do armazém" src="../Imagenes/PR_Stock_Control/movimentos_almacen2.jpg" /></p>
+<ul>
+<li>Em Movimentos de armazém existe a função <strong>Devolver</strong>. Clique com o botão direito sobre o movimento de saída e selecione devolver:</li>
+</ul>
+<p><img alt="Devolver" src="../Imagenes/PR_Stock_Control/devolver.jpg" /></p>
+<p>Abrirá uma janela <strong>Movimento de devolução</strong>, onde indica unidades e localização a devolver. Por padrão, é a localização da saída do material:</p>
+<p><img alt="Devolver" src="../Imagenes/PR_Stock_Control/devolver2.jpg" /></p>
+<ul>
+<li>A opção <strong>Abrir</strong> na lista detalhada abre a guia (coluna numeração) do artigo selecionado:</li>
+</ul>
+<p><img alt="Abrir" src="../Imagenes/PR_Stock_Control/abrir.jpg" /></p>
+<h3 id="34-relatorios-de-armazens-inventario">3.4. Relatórios de armazéns (inventário)</h3>
+<ul>
+<li>
+<p>Na seção <strong>Armazéns</strong> - <strong>Estoque</strong> é possível imprimir diferentes tipos de relatórios:</p>
+</li>
+<li>
+<p><strong>Resumo:</strong> Existem dois relatórios: <strong>Inventário</strong> e <strong>Inventário por data</strong>.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
+<p><strong>Inventário</strong> mostra um relatório de inventário, de acordo com os filtros aplicados na lista de armazém. Inclui as colunas Artigo, Projeto, Unidades, Unidades pendentes e Unidades reservadas.</p>
+<p><img alt="Inventário" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
+<p><strong>Inventário por data</strong> mostra um relatório de inventário na data selecionada. Inclui as colunas Artigo, Descrição, Unidades e Valor.</p>
+<p><img alt="Inventário por data" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
+</li>
+<li>
+<p><strong>Resumo com localização:</strong> Existe um relatório <strong>Inventário detalhado</strong>.</p>
+<p><strong>Inventário detalhado</strong> mostra um relatório de inventário, de acordo com os filtros aplicados na lista detalhada de armazém. Inclui Localização no armazém, Artigo, Descrição e Unidades.</p>
+<p><img alt="Inventário detalhado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
+</li>
+<li>
+<p><strong>Detalhado:</strong> Existe um relatório <strong>Inventário detalhado</strong>.</p>
+<p><strong>Inventário detalhado</strong> mostra um relatório de inventário, de acordo com os filtros aplicados na lista detalhada de armazém. Inclui Projeto, Número da guia de compra, Localização no armazém, Artigo, Descrição e Unidades agrupadas por referência e comprimento.</p>
+<p><img alt="Inventário detalhado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
+</li>
+<li>
+<p>Na seção <strong>Armazéns</strong> - <strong>Movimentos de armazém</strong> é possível imprimir diferentes tipos de relatórios:</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
+<p><strong>Movimentos</strong> mostra uma lista dos movimentos visualizados na lista de movimentos. Inclui Data do movimento, Responsável, Projeto atribuído, Localização no armazém, Artigo, Descrição, Unidades e Tipo de movimento.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
+<p><strong>Movimentos I</strong> mostra uma lista dos movimentos visualizados na lista de movimentos. Inclui as colunas Tipo de movimento, Data do movimento, Responsável, Documento, Unidades, Valor, Artigo e Descrição.</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
+</li>
+</ul>
+<h2 id="4-inventarios">4. Inventários</h2>
+<ul>
+<li>Na seção <strong>Armazéns</strong> - <strong>Inventários</strong> é possível realizar uma normalização no armazém considerando o estoque em tempo real.</li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios.jpg" /></p>
+<h3 id="41-novo-inventario">4.1. Novo inventário</h3>
+<ul>
+<li>
+<p>Para criar um inventário, acesse a seção de Inventários e selecione <strong>Novo</strong>.</p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios2.jpg" /></p>
+</li>
+</ul>
+<h3 id="42-contabilizacao-de-estoque">4.2. Contabilização de Estoque</h3>
+<p><strong>1.</strong> Em um inventário, selecione o <strong>Projeto</strong> definido como <strong>Stock</strong>.  </p>
+<p><strong>2.</strong> Clique em <strong>Obter estoque</strong> para carregar a lista de materiais do projeto <strong>Stock</strong>:<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios3.jpg" />
+    <img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios4.jpg" />  </p>
+<p><strong>3.</strong> Na coluna <strong>Unidades contabilizadas</strong>, insira as unidades reais em estoque do artigo, conforme contabilizado na localização do armazém.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios5.jpg" />  </p>
+<p><strong>4.</strong> Após inserir as unidades na coluna <strong>Unidades contabilizadas</strong>, as linhas dos artigos serão exibidas em vermelho, indicando alteração de unidades.<br />
+     Em seguida, clique em <strong>Atualizar armazém</strong> para registrar a regularização de acordo com as unidades contabilizadas.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios6.jpg" />  </p>
+<p><strong>5.</strong> Após atualizar o armazém, as linhas serão exibidas em verde.  </p>
+<ul>
+<li>Nas colunas <strong>Unidades Stock</strong> e <strong>Unidades contabilizadas</strong> serão refletidas as unidades atualizadas.  </li>
+<li>Na coluna <strong>Contabilizado</strong> será marcada uma caixa.  </li>
+<li>
+<p>Na coluna <strong>Data contabilizada</strong> aparecerá a data da regularização.  </p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios7.jpg" />    </p>
+</li>
+<li>
+<p>Este processo gera um movimento de regularização (entrada ou saída) no armazém:  </p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios13.jpg" />  </p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Na lista do inventário, apenas <strong>entradas</strong> e <strong>saídas</strong> são refletidas.<br />
+Não é possível realizar movimentos do tipo <strong>transferência</strong> a partir desta lista.  </p>
+</blockquote>
+</li>
+</ul>
+<p><strong>6.</strong> Também é possível adicionar novos artigos a partir das árvores de:</p>
+<ul>
+<li><strong>Artigos (materiais ENBLAU)</strong>  </li>
+<li>
+<p><strong>Artigos importados (materiais do Logikal)</strong>  </p>
+<p>Para isso:<br />
+- Arraste o artigo para a lista do inventário.<br />
+- Indique <strong>unidades</strong>, <strong>dimensões</strong> (barra, superfície ou junta), <strong>localização em estoque</strong> e <strong>preço</strong>.<br />
+<img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios8.jpg" />  </p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Ao adicionar um artigo novo ao inventário, sempre indique uma <strong>localização</strong>.<br />
+Caso contrário, não será atualizado no estoque.  </p>
+</blockquote>
+</li>
+</ul>
+<p><strong>7.</strong> Com o botão <strong>Atualizar unidades em estoque</strong>, as unidades atuais de cada linha do inventário são atualizadas.  </p>
+<pre><code>![Inventarios](Imagenes/PR_Stock_Control/inventarios9.jpg)
+</code></pre>
+<hr />
+<h3 id="43-relatorio-de-regularizacao-do-inventario">4.3. Relatório de regularização do inventário</h3>
+<ul>
+<li>É possível <strong>Imprimir</strong> a lista do inventário, onde são exibidas as colunas:<br />
+<strong>Artigo</strong>, <strong>Descrição</strong>, <strong>Data da última verificação</strong>, <strong>Unidades em estoque</strong>, <strong>Unidades contabilizadas</strong> e <strong>Localização</strong>.  </li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios10.jpg" /></p>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios11.jpg" />  </p>
+<ul>
+<li>Este relatório tem como objetivo facilitar a contabilização manual do estoque no armazém antes de proceder à atualização na lista do inventário.<br />
+  Na coluna <strong>Unidades contabilizadas</strong>, deve-se indicar a quantidade real de cada artigo em estoque.  </li>
+</ul>
+<p><img alt="Inventarios" src="../Imagenes/PR_Stock_Control/inventarios12.jpg" />  </p>
+<h2 id="5-estoque-necessario">5. Estoque necessário</h2>
+<ul>
+<li>Uma vez criada a produção e enviada para a oficina, é possível visualizar e descontar os materiais manualmente.</li>
+</ul>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/stock_necesario.jpg" /></p>
+<ul>
+<li>Abre-se uma janela de Estoque necessário, indicando se o material está disponível nos armazéns e em qual posto (monitor) será descontado. Para descontar o material, marque a caixa na coluna <strong>Estoque a descontar</strong> do material.</li>
+</ul>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/stock_necesario2.jpg" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Se não houver o material em estoque, não será descontado.</p>
+<p>ℹ️ <strong>Nota:</strong> Para um controle mais detalhado do estoque, recomenda-se usar o app móvel enSITE para esse tipo de desconto de material. Para mais informações sobre o app: <a href="../4.PR_Manual_Stock_enCONTROL/#21-recepcion-en-ensite">2.1. Recepção em enSITE</a></p>
+</blockquote>
+<hr />
+<h2 id="6-materiais-importados">6. Materiais importados</h2>
+<p>Na seção <strong>Armazéns → Material importado</strong> encontra-se a lista de todos os materiais importados do <strong>Logikal</strong>.</p>
+<hr />
+<h3 id="61-configuracao-de-materiais">6.1. Configuração de materiais</h3>
+<p>Nesta seção é possível definir, para cada artigo, uma série de valores padrão que afetam a gestão de compras e produção:</p>
+<ul>
+<li>
+<p><strong>Comprar</strong>:<br />
+  Se esta caixa estiver marcada, indica que o material será proposto por padrão como “a comprar” quando listado na seção <strong>Material necessário</strong>.</p>
+</li>
+<li>
+<p><strong>Montado no destino</strong>:<br />
+  Se marcada, o material será montado no destino durante o processo no posto <strong>Picking</strong> dentro do <strong>enCONTROL</strong>.</p>
+</li>
+<li>
+<p><strong>Controle de estoque</strong>:<br />
+  Quando ativado, o material será considerado para desconto automático durante o processo de produção.</p>
+</li>
+<li>
+<p><strong>Estoque mínimo</strong>, <strong>estoque máximo</strong> e <strong>estoque habitual</strong>: 
+  Permite definir valores de referência para a gestão de estoque, úteis para alertas, reposições ou planejamento.</p>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/material_importado.jpg" /></p>
+<p>Na seção de <a href="#24-reposicion-de-stock">Reposição de estoque</a> em compras, é possível gerar uma lista de materiais abaixo do mínimo ou habitual, conforme os valores definidos para cada material.</p>
+</li>
+</ul>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> A configuração correta destes campos melhora significativamente o controle de inventário, o planejamento de compras e a rastreabilidade dos materiais durante a produção.</p>
+</blockquote>
+<hr />
+<h2 id="7-produto-acabado">7. Produto acabado</h2>
+<p>O <strong>produto acabado</strong> é aquele que foi completamente fabricado e passou pelo posto de <strong>Verificação final</strong> no <strong>enCONTROL</strong>.</p>
+<p>Na seção <strong>Armazéns → Produto acabado</strong> encontram-se duas listas principais:</p>
+<ul>
+<li><strong>Localização de produtos</strong></li>
+<li><strong>Movimentos de produto</strong></li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado.jpg" /></p>
+<hr />
+<h3 id="71-localizacao-de-produtos">7.1. Localização de produtos</h3>
+<ul>
+<li>Na lista de <strong>Localização de produtos</strong> é exibida a informação e a localização atual do produto acabado, conforme definido no posto de <strong>Verificação final</strong> no <strong>enCONTROL</strong>.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado2.jpg" /></p>
+<ul>
+<li>
+<p>A partir desta vista, clicando com o botão direito em uma linha, é possível realizar as seguintes ações:</p>
+</li>
+<li>
+<p>Mover o produto para outra localização.</p>
+</li>
+<li>Dar saída ao produto.</li>
+<li>Abrir o documento de produção relacionado a esse produto.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado3.jpg" /></p>
+<hr />
+<h3 id="72-movimentos-de-produto">7.2. Movimentos de produto</h3>
+<ul>
+<li>
+<p>Na seção <strong>Movimentos de produto</strong> são registrados todas as operações realizadas com os produtos acabados, incluindo:</p>
+</li>
+<li>
+<p>Entrada.</p>
+</li>
+<li>Saída.</li>
+<li>Transferência.</li>
+</ul>
+<p><img alt="Material importado" src="../Imagenes/PR_Stock_Control/producto_terminado4.jpg" /></p>
+<ul>
+<li>Clicando com o botão direito em uma linha cujo <strong>tipo de movimento</strong> seja <strong>saída</strong>, habilita-se a opção <strong>Devolver</strong>.</li>
+</ul>
+<p><img alt="Devolver producto terminado" src="../Imagenes/PR_Stock_Control/producto_terminado5.jpg" /></p>
+<ul>
+<li>
+<p>Ao selecionar esta opção, abre-se a janela <strong>Devolução de produto acabado</strong>, onde deve-se:</p>
+</li>
+<li>
+<p>Indicar a nova <strong>localização</strong> do produto.</p>
+</li>
+<li>Aceitar a operação.</li>
+</ul>
+<p><img alt="Devolver producto terminado" src="../Imagenes/PR_Stock_Control/producto_terminado6.jpg" /></p>
+<p>Após concluir o processo, o sistema registrará um novo movimento do tipo <strong>Entrada</strong> no histórico do produto.</p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Esta funcionalidade é útil para gerenciar devoluções internas, produtos rejeitados ou realocações logísticas dentro do armazém.</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> A gestão correta do produto acabado garante melhor controle de inventário, facilita a rastreabilidade e agiliza a preparação de expedições ou entregas.</p>
+</blockquote>
+<hr />
+<h2 id="8-controle-de-estoque-e-relatorios">8. Controle de estoque e relatórios</h2>
+<ul>
+<li>Monitore o estoque necessário a partir da seção "Produção".</li>
+<li>Identifique materiais reservados e pendentes em tempo real.</li>
+<li>Gere relatórios de inventário para avaliar o uso de materiais e planejar futuras compras.</li>
+</ul>
+<hr />
+<h2 id="9-resolucao-de-problemas-comuns">9. Resolução de problemas comuns</h2>
+<ul>
+<li><strong>Erro ao importar referências</strong>: Verifique se as referências estão configuradas na base de dados.</li>
+<li><strong>Materiais excedentes ou faltantes</strong>: Certifique-se de registrar corretamente localizações e quantidades ao receber materiais.</li>
+<li><strong>Problemas com o layout do armazém</strong>: Revise a configuração de zonas e ajuste conforme necessário.</li>
+</ul>
+<hr />
+<h2 id="10-conclusao">10. Conclusão</h2>
+<p>Este manual oferece um guia passo a passo para os principais processos no sistema de controle de estoque. Seguindo estas instruções, os usuários poderão gerir eficientemente os inventários, melhorar a produção e otimizar a relação com fornecedores. Para suporte adicional, contate o administrador do sistema.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2.PR_Facturas/" class="btn btn-neutral float-left" title="Facturação"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4.PR_Manual_Stock_enCONTROL/" class="btn btn-neutral float-right" title="Gestão de controlo de stock enCONTROL">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2.PR_Facturas/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4.PR_Manual_Stock_enCONTROL/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Reports - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Reports";
+        var mkdocs_page_input_path = "en\\Processes\\5.PR_Informes.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Reports</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduction">1. Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-report-types">2. Report types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-sales-documents">2.1 Sales documents</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-purchase-documents">2.2 Purchase documents</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-print-save-send-reports">3. Print / Save / Send reports</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#31-document-preparation">3.1 Document preparation</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#311-report-conditions">3.1.1 Report conditions</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#312-report-information">3.1.2 Report information</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#313-preview">3.1.3 Preview</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#314-save-as-pdf">3.1.4 Save as PDF</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#315-print">3.1.5 Print</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#316-send-by-email">3.1.6 Send by email</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Processes</li>
+      <li class="breadcrumb-item active">Reports</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="reports">Reports</h1>
+<hr />
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This guide explains how to generate documents and reports in ENBLAU so they can be printed or sent by email.</p>
+<hr />
+<h2 id="2-report-types">2. Report types</h2>
+<p>Different types of reports can be generated for each sales or purchase document as required.</p>
+<h3 id="21-sales-documents">2.1 Sales documents</h3>
+<ul>
+<li>Quote</li>
+<li>Order</li>
+<li>Measurement</li>
+<li>Production</li>
+<li>Delivery note</li>
+<li>Invoice</li>
+</ul>
+<h3 id="22-purchase-documents">2.2 Purchase documents</h3>
+<ul>
+<li>Order</li>
+<li>Delivery note</li>
+<li>Invoice</li>
+</ul>
+<hr />
+<h2 id="3-print-save-send-reports">3. Print / Save / Send reports</h2>
+<p>From any document list (for example, Sales Documents), select a document and click <strong>Print</strong>.</p>
+<p><img alt="Ventas Informe" src="../Imagenes/PR_Informes/ventas_informe.jpg" /></p>
+<h3 id="31-document-preparation">3.1 Document preparation</h3>
+<p>In the <strong>Document preparation</strong> window a list of related reports appears on the right side.</p>
+<p><img alt="Ventas Informe" src="../Imagenes/PR_Informes/ventas_informe2.jpg" /></p>
+<h4 id="311-report-conditions">3.1.1 Report conditions</h4>
+<ul>
+<li>When you select a report type, the <strong>Report conditions</strong> tab shows the conditions that the document must meet to issue the report.</li>
+</ul>
+<p><img alt="Condición informe" src="../Imagenes/PR_Informes/condicion_informe.jpg" /></p>
+<h4 id="312-report-information">3.1.2 Report information</h4>
+<ul>
+<li>The <strong>Report information</strong> tab provides a short description of each report type.</li>
+</ul>
+<p><img alt="Información informe" src="../Imagenes/PR_Informes/informacion_informe.jpg" /></p>
+<h4 id="313-preview">3.1.3 Preview</h4>
+<ul>
+<li>Before printing or emailing a report you can preview it to verify the document.</li>
+</ul>
+<p><img alt="Vista previa" src="../Imagenes/PR_Informes/vista_previa.jpg" /></p>
+<h4 id="314-save-as-pdf">3.1.4 Save as PDF</h4>
+<ul>
+<li>There is an option to save the report as a PDF. This opens the default export path associated with the sales or purchase document (the path can be changed during export).</li>
+</ul>
+<p><img alt="Guardar PDF" src="../Imagenes/PR_Informes/guardar_pdf.jpg" /></p>
+<h4 id="315-print">3.1.5 Print</h4>
+<ul>
+<li>To print reports click <strong>Print</strong>, choose the printer configured on the server and print.</li>
+</ul>
+<p><img alt="Imprimir informe" src="../Imagenes/PR_Informes/imprimir_informe.jpg" /></p>
+<h4 id="316-send-by-email">3.1.6 Send by email</h4>
+<ul>
+<li>To send the report by email select <strong>Send by email</strong>. A <strong>New email</strong> window opens with the user's email populated by default (this is configured in <strong>Email accounts</strong>). For more information see: <a href="/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU">1. Initial Configuration of ENBLAU</a>.</li>
+</ul>
+<p><img alt="Enviar email" src="../Imagenes/PR_Informes/enviar_email.jpg" /></p>
+<ul>
+<li>From the <strong>New email</strong> window you can attach additional documents, write the message body, add CC recipients, etc.</li>
+</ul>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../4.PR_Manual_Stock_enCONTROL/" class="btn btn-neutral float-left" title="Stock Control Management enCONTROL"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../6.PR_Proyecto_cliente/" class="btn btn-neutral float-right" title="Projects, Clients and Suppliers">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../4.PR_Manual_Stock_enCONTROL/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../6.PR_Proyecto_cliente/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

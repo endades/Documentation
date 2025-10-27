@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Sistema de control de stock enCONTROL - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sistema de control de stock enCONTROL";
+        var mkdocs_page_input_path = "es\\Procesos\\4.PR_Manual_Stock_enCONTROL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Sistema de control de stock enCONTROL</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="sistema-de-control-de-stock-encontrol">Sistema de control de stock enCONTROL</h1>
+<hr />
+<h2 id="1-proposito">1. Propósito</h2>
+<p>El presente manual está diseñado para usuarios nuevos en el sistema de control de stock utilizado por los Clientes y Endades. El objetivo principal es proporcionar una guía detallada para la gestión eficiente de proyectos, desde la creación de pedidos hasta la optimización del proceso de producción en enCONTROL y enSITE. Este documento abarca los pasos necesarios para realizar las operaciones clave del sistema y está estructurado de forma secuencial para facilitar su comprensión.</p>
+<hr />
+<h2 id="2-recepcion-de-materiales">2. Recepción de materiales</h2>
+<h3 id="21-recepcion-en-ensite">2.1. Recepción en enSITE</h3>
+<ul>
+<li>Una vez se haya creado el pedido de compra, desde ENBLAU en <strong>Almacenes</strong>, acceda a la opción <strong>"Pendientes de Recibir"</strong> en el apartado de Almacenes. Se abrirá una pestaña con todos los materiales pendientes de recibir para cada proyecto.</li>
+</ul>
+<p><img alt="pendientes_recibir" src="../../../Procesos/Imagenes/PR_Stock_Control/pendiente_recibir.jpg" />
+<img alt="pendientes_recibir" src="../../../Procesos/Imagenes/PR_Stock_Control/pendiente_recibir2.jpg" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Para información mas detalladas sobre pedido de compras, sigue este enlace: <a href="../3.PR_Manual_Stock_ENBLAU/#21-pedidos-de-compra">2.1. Pedidos de compra</a></p>
+</blockquote>
+<ul>
+<li><strong>Modo de recibir</strong>: Abra <strong>enSite</strong> desde el taller a través de wifi con la persona encargada de recibir el pedido.</li>
+<li>En <strong>Recepción de pedidos</strong>, localice el pedido correspondiente (ordenado por fecha).</li>
+</ul>
+<p><img alt="recepcion_pedido" src="../../../Procesos/Imagenes/PR_Stock_Control/recepcion_pedido.jpg" />
+<img alt="recepcion_pedido" src="../../../Procesos/Imagenes/PR_Stock_Control/recepcion_pedido2.jpg" /></p>
+<ul>
+<li>Registre la recepción en <strong>Nuevo Albarán</strong> creando un albarán desde la sección <strong>Almacén</strong>.</li>
+</ul>
+<p><img alt="albaran" src="../../../Procesos/Imagenes/PR_Stock_Control/albaran.jpg" />
+<img alt="albaran" src="../../../Procesos/Imagenes/PR_Stock_Control/albaran2.jpg" />
+<img alt="albaran" src="../../../Procesos/Imagenes/PR_Stock_Control/albaran3.jpg" /></p>
+<ul>
+<li>En ENBLAU, la pestaña <strong>Pendiente de recibir</strong> de <strong>Almacenes</strong> se sincroniza y ya no verás los materiales para ese pedido.</li>
+<li>En <strong>Pedido de Compras</strong>, puedes comprobar la trazabilidad.</li>
+<li>En <strong>enSite</strong>, indique las cantidades recibidas y la ubicación donde se almacenarán (Almacén, Planta, Zona, Subzona…). Luego podrás ver la ubicación de cada material.</li>
+</ul>
+<p><img alt="ubicacion" src="../../../Procesos/Imagenes/PR_Stock_Control/ubicacion.jpg" />
+<img alt="ubicacion" src="../../../Procesos/Imagenes/PR_Stock_Control/ubicacion2.jpg" /></p>
+<ul>
+<li>
+<p>Desde la app <strong>enSITE</strong>, también se puede buscar por artículos y ver todas las ubicaciones donde está ese artículo. Para luego mover o descontar los artículos.</p>
+<p><img alt="ver_ubicacion" src="../../../Procesos/Imagenes/PR_Stock_Control/ver_ubicacion.jpg" /> 
+<img alt="mover_salida" src="../../../Procesos/Imagenes/PR_Stock_Control/mover_salida.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>En caso de materiales dañados u otras incidencias</strong>, puedes adjuntar documentos o capturar fotografías y adjuntarlas al albarán. Luego se podrá revisar desde ENBLAU.</p>
+</blockquote>
+<p><img alt="adjuntos" src="../../../Procesos/Imagenes/PR_Stock_Control/adjuntos.jpg" />
+<img alt="adjuntos" src="../../../Procesos/Imagenes/PR_Stock_Control/adjuntos2.jpg" /></p>
+<h3 id="22-recepcion-en-enblau">2.2. Recepción en ENBLAU</h3>
+<ul>
+<li>
+<p>Desde ENBLAU una vez creado el pedido de compra se puede sacar un albarán de recepción de materiales del pedido.</p>
+</li>
+<li>
+<p>Desde el albarán podrás indicar la recepción de cada material indicando la cantidad. Por defecto estarán todos marcados con la cantidad del pedido.</p>
+</li>
+<li>
+<p>Luego hay que indicar la ubicación del albarán en la pestaña de almacenes del albarán.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Para información más detalladas sobre recepcion de materiales en ENBLAU, sigue este enlace: <a href="../1.PR_Ventas_Compras/#42-recepcion-de-material">4.2. Recepción de material</a></p>
+</blockquote>
+<hr />
+<h2 id="3-produccion-y-encontrol">3. Producción y enCONTROL</h2>
+<h3 id="31-produccion">3.1. Producción</h3>
+<ul>
+<li>Crea proyectos de producción basados en los pedidos de cliente en ENBLAU.</li>
+<li>
+<p>Crear producción.</p>
+<p><img alt="crear_produccion" src="../../../Procesos/Imagenes/PR_Stock_Control/crear_produccion.jpg" /></p>
+</li>
+<li>
+<p>El siguiente paso es <strong>Enviar a producción</strong>.</p>
+<p><img alt="enviar_produccion" src="../../../Procesos/Imagenes/PR_Stock_Control/enviar_produccion.jpg" /></p>
+</li>
+<li>
+<p>En producción, se puede ver en <strong>stock necesario</strong> los materiales descontados y se puede descontar manualmente.</p>
+<p><img alt="stock_necesario" src="../../../Procesos/Imagenes/PR_Stock_Control/stock_necesario.jpg" />
+<img alt="stock_necesario" src="../../../Procesos/Imagenes/PR_Stock_Control/stock_necesario2.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Para información más detallada sobre crear fase de producción en ENBLAU, sigue este enlace: <a href="../1.PR_Ventas_Compras/#35-produccion">3.5. Producción</a></p>
+</blockquote>
+<h3 id="32-encontrol">3.2. enCONTROL</h3>
+<ul>
+<li>
+<p>Abre <strong>enCONTROL</strong>. Aparecen los proyectos de producción. Si eres usuario administrador, verás todos los proyectos, si no, solo verás los asignados.</p>
+</li>
+<li>
+<p>Abre el <strong>monitor de control</strong>. Puedes abrirlo haciendo doble clic en cualquiera de los filtros (en la cabecera) o haciendo doble clic en el proyecto y seleccionando el puesto de <strong>Control</strong> si lo tienes configurado en el equipo.</p>
+<p><img alt="puesto_control" src="../../../Procesos/Imagenes/PR_Stock_Control/control.jpg" /></p>
+<p><img alt="puesto_control" src="../../../Procesos/Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
+</li>
+<li>
+<p>Cuando se envía a producción (Taller), se coloca en cola de producción en la pestaña de <strong>Gestión de Producción</strong>. El responsable de producción decide la prioridad.</p>
+<p><img alt="gestion_produccion" src="../../../Procesos/Imagenes/PR_Stock_Control/gestion_produccion.jpg" /></p>
+</li>
+<li>
+<p>Para sacar de "En cola", solo tienes que arrastrarlo al panel de "En fabricación" y se abrirá una ventana de <strong>Tarea</strong> para proponer una fecha, indicar el estado, clasificación, etc.</p>
+<p><img alt="cola" src="../../../Procesos/Imagenes/PR_Stock_Control/cola.jpg" /></p>
+<p><img alt="tarea" src="../../../Procesos/Imagenes/PR_Stock_Control/tarea.jpg" /></p>
+</li>
+<li>
+<p>En la pestaña Planificación de producción defines a quien se asigna, arrastrando los proyectos a cada responsable por hacer. Hay que seleccionar el responsable y arrastrar el proyecto (se puede seleccionar más de uno responsable con ctrl + botón derecho). También se puede cambiar la prioridad de izquierda a derecha y de arriba a abajo:</p>
+</li>
+</ul>
+<p><img alt="planificacion_produccion" src="../../../Procesos/Imagenes/PR_Stock_Control/planificacion_produccion.jpg" /></p>
+<p>Para quitar el proyecto asignado, hay que seleccionar el responsable seleccionar el proyecto y usar ctrl + suprimir.</p>
+<ul>
+<li>En la pestaña Calendario de producción se muestra un diagrama Gantt con base en los tiempos de Logikal (en el ejemplo) fechas de entrada y salida de producción.</li>
+</ul>
+<p><img alt="calendario_produccion" src="../../../Procesos/Imagenes/PR_Stock_Control/calendario_produccion.jpg" /></p>
+<ul>
+<li>Optimice los procesos según las áreas de producción (corte, mecanizado, ensamblado, etc.). En la pantalla principal de proyecto con doble clic sobre el proyecto deseado, te abrirá una ventana Seleccione un puesto. (Los puestos se definen como el cliente decida y se verá según el usuario) ejemplos:</li>
+</ul>
+<p><img alt="seleccion_puesto" src="../../../Procesos/Imagenes/PR_Stock_Control/seleccion_puesto.jpg" /></p>
+<ul>
+<li>Al entrar en cualquier puesto te abrirá la pantalla con el botón <strong>Iniciar</strong>:</li>
+</ul>
+<p><img alt="iniciar" src="../../../Procesos/Imagenes/PR_Stock_Control/iniciar.jpg" /></p>
+<p>Al iniciar se cuenta el tiempo hasta que se pause o se finalice el trabajo.</p>
+<ul>
+<li>
+<p>Todas las pantallas tienen algunos campos en común:</p>
+<ul>
+<li>Comentario - Se puede añadir comentario y escoger una severidad en el desplegable. El último comentario bueno es el que desbloquea.</li>
+</ul>
+<p><img alt="comentario" src="../../../Procesos/Imagenes/PR_Stock_Control/comentario.jpg" /></p>
+<p><img alt="comentario" src="../../../Procesos/Imagenes/PR_Stock_Control/comentario2.jpg" /></p>
+<ul>
+<li>Pausar - Al pausar el trabajo te obliga indicar desde el listado el motivo de la pausa. Luego se puede reanudar indicando otra vez el mismo puesto.</li>
+</ul>
+<p><img alt="pausar" src="../../../Procesos/Imagenes/PR_Stock_Control/pausar.jpg" /></p>
+<ul>
+<li>Finalizar - Se finaliza cuando acabas el trabajo en ese puesto. Luego se puede reanudar inicando otra vez el mismo puesto.</li>
+</ul>
+<p><img alt="finalizar" src="../../../Procesos/Imagenes/PR_Stock_Control/finalizar.jpg" /></p>
+<ul>
+<li>Documentación - Desde el apartado de documentación se podrá ver los documentos de producción exportados desde Logikal en el visor de documentación. También se puede añadir una ruta genérica para añadir lo que quiera. Catálogo, manuales, etc.</li>
+</ul>
+<p><img alt="documentacion" src="../../../Procesos/Imagenes/PR_Stock_Control/documentacion.jpg" /></p>
+</li>
+</ul>
+<h4 id="321-puestos-de-trabajo">3.2.1 Puestos de trabajo</h4>
+<p><strong>1. Preparación de Material</strong></p>
+<ul>
+<li>Todo preparado – Marca los materiales con un check en verde indicando que está preparado.</li>
+<li>Nada Preparado – Marca los materiales con una X en rojo indicando que no está preparado.</li>
+<li>
+<p>Ubicación Material – Según lo tengas configurado enCONTROL, se podría indicar donde ubicar los materiales. Para que se descuente ese material solo de esa ubicación. </p>
+<p><img alt="preparacion" src="../../../Procesos/Imagenes/PR_Stock_Control/preparacion.jpg" /></p>
+</li>
+</ul>
+<p><strong>2. Corte</strong></p>
+<ul>
+<li>
+<p>En corte se indica la longitud de la barra y el desperdicio de retales. Se abre una ventana de retales y puede cambiar la longitud según sé necesario.</p>
+<p><img alt="corte" src="../../../Procesos/Imagenes/PR_Stock_Control/corte.jpg" /></p>
+<p><img alt="desperdicio" src="../../../Procesos/Imagenes/PR_Stock_Control/desperdicio.jpg" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Desde ENBLAU en el apartado Configuración - General - <strong>Logikal</strong>. Se puede indicar el <strong>Retal mínimo</strong> a tener en cuenta cuando se corta una barra en el puesto de <strong>Corte</strong>.</p>
+</blockquote>
+<p><img alt="retales" src="../../../Procesos/Imagenes/PR_Stock_Control/retales.jpg" /></p>
+<p><img alt="retales" src="../../../Procesos/Imagenes/PR_Stock_Control/retales2.jpg" /></p>
+</li>
+<li>
+<p>Luego desde ENBLAU <strong>Movimientos</strong> de almacén se reflejará una salida de la barra total ej. 6500 y luego una entrada de la del mismo material de ej. 4100 según había indicado en el puesto de corte. </p>
+<p><img alt="movimientos barra" src="../../../Procesos/Imagenes/PR_Stock_Control/movimientos_barra.jpg" /></p>
+<ul>
+<li>También en ENBLAU se puede ver en el apartado de <strong>Stock</strong> el listado filtrado por <strong>Es retal</strong> todos los retales que hay disponible en stock.</li>
+</ul>
+<p><img alt="retales" src="../../../Procesos/Imagenes/PR_Stock_Control/retales3.jpg" /></p>
+</li>
+<li>
+<p>En el apartado <strong>Cortados</strong> del puesto de corte de enCONTROL en la parte derecha del monitor se muestra el listado de cortes realizados y se puede imprimir las etiquetas de cada barra.</p>
+<p><img alt="cortados" src="../../../Procesos/Imagenes/PR_Stock_Control/cortados.jpg" /></p>
+</li>
+</ul>
+<p><strong>3. Mecanizado</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real.</p>
+<p><img alt="mecanizado" src="../../../Procesos/Imagenes/PR_Stock_Control/mecanizado.jpg" /></p>
+</li>
+</ul>
+<p><strong>4. Montaje</strong></p>
+<ul>
+<li>
+<p>Se descuenta materiales (accesorios) por cada posición de cuadro.</p>
+<p><img alt="montaje" src="../../../Procesos/Imagenes/PR_Stock_Control/montaje.jpg" /></p>
+</li>
+<li>
+<p>En el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>.</p>
+</li>
+</ul>
+<p><img alt="montaje" src="../../../Procesos/Imagenes/PR_Stock_Control/montaje_2.jpg" /></p>
+<p><strong>5. Ajunquillado</strong></p>
+<ul>
+<li>Se descuenta materiales (Juntas, calzos, espuma, etc.) por cuadro.</li>
+</ul>
+<p><img alt="ajunquillado" src="../../../Procesos/Imagenes/PR_Stock_Control/ajunquillado.jpg" /></p>
+<ul>
+<li>
+<p>En el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>.</p>
+<p><img alt="ajunquillado" src="../../../Procesos/Imagenes/PR_Stock_Control/ajunquillado_2.jpg" /></p>
+</li>
+</ul>
+<p><strong>6. Ensamblado</strong></p>
+<ul>
+<li>Información del cuadro, pero no se descuenta materiales.</li>
+</ul>
+<p><img alt="ensamblado" src="../../../Procesos/Imagenes/PR_Stock_Control/ensamblado.jpg" /></p>
+<p><strong>7. Herraje</strong></p>
+<ul>
+<li>
+<p>Se descuenta materiales (herraje) por hoja.</p>
+<p><img alt="herraje" src="../../../Procesos/Imagenes/PR_Stock_Control/herraje.jpg" /></p>
+</li>
+<li>
+<p>En el listado de materiales tienes la opción de indicar los herrajes que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>.</p>
+<p><img alt="herraje" src="../../../Procesos/Imagenes/PR_Stock_Control/herraje_2.jpg" /></p>
+</li>
+</ul>
+<p><strong>8. Soldado</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real. </p>
+<p><img alt="soldado" src="../../../Procesos/Imagenes/PR_Stock_Control/soldado.jpg" /></p>
+</li>
+</ul>
+<p><strong>9. Comprobación final</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales. Pero, una vez finalice la comprobación se puede ubicar en Almacen y luego imprimir una etiqueta del producto acabado.</p>
+<p><img alt="comprobacion" src="../../../Procesos/Imagenes/PR_Stock_Control/comprobacion.jpg" /> </p>
+<p><img alt="comprobacion" src="../../../Procesos/Imagenes/PR_Stock_Control/comprobacion_ubicacion.jpg" /></p>
+<p><img alt="comprobacion" src="../../../Procesos/Imagenes/PR_Stock_Control/comprobacion_etiqueta.jpg" /></p>
+</li>
+<li>
+<p>Desde ENBLAU en el apartado de Almacenes en el apartado de <strong>Producto terminado</strong> hay dos listados:</p>
+<p><strong>Ubicación de productos:</strong> Muestra donde está ubicado el producto terminado de cada proyecto y producción. Desde ese listado se puede dar salida, mover de ubicación y abrir el documento de producción, seleccionando sobre la posición con el botón derecho.</p>
+<p><img alt="ubicacion producto" src="../../../Procesos/Imagenes/PR_Stock_Control/ubicacion_producto.jpg" /></p>
+<p><strong>Movimientos de productos:</strong> Muestra los movimientos del producto terminado como entrada, traspaso, salida y devolución. Desde ese listado se puede hacer una devolución, seleccionando sobre la posición de salida con el botón derecho.</p>
+<p><img alt="movimientos producto" src="../../../Procesos/Imagenes/PR_Stock_Control/movimientos_producto.jpg" /></p>
+</li>
+</ul>
+<p><strong>10. Transformación</strong></p>
+<ul>
+<li>
+<p>Ese puesto puedes indicar un grupo de materiales o escandallo para transformar en un producto, ejemplo: Barandilla. </p>
+<p><img alt="transformacion" src="../../../Procesos/Imagenes/PR_Stock_Control/transformacion.jpg" /></p>
+</li>
+<li>
+<p>Así como en otros puestos en el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>. Además de luego poder imprimir la etiqueta y ubicar el producto.</p>
+</li>
+</ul>
+<p><strong>11. Limpieza</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real.</p>
+<p><img alt="limpieza" src="../../../Procesos/Imagenes/PR_Stock_Control/limpieza.jpg" /></p>
+</li>
+</ul>
+<p><strong>12. Picking</strong></p>
+<ul>
+<li>
+<p>El puesto muestra el listado de los materiales marcados previamente en otros puestos que se montará en destino.</p>
+<p><img alt="picking" src="../../../Procesos/Imagenes/PR_Stock_Control/picking.jpg" /></p>
+</li>
+<li>
+<p>Puedes crear los paquetes y asignar para cada material. Y luego imprimir la etiqueta para el paquete.</p>
+<p><img alt="picking" src="../../../Procesos/Imagenes/PR_Stock_Control/picking_paquete.jpg" /></p>
+<ul>
+<li>Indicar la ubicación de picking para cada material.</li>
+</ul>
+<p><img alt="picking" src="../../../Procesos/Imagenes/PR_Stock_Control/picking_ubicacion.jpg" /></p>
+</li>
+</ul>
+<p><strong>13. Pizarra</strong></p>
+<ul>
+<li>
+<p>Muestra la evolución de cada proyecto y su estado.</p>
+<p><img alt="pizarra" src="../../../Procesos/Imagenes/PR_Stock_Control/pizarra.jpg" /></p>
+</li>
+</ul>
+<p><strong>14. Control</strong></p>
+<ul>
+<li>
+<p>Abre el monitor Control de proyectos. Donde también se puede ver el estado de cada proyecto que está en fábrica.</p>
+<p><img alt="control estados" src="../../../Procesos/Imagenes/PR_Stock_Control/control_estados.jpg" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota</strong>: Asigne prioridades y recursos para asegurar la fluidez en la producción.</p>
+<p><strong>Configuración enCONTROL</strong> - Configurar enCONTROL previamente. Para más información, sigue este enlace: <a href="/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configuración Inicial de enCONTROL</a> :</p>
+<p><strong>Gestión de filtros</strong> - Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros/">4. Gestión de filtros</a></p>
+</blockquote>
+<hr />
+<h2 id="4-control-de-stock-y-reportes">4. Control de stock y reportes</h2>
+<ul>
+<li>Monitorea el stock necesario desde la sección "Producción".</li>
+<li>Identifica materiales reservados y pendientes en tiempo real.</li>
+<li>Genera reportes de inventarios para evaluar el uso de materiales y planificar futuras compras.</li>
+</ul>
+<hr />
+<h2 id="5-resolucion-de-problemas-comunes">5. Resolución de problemas comunes</h2>
+<ul>
+<li><strong>Error al importar referencias</strong>: Verifica que las referencias estén configuradas en la base de datos.</li>
+<li><strong>Materiales sobrantes o faltantes</strong>: Asegúrate de registrar correctamente las ubicaciones y cantidades al recibir materiales.</li>
+<li><strong>Problemas con el layout del almacén</strong>: Revisa la configuración de zonas y ajusta según sea necesario.</li>
+</ul>
+<hr />
+<h2 id="6-conclusion">6. Conclusión</h2>
+<p>Este manual ofrece una guía paso a paso para los procesos principales en el sistema de control de stock. Siguiendo estas instrucciones, los usuarios podrán gestionar eficientemente los inventarios, mejorar la producción y optimizar la relación con proveedores. Para soporte adicional, contacte al administrador del sistema.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

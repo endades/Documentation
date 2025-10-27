@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Initial Configuration ENBLAU - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Initial Configuration ENBLAU";
+        var mkdocs_page_input_path = "en\\Configurations\\1. CO_Configuracion_Inicial_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Initial Configuration ENBLAU</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-purpose">1. Purpose</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-general-setup">2. General Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-connection-setup-with-logikal">2.1. Connection Setup with Logikal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-general">2.2. General</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-sales-texts">2.3. Sales Texts</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-user-management">3. User Management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-email-account-setup">4. Email Account Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-general-email-setup">4.1. General Email Setup</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-possible-microsoft-authentication-errors">4.2. Possible Microsoft Authentication Errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-company-management">5. Company Management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-project-setup">6. Project Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-statuses">6.1. Statuses</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-default-directories">6.2. Default Directories</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-sales-setup">7. Sales Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-numbering">7.1. Numbering</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-payment-methods">7.2. Payment Methods</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#73-banks">7.3. Banks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#74-payment-modes">7.4. Payment Modes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#75-breakage-concepts">7.5. Breakage Concepts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#76-classifications">7.6. Classifications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#77-taxable-persons-vat">7.7. Taxable Persons (VAT)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#78-default-directories">7.8. Default Directories</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-purchase-setup">8. Purchase Setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-numbering">8.1. Numbering</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#82-payment-methods">8.2. Payment Methods</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#83-classifications">8.3. Classifications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#84-default-directories">8.4. Default Directories</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-notification-management">9. Notification Management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#91-when-are-notifications-generated">9.1. When Are Notifications Generated?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#92-notification-setup">9.2. Notification Setup</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#93-where-are-notifications-received">9.3. Where Are Notifications Received?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#94-email-sending">9.4. Email Sending</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-conclusion">10. Conclusion</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Configurations</li>
+      <li class="breadcrumb-item active">Initial Configuration ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="initial-enblau-setup">Initial ENBLAU Setup</h1>
+<hr />
+<h2 id="1-purpose">1. Purpose</h2>
+<p>This manual is designed to guide new users through the initial setup of ENBLAU. This setup includes everything necessary for the client to carry out sales, purchases, and invoice issuance.</p>
+<hr />
+<h2 id="2-general-setup">2. General Setup</h2>
+<p><img alt="general" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<h3 id="21-connection-setup-with-logikal">2.1. Connection Setup with Logikal</h3>
+<ul>
+<li>
+<p>To connect with the factory and Logikal projects, it is necessary to indicate the installation path and the Logikal DLL (network drive where Logikal points).</p>
+</li>
+<li>
+<p>From <strong>General</strong>, go to <strong>Logikal - Connection and Projects</strong>.</p>
+</li>
+</ul>
+<p><img alt="initial_setup" src="../Imagenes/CO_Config_ENBLAU/conexion_logikal.png" /></p>
+<ul>
+<li>To connect to the factory in Logikal, go to the bottom of the main window of <strong>ENBLAU</strong>, right-click on <strong>Factory connection</strong> and select <strong>Connect</strong>.</li>
+</ul>
+<p><img alt="factory connection" src="../Imagenes/CO_Config_ENBLAU/conexion_fabrica.png" /></p>
+<hr />
+<h3 id="22-general">2.2. General</h3>
+<p><img alt="general" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<ul>
+<li><strong>Storage path</strong>: Indicate the path where ENBLAU and Logikal documents will be stored (network drive). Example:</li>
+</ul>
+<p><img alt="storage_path" src="../Imagenes/CO_Config_ENBLAU/ruta_almacenamiento.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> It is recommended to use a network drive. If one does not exist, create it.</p>
+</blockquote>
+<ul>
+<li><strong>Company information</strong>: Fill in the required fields with company information such as name, VAT number, address, logos, etc.</li>
+</ul>
+<p><img alt="company_info" src="../Imagenes/CO_Config_ENBLAU/info_empresa.png" /></p>
+<hr />
+<h3 id="23-sales-texts">2.3. Sales Texts</h3>
+<ul>
+<li>Add texts for sales documents, such as observations, conditions, etc.</li>
+</ul>
+<p><img alt="sales_text" src="../Imagenes/CO_Config_ENBLAU/texto_ventas.png" /></p>
+<p>Example order report:</p>
+<p><img alt="sales_text" src="Imagenes/CO_Config_ENBLAU/informe_pedido.png" />  </p>
+<hr />
+<h2 id="3-user-management">3. User Management</h2>
+<ul>
+<li>To register new users, go to <strong>Users</strong>.</li>
+</ul>
+<p><img alt="users" src="../Imagenes/CO_Config_ENBLAU/usuarios.png" /></p>
+<ul>
+<li>In <strong>New</strong>, you can create new users.</li>
+</ul>
+<p><img alt="users2" src="../Imagenes/CO_Config_ENBLAU/usuarios2.png" /></p>
+<ul>
+<li>A window will open to configure user information (name, address, email, phone, etc.), user type (Technician, Sales, Workshop, etc. – more than one type can be assigned), and permissions. Permissions can only be assigned by administrator-type users.</li>
+</ul>
+<p><img alt="users3" src="../Imagenes/CO_Config_ENBLAU/usuarios3.png" /></p>
+<ul>
+<li>Once registered, the user can be edited at any time.</li>
+</ul>
+<hr />
+<h2 id="4-email-account-setup">4. Email Account Setup</h2>
+<ul>
+<li>To configure the user’s email account, go to <strong>User Email:</strong> </li>
+</ul>
+<p><img alt="email" src="../Imagenes/CO_Config_ENBLAU/email.png" /></p>
+<p><img alt="email2" src="../Imagenes/CO_Config_ENBLAU/email2.png" /></p>
+<ul>
+<li>To configure each user’s email accounts, go to <strong>Email Accounts:</strong> </li>
+</ul>
+<p><img alt="email accounts" src="../Imagenes/CO_Config_ENBLAU/cuentas_email.png" /></p>
+<p><img alt="email accounts2" src="../Imagenes/CO_Config_ENBLAU/cuentas_email2.png" /></p>
+<ul>
+<li>From each section, you can configure the email, username, signature, and IMAP/SMTP incoming and outgoing server. The server and port setup must be properly defined according to your provider. This way, emails can be sent and received from reports or notifications depending on your setup.</li>
+</ul>
+<h3 id="41-general-email-setup">4.1. General Email Setup</h3>
+<ul>
+<li>From <strong>General</strong> - <strong>Emails</strong> you can define default copies, subject, and email sending mode.</li>
+</ul>
+<p><img alt="general" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<p><img alt="email setup" src="../Imagenes/CO_Config_ENBLAU/conf_email.png" />  </p>
+<h3 id="42-possible-microsoft-authentication-errors">4.2. Possible Microsoft Authentication Errors</h3>
+<ul>
+<li>When trying to send an email, you may encounter this type of error.</li>
+</ul>
+<p><img alt="email error" src="../Imagenes/CO_Config_ENBLAU/email_error.png" /></p>
+<p><strong>LOG</strong><br />
+    Error: 535: 5.7.139 Authentication unsuccessful, SmtpClientAuthentication is disabled for the Tenant. Visit <a href="https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission">Authenticated SMTP submission in Exchange Online</a> for more information.</p>
+<p>The error is related to email account authentication. This can occur due to a Microsoft 365 security protocol change.</p>
+<ul>
+<li>
+<p><strong>Solution:</strong> Contact the responsible person with permissions from the Microsoft 365 Admin Center. Follow the steps in the link above from Microsoft Exchange Online to configure the Outlook account so that emails can be synced from another app.</p>
+<p><img alt="admin 365" src="../Imagenes/CO_Config_ENBLAU/adimn_365.png" /></p>
+<p>Ensure that all checkboxes are ticked in the <strong>Manage email apps</strong> section for users in Microsoft 365.</p>
+<p><img alt="admin 365" src="../Imagenes/CO_Config_ENBLAU/adimn_365_2.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> For Microsoft Exchange emails, it is recommended that in <strong>Email sending mode</strong> under General, the option <strong>Sending mode 2</strong> is selected.</p>
+</blockquote>
+<p><img alt="sending mode" src="../Imagenes/CO_Config_ENBLAU/modo_envio.png" /></p>
+<hr />
+<h2 id="5-company-management">5. Company Management</h2>
+<ul>
+<li>If you have multiple companies, you can create them in <strong>Companies</strong>, under <strong>Add</strong>. Then, fill in the information in <strong>General</strong> and <strong>Sales Texts</strong> as required for each company.</li>
+</ul>
+<p><img alt="company" src="../Imagenes/CO_Config_ENBLAU/empresa.png" /></p>
+<p><img alt="new_company" src="../Imagenes/CO_Config_ENBLAU/empresa_nuevo.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Important!</strong> If no other company is indicated, projects will default to the company previously added in the basic setup under <strong>General</strong>. If you are going to invoice using <strong>facturae</strong>, the company information must be included in the <strong>Companies</strong> section.</p>
+</blockquote>
+<hr />
+<h2 id="6-project-setup">6. Project Setup</h2>
+<ul>
+<li>From <strong>Sales</strong>, select <strong>Projects</strong>, then go to <strong>Setup</strong>.</li>
+</ul>
+<p><img alt="project_setup" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos.png" /></p>
+<p><img alt="project_setup2" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos2.png" /></p>
+<ul>
+<li>From the setup, you will access a dropdown list for configuration. For an initial setup, it is necessary to configure <strong>Statuses</strong> and <strong>Default Directories</strong>.</li>
+</ul>
+<p><img alt="project_setup3" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos3.png" /></p>
+<h3 id="61-statuses">6.1. Statuses</h3>
+<ul>
+<li>By selecting <strong>Statuses</strong>, a window will open to define the project (job) statuses.</li>
+</ul>
+<p><img alt="statuses" src="../Imagenes/CO_Config_ENBLAU/estados.png" /></p>
+<h3 id="62-default-directories">6.2. Default Directories</h3>
+<ul>
+<li>By selecting <strong>Default Directories</strong>, a window will open to define the necessary directories in the project (job) folder.</li>
+</ul>
+<p><img alt="default_dir" src="../Imagenes/CO_Config_ENBLAU/dir_defecto.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> Default directories are folders that can be configured to be automatically generated with each project.</p>
+</blockquote>
+<hr />
+<h2 id="7-sales-setup">7. Sales Setup</h2>
+<ul>
+<li>From <strong>Sales</strong>, select <strong>Sales Documents</strong>, then go to <strong>Setup</strong>.</li>
+</ul>
+<p><img alt="sales_setup" src="../Imagenes/CO_Config_ENBLAU/conf_ventas.png" /></p>
+<p><img alt="sales_setup2" src="../Imagenes/CO_Config_ENBLAU/conf_ventas2.png" /></p>
+<ul>
+<li>From the setup, you will access a dropdown list for configuration. For an initial setup, it is necessary to configure <strong>Numbering</strong>, <strong>Payment Methods</strong>, <strong>Banks</strong>, <strong>Payment Modes</strong>, <strong>Breakage Concepts</strong>, <strong>Classifications</strong>, <strong>Taxable Persons (VAT)</strong>, and <strong>Default Directories</strong>.</li>
+</ul>
+<p><img alt="sales_setup3" src="../Imagenes/CO_Config_ENBLAU/conf_ventas3.png" /></p>
+<h3 id="71-numbering">7.1. Numbering</h3>
+<ul>
+<li>By selecting <strong>Numbering</strong>, a window will open to define document numbering types for sales documents, assigning sequential numbers.</li>
+</ul>
+<p><img alt="numbering" src="../Imagenes/CO_Config_ENBLAU/numeraciones.png" /></p>
+<ul>
+<li>Example: Document type "Quote", prefix (Alpha) and number (next number) - <strong>PR1000272</strong>.</li>
+</ul>
+<p><img alt="numbering2" src="../Imagenes/CO_Config_ENBLAU/numeraciones2.png" /></p>
+<h3 id="72-payment-methods">7.2. Payment Methods</h3>
+<ul>
+<li>By selecting <strong>Payment Methods</strong>, a window will open to define payment methods necessary to generate due dates in invoices.</li>
+</ul>
+<p><img alt="payment_methods" src="../Imagenes/CO_Config_ENBLAU/formas_pago.png" /></p>
+<ul>
+<li>Example: Indicate the number of installments and the percentage the client must pay at each due date.</li>
+</ul>
+<p><img alt="payment_methods2" src="../Imagenes/CO_Config_ENBLAU/formas_pago2.png" /></p>
+<h3 id="73-banks">7.3. Banks</h3>
+<ul>
+<li>By selecting <strong>Banks</strong>, a window will open to enter bank information. The name and a code.</li>
+</ul>
+<p><img alt="bank" src="../Imagenes/CO_Config_ENBLAU/banco.png" /></p>
+<h3 id="74-payment-modes">7.4. Payment Modes</h3>
+<ul>
+<li>By selecting <strong>Payment Modes</strong>, a window will open to define the different ways a due payment can be collected.</li>
+</ul>
+<p><img alt="payment_mode" src="../Imagenes/CO_Config_ENBLAU/modo_pago.png" /></p>
+<h3 id="75-breakage-concepts">7.5. Breakage Concepts</h3>
+<ul>
+<li>By selecting <strong>Breakage Concepts</strong>, a window will open where you can add the different concepts to be used when recording a breakage (e.g., "manufacturing defect", "breakage during transport", etc.)</li>
+</ul>
+<p><img alt="breakage" src="../Imagenes/CO_Config_ENBLAU/rotura.png" /></p>
+<h3 id="76-classifications">7.6. Classifications</h3>
+<ul>
+<li>By selecting <strong>Classifications</strong>, a window will open to define quote classifications.</li>
+</ul>
+<p><img alt="classifications" src="../Imagenes/CO_Config_ENBLAU/clasificaciones.png" /></p>
+<p>The classification serves the purpose of grouping and filtering documents in the Sales Documents list.</p>
+<h3 id="77-taxable-persons-vat">7.7. Taxable Persons (VAT)</h3>
+<ul>
+<li>By selecting <strong>Taxable Persons (VAT)</strong>, a window will open to define taxable person types.</li>
+</ul>
+<p><img alt="taxable_person" src="../Imagenes/CO_Config_ENBLAU/sujeto_pasivo.png" /></p>
+<h3 id="78-default-directories">7.8. Default Directories</h3>
+<ul>
+<li>By selecting <strong>Default Directories</strong>, a window will open to define the necessary directories in the documentation folder.</li>
+</ul>
+<p><img alt="default_dir_sales" src="../Imagenes/CO_Config_ENBLAU/dir_defecto_ventas.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> Default directories are folders that can be configured to be automatically generated with each documentation.</p>
+</blockquote>
+<hr />
+<h2 id="8-purchase-setup">8. Purchase Setup</h2>
+<ul>
+<li>From <strong>Purchases</strong>, select <strong>Purchase Documents</strong>, then go to <strong>Setup</strong>.</li>
+</ul>
+<p><img alt="purchase_setup" src="../Imagenes/CO_Config_ENBLAU/conf_compras.png" /></p>
+<p><img alt="purchase_setup2" src="../Imagenes/CO_Config_ENBLAU/conf_compras2.png" /></p>
+<ul>
+<li>From the setup, you will access a dropdown list for configuration. For an initial setup, it is necessary to configure <strong>Numbering</strong>, <strong>Payment Methods</strong>, <strong>Classifications</strong>, and <strong>Default Directories</strong>.</li>
+</ul>
+<p><img alt="purchase_setup3" src="../Imagenes/CO_Config_ENBLAU/conf_compras3.png" /></p>
+<h3 id="81-numbering">8.1. Numbering</h3>
+<ul>
+<li>By selecting <strong>Numbering</strong>, a window will open to define document numbering types for purchase documents, assigning sequential numbers.</li>
+</ul>
+<p><img alt="numbering3" src="../Imagenes/CO_Config_ENBLAU/numeraciones3.png" /></p>
+<ul>
+<li>Example: Document type "Order", prefix (Alpha) and number (next number) - <strong>PE70000082</strong>.</li>
+</ul>
+<p><img alt="numbering4" src="../Imagenes/CO_Config_ENBLAU/numeraciones4.png" /></p>
+<h3 id="82-payment-methods">8.2. Payment Methods</h3>
+<ul>
+<li>By selecting <strong>Payment Methods</strong>, a window will open to define payment methods necessary to generate due dates in invoices. You will see it is the same window configured from the Sales Documents setup.</li>
+</ul>
+<p><img alt="payment_methods3" src="../Imagenes/CO_Config_ENBLAU/formas_pago3.png" /></p>
+<h3 id="83-classifications">8.3. Classifications</h3>
+<ul>
+<li>
+<p>By selecting <strong>Classifications</strong>, a window will open to define purchase classifications. Here you can define classification types:<br />
+  • Breakages<br />
+  • Additional materials<br />
+  • Standard order (by default, when an order does not correspond to the above)</p>
+<p><img alt="classifications2" src="../Imagenes/CO_Config_ENBLAU/clasificaciones2.png" /></p>
+</li>
+</ul>
+<p>This setup is important so that data is reflected correctly when performing a project cost study.</p>
+<h3 id="84-default-directories">8.4. Default Directories</h3>
+<ul>
+<li>By selecting <strong>Default Directories</strong>, a window will open to define the necessary directories in the documentation folder.</li>
+</ul>
+<p><img alt="default_dir_purchases" src="../Imagenes/CO_Config_ENBLAU/dir_defecto_compras.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> Default directories are folders that can be configured to be automatically generated with each documentation.</p>
+</blockquote>
+<hr />
+<h2 id="9-notification-management">9. Notification Management</h2>
+<p>ENBLAU allows setting up automatic notifications associated with different system processes. These notifications can improve traceability and internal communication.</p>
+<hr />
+<h3 id="91-when-are-notifications-generated">9.1. When Are Notifications Generated?</h3>
+<p>Notifications can be triggered by events such as:</p>
+<ul>
+<li>Payment of the first invoice.</li>
+<li>Sending a production to the production queue.</li>
+<li>Other processes defined by the workflow.</li>
+</ul>
+<hr />
+<h3 id="92-notification-setup">9.2. Notification Setup</h3>
+<p>These notifications are fully configurable from the Notifications and Processes section:</p>
+<ul>
+<li>They can be directed to a specific <strong>role</strong> (e.g., Sales, Technician, Production) or to a <strong>specific person</strong>.</li>
+<li>They can be automatically associated with users linked to <strong>specific projects</strong>.</li>
+</ul>
+<p><img alt="Notification Setup" src="../Imagenes/CO_Config_ENBLAU/notificaciones.png" /><br />
+<img alt="Detailed Setup" src="../Imagenes/CO_Config_ENBLAU/notificaciones2.png" /><br />
+<img alt="Project Assignment" src="../Imagenes/CO_Config_ENBLAU/notificaciones3.png" /></p>
+<hr />
+<h3 id="93-where-are-notifications-received">9.3. Where Are Notifications Received?</h3>
+<p>Notifications can be received through different channels:</p>
+<ul>
+<li><strong>ENBLAU home window</strong>  </li>
+<li><strong>enSITE mobile app</strong>  </li>
+<li><strong>Email</strong>, if the corresponding option is enabled</li>
+</ul>
+<blockquote>
+<p>⚠️ In some cases, it may not be convenient for them to arrive via email, so you can choose to display them only inside ENBLAU or enSITE.</p>
+</blockquote>
+<p><img alt="Notifications in ENBLAU and enSITE" src="../Imagenes/CO_Config_ENBLAU/notificaciones4.png" /></p>
+<hr />
+<h3 id="94-email-sending">9.4. Email Sending</h3>
+<p>For notifications to reach the user’s email, the corresponding checkbox must be marked in their profile:</p>
+<p><img alt="Enable email notification" src="../Imagenes/CO_Config_ENBLAU/notificaciones5.png" /></p>
+<hr />
+<blockquote>
+<p><strong>Note:</strong><br />
+Notifications are generated based on processes executed by users within the system.</p>
+</blockquote>
+<h2 id="10-conclusion">10. Conclusion</h2>
+<p>By following this manual, you will be able to complete the initial setup of ENBLAU for creating purchase and sales documents.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../" class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2.%20CO_Configuracion_Inicial_enCONTROL/" class="btn btn-neutral float-right" title="Initial Configuration enCONTROL">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2.%20CO_Configuracion_Inicial_enCONTROL/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

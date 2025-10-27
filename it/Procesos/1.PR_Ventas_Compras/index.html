@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Ventas y Compras - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ventas y Compras";
+        var mkdocs_page_input_path = "es\\Procesos\\1.PR_Ventas_Compras.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+      <li class="breadcrumb-item active">Ventas y Compras</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="ventas-y-compras">Ventas y Compras</h1>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual está diseñado para guiar a los usuarios en el uso del sistema de ventas y compras de ENBLAU. Basado en la formación proporcionada, cubre los procesos clave, desde la creación de proyectos hasta la gestión de pedidos, compras y producción.</p>
+<hr />
+<h2 id="2-proceso">2. Proceso</h2>
+<p>Una vez dentro, verás dos secciones principales:</p>
+<h3 id="21-ventas">2.1. Ventas</h3>
+<ul>
+<li><strong>Documentos de venta</strong>: Gestión y listado de presupuestos, pedidos, albaranes y facturas. Creación de proyectos y clientes.</li>
+</ul>
+<p><img alt="Ventas" src="../../../Procesos/Imagenes/PR_Ventas_Compras/ventas.jpg" /></p>
+<h3 id="22-compras">2.2. Compras</h3>
+<ul>
+<li><strong>Documentos de compra</strong>: Gestión y listado de pedidos de compra y recepción de materiales. Creación de proveedores.</li>
+</ul>
+<p><img alt="Compras" src="../../../Procesos/Imagenes/PR_Ventas_Compras/compras.jpg" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Para crear documentos de venta y compra, es importante tener creados <strong>proyectos, clientes y proveedores</strong>. Para más información, sigue este enlace: <a href="../6.PR_Proyecto_cliente/">4. Proyecto, cliente y proveedores</a>.</p>
+</blockquote>
+<hr />
+<h2 id="3-ventas">3. Ventas</h2>
+<p>En el apartado de Ventas, encontrarás Proyectos, Documentos de venta y Clientes.</p>
+<h3 id="31-documentos-de-venta">3.1. Documentos de venta</h3>
+<ul>
+<li>Al entrar en <strong>Documentos de venta</strong>, se abrirá un listado de todos los documentos relacionados con ventas.</li>
+</ul>
+<p><img alt="Ventas" src="../../../Procesos/Imagenes/PR_Ventas_Compras/ventas2.jpg" /></p>
+<h4 id="311-tipos-de-documentos">3.1.1. Tipos de documentos</h4>
+<ul>
+<li>Para crear un nuevo documento, haz clic en <strong>Nuevo</strong> desde la cinta superior.</li>
+</ul>
+<p><img alt="Ventas Nuevo" src="../../../Procesos/Imagenes/PR_Ventas_Compras/ventas_nuevo.jpg" /></p>
+<ul>
+<li>Se abrirá una ventana <strong>Nuevo documento de venta</strong>.</li>
+</ul>
+<p><img alt="Nuevo documento de venta" src="../../../Procesos/Imagenes/PR_Ventas_Compras/ventas_doc.jpg" /></p>
+<ul>
+<li>Desde aquí, podrás crear diferentes tipos de documentos de venta, como Presupuesto, Pedido, Albarán o Factura.</li>
+</ul>
+<p><img alt="Ventas tipo de documento" src="../../../Procesos/Imagenes/PR_Ventas_Compras/ventas_tipo.jpg" /></p>
+<ul>
+<li>Al seleccionar el tipo de documento, algunos campos se rellenarán automáticamente (Comercial, Responsable, Numeración, etc.). Estos campos son editables.</li>
+</ul>
+<p><img alt="Ventas Campos" src="../../../Procesos/Imagenes/PR_Ventas_Compras/ventas_campos.jpg" /></p>
+<ul>
+<li>Otros campos, como Proyecto y Cliente, pueden configurarse para rellenarse automáticamente según el proyecto.</li>
+</ul>
+<p><img alt="Ventas Campos" src="../../../Procesos/Imagenes/PR_Ventas_Compras/ventas_campos2.jpg" /></p>
+<ul>
+<li>En la cinta superior, puedes cambiar el cliente o añadir un nuevo cliente o proyecto.</li>
+</ul>
+<p><img alt="Ventas cinta superior" src="../../../Procesos/Imagenes/PR_Ventas_Compras/venta_cinta.jpg" /></p>
+<h3 id="32-presupuesto">3.2. Presupuesto</h3>
+<ul>
+<li>Al crear un nuevo presupuesto, se abrirá una ventana con el número del presupuesto de venta.</li>
+</ul>
+<p><img alt="Presupuesto" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto.jpg" /></p>
+<h4 id="321-datos-del-documento">3.2.1. Datos del documento</h4>
+<ul>
+<li>En este apartado, se pueden ver y modificar algunos campos del presupuesto.</li>
+</ul>
+<p><img alt="Presupuesto datos documento" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_datos.jpg" /></p>
+<h4 id="322-detalle">3.2.2. Detalle</h4>
+<ul>
+<li>Aquí se añaden las posiciones para la versión del presupuesto.</li>
+</ul>
+<p><img alt="Presupuesto detalle" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_detalle.jpg" /></p>
+<ul>
+<li>Puedes añadir una nueva posición vacía o desde Logikal (asegúrate de estar conectado a fábrica).</li>
+</ul>
+<p><img alt="Presupuesto posicion" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_posicion.jpg" /></p>
+<ul>
+<li>Al añadir una posición desde Logikal, se abrirá la ventana de configuración de Logikal <strong>Tipo de línea</strong>.</li>
+</ul>
+<p><img alt="Presupuesto posicion logikal" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_logikal.jpg" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante</strong>: Para añadir una posición en Logikal, asegúrate de estar conectado a fábrica.</p>
+</blockquote>
+<p><img alt="Conexion fabrica" src="../../../Procesos/Imagenes/PR_Ventas_Compras/conexion_fabrica.jpg" /></p>
+<ul>
+<li>Una vez configurado, la posición se añadirá en ENBLAU.</li>
+</ul>
+<p><img alt="Presupuesto posicion logikal" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_logikal2.jpg" /></p>
+<h4 id="323-logikal">3.2.3. Logikal</h4>
+<ul>
+<li>Desde este apartado, puedes crear un proyecto o vincular un proyecto ya creado en Logikal.</li>
+</ul>
+<p><img alt="Presupuesto posicion logikal" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_logikal3.jpg" /></p>
+<ul>
+<li>Al vincular el proyecto, se abrirá una ventana con los proyectos disponibles en Logikal.</li>
+</ul>
+<p><img alt="Presupuesto posicion logikal" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_logikal4.jpg" /></p>
+<ul>
+<li>Puedes crear diferentes versiones del presupuesto. Haz clic derecho sobre la pestaña de <em>Versión 1</em> o desde la cinta superior en el desplegable de <em>Presupuesto</em>.</li>
+</ul>
+<p><img alt="Presupuesto posicion logikal" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_version.jpg" />
+  <img alt="Presupuesto posicion logikal" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_version2.jpg" /></p>
+<ul>
+<li>Se abrirá una ventana de <strong>Nueva versión de presupuesto</strong>, donde puedes indicar si quieres copiar las líneas de la versión activa o crear una versión en blanco.</li>
+</ul>
+<p><img alt="Presupuesto posicion logikal" src="../../../Procesos/Imagenes/PR_Ventas_Compras/presupuesto_version3.jpg" /></p>
+<ul>
+<li>Para editar una posición en Logikal, pulsa <strong>Ctrl + doble clic</strong> sobre la posición que desees editar.</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> El nombre de las pestañas de versiones es editable. Para cambiarlo, haz clic derecho sobre la pestaña de la versión y selecciona <em>Cambiar el nombre de la versión</em>.</p>
+<p>⚠️ <strong>Importante</strong>: Para crear o vincular un proyecto desde Logikal, asegúrate de estar conectado a fábrica.</p>
+</blockquote>
+<p><img alt="Conexion fabrica" src="../../../Procesos/Imagenes/PR_Ventas_Compras/conexion_fabrica.jpg" /></p>
+<h3 id="33-pedido">3.3. Pedido</h3>
+<h4 id="331-crear-pedido">3.3.1. Crear pedido</h4>
+<ul>
+<li>Una vez creada la versión del presupuesto, el siguiente paso es aceptarlo y crear el pedido de cliente.</li>
+</ul>
+<p><img alt="Pedido" src="../../../Procesos/Imagenes/PR_Ventas_Compras/pedido.jpg" />
+  <img alt="Pedido" src="../../../Procesos/Imagenes/PR_Ventas_Compras/pedido2.jpg" /></p>
+<h4 id="332-editar-posicion">3.3.2. Editar posición</h4>
+<ul>
+<li>Desde el pedido, puedes editar o añadir posiciones, listar materiales, crear mediciones, producciones, etc.</li>
+</ul>
+<p><img alt="Pedido" src="../../../Procesos/Imagenes/PR_Ventas_Compras/pedido3.jpg" /></p>
+<h4 id="333-albaran">3.3.3. Albarán</h4>
+<ul>
+<li>Desde la fase de Pedido, puedes crear un albarán e indicar las unidades a albaranar.</li>
+</ul>
+<p><img alt="Albarán" src="../../../Procesos/Imagenes/PR_Ventas_Compras/albaran.jpg" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Los datos del documento de pedido también se pueden modificar, al igual que en otros documentos de venta.</p>
+</blockquote>
+<h3 id="34-medicion">3.4. Medición</h3>
+<h4 id="341-crear-medicion">3.4.1. Crear medición</h4>
+<ul>
+<li>Desde el pedido, puedes crear una medición.</li>
+</ul>
+<p><img alt="Medición" src="../../../Procesos/Imagenes/PR_Ventas_Compras/medicion.jpg" /></p>
+<h4 id="342-seleccionar-posiciones">3.4.2. Seleccionar posiciones</h4>
+<ul>
+<li>Al crear una medición, se abre una ventana <strong>Nueva fase de medición</strong>, donde puedes seleccionar las posiciones para la fase de medición.</li>
+</ul>
+<p><img alt="Nueva Fase medición" src="../../../Procesos/Imagenes/PR_Ventas_Compras/fase_medicion.jpg" /></p>
+<h4 id="343-fase-de-medicion">3.4.3. Fase de medición</h4>
+<ul>
+<li>Se crea una fase de medición donde puedes editar las mediciones sin afectar el pedido.</li>
+</ul>
+<p><img alt="Nueva Fase medición" src="../../../Procesos/Imagenes/PR_Ventas_Compras/fase_medicion2.jpg" /></p>
+<h4 id="344-albaran">3.4.4. Albarán</h4>
+<ul>
+<li>Desde la fase de Medición, puedes crear un albarán e indicar las unidades a albaranar, de la misma forma que en el pedido.</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Los datos del documento de medición también se pueden modificar, al igual que en otros documentos de venta.</p>
+</blockquote>
+<h3 id="35-produccion">3.5. Producción</h3>
+<h4 id="351-crear-produccion">3.5.1. Crear producción</h4>
+<ul>
+<li>La fase de producción se puede crear desde el pedido o la medición.</li>
+</ul>
+<p><img alt="Crear producción" src="../../../Procesos/Imagenes/PR_Ventas_Compras/crear_produccion.jpg" /></p>
+<h4 id="352-seleccionar-posiciones">3.5.2. Seleccionar posiciones</h4>
+<ul>
+<li>Al crear una producción, se abre una ventana <strong>Nueva fase de producción</strong>, donde puedes seleccionar las posiciones para la fase de producción.</li>
+</ul>
+<p><img alt="Nueva Fase producción" src="../../../Procesos/Imagenes/PR_Ventas_Compras/fase_produccion.jpg" /></p>
+<ul>
+<li>Al aceptar, aparecerá una ventana preguntando si deseas enviar a producción.</li>
+</ul>
+<p><img alt="Pregunta enviar a producción" src="../../../Procesos/Imagenes/PR_Ventas_Compras/pregunta_enviar.jpg" /></p>
+<h4 id="353-fase-de-produccion">3.5.3. Fase de producción</h4>
+<ul>
+<li>Se crea una fase de producción donde puedes editar la posición antes de mandar a producción sin afectar el pedido.</li>
+</ul>
+<p><img alt="Nueva Fase producción" src="../../../Procesos/Imagenes/PR_Ventas_Compras/fase_produccion2.jpg" /></p>
+<h4 id="354-albaran">3.5.4. Albarán</h4>
+<ul>
+<li>Desde la fase de Producción, puedes crear un albarán e indicar las unidades a albaranar, de la misma forma que en el pedido.</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Los datos del documento de producción también se pueden modificar, al igual que en otros documentos de venta.</p>
+</blockquote>
+<hr />
+<h2 id="4-compras">4. Compras</h2>
+<h3 id="41-pedidos-de-compra">4.1. Pedidos de compra</h3>
+<h4 id="411-desde-un-presupuesto">4.1.1. Desde un presupuesto</h4>
+<ul>
+<li>Acepta un presupuesto para generar un pedido de cliente.</li>
+</ul>
+<h4 id="412-material-necesario">4.1.2. Material necesario</h4>
+<ul>
+<li>Accede a la pestaña "Material Necesario" para listar los materiales requeridos.</li>
+</ul>
+<p><img alt="Material necesario" src="../../../Procesos/Imagenes/PR_Ventas_Compras/material_necesario.jpg" /></p>
+<ul>
+<li>Al listar materiales, verás en las columnas de Artículos y Unidades a comprar en color verde y rojo. Verde indica que hay suficiente material en stock para ese proyecto, y rojo indica que no hay suficiente.</li>
+</ul>
+<p><img alt="Listar material" src="../../../Procesos/Imagenes/PR_Ventas_Compras/material_necesario.jpg" /></p>
+<ul>
+<li>Puedes elegir si deseas comprar los materiales marcando o desmarcando la casilla en la columna <em>Comprar</em>.</li>
+</ul>
+<p><img alt="Comprar material" src="../../../Procesos/Imagenes/PR_Ventas_Compras/material_comprar.gif" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante</strong>: Para listar material desde un proyecto de Logikal, asegúrate de estar conectado a fábrica.</p>
+</blockquote>
+<p><img alt="Conexion fabrica" src="../../../Procesos/Imagenes/PR_Ventas_Compras/conexion_fabrica.jpg" /></p>
+<h4 id="413-generar-pedido-de-compra">4.1.3. Generar pedido de compra</h4>
+<ul>
+<li>Selecciona los materiales y genera el pedido de compra en <strong>Pedir material</strong>. Se abrirá una ventana <strong>Nuevo documento de compra</strong>, donde puedes cambiar algunos campos por defecto y elegir el proveedor.</li>
+</ul>
+<p><img alt="Pedir material" src="../../../Procesos/Imagenes/PR_Ventas_Compras/pedir_material.jpg" /></p>
+<ul>
+<li>Asigna un proveedor y envía el pedido.</li>
+</ul>
+<p><img alt="Elegir proveedor" src="../../../Procesos/Imagenes/PR_Ventas_Compras/buscar_proveedor.jpg" /></p>
+<h4 id="414-pedido-de-compra">4.1.4. Pedido de compra</h4>
+<ul>
+<li>Una vez creado el pedido de compra, puedes revisarlo y modificarlo según sea necesario (proveedor, proyecto, cantidad de materiales, etc.).</li>
+</ul>
+<p><img alt="Pedido compra detalle" src="../../../Procesos/Imagenes/PR_Ventas_Compras/pedidoc_detalle.jpg" /></p>
+<h4 id="415-exportar-a-cortizo-center">4.1.5. Exportar a Cortizo center</h4>
+<ul>
+<li>Una vez creado el pedido de compra, puedes exportar en formato Excel el pedido para que se pueda subir a Cortizo center.</li>
+</ul>
+<p><img alt="Cortizo center" src="../../../Procesos/Imagenes/PR_Ventas_Compras/export_cortizo.jpg" /></p>
+<h4 id="416-reclamaciones">4.1.6. Reclamaciones</h4>
+<p>Una vez generado un <strong>pedido de compra</strong>, tienes la opción de gestionar <strong>Reclamaciones</strong> directamente desde el sistema.</p>
+<ul>
+<li>Puedes añadir una reclamación asociada al pedido desde su propia ficha:</li>
+</ul>
+<p><img alt="Reclamaciones" src="../../../Procesos/Imagenes/PR_Ventas_Compras/reclamaciones.jpg" /></p>
+<ul>
+<li>También es posible <strong>enviar la reclamación automáticamente por correo electrónico</strong>, agilizando la comunicación con el proveedor:</li>
+</ul>
+<p><img alt="Envío por correo" src="../../../Procesos/Imagenes/PR_Ventas_Compras/reclamaciones2.jpg" /></p>
+<ul>
+<li>El sistema guarda un <strong>histórico automático</strong> de las reclamaciones realizadas.<br />
+  Además, puedes añadir registros manuales para documentar el <strong>seguimiento</strong> de la reclamación.</li>
+</ul>
+<p><img alt="Histórico de reclamaciones" src="../../../Procesos/Imagenes/PR_Ventas_Compras/reclamaciones3.jpg" /></p>
+<p><strong>Nota:</strong> El seguimiento adecuado de las reclamaciones permite mejorar la trazabilidad de incidencias con proveedores y facilita la gestión de calidad en compras.</p>
+<h4 id="417-documentos-de-compra">4.1.7. Documentos de compra</h4>
+<ul>
+<li>Desde el apartado de Compras, puedes acceder al listado de compras y a Proveedores.</li>
+</ul>
+<p><img alt="Documentos de compra" src="../../../Procesos/Imagenes/PR_Ventas_Compras/compras_documentos.jpg" /></p>
+<p><img alt="Lista de compra" src="../../../Procesos/Imagenes/PR_Ventas_Compras/lista_compra.jpg" /></p>
+<h4 id="418-articulos-y-articulos-importados">4.1.8. Artículos y Artículos importados</h4>
+<ul>
+<li>
+<p>En el pedido de compras, en la pestaña <strong>Detalle</strong> en la cinta lateral derecha, verás que hay una sección ubicada en la parte inferior llamada <strong>Artículos</strong> y <strong>Artículos importados</strong>. Esos artículos se puede añadir al pedido de compra arrastrando el material al listado.</p>
+</li>
+<li>
+<p><strong>Artículos</strong>: Son materiales propios creados desde en <strong>MATERIAL</strong>.</p>
+</li>
+</ul>
+<p><img alt="articulos" src="../../../Procesos/Imagenes/PR_Ventas_Compras/articulos.jpg" /></p>
+<ul>
+<li><strong>Artículos importados</strong>: Son los materiales importados cada de los proyectos de <strong>Logikal</strong>. Esos materiales se almacenan y se actualizan cada vez que se lista material desde material necesario. Son los mismos materiales que están también en Almacén <strong>Materiales importados</strong>.</li>
+</ul>
+<p><img alt="articulos_importados" src="../../../Procesos/Imagenes/PR_Ventas_Compras/articulos_importados.jpg" /></p>
+<h3 id="42-recepcion-de-material">4.2. Recepción de material</h3>
+<h4 id="421-albaran-de-recibido">4.2.1. Albarán de recibido</h4>
+<ul>
+<li>Genera un albarán al recibir el material.</li>
+</ul>
+<p><img alt="Generar albarán" src="../../../Procesos/Imagenes/PR_Ventas_Compras/generar_albaran.jpg" /></p>
+<h4 id="422-unidades-recibidas">4.2.2. Unidades recibidas</h4>
+<ul>
+<li>Indica las unidades recibidas en la columna <em>Unidades a albaranar</em>.</li>
+</ul>
+<p><img alt="Unidades recibidas" src="../../../Procesos/Imagenes/PR_Ventas_Compras/unidades_recibidas.jpg" /></p>
+<hr />
+<h2 id="5-material-adicional-y-roturas">5. Material adicional y roturas</h2>
+<h3 id="51-material-adicional">5.1. Material adicional</h3>
+<ul>
+<li>Los materiales adicionales se pueden añadir al pedido, medición o producción. Se pueden añadir materiales propios creados desde enMATERIALS o artículos importados desde Logikal. Para más información sobre cómo crear materiales propios, sigue este enlace: <a href="/Utilidades/2.UT_Crear_Materiales_enMATERIAL">2. Creación de materiales propios en enMATERIALS</a>.</li>
+</ul>
+<p><img alt="Material adicional" src="../../../Procesos/Imagenes/PR_Ventas_Compras/material_adicional.jpg" /></p>
+<h4 id="511-anadir-material">5.1.1. Añadir material</h4>
+<ul>
+<li>Arrastra material adicional desde el árbol de Artículos (materiales propios dado de alta desde enMATERIAL).</li>
+</ul>
+<p><img alt="Añadir material" src="../../../Procesos/Imagenes/PR_Ventas_Compras/a%C3%B1adir_articulo.gif" /></p>
+<ul>
+<li>También se puede arrastrar desde <strong>Artículos importados</strong> de Logikal.</li>
+</ul>
+<p><img alt="Añadir material" src="../../../Procesos/Imagenes/PR_Ventas_Compras/a%C3%B1adir_importado.jpg" /></p>
+<ul>
+<li>Añade líneas de texto.</li>
+</ul>
+<p><img alt="Añadir línea" src="../../../Procesos/Imagenes/PR_Ventas_Compras/a%C3%B1adir_linea.jpg" /></p>
+<ul>
+<li>Una vez se ha añadido los materiales adicionales tienes la opción de generar un pedido de compra al proveedor.</li>
+</ul>
+<p><img alt="Pedido compra" src="../../../Procesos/Imagenes/PR_Ventas_Compras/adicional_pedido.jpg" /></p>
+<ul>
+<li>Puedes generar un albarán de envío para material adicional.</li>
+</ul>
+<p><img alt="Albarán envío" src="../../../Procesos/Imagenes/PR_Ventas_Compras/albaran_envio.jpg" /></p>
+<h4 id="512-costes">5.1.2. Costes</h4>
+<ul>
+<li>El material adicional se contabiliza como coste del proyecto, pero no está presupuestado al cliente.</li>
+</ul>
+<h3 id="52-roturas">5.2. Roturas</h3>
+<h4 id="521-anadir-a-roturas">5.2.1. Añadir a roturas</h4>
+<ul>
+<li>Desde la sección "Material Necesario", haz clic derecho sobre el material y selecciona <strong>Añadir a roturas</strong>.</li>
+</ul>
+<p><img alt="Añadir roturas" src="../../../Procesos/Imagenes/PR_Ventas_Compras/a%C3%B1adir_roturas.jpg" /></p>
+<ul>
+<li>El material se añadirá en el apartado de <strong>Roturas</strong>. En la columna <em>Concepto</em>, puedes indicar el motivo de la rotura, seleccionando de una lista predefinida en la configuración de <a href="/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/#75-conceptos-de-roturas">7.5. Conceptos de roturas</a>.</li>
+</ul>
+<p><img alt="Rotura" src="../../../Procesos/Imagenes/PR_Ventas_Compras/rotura.jpg" /></p>
+<ul>
+<li>Así como en Material adicional se puede añadir Artículos (material propio) y Artículos adicionales. Además de generar pedido de compra y albarán. </li>
+</ul>
+<p><img alt="Rotura" src="../../../Procesos/Imagenes/PR_Ventas_Compras/rotura_articulo.jpg" /></p>
+<ul>
+<li>Asegurar que en el apartado <a href="/Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/#83-clasificaciones">8.3. Clasificaciones</a> está correctamente configuradas la clasificación para roturas.</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> El proceso de añadir y pedir material adicional o roturas, también se puede hacer desde el apartado de proyectos.</p>
+</blockquote>
+<hr />
+<h2 id="6-trazabilidad">6. Trazabilidad</h2>
+<h3 id="61-arbol-de-trazabilidad">6.1. Árbol de trazabilidad</h3>
+<ul>
+<li>Muestra la trazabilidad completa de un documento, desde el presupuesto hasta la producción. Por ejemplo, desde un presupuesto (ej. 483) hasta su envío a producción.</li>
+</ul>
+<p><img alt="Trazabilidad" src="../../../Procesos/Imagenes/PR_Ventas_Compras/trazabilidad.jpg" /></p>
+<h3 id="62-visualizacion">6.2. Visualización</h3>
+<ul>
+<li>Haz clic en cualquier documento para ver su trazabilidad en el panel derecho.</li>
+</ul>
+<p><img alt="Trazabilidad visualización" src="../../../Procesos/Imagenes/PR_Ventas_Compras/trazabilidad_vizualizacion.gif" /></p>
+<hr />
+<blockquote>
+<p><strong>Gestion de filtros</strong> Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros/">4. Gestión de filtros</a></p>
+</blockquote>
+<hr />
+<h2 id="7-preguntas-frecuentes">7. Preguntas frecuentes</h2>
+<h3 id="71-como-gestionar-incidencias-postventa">7.1. ¿Cómo gestionar incidencias postventa?</h3>
+<ul>
+<li><strong>Opción 1</strong>: Crea un nuevo presupuesto.</li>
+<li><strong>Opción 2</strong>: Genera un pedido de cliente a importe cero y envíalo a producción.</li>
+</ul>
+<h3 id="72-como-anadir-material-adicional">7.2. ¿Cómo añadir material adicional?</h3>
+<ul>
+<li>Arrastra el material adicional desde el árbol y genera un albarán de envío.</li>
+</ul>
+<h3 id="73-como-recibir-material-parcialmente">7.3. ¿Cómo recibir material parcialmente?</h3>
+<ul>
+<li>Al generar un albarán, indica las unidades recibidas. Puedes crear múltiples albaranes para un mismo pedido.</li>
+</ul>
+<hr />
+<p>Este manual está diseñado para ayudarte a navegar y utilizar el sistema de ventas y compras de ENBLAU de manera eficiente. Para más detalles, consulta el video de formación o contacta con el soporte técnico.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>

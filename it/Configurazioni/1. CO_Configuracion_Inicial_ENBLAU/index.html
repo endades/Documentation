@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Configurazione iniziale ENBLAU - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configurazione iniziale ENBLAU";
+        var mkdocs_page_input_path = "it\\Configurazioni\\1. CO_Configuracion_Inicial_ENBLAU.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Configurazione iniziale ENBLAU</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-scopo">1. Scopo</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-configurazione-generale">2. Configurazione generale</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-configurazione-della-connessione-con-logikal">2.1. Configurazione della connessione con Logikal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-generale">2.2. Generale</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-testi-nelle-vendite">2.3. Testi nelle vendite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-gestione-utenti">3. Gestione utenti</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-configurazione-degli-account-email">4. Configurazione degli account email</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#41-configurazione-generale-delle-email">4.1. Configurazione generale delle email</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#42-possibili-errori-di-autenticazione-microsoft">4.2. Possibili errori di autenticazione Microsoft</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-gestione-aziende">5. Gestione aziende</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-configurazione-progetti">6. Configurazione progetti</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#61-stati">6.1. Stati</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#62-cartelle-predefinite">6.2. Cartelle predefinite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-configurazione-vendite">7. Configurazione vendite</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#71-numerazioni">7.1. Numerazioni</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#72-modalita-di-pagamento">7.2. Modalità di pagamento</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#73-banche">7.3. Banche</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#74-metodi-di-pagamento">7.4. Metodi di pagamento</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#75-concetti-di-rottura">7.5. Concetti di rottura</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#76-classificazioni">7.6. Classificazioni</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#77-soggetti-passivi-iva">7.7. Soggetti passivi (IVA)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#78-directory-predefinite">7.8. Directory predefinite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-configurazione-degli-acquisti">8. Configurazione degli acquisti</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-numerazioni">8.1. Numerazioni</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#82-modalita-di-pagamento">8.2. Modalità di pagamento</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#83-classificazioni">8.3. Classificazioni</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#84-directory-predefinite">8.4. Directory predefinite</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-gestione-delle-notifiche">9. Gestione delle notifiche</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#91-quando-vengono-generate-le-notifiche">9.1. Quando vengono generate le notifiche?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#92-configurazione-delle-notifiche">9.2. Configurazione delle notifiche</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#93-dove-si-ricevono-le-notifiche">9.3. Dove si ricevono le notifiche?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#94-invio-via-email">9.4. Invio via email</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-conclusione">10. Conclusione</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilita/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+          <li class="breadcrumb-item">Configurazioni</li>
+      <li class="breadcrumb-item active">Configurazione iniziale ENBLAU</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="configurazione-iniziale-di-enblau">Configurazione iniziale di ENBLAU</h1>
+<hr />
+<h2 id="1-scopo">1. Scopo</h2>
+<p>Il presente manuale è stato progettato per guidare i nuovi utenti nella configurazione iniziale di ENBLAU.<br />
+Questa configurazione include tutto il necessario affinché il cliente possa effettuare vendite, acquisti e l’emissione di fatture.</p>
+<hr />
+<h2 id="2-configurazione-generale">2. Configurazione generale</h2>
+<p><img alt="generale" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<h3 id="21-configurazione-della-connessione-con-logikal">2.1. Configurazione della connessione con Logikal</h3>
+<ul>
+<li>
+<p>Per connettersi con la fabbrica e i progetti di Logikal, è necessario indicare il percorso di installazione e la DLL di Logikal (unità di rete su cui punta Logikal).</p>
+</li>
+<li>
+<p>Da <strong>Generale</strong>, vai su <strong>Logikal - Connessione e Progetti</strong>.</p>
+</li>
+</ul>
+<p><img alt="configuracion_inicial" src="../Imagenes/CO_Config_ENBLAU/conexion_logikal.png" /></p>
+<ul>
+<li>Per connettersi alla fabbrica in Logikal, vai nella parte inferiore della finestra principale di <strong>ENBLAU</strong>, fai clic con il tasto destro su <strong>Connessione fabbrica</strong> e seleziona <strong>Connetti</strong>.</li>
+</ul>
+<p><img alt="conexion fabrica" src="../Imagenes/CO_Config_ENBLAU/conexion_fabrica.png" /></p>
+<hr />
+<h3 id="22-generale">2.2. Generale</h3>
+<p><img alt="generale" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<ul>
+<li><strong>Percorso di archiviazione</strong>: Indicare il percorso dove verranno salvati i documenti di ENBLAU e Logikal (unità di rete). Esempio:</li>
+</ul>
+<p><img alt="ruta_almacenamiento" src="../Imagenes/CO_Config_ENBLAU/ruta_almacenamiento.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Si consiglia di utilizzare un’unità di rete. Se non esiste, crearla.</p>
+</blockquote>
+<ul>
+<li><strong>Informazioni sull’azienda</strong>: Compilare i campi necessari con le informazioni aziendali, come nome, codice fiscale, indirizzo, loghi, ecc.</li>
+</ul>
+<p><img alt="info_empresa" src="../Imagenes/CO_Config_ENBLAU/info_empresa.png" /></p>
+<hr />
+<h3 id="23-testi-nelle-vendite">2.3. Testi nelle vendite</h3>
+<ul>
+<li>Aggiungere testi per i documenti di vendita, come osservazioni, condizioni, ecc.</li>
+</ul>
+<p><img alt="texto_ventas" src="../Imagenes/CO_Config_ENBLAU/texto_ventas.png" /></p>
+<p>Esempio di rapporto d’ordine:</p>
+<p><img alt="texto_ventas" src="Imagenes/CO_Config_ENBLAU/informe_pedido.png" /></p>
+<hr />
+<h2 id="3-gestione-utenti">3. Gestione utenti</h2>
+<ul>
+<li>Per registrare nuovi utenti, accedere a <strong>Utenti</strong>.</li>
+</ul>
+<p><img alt="usuarios" src="../Imagenes/CO_Config_ENBLAU/usuarios.png" /></p>
+<ul>
+<li>In <strong>Nuovo</strong>, è possibile creare nuovi utenti.</li>
+</ul>
+<p><img alt="usuarios2" src="../Imagenes/CO_Config_ENBLAU/usuarios2.png" /></p>
+<ul>
+<li>Si aprirà una finestra per configurare le informazioni dell’utente (nome, indirizzo, email, telefono, ecc.), il tipo di utente (Tecnico, Commerciale, Officina, ecc. — è possibile assegnare più di un tipo) e i permessi.<br />
+  I permessi possono essere assegnati solo dagli utenti di tipo amministratore.</li>
+</ul>
+<p><img alt="usuarios3" src="../Imagenes/CO_Config_ENBLAU/usuarios3.png" /></p>
+<ul>
+<li>Una volta creato, l’utente potrà essere modificato in qualsiasi momento.</li>
+</ul>
+<hr />
+<h2 id="4-configurazione-degli-account-email">4. Configurazione degli account email</h2>
+<ul>
+<li>Per configurare l’account email dell’utente, accedi a <strong>Email utente:</strong> </li>
+</ul>
+<p><img alt="email" src="../Imagenes/CO_Config_ENBLAU/email.png" /></p>
+<p><img alt="email2" src="../Imagenes/CO_Config_ENBLAU/email2.png" /></p>
+<ul>
+<li>Per configurare gli account email di ciascun utente, accedi a <strong>Account email:</strong> </li>
+</ul>
+<p><img alt="cuentas email" src="../Imagenes/CO_Config_ENBLAU/cuentas_email.png" /></p>
+<p><img alt="cuentas email2" src="../Imagenes/CO_Config_ENBLAU/cuentas_email2.png" /></p>
+<ul>
+<li>Da ciascuna sezione è possibile configurare l’indirizzo email, il nome utente, la firma e i server di posta in entrata/uscita IMAP e SMTP.<br />
+  La configurazione dei server e delle porte deve essere corretta in base al provider utilizzato, per consentire l’invio e la ricezione delle email da report o notifiche.</li>
+</ul>
+<h3 id="41-configurazione-generale-delle-email">4.1. Configurazione generale delle email</h3>
+<ul>
+<li>Dalla sezione <strong>Generale → Email</strong> è possibile definire i destinatari in copia, l’oggetto e la modalità di invio delle email.</li>
+</ul>
+<p><img alt="general" src="../Imagenes/CO_Config_ENBLAU/general.png" /></p>
+<p><img alt="configuracion email" src="../Imagenes/CO_Config_ENBLAU/conf_email.png" /></p>
+<h3 id="42-possibili-errori-di-autenticazione-microsoft">4.2. Possibili errori di autenticazione Microsoft</h3>
+<ul>
+<li>Durante l’invio di un’email, può apparire un errore come questo:</li>
+</ul>
+<p><img alt="email error" src="../Imagenes/CO_Config_ENBLAU/email_error.png" /></p>
+<p><strong>LOG</strong><br />
+  Error: 535: 5.7.139 Authentication unsuccessful, SmtpClientAuthentication is disabled for the Tenant.<br />
+  Visitare <a href="https://learn.microsoft.com/es-es/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission">Invio SMTP autenticato in Exchange Online</a> per maggiori informazioni.</p>
+<p>L’errore è dovuto a un problema di autenticazione dell’account email, probabilmente causato da un aggiornamento dei protocolli di sicurezza di Microsoft 365.</p>
+<ul>
+<li>
+<p><strong>Soluzione:</strong> Contattare l’amministratore di Microsoft 365.<br />
+    Dalla console di amministrazione, seguire i passaggi riportati nel link sopra per configurare correttamente l’account Outlook in modo che possa sincronizzare le email da un’altra applicazione.</p>
+<p><img alt="adimn 365" src="../Imagenes/CO_Config_ENBLAU/adimn_365.png" /></p>
+<p>Assicurarsi che tutte le caselle siano selezionate nella sezione <strong>Gestione applicazioni di posta</strong> per l’utente in Microsoft 365.</p>
+<p><img alt="adimn 365" src="../Imagenes/CO_Config_ENBLAU/adimn_365_2.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> Per gli account <strong>Microsoft Exchange</strong>, si consiglia di selezionare <strong>Modalità di invio 2</strong> nel campo <strong>Modalità di invio email</strong> della sezione Generale.</p>
+</blockquote>
+<p><img alt="modo envio" src="../Imagenes/CO_Config_ENBLAU/modo_envio.png" /></p>
+<hr />
+<h2 id="5-gestione-aziende">5. Gestione aziende</h2>
+<ul>
+<li>Se disponi di più aziende, puoi crearle nella sezione <strong>Aziende</strong>, cliccando su <strong>Aggiungi</strong>.<br />
+  Poi compila le informazioni in <strong>Generale</strong> e <strong>Testi nelle vendite</strong> secondo le necessità di ciascuna azienda.</li>
+</ul>
+<p><img alt="empresa" src="../Imagenes/CO_Config_ENBLAU/empresa.png" /></p>
+<p><img alt="empresa_nuevo" src="../Imagenes/CO_Config_ENBLAU/empresa_nuevo.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Se non viene indicata un’altra azienda, i progetti utilizzeranno di default l’azienda definita nella configurazione di base in <strong>Generale</strong>.<br />
+Se devi emettere fatture con <strong>facturae</strong>, è necessario che le informazioni aziendali siano inserite nella sezione <strong>Aziende</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="6-configurazione-progetti">6. Configurazione progetti</h2>
+<ul>
+<li>Dalla sezione <strong>Vendite → Progetti</strong>, accedi a <strong>Configurazione</strong>.</li>
+</ul>
+<p><img alt="conf_proyectos" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos.png" /></p>
+<p><img alt="conf_proyectos2" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos2.png" /></p>
+<ul>
+<li>Nella configurazione troverai un menu a tendina con diverse opzioni.<br />
+  Per una configurazione iniziale, è necessario impostare <strong>Stati</strong> e <strong>Cartelle predefinite</strong>.</li>
+</ul>
+<p><img alt="conf_proyectos3" src="../Imagenes/CO_Config_ENBLAU/conf_proyectos3.png" /></p>
+<h3 id="61-stati">6.1. Stati</h3>
+<ul>
+<li>Selezionando <strong>Stati</strong>, si aprirà una finestra per definire gli stati dei progetti (commesse).</li>
+</ul>
+<p><img alt="estados" src="../Imagenes/CO_Config_ENBLAU/estados.png" /></p>
+<h3 id="62-cartelle-predefinite">6.2. Cartelle predefinite</h3>
+<ul>
+<li>Selezionando <strong>Cartelle predefinite</strong>, si aprirà una finestra per definire le cartelle necessarie nella directory del progetto.</li>
+</ul>
+<p><img alt="dir_defecto" src="../Imagenes/CO_Config_ENBLAU/dir_defecto.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Le cartelle predefinite possono essere configurate per essere create automaticamente per ogni progetto.</p>
+</blockquote>
+<hr />
+<h2 id="7-configurazione-vendite">7. Configurazione vendite</h2>
+<ul>
+<li>Dalla sezione <strong>Vendite → Documenti di vendita</strong>, accedi a <strong>Configurazione</strong>.</li>
+</ul>
+<p><img alt="conf_ventas" src="../Imagenes/CO_Config_ENBLAU/conf_ventas.png" /></p>
+<p><img alt="conf_ventas2" src="../Imagenes/CO_Config_ENBLAU/conf_ventas2.png" /></p>
+<ul>
+<li>Nella configurazione troverai un menu a tendina con varie opzioni.<br />
+  Per una configurazione iniziale, è necessario impostare <strong>Numerazioni</strong>, <strong>Forme di pagamento</strong>, <strong>Banche</strong>, <strong>Modalità di pagamento</strong>, <strong>Concetti di rottura</strong>, <strong>Classificazioni</strong>, <strong>Soggetti passivi (IVA)</strong> e <strong>Cartelle predefinite</strong>.</li>
+</ul>
+<p><img alt="conf_ventas3" src="../Imagenes/CO_Config_ENBLAU/conf_ventas3.png" /></p>
+<h3 id="71-numerazioni">7.1. Numerazioni</h3>
+<ul>
+<li>Selezionando <strong>Numerazioni</strong>, si aprirà una finestra per definire i tipi di numerazioni per i documenti di vendita, assegnando numeri progressivi ai documenti.</li>
+</ul>
+<p><img alt="numeraciones" src="../Imagenes/CO_Config_ENBLAU/numeraciones.png" /></p>
+<ul>
+<li>Esempio: Tipo di documento "Preventivo", prefisso (Alpha) e numero (numero successivo) - <strong>PR1000272</strong>.</li>
+</ul>
+<p><img alt="numeraciones2" src="../Imagenes/CO_Config_ENBLAU/numeraciones2.png" /></p>
+<h3 id="72-modalita-di-pagamento">7.2. Modalità di pagamento</h3>
+<ul>
+<li>Selezionando <strong>Modalità di Pagamento</strong>, si aprirà una finestra per definire le modalità di pagamento necessarie per generare le scadenze nelle fatture.</li>
+</ul>
+<p><img alt="formas_pago" src="../Imagenes/CO_Config_ENBLAU/formas_pago.png" /></p>
+<ul>
+<li>Esempio: Indicare in quante rate e la percentuale che il cliente deve pagare a ogni scadenza.</li>
+</ul>
+<p><img alt="formas_pago2" src="../Imagenes/CO_Config_ENBLAU/formas_pago2.png" /></p>
+<h3 id="73-banche">7.3. Banche</h3>
+<ul>
+<li>Selezionando <strong>Banche</strong>, si aprirà una finestra per inserire le informazioni della banca. Il nome e un codice.</li>
+</ul>
+<p><img alt="banco" src="../Imagenes/CO_Config_ENBLAU/banco.png" /></p>
+<h3 id="74-metodi-di-pagamento">7.4. Metodi di pagamento</h3>
+<ul>
+<li>Selezionando <strong>Metodi di Pagamento</strong>, si aprirà una finestra per definire i diversi metodi con cui può essere effettuato il pagamento di una scadenza.</li>
+</ul>
+<p><img alt="modo_pago" src="../Imagenes/CO_Config_ENBLAU/modo_pago.png" /></p>
+<h3 id="75-concetti-di-rottura">7.5. Concetti di rottura</h3>
+<ul>
+<li>Selezionando <strong>Concetti di Rottura</strong>, si aprirà una finestra dove potrai aggiungere i diversi concetti da utilizzare al momento della registrazione di una rottura (ad esempio: “difetto di fabbricazione”, “rottura durante il trasporto”, ecc.)</li>
+</ul>
+<p><img alt="rotura" src="../Imagenes/CO_Config_ENBLAU/rotura.png" /></p>
+<h3 id="76-classificazioni">7.6. Classificazioni</h3>
+<ul>
+<li>Selezionando <strong>Classificazioni</strong>, si aprirà una finestra per definire le classificazioni dei preventivi.</li>
+</ul>
+<p><img alt="clasificaciones" src="../Imagenes/CO_Config_ENBLAU/clasificaciones.png" /></p>
+<p>La classificazione ha lo scopo di raggruppare e filtrare i documenti nell'elenco dei Documenti di vendita.</p>
+<h3 id="77-soggetti-passivi-iva">7.7. Soggetti passivi (IVA)</h3>
+<ul>
+<li>Selezionando <strong>Soggetti Passivi (IVA)</strong>, si aprirà una finestra per definire i tipi di soggetti passivi.</li>
+</ul>
+<p><img alt="sujeto_pasivo" src="../Imagenes/CO_Config_ENBLAU/sujeto_pasivo.png" /></p>
+<h3 id="78-directory-predefinite">7.8. Directory predefinite</h3>
+<ul>
+<li>Selezionando <strong>Directory Predefinite</strong>, si aprirà una finestra per definire le directory necessarie nella cartella di documentazione.</li>
+</ul>
+<p><img alt="dir_defecto_ventas" src="../Imagenes/CO_Config_ENBLAU/dir_defecto_ventas.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Le directory predefinite sono cartelle che possono essere configurate per generarsi automaticamente con ogni documentazione.</p>
+</blockquote>
+<hr />
+<h2 id="8-configurazione-degli-acquisti">8. Configurazione degli acquisti</h2>
+<ul>
+<li>Dal menu <strong>Acquisti</strong>, selezionare <strong>Documenti di Acquisto</strong> e accedere a <strong>Configurazione</strong>.</li>
+</ul>
+<p><img alt="conf_compras" src="../Imagenes/CO_Config_ENBLAU/conf_compras.png" /></p>
+<p><img alt="conf_compras2" src="../Imagenes/CO_Config_ENBLAU/conf_compras2.png" /></p>
+<ul>
+<li>Dalla configurazione, accederai a un menu a tendina con un elenco per configurare. Per una configurazione iniziale, è necessario configurare <strong>Numerazioni</strong>, <strong>Modalità di Pagamento</strong>, <strong>Classificazioni</strong> e <strong>Directory Predefinite</strong>.</li>
+</ul>
+<p><img alt="conf_compras3" src="../Imagenes/CO_Config_ENBLAU/conf_compras3.png" /></p>
+<h3 id="81-numerazioni">8.1. Numerazioni</h3>
+<ul>
+<li>Selezionando <strong>Numerazioni</strong>, si aprirà una finestra per definire i tipi di numerazioni per i documenti di acquisto, assegnando numeri progressivi ai documenti.</li>
+</ul>
+<p><img alt="numeraciones3" src="../Imagenes/CO_Config_ENBLAU/numeraciones3.png" /></p>
+<ul>
+<li>Esempio: Tipo di documento "Ordine", prefisso (Alpha) e numero (numero successivo) - <strong>PE70000082</strong>.</li>
+</ul>
+<p><img alt="numeraciones4" src="../Imagenes/CO_Config_ENBLAU/numeraciones4.png" /></p>
+<h3 id="82-modalita-di-pagamento">8.2. Modalità di pagamento</h3>
+<ul>
+<li>Selezionando <strong>Modalità di Pagamento</strong>, si aprirà una finestra per definire le modalità di pagamento necessarie per generare le scadenze nelle fatture. Vedrai che è la stessa finestra configurata dalla sezione Documenti di vendita.</li>
+</ul>
+<p><img alt="formas_pago3" src="../Imagenes/CO_Config_ENBLAU/formas_pago3.png" /></p>
+<h3 id="83-classificazioni">8.3. Classificazioni</h3>
+<ul>
+<li>
+<p>Selezionando <strong>Classificazioni</strong>, si aprirà una finestra per definire le classificazioni degli acquisti. Qui puoi definire i tipi di classificazione:
+  • Rotture
+  • Materiali aggiuntivi
+  • Ordine ordinario (predefinito, quando un ordine non rientra nelle categorie precedenti)</p>
+<p><img alt="clasificaciones2" src="../Imagenes/CO_Config_ENBLAU/clasificaciones2.png" /></p>
+</li>
+</ul>
+<p>Questa configurazione è importante affinché i dati siano correttamente riflessi nello studio dei costi del progetto.</p>
+<h3 id="84-directory-predefinite">8.4. Directory predefinite</h3>
+<ul>
+<li>Selezionando <strong>Directory Predefinite</strong>, si aprirà una finestra per definire le directory necessarie nella cartella di documentazione.</li>
+</ul>
+<p><img alt="dir_defecto_compras" src="../Imagenes/CO_Config_ENBLAU/dir_defecto_compras.png" /></p>
+<blockquote>
+<p><strong>Nota:</strong> Le directory predefinite sono cartelle che possono essere configurate per generarsi automaticamente con ogni documentazione.</p>
+</blockquote>
+<hr />
+<h2 id="9-gestione-delle-notifiche">9. Gestione delle notifiche</h2>
+<p>ENBLAU permette di configurare notifiche automatiche associate a diversi processi del sistema. Queste notifiche possono migliorare la tracciabilità e la comunicazione interna.</p>
+<hr />
+<h3 id="91-quando-vengono-generate-le-notifiche">9.1. Quando vengono generate le notifiche?</h3>
+<p>Le notifiche possono attivarsi in eventi come:</p>
+<ul>
+<li>Pagamento della prima fattura.</li>
+<li>Invio di una produzione alla coda di produzione.</li>
+<li>Altri processi definiti dal flusso di lavoro.</li>
+</ul>
+<hr />
+<h3 id="92-configurazione-delle-notifiche">9.2. Configurazione delle notifiche</h3>
+<p>Queste notifiche sono completamente configurabili dalla sezione Notifiche e processi:</p>
+<ul>
+<li>Possono essere indirizzate a un <strong>ruolo</strong> specifico (es. Commerciale, Tecnico, Produzione) o a una <strong>persona concreta</strong>.</li>
+<li>Possono essere associate automaticamente agli utenti collegati a <strong>progetti specifici</strong>.</li>
+</ul>
+<p><img alt="Configuración de notificaciones" src="../Imagenes/CO_Config_ENBLAU/notificaciones.png" /><br />
+<img alt="Configuración detallada" src="../Imagenes/CO_Config_ENBLAU/notificaciones2.png" /><br />
+<img alt="Asignación por proyecto" src="../Imagenes/CO_Config_ENBLAU/notificaciones3.png" /></p>
+<hr />
+<h3 id="93-dove-si-ricevono-le-notifiche">9.3. Dove si ricevono le notifiche?</h3>
+<p>Le notifiche possono essere ricevute attraverso diversi canali:</p>
+<ul>
+<li><strong>Finestra iniziale di ENBLAU</strong>  </li>
+<li><strong>App mobile enSITE</strong>  </li>
+<li><strong>Email</strong>, se l'opzione corrispondente è attivata</li>
+</ul>
+<blockquote>
+<p>⚠️ In alcuni casi, potrebbe non essere opportuno riceverle via email, quindi si può optare per visualizzarle solo all'interno di ENBLAU o su enSITE.</p>
+</blockquote>
+<p><img alt="Notificaciones en ENBLAU y enSITE" src="../Imagenes/CO_Config_ENBLAU/notificaciones4.png" /></p>
+<hr />
+<h3 id="94-invio-via-email">9.4. Invio via email</h3>
+<p>Per far sì che le notifiche arrivino alla casella di posta dell'utente, deve essere selezionata la casella corrispondente nel suo profilo:</p>
+<p><img alt="Activar notificación por email" src="../Imagenes/CO_Config_ENBLAU/notificaciones5.png" /></p>
+<hr />
+<blockquote>
+<p><strong>Nota:</strong><br />
+Le notifiche vengono generate in base ai processi eseguiti dagli utenti all'interno del sistema.</p>
+</blockquote>
+<h2 id="10-conclusione">10. Conclusione</h2>
+<p>Seguendo questo manuale, potrai effettuare una configurazione iniziale di ENBLAU per l’utilizzo nella creazione di documenti di acquisto e vendita.</p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigazione a pié di pagina">
+        <a href="../../" class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Precedente</a>
+        <a href="../2.%20CO_Configuracion_Inicial_enCONTROL/" class="btn btn-neutral float-right" title="Configurazione iniziale enCONTROL">Successivo <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../" style="color: #fcfcfc">&laquo; Precedente</a></span>
+    
+    
+      <span><a href="../2.%20CO_Configuracion_Inicial_enCONTROL/" style="color: #fcfcfc">Successivo &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>
