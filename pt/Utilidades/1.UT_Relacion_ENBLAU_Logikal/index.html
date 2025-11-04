@@ -128,11 +128,17 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#1-introducao">1. Introdução</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-fases-exemplos">2. Fases - Exemplos</a>
+    <li class="toctree-l2"><a class="reference internal" href="#2-modos-de-trabalho-no-logikal">2. Modos de trabalho no Logikal</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#criar-um-orcamento-a-partir-do-enblau">Criar um orçamento a partir do ENBLAU</a>
+    <li class="toctree-l3"><a class="reference internal" href="#21-modo-por-fases-modo-predefinido">2.1. Modo por fases (modo predefinido)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-modo-por-projetos">2.2. Modo por projetos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-modo-por-fases-duplicando-posicoes">2.3. Modo por fases duplicando posições</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-criacao-de-projeto-no-logikal">3. Criação de projeto no Logikal</a>
     </li>
     </ul>
                   </li>
@@ -178,55 +184,75 @@
             <div class="section" itemprop="articleBody">
               
   
-                <h1 id="relacao-entre-fases-no-enblau-e-logikal">Relação entre fases no ENBLAU e Logikal</h1>
+                <h1 id="relacao-entre-fases-e-projeto-no-enblau-e-logikal">Relação entre fases e projeto no ENBLAU e Logikal</h1>
 <hr />
 <h2 id="1-introducao">1. Introdução</h2>
 <p>Explicação da relação entre as fases de um projeto no ENBLAU e no Logikal.</p>
 <hr />
-<h2 id="2-fases-exemplos">2. Fases - Exemplos</h2>
-<h3 id="criar-um-orcamento-a-partir-do-enblau">Criar um orçamento a partir do ENBLAU</h3>
-<ol>
-<li>
-<p><strong>Versão 1</strong>  </p>
+<h2 id="2-modos-de-trabalho-no-logikal">2. Modos de trabalho no Logikal</h2>
+<h3 id="21-modo-por-fases-modo-predefinido">2.1. Modo por fases (modo predefinido)</h3>
+<p>O modo por fases move as posições e as unidades de cada fase do documento do ENBLAU para as fases do projeto no Logikal.</p>
 <ul>
-<li>Ao criar um orçamento no ENBLAU, esta versão será refletida no Logikal em "Posições sem Fase Atribuída" dentro do mesmo projeto.<br />
-<img alt="Version" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></li>
+<li>Criar um orçamento a partir do ENBLAU:</li>
 </ul>
-</li>
-<li>
-<p><strong>Pedido</strong>  </p>
-<ul>
-<li>Ao confirmar o pedido no ENBLAU, será gerado um pedido e, em seguida, uma fase no Logikal denominada "Orçamento Aceito".<br />
-<img alt="Pedido" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Produção 1</strong>  </p>
-<ul>
-<li>A partir do pedido no ENBLAU, ao criar uma produção, será gerada uma nova fase no Logikal chamada "nº orçamento P1".<br />
-<img alt="Producción 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Medição 1</strong>  </p>
-<ul>
-<li>A partir do pedido no ENBLAU, ao criar uma medição, será gerada uma nova fase no Logikal denominada "nº orçamento M1".<br />
-<img alt="Medición 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Produção 2</strong>  </p>
-<ul>
-<li>A partir da medição no ENBLAU, ao criar uma produção (considerando as alterações na medição), será gerada uma nova fase no Logikal com o nome "nº orçamento P2".<br />
-<img alt="Producción 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></li>
-</ul>
-</li>
-</ol>
-<hr />
+<p><strong>1. Versão 1</strong><br />
+      - Ao criar um orçamento no ENBLAU, esta versão será refletida no Logikal em <em>"Posições (1)"</em> dentro do mesmo projeto.<br />
+<img alt="Versão" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></p>
+<p><strong>2. Pedido</strong><br />
+      - Ao confirmar o pedido no ENBLAU, será gerado um pedido e, de seguida, uma fase no Logikal denominada <em>"Orçamento aceite"</em>. As posições serão movidas da fase anterior para a fase seguinte do pedido.
+        <img alt="Pedido" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></p>
+<p><strong>3. Produção 1</strong><br />
+      - A partir do pedido no ENBLAU, ao criar uma produção, será gerada uma nova fase no Logikal chamada <em>"nº orçamento P1"</em>. As posições e as unidades indicadas serão movidas da fase anterior para a fase seguinte de produção.
+        <img alt="Produção 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></p>
+<p><strong>4. Medição 1</strong><br />
+      - A partir do pedido no ENBLAU, ao criar uma medição, será gerada uma nova fase no Logikal denominada <em>"nº orçamento M1"</em>. As posições e as unidades indicadas serão movidas da fase anterior para a fase seguinte de medição.
+        <img alt="Medição 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></p>
+<p><strong>5. Produção 2</strong><br />
+      - A partir da medição no ENBLAU, ao criar uma produção (considerando as alterações da medição), será gerada uma nova fase no Logikal com o nome <em>"nº orçamento M1 P2"</em>. As posições e as unidades indicadas serão movidas da fase anterior para a fase seguinte de produção.
+        <img alt="Produção 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></p>
 <blockquote>
-<p><strong>Nota:</strong><br />
-Ao criar um orçamento no ENBLAU e depois adicionar uma posição no Logikal, esta será vinculada a um projeto existente no Logikal ou, se não houver, será criado um novo.</p>
+<p>⚠️ <strong>Importante!</strong> Neste modo, as posições eliminadas a partir do ENBLAU são removidas de forma permanente no Logikal.</p>
 </blockquote>
+<hr />
+<h3 id="22-modo-por-projetos">2.2. Modo por projetos</h3>
+<p>O modo por projetos move as posições e as unidades de cada fase do documento do ENBLAU, mas no Logikal é criado um projeto (com o mesmo número do orçamento) para cada fase do ENBLAU.</p>
+<ul>
+<li>Criar um orçamento a partir do ENBLAU:</li>
+</ul>
+<p><strong>1. Versão 1</strong><br />
+      - Ao criar um orçamento no ENBLAU, esta versão será refletida como um projeto no Logikal na fase <em>"Posições (1)"</em>.<br />
+<img alt="Versão" src="../Imagenes/UT_ENBLAU_LOGIKAL/p1_version.png" /></p>
+<p><strong>2. Pedido</strong><br />
+      - Ao confirmar o pedido no ENBLAU, será gerado um pedido e, de seguida, um novo projeto no Logikal com o mesmo <em>"nº orçamento"</em>.
+        <img alt="Pedido" src="../Imagenes/UT_ENBLAU_LOGIKAL/p2_pedido.png" /></p>
+<p><strong>3. Medição 1</strong><br />
+      - A partir do pedido no ENBLAU, ao criar uma medição, será gerado um novo projeto no Logikal com o mesmo número <em>"nº orçamento M1"</em>, com as posições e as unidades indicadas da fase anterior para a fase seguinte de medição no ENBLAU.
+        <img alt="Medição 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/p4_medicion.png" /></p>
+<p><strong>4. Produção 1</strong><br />
+      - A partir da medição no ENBLAU, ao criar uma produção (considerando as alterações da medição), será gerado um novo projeto no Logikal com o mesmo número <em>"nº orçamento M1 P1"</em>, com as posições e as unidades indicadas da fase anterior para a fase seguinte de produção no ENBLAU.
+        <img alt="Produção 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/p5_produccion1.png" /></p>
+<h3 id="23-modo-por-fases-duplicando-posicoes">2.3. Modo por fases duplicando posições</h3>
+<p>O modo por fases duplicando posições copia as posições e as unidades de cada fase do documento do ENBLAU para as fases do projeto no Logikal, mantendo sempre uma cópia em cada fase.</p>
+<ul>
+<li>Criar um orçamento a partir do ENBLAU:</li>
+</ul>
+<p><strong>1. Versão 1</strong><br />
+      - Ao criar um orçamento no ENBLAU, esta versão será refletida no Logikal em <em>"Posições (1)"</em> dentro do mesmo projeto.<br />
+<img alt="Versão" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd1_version.png" /></p>
+<p><strong>2. Pedido</strong><br />
+      - Ao confirmar o pedido no ENBLAU, será gerado um pedido e, de seguida, uma fase no Logikal denominada <em>"Orçamento aceite"</em>. As posições serão copiadas da fase anterior para a fase seguinte do pedido.
+        <img alt="Pedido" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd2_pedido.png" /></p>
+<p><strong>3. Medição 1</strong><br />
+      - A partir do pedido no ENBLAU, ao criar uma medição, será gerada uma nova fase no Logikal denominada <em>"nº orçamento M1"</em>. As posições e as unidades indicadas serão copiadas da fase anterior para a fase seguinte de medição.
+        <img alt="Medição 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd4_medicion.png" /></p>
+<p><strong>4. Produção 1</strong><br />
+      - A partir da medição no ENBLAU, ao criar uma produção (considerando as alterações da medição), será gerada uma nova fase no Logikal com o nome <em>"nº orçamento M1 P2"</em>. As posições e as unidades indicadas serão copiadas da fase anterior para a fase seguinte de produção.
+        <img alt="Produção 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd5_produccion1.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> Neste modo, as posições eliminadas a partir do ENBLAU são removidas de forma permanente no Logikal.</p>
+</blockquote>
+<h2 id="3-criacao-de-projeto-no-logikal">3. Criação de projeto no Logikal</h2>
+<p>Ao criar um orçamento no ENBLAU e depois adicionar uma posição do Logikal, esta será vinculada a um projeto no Logikal ou, caso não exista, será criado um novo.</p>
 <p><img alt="Vincular projeto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
 <p><img alt="Vincular projeto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
 <p><img alt="Vincular projeto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>

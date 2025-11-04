@@ -128,11 +128,17 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#1-introduzione">1. Introduzione</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-fasi-esempi">2. Fasi - Esempi</a>
+    <li class="toctree-l2"><a class="reference internal" href="#2-modalita-di-lavoro-in-logikal">2. Modalità di lavoro in Logikal</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#creare-un-preventivo-da-enblau">Creare un preventivo da ENBLAU</a>
+    <li class="toctree-l3"><a class="reference internal" href="#21-modalita-per-fasi-modalita-predefinita">2.1. Modalità per fasi (modalità predefinita)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-modalita-per-progetti">2.2. Modalità per progetti</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-modalita-per-fasi-duplicando-le-posizioni">2.3. Modalità per fasi duplicando le posizioni</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-creazione-del-progetto-in-logikal">3. Creazione del progetto in Logikal</a>
     </li>
     </ul>
                   </li>
@@ -178,58 +184,78 @@
             <div class="section" itemprop="articleBody">
               
   
-                <h1 id="relazione-tra-fasi-in-enblau-e-logikal">Relazione tra fasi in ENBLAU e Logikal</h1>
+                <h1 id="relazione-tra-fasi-e-progetto-in-enblau-e-logikal">Relazione tra fasi e progetto in ENBLAU e Logikal</h1>
 <hr />
 <h2 id="1-introduzione">1. Introduzione</h2>
 <p>Spiegazione della relazione tra le fasi di un progetto in ENBLAU e Logikal.</p>
 <hr />
-<h2 id="2-fasi-esempi">2. Fasi - Esempi</h2>
-<h3 id="creare-un-preventivo-da-enblau">Creare un preventivo da ENBLAU</h3>
-<ol>
-<li>
-<p><strong>Versione 1</strong>  </p>
+<h2 id="2-modalita-di-lavoro-in-logikal">2. Modalità di lavoro in Logikal</h2>
+<h3 id="21-modalita-per-fasi-modalita-predefinita">2.1. Modalità per fasi (modalità predefinita)</h3>
+<p>La modalità per fasi sposta le posizioni e le quantità di ogni fase del documento ENBLAU nelle fasi del progetto in Logikal.</p>
 <ul>
-<li>Creando un preventivo in ENBLAU, questa versione si rifletterà in Logikal in "Posizioni senza Fase Assegnata" all'interno dello stesso progetto.<br />
-<img alt="Versione" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></li>
+<li>Creare un preventivo da ENBLAU:</li>
 </ul>
-</li>
-<li>
-<p><strong>Ordine</strong>  </p>
-<ul>
-<li>Confermando l'ordine in ENBLAU, verrà generato un ordine e successivamente una fase in Logikal denominata "Preventivo accettato".<br />
-<img alt="Ordine" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Produzione 1</strong>  </p>
-<ul>
-<li>Dall'ordine in ENBLAU, creando una produzione, verrà generata una nuova fase in Logikal chiamata "nº preventivo P1".<br />
-<img alt="Produzione 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Rilievo 1</strong>  </p>
-<ul>
-<li>Dall'ordine in ENBLAU, creando un rilievo, verrà generata una nuova fase in Logikal denominata "nº preventivo M1".<br />
-<img alt="Rilievo 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Produzione 2</strong>  </p>
-<ul>
-<li>Dal rilievo in ENBLAU, creando una produzione (considerando le modifiche nel rilievo), verrà generata una nuova fase in Logikal con il nome "nº preventivo P2".<br />
-<img alt="Produzione 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></li>
-</ul>
-</li>
-</ol>
-<hr />
+<p><strong>1. Versione 1</strong><br />
+      - Alla creazione di un preventivo in ENBLAU, questa versione sarà visualizzata in Logikal in <em>"Posizioni (1)"</em> all'interno dello stesso progetto.<br />
+<img alt="Versione" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></p>
+<p><strong>2. Ordine</strong><br />
+      - Confermando l’ordine in ENBLAU, verrà generato un ordine e successivamente una fase in Logikal denominata <em>"Preventivo accettato"</em>. Le posizioni verranno spostate dalla fase precedente alla fase successiva dell’ordine.
+        <img alt="Ordine" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></p>
+<p><strong>3. Produzione 1</strong><br />
+      - Dall’ordine in ENBLAU, creando una produzione, verrà generata una nuova fase in Logikal chiamata <em>"nº preventivo P1"</em>. Le posizioni e le quantità indicate verranno spostate dalla fase precedente alla fase successiva di produzione.
+        <img alt="Produzione 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></p>
+<p><strong>4. Misurazione 1</strong><br />
+      - Dall’ordine in ENBLAU, creando una misurazione, verrà generata una nuova fase in Logikal chiamata <em>"nº preventivo M1"</em>. Le posizioni e le quantità indicate verranno spostate dalla fase precedente alla fase successiva di misurazione.
+        <img alt="Misurazione 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></p>
+<p><strong>5. Produzione 2</strong><br />
+      - Dalla misurazione in ENBLAU, creando una produzione (considerando le modifiche nella misurazione), verrà generata una nuova fase in Logikal con il nome <em>"nº preventivo M1 P2"</em>. Le posizioni e le quantità indicate verranno spostate dalla fase precedente alla fase successiva di produzione.
+        <img alt="Produzione 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></p>
 <blockquote>
-<p><strong>Nota:</strong><br />
-Creando un preventivo in ENBLAU e poi aggiungendo una posizione di Logikal, questa verrà collegata a un progetto in Logikal o, in mancanza, ne verrà creato uno nuovo.</p>
+<p>⚠️ <strong>Importante!</strong> In questa modalità le posizioni eliminate da ENBLAU vengono rimosse definitivamente in Logikal.</p>
 </blockquote>
-<p><img alt="Collegare progetto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
-<p><img alt="Collegare progetto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
-<p><img alt="Collegare progetto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>
+<hr />
+<h3 id="22-modalita-per-progetti">2.2. Modalità per progetti</h3>
+<p>La modalità per progetti sposta le posizioni e le quantità di ogni fase del documento ENBLAU, ma in Logikal viene creato un progetto (con lo stesso numero di preventivo) per ogni fase di ENBLAU.</p>
+<ul>
+<li>Creare un preventivo da ENBLAU:</li>
+</ul>
+<p><strong>1. Versione 1</strong><br />
+      - Alla creazione di un preventivo in ENBLAU, questa versione sarà visualizzata come progetto in Logikal nella fase <em>"Posizioni (1)"</em>.<br />
+<img alt="Versione" src="../Imagenes/UT_ENBLAU_LOGIKAL/p1_version.png" /></p>
+<p><strong>2. Ordine</strong><br />
+      - Confermando l’ordine in ENBLAU, verrà generato un ordine e successivamente un nuovo progetto in Logikal con lo stesso <em>"nº preventivo"</em>.
+        <img alt="Ordine" src="../Imagenes/UT_ENBLAU_LOGIKAL/p2_pedido.png" /></p>
+<p><strong>3. Misurazione 1</strong><br />
+      - Dall’ordine in ENBLAU, creando una misurazione, verrà generato un nuovo progetto in Logikal con lo stesso numero di <em>"nº preventivo M1"</em> con le posizioni e le quantità indicate dalla fase precedente alla fase successiva di misurazione in ENBLAU.
+        <img alt="Misurazione 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/p4_medicion.png" /></p>
+<p><strong>4. Produzione 1</strong><br />
+      - Dalla misurazione in ENBLAU, creando una produzione (considerando le modifiche nella misurazione), verrà generato un nuovo progetto in Logikal con lo stesso numero di <em>"nº preventivo M1 P1"</em> con le posizioni e le quantità indicate dalla fase precedente alla fase successiva di produzione in ENBLAU.
+        <img alt="Produzione 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/p5_produccion1.png" /></p>
+<h3 id="23-modalita-per-fasi-duplicando-le-posizioni">2.3. Modalità per fasi duplicando le posizioni</h3>
+<p>La modalità per fasi duplicando le posizioni copia le posizioni e le quantità di ogni fase del documento ENBLAU nelle fasi del progetto in Logikal, mantenendo sempre una copia in ogni fase.</p>
+<ul>
+<li>Creare un preventivo da ENBLAU:</li>
+</ul>
+<p><strong>1. Versione 1</strong><br />
+      - Alla creazione di un preventivo in ENBLAU, questa versione sarà visualizzata in Logikal in <em>"Posizioni (1)"</em> all'interno dello stesso progetto.<br />
+<img alt="Versione" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd1_version.png" /></p>
+<p><strong>2. Ordine</strong><br />
+      - Confermando l’ordine in ENBLAU, verrà generato un ordine e successivamente una fase in Logikal denominata <em>"Preventivo accettato"</em>. Le posizioni verranno copiate dalla fase precedente alla fase successiva dell’ordine.
+        <img alt="Ordine" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd2_pedido.png" /></p>
+<p><strong>3. Misurazione 1</strong><br />
+      - Dall’ordine in ENBLAU, creando una misurazione, verrà generata una nuova fase in Logikal denominata <em>"nº preventivo M1"</em>. Le posizioni e le quantità indicate verranno copiate dalla fase precedente alla fase successiva di misurazione.
+        <img alt="Misurazione 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd4_medicion.png" /></p>
+<p><strong>4. Produzione 1</strong><br />
+      - Dalla misurazione in ENBLAU, creando una produzione (considerando le modifiche nella misurazione), verrà generata una nuova fase in Logikal con il nome <em>"nº preventivo M1 P2"</em>. Le posizioni e le quantità indicate verranno copiate dalla fase precedente alla fase successiva di produzione.
+        <img alt="Produzione 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd5_produccion1.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Importante!</strong> In questa modalità le posizioni eliminate da ENBLAU vengono rimosse definitivamente in Logikal.</p>
+</blockquote>
+<h2 id="3-creazione-del-progetto-in-logikal">3. Creazione del progetto in Logikal</h2>
+<p>Alla creazione di un preventivo in ENBLAU e successiva aggiunta di una posizione di Logikal, questa sarà collegata a un progetto in Logikal o, in caso contrario, ne verrà creato uno nuovo.</p>
+<p><img alt="Collega progetto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
+<p><img alt="Collega progetto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
+<p><img alt="Collega progetto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>
 <hr />
               
 

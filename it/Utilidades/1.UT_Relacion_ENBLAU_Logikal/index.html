@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Relación entre fases en ENBLAU y Logikal - Endades Documentation</title>
+    <title>Relación entre fases y proyecto en ENBLAU y Logikal - Endades Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Relaci\u00f3n entre fases en ENBLAU y Logikal";
+        var mkdocs_page_name = "Relaci\u00f3n entre fases y proyecto en ENBLAU y Logikal";
         var mkdocs_page_input_path = "es\\Utilidades\\1.UT_Relacion_ENBLAU_Logikal.md";
         var mkdocs_page_url = null;
       </script>
@@ -157,7 +157,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
-      <li class="breadcrumb-item active">Relación entre fases en ENBLAU y Logikal</li>
+      <li class="breadcrumb-item active">Relación entre fases y proyecto en ENBLAU y Logikal</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -167,55 +167,76 @@
             <div class="section" itemprop="articleBody">
               
   
-                <h1 id="relacion-entre-fases-en-enblau-y-logikal">Relación entre fases en ENBLAU y Logikal</h1>
+                <h1 id="relacion-entre-fases-y-proyecto-en-enblau-y-logikal">Relación entre fases y proyecto en ENBLAU y Logikal</h1>
 <hr />
 <h2 id="1-introduccion">1. Introducción</h2>
 <p>Explicación de la relación entre las fases de un proyecto en ENBLAU y Logikal.</p>
 <hr />
-<h2 id="2-fases-ejemplos">2. Fases - Ejemplos</h2>
-<h3 id="crear-un-presupuesto-desde-enblau">Crear un presupuesto desde ENBLAU</h3>
-<ol>
-<li>
-<p><strong>Versión 1</strong>  </p>
+<h2 id="2-modos-de-trabajo-en-logikal">2. Modos de trabajo en Logikal</h2>
+<h3 id="21-modo-por-fases-modo-por-defecto">2.1. Modo por fases (modo por defecto)</h3>
+<p>El modo por fases mueve las posiciones y unidades de cada fase del documento de ENBLAU y en las fases del proyecto en Logikal.</p>
 <ul>
-<li>Al crear un presupuesto en ENBLAU, esta versión se reflejará en Logikal en "Posiciones sin Fase Asignada" dentro del mismo proyecto.<br />
-<img alt="Version" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></li>
+<li>Crear un presupuesto desde ENBLAU:</li>
 </ul>
-</li>
-<li>
-<p><strong>Pedido</strong>  </p>
-<ul>
-<li>Al confirmar el pedido en ENBLAU, se generará un pedido y luego una fase en Logikal denominada "Presupuesto aceptado".<br />
-<img alt="Pedido" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Producción 1</strong>  </p>
-<ul>
-<li>Desde el pedido en ENBLAU, al crear una producción, se generará una nueva fase en Logikal llamada "nº presupuesto P1".<br />
-<img alt="Producción 1" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Medición 1</strong>  </p>
-<ul>
-<li>Desde el pedido en ENBLAU, al crear una medición, se generará una nueva fase en Logikal denominada "nº presupuesto M1".<br />
-<img alt="Medición 1" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Producción 2</strong>  </p>
-<ul>
-<li>Desde la medición en ENBLAU, al crear una producción (considerando los cambios en la medición), se generará una nueva fase en Logikal con el nombre "nº presupuesto P2".<br />
-<img alt="Producción 2" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></li>
-</ul>
-</li>
-</ol>
-<hr />
+<p><strong>1. Versión 1</strong> 
+      - Al crear un presupuesto en ENBLAU, esta versión se reflejará en Logikal en <em>"Posiciones (1)"</em> dentro del mismo proyecto.<br />
+<img alt="Version" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></p>
+<p><strong>2. Pedido</strong><br />
+      - Al confirmar el pedido en ENBLAU, se generará un pedido y luego una fase en Logikal denominada <em>"Presupuesto aceptado"</em>. Moviendo las posiciones de la fase anterior a la siguiente fase del pedido.
+        <img alt="Pedido" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></p>
+<p><strong>3. Producción 1</strong><br />
+      - Desde el pedido en ENBLAU, al crear una producción, se generará una nueva fase en Logikal llamada <em>"nº presupuesto P1"</em>. Moviendo las posiciones y las unidades indicadas de la fase anterior a la siguiente fase de producción.
+        <img alt="Producción 1" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></p>
+<p><strong>4. Medición 1</strong><br />
+      - Desde el pedido en ENBLAU, al crear una medición, se generará una nueva fase en Logikal denominada <em>"nº presupuesto M1"</em>. Moviendo las posiciones y las unidades indicadas de la fase anterior a la siguiente fase de medición. 
+        <img alt="Medición 1" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></p>
+<p><strong>5. Producción 2</strong><br />
+      - Desde la medición en ENBLAU, al crear una producción (considerando los cambios en la medición), se generará una nueva fase en Logikal con el nombre <em>"nº presupuesto M1 P2"</em>. Moviendo las posiciones y las unidades indicadas de la fase anterior a la siguiente fase de producción.
+        <img alt="Producción 2" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></p>
 <blockquote>
-<p><strong>Nota:</strong><br />
-Al crear un presupuesto en ENBLAU y luego añadir una posición de Logikal, esta se vinculará a un proyecto en Logikal o, en su defecto, se creará uno nuevo.</p>
+<p>⚠️ <strong>¡Importante!</strong> Para ese modo las posiciones borradas desde ENBLAU se eliminan de forma permanente en Logikal.</p>
 </blockquote>
+<hr />
+<h3 id="22-modo-por-proyectos">2.2. Modo por proyectos</h3>
+<p>El modo por proyecto mueve las posiciones y unidades de cada fase del documento de ENBLAU, pero en Logikal se crea un proyecto (mismo número del presupuesto) para cada fase de ENBLAU.</p>
+<ul>
+<li>Crear un presupuesto desde ENBLAU:</li>
+</ul>
+<p><strong>1. Versión 1</strong> 
+      - Al crear un presupuesto en ENBLAU, esta versión se reflejará como un proyecto en Logikal en la fase <em>"Posiciones (1)"</em>.<br />
+<img alt="Version" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/p1_version.png" /></p>
+<p><strong>2. Pedido</strong><br />
+      - Al confirmar el pedido en ENBLAU, se generará un pedido y luego un nuevo proyecto en Logikal con el mismo <em>"nº presupuesto"</em>.
+        <img alt="Pedido" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/p2_pedido.png" /></p>
+<p><strong>3. Medición 1</strong><br />
+      - Desde el pedido en ENBLAU, al crear una medición, se generará un nuevo proyecto en Logikal con el mismo número del <em>"nº presupuesto M1"</em> con las posiciones y las unidades indicadas de la fase anterior a la siguiente fase de medición en ENBLAU. 
+        <img alt="Medición 1" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/p4_medicion.png" /></p>
+<p><strong>4. Producción 1</strong><br />
+      - Desde la medición en ENBLAU, al crear una producción (considerando los cambios en la medición), se generará un nuevo proyecto en Logikal con el mismo número del <em>"nº presupuesto M1 P1"</em> con las posiciones y las unidades indicadas de la fase anterior a la siguiente fase de producción en ENBLAU.
+        <img alt="Producción 2" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/p5_produccion1.png" /></p>
+<h3 id="23-modo-por-fases-duplicando-posiciones">2.3. Modo por fases duplicando posiciones</h3>
+<p>El modo por fases duplicando posiciones copia las posiciones y unidades de cada fase del documento de ENBLAU y en las fases del proyecto en Logikal, manteniendo siempre una copia en cada fase. </p>
+<ul>
+<li>Crear un presupuesto desde ENBLAU:</li>
+</ul>
+<p><strong>1. Versión 1</strong> 
+      - Al crear un presupuesto en ENBLAU, esta versión se reflejará en Logikal en <em>"Posiciones (1)"</em> dentro del mismo proyecto.<br />
+<img alt="Version" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/fd1_version.png" /></p>
+<p><strong>2. Pedido</strong><br />
+      - Al confirmar el pedido en ENBLAU, se generará un pedido y luego una fase en Logikal denominada <em>"Presupuesto aceptado"</em>. Copiando las posiciones de la fase anterior a la siguiente fase del pedido.
+        <img alt="Pedido" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/fd2_pedido.png" /></p>
+<p><strong>3. Medición 1</strong><br />
+      - Desde el pedido en ENBLAU, al crear una medición, se generará una nueva fase en Logikal denominada <em>"nº presupuesto M1"</em>. Copiando las posiciones y las unidades indicadas de la fase anterior a la siguiente fase de medición.
+        <img alt="Medición 1" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/fd4_medicion.png" /></p>
+<p><strong>4. Producción 1</strong><br />
+      - Desde la medición en ENBLAU, al crear una producción (considerando los cambios en la medición), se generará una nueva fase en Logikal con el nombre <em>"nº presupuesto M1 P2"</em>. Copiando las posiciones y las unidades indicadas de la fase anterior a la siguiente fase de producción.
+        <img alt="Producción 2" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/fd5_produccion1.png" /></p>
+<blockquote>
+<p>⚠️ <strong>¡Importante!</strong> Para ese modo las posiciones borradas desde ENBLAU se eliminan de forma permanente en Logikal.</p>
+</blockquote>
+<hr />
+<h2 id="3-creacion-proyecto-logikal">3. Creación proyecto Logikal</h2>
+<p>Al crear un presupuesto en ENBLAU y luego añadir una posición de Logikal, esta se vinculará a un proyecto en Logikal o, en su defecto, se creará uno nuevo.</p>
 <p><img alt="Vincular proyecto" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
 <p><img alt="Vincular proyecto" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
 <p><img alt="Vincular proyecto" src="../../../Utilidades/Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>

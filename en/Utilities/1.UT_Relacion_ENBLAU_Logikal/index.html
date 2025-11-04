@@ -128,11 +128,17 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#1-introduction">1. Introduction</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-phases-examples">2. Phases — Examples</a>
+    <li class="toctree-l2"><a class="reference internal" href="#2-working-modes-in-logikal">2. Working modes in Logikal</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#creating-a-quote-from-enblau">Creating a quote from ENBLAU</a>
+    <li class="toctree-l3"><a class="reference internal" href="#21-phase-mode-default-mode">2.1. Phase mode (default mode)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-project-mode">2.2. Project mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-phase-mode-duplicating-items">2.3. Phase mode duplicating items</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-logikal-project-creation">3. Logikal project creation</a>
     </li>
     </ul>
                   </li>
@@ -178,58 +184,79 @@
             <div class="section" itemprop="articleBody">
               
   
-                <h1 id="relationship-between-phases-in-enblau-and-logikal">Relationship between phases in ENBLAU and Logikal</h1>
+                <h1 id="relationship-between-phases-and-project-in-enblau-and-logikal">Relationship between phases and project in ENBLAU and Logikal</h1>
 <hr />
 <h2 id="1-introduction">1. Introduction</h2>
-<p>This document explains the relationship between the phases of a project in ENBLAU and how those phases appear and are managed in Logikal.</p>
+<p>Explanation of the relationship between the phases of a project in ENBLAU and Logikal.</p>
 <hr />
-<h2 id="2-phases-examples">2. Phases — Examples</h2>
-<h3 id="creating-a-quote-from-enblau">Creating a quote from ENBLAU</h3>
-<ol>
-<li>
-<p><strong>Version 1</strong>  </p>
+<h2 id="2-working-modes-in-logikal">2. Working modes in Logikal</h2>
+<h3 id="21-phase-mode-default-mode">2.1. Phase mode (default mode)</h3>
+<p>The phase mode moves the items and quantities of each phase from the ENBLAU document to the project phases in Logikal.</p>
 <ul>
-<li>When you create a quote in ENBLAU, that version will appear in Logikal under "Positions without Assigned Phase" within the same project.<br />
-<img alt="Version" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></li>
+<li>Create a quotation from ENBLAU:</li>
 </ul>
-</li>
-<li>
-<p><strong>Order</strong>  </p>
-<ul>
-<li>When the order is confirmed in ENBLAU, an order and a new phase will be created in Logikal called "Quote accepted".<br />
-<img alt="Pedido" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Production 1</strong>  </p>
-<ul>
-<li>From the ENBLAU order, when you create a production, a new phase will be created in Logikal named "quote no. P1".<br />
-<img alt="Producción 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Measurement 1</strong>  </p>
-<ul>
-<li>From the ENBLAU order, when you create a measurement, a new phase will be created in Logikal named "quote no. M1".<br />
-<img alt="Medición 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></li>
-</ul>
-</li>
-<li>
-<p><strong>Production 2</strong>  </p>
-<ul>
-<li>From the ENBLAU measurement, when you create a production (taking measurement changes into account), Logikal will create a new phase named "quote no. P2".<br />
-<img alt="Producción 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></li>
-</ul>
-</li>
-</ol>
-<hr />
+<p><strong>1. Version 1</strong><br />
+      - When creating a quotation in ENBLAU, this version will be reflected in Logikal in <em>"Positions (1)"</em> within the same project.<br />
+<img alt="Version" src="../Imagenes/UT_ENBLAU_LOGIKAL/f1_version.png" /></p>
+<p><strong>2. Order</strong><br />
+      - When confirming the order in ENBLAU, an order will be generated and then a phase in Logikal called <em>"Quotation accepted"</em>. The items will be moved from the previous phase to the next order phase.
+        <img alt="Order" src="../Imagenes/UT_ENBLAU_LOGIKAL/f2_pedido.png" /></p>
+<p><strong>3. Production 1</strong><br />
+      - From the order in ENBLAU, when creating a production, a new phase will be generated in Logikal called <em>"quotation nº P1"</em>. The items and indicated quantities will be moved from the previous phase to the next production phase.
+        <img alt="Production 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f3_produccion.png" /></p>
+<p><strong>4. Measurement 1</strong><br />
+      - From the order in ENBLAU, when creating a measurement, a new phase will be generated in Logikal called <em>"quotation nº M1"</em>. The items and indicated quantities will be moved from the previous phase to the next measurement phase.
+        <img alt="Measurement 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/f4_medicion.png" /></p>
+<p><strong>5. Production 2</strong><br />
+      - From the measurement in ENBLAU, when creating a production (considering the changes in the measurement), a new phase will be generated in Logikal named <em>"quotation nº M1 P2"</em>. The items and indicated quantities will be moved from the previous phase to the next production phase.
+        <img alt="Production 2" src="../Imagenes/UT_ENBLAU_LOGIKAL/f5_produccion2.png" /></p>
 <blockquote>
-<p><strong>Note:</strong><br />
-When you create a quote in ENBLAU and then add a Logikal item/position, it will be linked to a project in Logikal or, if none exists, a new project will be created.</p>
+<p>⚠️ <strong>Important!</strong> In this mode, items deleted from ENBLAU are permanently removed in Logikal.</p>
 </blockquote>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
-<p><img alt="Vincular proyecto" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>
+<hr />
+<h3 id="22-project-mode">2.2. Project mode</h3>
+<p>The project mode moves the items and quantities of each phase from the ENBLAU document, but a project (same quotation number) is created in Logikal for each ENBLAU phase.</p>
+<ul>
+<li>Create a quotation from ENBLAU:</li>
+</ul>
+<p><strong>1. Version 1</strong><br />
+      - When creating a quotation in ENBLAU, this version will be reflected as a project in Logikal in the phase <em>"Positions (1)"</em>.<br />
+<img alt="Version" src="../Imagenes/UT_ENBLAU_LOGIKAL/p1_version.png" /></p>
+<p><strong>2. Order</strong><br />
+      - When confirming the order in ENBLAU, an order will be generated and then a new project in Logikal with the same <em>"quotation nº"</em>.
+        <img alt="Order" src="../Imagenes/UT_ENBLAU_LOGIKAL/p2_pedido.png" /></p>
+<p><strong>3. Measurement 1</strong><br />
+      - From the order in ENBLAU, when creating a measurement, a new project will be generated in Logikal with the same number <em>"quotation nº M1"</em> with the items and quantities indicated from the previous phase to the next measurement phase in ENBLAU.
+        <img alt="Measurement 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/p4_medicion.png" /></p>
+<p><strong>4. Production 1</strong><br />
+      - From the measurement in ENBLAU, when creating a production (considering the changes in the measurement), a new project will be generated in Logikal with the same number <em>"quotation nº M1 P1"</em> with the items and quantities indicated from the previous phase to the next production phase in ENBLAU.
+        <img alt="Production 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/p5_produccion1.png" /></p>
+<h3 id="23-phase-mode-duplicating-items">2.3. Phase mode duplicating items</h3>
+<p>The phase mode duplicating items copies the items and quantities of each phase from the ENBLAU document to the project phases in Logikal, always keeping a copy in each phase.</p>
+<ul>
+<li>Create a quotation from ENBLAU:</li>
+</ul>
+<p><strong>1. Version 1</strong><br />
+      - When creating a quotation in ENBLAU, this version will be reflected in Logikal in <em>"Positions (1)"</em> within the same project.<br />
+<img alt="Version" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd1_version.png" /></p>
+<p><strong>2. Order</strong><br />
+      - When confirming the order in ENBLAU, an order will be generated and then a phase in Logikal named <em>"Quotation accepted"</em>. The items will be copied from the previous phase to the next order phase.
+        <img alt="Order" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd2_pedido.png" /></p>
+<p><strong>3. Measurement 1</strong><br />
+      - From the order in ENBLAU, when creating a measurement, a new phase will be generated in Logikal named <em>"quotation nº M1"</em>. The items and indicated quantities will be copied from the previous phase to the next measurement phase.
+        <img alt="Measurement 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd4_medicion.png" /></p>
+<p><strong>4. Production 1</strong><br />
+      - From the measurement in ENBLAU, when creating a production (considering the changes in the measurement), a new phase will be generated in Logikal named <em>"quotation nº M1 P2"</em>. The items and indicated quantities will be copied from the previous phase to the next production phase.
+        <img alt="Production 1" src="../Imagenes/UT_ENBLAU_LOGIKAL/fd5_produccion1.png" /></p>
+<blockquote>
+<p>⚠️ <strong>Important!</strong> In this mode, items deleted in ENBLAU are permanently removed in Logikal.</p>
+</blockquote>
+<hr />
+<h2 id="3-logikal-project-creation">3. Logikal project creation</h2>
+<p>When creating a quotation in ENBLAU and then adding a Logikal item, it will be linked to a project in Logikal or, if not available, a new one will be created.</p>
+<p><img alt="Link project" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto.png" /></p>
+<p><img alt="Link project" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto2.png" /></p>
+<p><img alt="Link project" src="../Imagenes/UT_ENBLAU_LOGIKAL/vincular_proyecto3.png" /></p>
 <hr />
               
 
