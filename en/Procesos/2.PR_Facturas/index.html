@@ -228,7 +228,7 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>Nota:</strong> La factura se puede generar desde el presupuesto, pedido o albarán. Es recomendable generar las facturas siempre desde el mismo documento, es decir, si haces desde el pedido (el pedido normalmente es el que se acuerda con el cliente), seguir generando las facturas siempre desde ahí para una mejor gestión y trazabilidad.</p>
+<p>ℹ️ <strong>Nota:</strong> La factura se puede generar desde el presupuesto, pedido o albarán. Es recomendable generar las facturas siempre desde el mismo documento, es decir, si haces desde el pedido (el pedido normalmente es el que se acuerda con el cliente), seguir generando las facturas siempre desde ahí para una mejor gestión y trazabilidad.</p>
 </blockquote>
 <h3 id="24-estados-observaciones">2.4. Estados observaciones</h3>
 <ul>
@@ -259,7 +259,7 @@
 <p>Indica el modo de pago (transferencia, pagaré, etc.), la fecha de cobro y la fecha de ingreso en cuenta. Los campos marcados en rojo son obligatorios. Estos campos se pueden configurar previamente en el apartado "Formas de pago".</p>
 <p><img alt="Modo cobro" src="../../../Procesos/Imagenes/PR_Facturas/modo_cobro.png" /></p>
 <blockquote>
-<p><strong>Nota:</strong> En este apartado, como en otros listados de documentos, se pueden utilizar los filtros según sea necesario.</p>
+<p>ℹ️ <strong>Nota:</strong> En este apartado, como en otros listados de documentos, se pueden utilizar los filtros según sea necesario.</p>
 </blockquote>
 </li>
 <li>
@@ -305,7 +305,7 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>Nota:</strong> Se recomienda siempre facturar desde el pedido, ya que es lo que se acuerda con el cliente para aceptar el presupuesto.</p>
+<p>ℹ️ <strong>Nota:</strong> Se recomienda siempre facturar desde el pedido, ya que es lo que se acuerda con el cliente para aceptar el presupuesto.</p>
 </blockquote>
 <ul>
 <li>
@@ -332,7 +332,7 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>Nota:</strong> Asegúrate de que los precios y descripciones sean correctos.</p>
+<p>ℹ️ <strong>Nota:</strong> Asegúrate de que los precios y descripciones sean correctos.</p>
 </blockquote>
 <h3 id="52-facturar-desde-albaranes">5.2. Facturar desde albaranes:</h3>
 <ul>
@@ -343,7 +343,7 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>Nota:</strong> Verifica que los precios y las unidades coincidan con lo acordado con el cliente, ya que puede variar dependiendo si hay alguna modificación en la producción (ej. cambiar la medida de la ventana) y que puede afectar el precio y facturar con un precio distinto del pedido.</p>
+<p>ℹ️ <strong>Nota:</strong> Verifica que los precios y las unidades coincidan con lo acordado con el cliente, ya que puede variar dependiendo si hay alguna modificación en la producción (ej. cambiar la medida de la ventana) y que puede afectar el precio y facturar con un precio distinto del pedido.</p>
 </blockquote>
 <hr />
 <h2 id="6-formas-y-modos-de-pago">6. Formas y modos de pago</h2>
@@ -376,7 +376,7 @@
 </li>
 </ul>
 <hr />
-<h2 id="7-rectificativas-y-anulaciones">7. Rectificativas y anulaciones</h2>
+<h2 id="7-facturas-rectificativas-y-anulaciones">7. Facturas rectificativas y anulaciones</h2>
 <p>Si necesitas corregir o anular una factura:</p>
 <h3 id="71-facturas-recien-creadas">7.1. Facturas recién creadas:</h3>
 <ul>
@@ -401,21 +401,114 @@
 <h3 id="72-facturas-ya-enviadas">7.2. Facturas ya enviadas:</h3>
 <ul>
 <li>
-<p>En el caso de que la factura ya haya sido enviada, emite una factura rectificativa.</p>
+<p>En el caso de que la factura ya haya sido enviada, emite una <strong>Factura rectificativa</strong>.</p>
 <p><img alt="Factura rectificada" src="../../../Procesos/Imagenes/PR_Facturas/factura_retificada.png" /></p>
 </li>
 <li>
 <p>Asegúrate de que cumpla con los requisitos de Hacienda.</p>
 </li>
 </ul>
-<h2 id="8-confirmacion-de-factura-proforma">8. Confirmación de factura (Proforma)</h2>
+<hr />
+<h2 id="8-facturacion-agrupada">8. Facturación agrupada</h2>
+<h3 id="81-compras">8.1. Compras</h3>
+<p>Desde el apartado <strong>Documentos de compra</strong>, existe una opción específica para la <strong>Facturación de albaranes</strong>.<br />
+Al seleccionarla:</p>
+<ul>
+<li>Se abre una ventana donde puedes <strong>escoger el proveedor</strong>.</li>
+<li>A continuación, se muestra un <strong>listado de albaranes</strong>, donde es posible:</li>
+<li><strong>Filtrar</strong> por proyecto, fechas, documentos, etc.</li>
+<li>
+<p><strong>Seleccionar</strong> los albaranes que deseas facturar, marcando la casilla correspondiente en la columna <strong>Seleccionar</strong>.</p>
+<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes.png" /></p>
+</li>
+</ul>
+<h3 id="82-ventas">8.2. Ventas</h3>
+<p>En el módulo de <strong>Documentos de venta</strong>, hay una opción similar para la facturación de albaranes y pedidos.<br />
+Al acceder:</p>
+<ul>
+<li>Se abre una ventana donde debes <strong>indicar el cliente</strong> y el proyecto que se va a emitir la factura.</li>
+<li>El sistema mostrará el listado de albaranes/pedidos correspondientes.</li>
+<li>
+<p>Con un <strong>doble clic</strong> sobre la casilla de la columna <strong>“A facturar”</strong> para albaranes y <strong>“Facturar”</strong> para pedidos, podrás seleccionar fácilmente los documentos que deseas incluir en la factura.</p>
+<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes2.png" /></p>
 <ul>
 <li>
-<p>Para generar un documento de confirmacion (proforma) antes de emitir la factura al cliente, puedes hacerlo desde: <strong>Documentos de Venta → Facturación → Facturación de Pedidos</strong>.</p>
+<p><strong>Facturación de albaranes</strong></p>
+<p><img alt="Facturacion Albaranes ventas" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes3.png" /></p>
+</li>
+<li>
+<p><strong>Facturación de pedidos</strong></p>
+<p><img alt="Facturacion Pedidos ventas" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_pedido.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="9-proforma">9. Proforma</h2>
+<h3 id="91-crear-numeracion-proforma">9.1. Crear numeración proforma</h3>
+<ul>
+<li>
+<p>Para crear una numeración de tipo proforma, desde <strong>Documentos de venta - Configuración - Numeraciones</strong>.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma_numeracion.png" /></p>
+<ul>
+<li>
+<p>Para el tipo de documento factura marcar la casilla de la columna <strong>Factura proforma</strong> para la numeración definida como proforma.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma_numeracion2.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="92-crear-proforma">9.2. Crear proforma</h3>
+<ul>
+<li>
+<p>Para generar una Proforma antes de emitir la factura, desde un documento de venta ir a <strong>Facturación - Crear factura</strong>.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma.png" /></p>
+</li>
+<li>
+<p>Abrirá una ventana <strong>Nueva factura</strong> desde ahí marcar el check proforma e indicar la numeración del tipo proforma.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma2.png" /></p>
+</li>
+<li>
+<p>Se creará una factura de tipo proforma.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma3.png" /></p>
+</li>
+<li>
+<p>Desde el documento proforma se puede imprimir y mandar por correo para su confirmación. </p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma4.png" /></p>
+</li>
+<li>
+<p>Una vez confirmado por parte del cliente convertir la proforma en factura. Ir a Facturación - <strong>Convertir en factura</strong>.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma5.png" /> </p>
+<ul>
+<li>
+<p>Se abrirá una ventana para seleccionar la numeración de la factura.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma6.png" />  </p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma7.png" /> </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="93-proforma-agrupado">9.3. Proforma agrupado</h3>
+<ul>
+<li>
+<p>Para generar una proforma agrupada, crear desde el listado de documentos de venta <strong>Facturación - Facturación de albaranes/Facturación de pedidos</strong>.</p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma_agrupada.png" /></p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma_albaranes.png" /></p>
+<p><img alt="Proforma" src="../../../Procesos/Imagenes/PR_Facturas/proforma_pedido.png" /></p>
+</li>
+</ul>
+<blockquote>
+<p>ℹ️ <strong>Nota</strong>: La proforma agrupada funciona igual que <a href="#82-ventas">Facturas agrupada</a>.</p>
+</blockquote>
+<hr />
+<h2 id="10-confirmacion-de-factura">10. Confirmación de factura</h2>
+<ul>
+<li>
+<p>Para generar un documento de confirmación que no sea una proforma antes de emitir la factura al cliente, puedes hacerlo desde: <strong>Documentos de Venta → Facturación → Facturación de Pedidos</strong>.</p>
 <p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma.png" /></p>
 </li>
 <li>
-<p>Te abrirá una ventana <strong>Nueva factura</strong> desde ahí buscar el cliente que quieres generar la proforma: </p>
+<p>Abrirá una ventana <strong>Nueva factura</strong> desde ahí buscar el cliente que quieres generar el documento: </p>
 <p><img alt="Factura proforma" src="../../../Procesos/Imagenes/PR_Facturas/factura_proforma2.png" /></p>
 </li>
 <li>
@@ -440,15 +533,15 @@
 <p><strong>Gestión de filtros</strong> Usar filtros y filtros personalizados para optimizar la búsqueda en los listados. Para más información, sigue este enlace: <a href="/Utilidades/4.UT_Gestion_Filtros">4. Gestión de filtros</a></p>
 </blockquote>
 <hr />
-<h2 id="9-descuento-pronto-pago">9. Descuento pronto pago</h2>
+<h2 id="11-descuento-pronto-pago">11. Descuento pronto pago</h2>
 <p>El <strong>descuento por pronto pago</strong> es una reducción que se aplica al importe total de una factura cuando el cliente realiza el pago en un plazo corto previamente establecido. Su finalidad es incentivar el pago anticipado y facilitar el flujo de caja del proveedor.</p>
-<h3 id="91-aplicacion-recomendada">9.1. Aplicación recomendada</h3>
+<h3 id="111-aplicacion-recomendada">11.1. Aplicación recomendada</h3>
 <p>Se recomienda <strong>incluir el descuento desde el pedido</strong>, en el apartado <strong>"Estados y observaciones"</strong>, para que se refleje correctamente en la factura final, ya sea esta generada a partir del <strong>pedido</strong> o del <strong>albarán</strong>.</p>
 <p><img alt="Descuento pronto pago" src="../../../Procesos/Imagenes/PR_Facturas/pp.png" /></p>
 <blockquote>
 <p>⚠️ <strong>Importante</strong>: Aplicar el descuento directamente desde la factura puede generar <strong>descuadres en informes</strong> como <em>"Estado de factura y cobros"</em>, ya que el importe facturado no coincidirá con los valores previstos originalmente.</p>
 </blockquote>
-<h3 id="92-calculo-del-descuento">9.2. Cálculo del descuento</h3>
+<h3 id="112-calculo-del-descuento">11.2. Cálculo del descuento</h3>
 <p>Existe un <strong>check de configuración</strong> que determina cómo se aplica el descuento:</p>
 <ul>
 <li>Si el check está <strong>activado</strong>, el descuento se aplica <strong>sobre el total con IVA incluido</strong>.</li>
@@ -458,96 +551,178 @@
 </li>
 </ul>
 <hr />
-<h2 id="10-facturacion-de-albaranes">10. Facturación de albaranes</h2>
-<h3 id="101-compras">10.1. Compras</h3>
-<p>Desde el apartado <strong>Documentos de compra</strong>, existe una opción específica para la <strong>Facturación de albaranes</strong>.<br />
-Al seleccionarla:</p>
+<!-- ## 12. Facturación electrónica (FACTURAE)
+Facturae es el formato estándar de factura electrónica utilizado en España, definido por el Ministerio de Asuntos Económicos y Transformación Digital. Está basado en XML y establece una estructura uniforme para el intercambio de facturas electrónicas, permitiendo su validación, firma electrónica y archivo seguro.
+
+- Para generar una factura electrónica desde ENBLAU, es necesario que en **Empresas**, **Clientes** y **Formas de pago** tengan completados ciertos campos obligatorios.
+
+    **Empresa:** Los campos son CIF, Dirección, localidad, CP, Provincia y País. Desde el apartado, Configuración - General - **Empresa**.
+
+    ![Facturae empresa](Imagenes/PR_Facturas/facturae_empresa2.png)
+
+    ![Facturae empresa](Imagenes/PR_Facturas/facturae_empresa.png)
+
+    > **Nota:** Si no hay empresa creada en el apartado **Empresa**, crearlo con la misma información que está en el apartado de Configuración - **General**.
+
+    **Clientes:** Los campos son Nombre comercial, NIF/CIF, Código de país y Tipo de persona (**J**: Jurídica, **F**: Física). Desde el apartado, Ventas - **Clientes**.
+
+    ![Facturae cliente](Imagenes/PR_Facturas/facturae_cliente2.png)
+
+    ![Facturae cliente](Imagenes/PR_Facturas/facturae_cliente.png)
+
+    **Formas de pago:** El campo Código legal. Desde el apartado, Ventas - Documentos de venta - Configuración - **Formas de pago**.
+
+    ![Facturae cliente](Imagenes/PR_Facturas/facturae_formasdepago.png)
+
+    ![Facturae cliente](Imagenes/PR_Facturas/facturae_formasdepago2.png)
+
+    > **Nota:** El código legal de formas de pago es un código proporcionado por la gestoría o contabilidad de la empresa.  
+
+- A continuación, desde el apartado de **Documentos de venta**, deben seguirse los siguientes pasos:
+
+    - **1-** Abre la factura que deseas emitir como factura electrónica.
+
+    - **2-** En la cinta superior de la factura, haz clic en el botón **Facturación** y selecciona la opción **Exportar para Facturae** del menú desplegable.
+
+    ![Factura eletronica](Imagenes/PR_Facturas/facturae.png)
+
+    - **3-** Indica la ruta donde se guardará la factura electrónica en formato XML.
+
+    ![Factura XML](Imagenes/PR_Facturas/facturae_xml.png)
+
+    - **4-** Al guardar, se abrirá una ventana para que selecciones una firma certificada válida. Si es necesario, haz clic en Más opciones, selecciona el certificado correspondiente y haz clic en Aceptar.
+
+    ![Factura certificado](Imagenes/PR_Facturas/facturae_certificado.png)
+
+    ![Factura certificado](Imagenes/PR_Facturas/facturae_firma.png)
+
+    - Al hacer clic en Aceptar, se mostrará un mensaje indicando que la exportación se realizó correctamente en la ruta especificada.
+
+    ![Factura mensaje](Imagenes/PR_Facturas/facturae_msg.png)
+
+    > ⚠️ **¡Importante!** Una vez que la factura electrónica haya sido exportada, no podrá ser eliminada ni modificada.
+
+    - **5-** Una vez exportada la factura electrónica en formato XML, accede a la página del [Validador y visualizador de facturas](https://face.gob.es/es/facturas/validar-visualizar-facturas) para subir el archivo y validar su contenido.
+
+    ![Factura mensaje](Imagenes/PR_Facturas/facturae_validar.png)
+
+    - Activa las opciones Formato Facturae y Firma de la factura para proceder con la validación.
+
+    ![Factura mensaje](Imagenes/PR_Facturas/facturae_validar2.png)
+
+- Al imprimir el informe de una factura electrónica desde ENBLAU, verás que en la parte superior derecha se muestra un código QR. Este QR contiene información relevante de la factura, como el NIF, nombre, dirección, cliente, número de factura, entre otros datos.
+
+    ![Factura QR](Imagenes/PR_Facturas/facturae_qr.png)
+
+    ![Factura QR](Imagenes/PR_Facturas/facturae_qr2.png) -->
+
+<h2 id="12-verifactu">12. Verifactu</h2>
+<p>Verifactu es un sistema de facturación electrónica regulado por la Agencia Tributaria (AEAT) en España. Su objetivo es garantizar la veracidad e integridad de los registros de facturación, especialmente para autónomos y empresas que facturan a consumidores finales.</p>
+<h3 id="121-campos-obligatorios-en-enblau">12.1. Campos obligatorios en ENBLAU</h3>
 <ul>
-<li>Se abre una ventana donde puedes <strong>escoger el proveedor</strong>.</li>
-<li>A continuación, se muestra un <strong>listado de albaranes</strong>, donde es posible:</li>
-<li><strong>Filtrar</strong> por proyecto, fechas, documentos, etc.</li>
 <li>
-<p><strong>Seleccionar</strong> los albaranes que deseas facturar, marcando la casilla correspondiente en la columna <strong>Seleccionar</strong>.</p>
-<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes.png" /></p>
+<p>Para generar y enviar la factura desde ENBLAU, es necesario que la <strong>Empresa</strong> y el <strong>Cliente destinatario</strong> tengan completados ciertos campos obligatorios.</p>
+<ul>
+<li>
+<p><strong>1-</strong> Información de la <strong>Empresa</strong> Cif, Código de país, Usuario (Verifactu) y ApiKey (Verifactu). </p>
+<ul>
+<li>
+<p>Desde el apartado, Configuración - <strong>General</strong>.</p>
+<p><img alt="Verifactu empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_general.png" /></p>
+<p><img alt="Verifactu empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_configuracion.png" /></p>
+</li>
+<li>
+<p>Desde el apartado, Configuración - <strong>Empresa</strong>.</p>
+<p><img alt="Verifactu empresa" src="../../../Procesos/Imagenes/PR_Facturas/facturae_empresa2.png" /></p>
+<p><img alt="Verifactu empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_empresa.png" /></p>
 </li>
 </ul>
-<h3 id="102-ventas">10.2. Ventas</h3>
-<p>En el módulo de <strong>Documentos de venta</strong>, hay una opción similar para la facturación de albaranes.<br />
-Al acceder:</p>
-<ul>
-<li>Se abre una ventana donde puedes <strong>indicar el proyecto y/o el cliente</strong>.</li>
-<li>El sistema mostrará el listado de albaranes correspondientes.</li>
-<li>
-<p>Con un <strong>doble clic</strong> sobre la casilla de la columna <strong>“A facturar”</strong>, podrás seleccionar fácilmente los documentos que deseas incluir en la factura.</p>
-<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes2.png" /></p>
-<p><img alt="Facturacion Albaranes compra" src="../../../Procesos/Imagenes/PR_Facturas/facturacion_albaranes3.png" /></p>
 </li>
 </ul>
-<hr />
-<h2 id="11-facturacion-electronica-facturae">11. Facturación electrónica (FACTURAE)</h2>
+<blockquote>
+<p>ℹ️ <strong>Nota</strong>: Los datos de <strong>Usuario</strong> (Verifactu) y <strong>ApiKey</strong> (Verifactu) serán proporcionados por Endades bajo pedido.</p>
+</blockquote>
 <ul>
 <li>
-<p>Para generar una factura electrónica desde ENBLAU, es necesario que en <strong>Empresas</strong>, <strong>Clientes</strong> y <strong>Formas de pago</strong> tengan completados ciertos campos obligatorios.</p>
-<p><strong>Empresa:</strong> Los campos son CIF, Dirección, localidad, CP, Provincia y País. Desde el apartado, Configuración - General - <strong>Empresa</strong>.</p>
-<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/facturae_empresa2.png" /></p>
-<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/facturae_empresa.png" /></p>
-<blockquote>
-<p><strong>Nota:</strong> Si no hay empresa creada en el apartado <strong>Empresa</strong>, crearlo con la misma información que esta en el apartado de Configuración - <strong>General</strong>.</p>
-</blockquote>
-<p><strong>Clientes:</strong> Los campos son Nombre comercial, NIF/CIF, Código de país y Tipo de persona (<strong>J</strong>: Jurídica, <strong>F</strong>: Física). Desde el apartado, Ventas - <strong>Clientes</strong>.</p>
-<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_cliente2.png" /></p>
-<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_cliente.png" /></p>
-<p><strong>Formas de pago:</strong> El campo Código legal. Desde el apartado, Ventas - Documentos de venta - Configuración - <strong>Formas de pago</strong>.</p>
-<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_formasdepago.png" /></p>
-<p><img alt="Facturae cliente" src="../../../Procesos/Imagenes/PR_Facturas/facturae_formasdepago2.png" /></p>
-<blockquote>
-<p><strong>Nota:</strong> El código legal de formas de pago es un código proporcionado por la gestoría o contabilidad de la empresa.  </p>
-</blockquote>
+<p><strong>2-</strong> Información del <strong>Cliente destinatario</strong> Nombre comercial, NIF/CIF, Código de país y Tipo de persona (<strong>J</strong>: Jurídica, <strong>F</strong>: Física). </p>
+<ul>
+<li>
+<p>Desde el apartado Ventas - <strong>Clientes</strong>.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_cliente1.png" /></p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_cliente.png" /></p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>3-</strong> En la factura es necesario indicar la clave del tipo de <strong>Régimen</strong>, por defecto el valor es <strong>"01" (operación de régimen general)</strong>. Esa información es responsabilidad del usuario según la indicación de su gestoría y se cambia de forma manual para cada posición de la factura.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_regimen2.png" /></p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_regimen.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="122-exportar-factura-para-verifactu">12.2. Exportar factura para Verifactu</h3>
+<ul>
 <li>
 <p>A continuación, desde el apartado de <strong>Documentos de venta</strong>, deben seguirse los siguientes pasos:</p>
 <ul>
 <li>
-<p><strong>1-</strong> Abre la factura que deseas emitir como factura electrónica.</p>
+<p><strong>1-</strong> Abre la factura que deseas exportar a Verifactu.</p>
 </li>
 <li>
-<p><strong>2-</strong> En la cinta superior de la factura, haz clic en el botón <strong>Facturación</strong> y selecciona la opción <strong>Exportar para Facturae</strong> del menú desplegable.</p>
-</li>
-</ul>
-<p><img alt="Factura eletronica" src="../../../Procesos/Imagenes/PR_Facturas/facturae.png" /></p>
+<p><strong>2-</strong> En la cinta superior de la factura, haz clic en el botón <strong>Facturación</strong> y selecciona la opción <strong>Exportar para Verifactu</strong> del menú desplegable. Luego confirmar que quieres enviar la factura electrónica.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_exportar.png" /></p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_exportar2.png" /></p>
 <ul>
-<li><strong>3-</strong> Indica la ruta donde se guardará la factura electrónica en formato XML.</li>
+<li>Si todos los datos obligatorios están correctos se exportará la factura a <strong>Verifactu</strong> y una vez exportado esa factura no se podrá modificar o eliminarla en ENBLAU.</li>
 </ul>
-<p><img alt="Factura XML" src="../../../Procesos/Imagenes/PR_Facturas/facturae_xml.png" /></p>
-<ul>
-<li><strong>4-</strong> Al guardar, se abrirá una ventana para que selecciones una firma certificada válida. Si es necesario, haz clic en Más opciones, selecciona el certificado correspondiente y haz clic en Aceptar.</li>
-</ul>
-<p><img alt="Factura certificado" src="../../../Procesos/Imagenes/PR_Facturas/facturae_certificado.png" /></p>
-<p><img alt="Factura certificado" src="../../../Procesos/Imagenes/PR_Facturas/facturae_firma.png" /></p>
-<ul>
-<li>Al hacer clic en Aceptar, se mostrará un mensaje indicando que la exportación se realizó correctamente en la ruta especificada.</li>
-</ul>
-<p><img alt="Factura mensaje" src="../../../Procesos/Imagenes/PR_Facturas/facturae_msg.png" /></p>
-<blockquote>
-<p>⚠️ <strong>¡Importante!</strong> Una vez que la factura electrónica haya sido exportada, no podrá ser eliminada ni modificada.</p>
-</blockquote>
-<ul>
-<li><strong>5-</strong> Una vez exportada la factura electrónica en formato XML, accede a la página del <a href="https://face.gob.es/es/facturas/validar-visualizar-facturas">Validador y visualizador de facturas</a> para subir el archivo y validar su contenido.</li>
-</ul>
-<p><img alt="Factura mensaje" src="../../../Procesos/Imagenes/PR_Facturas/facturae_validar.png" /></p>
-<ul>
-<li>Activa las opciones Formato Facturae y Firma de la factura para proceder con la validación.</li>
-</ul>
-<p><img alt="Factura mensaje" src="../../../Procesos/Imagenes/PR_Facturas/facturae_validar2.png" /></p>
 </li>
 <li>
-<p>Al imprimir el informe de una factura electrónica desde ENBLAU, verás que en la parte superior derecha se muestra un código QR. Este QR contiene información relevante de la factura, como el NIF, nombre, dirección, cliente, número de factura, entre otros datos.</p>
-<p><img alt="Factura QR" src="../../../Procesos/Imagenes/PR_Facturas/facturae_qr.png" /></p>
-<p><img alt="Factura QR" src="../../../Procesos/Imagenes/PR_Facturas/facturae_qr2.png" /></p>
+<p><strong>3-</strong> En caso de que la factura ya esté exportada a Verifactu saltara un error indicando que el número de esa factura ya consta en la base de datos de Verifactu y que no se puede volver a exportarlo.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_exportar3.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="123-imprimir-factura">12.3. Imprimir factura</h3>
+<ul>
+<li>
+<p>En la cinta superior de la factura, haz clic en el botón <strong>Imprimir</strong> seleccionar <strong>Factura</strong> para imprimirla.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_imprimir.png" /></p>
+</li>
+<li>
+<p>Al imprimir la factura en la parte superior a la derecha del documento se mostrará el <strong>código QR tributario de verifactu</strong>, donde podrás verificar si la factura ha sido procesada correctamente por la <strong>AEAT</strong> (Agencia Estatal de Administración Tributaria). </p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_imprimir2.png" /></p>
+</li>
+</ul>
+<h3 id="124-anular-factura-en-verifactu">12.4. Anular factura en Verifactu</h3>
+<ul>
+<li>
+<p>Para anular una factura en Verifactu seguir esos pasos.</p>
+<ul>
+<li>
+<p><strong>1-</strong> Abre la factura que deseas anular en Verifactu.</p>
+</li>
+<li>
+<p><strong>2-</strong> En la cinta superior de la factura, haz clic en el botón <strong>Facturación</strong> y selecciona la opción <strong>Anular en Verifactu</strong> del menú desplegable. Luego confirmar que quieres anular la factura electrónica.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_anular.png" /></p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_anular2.png" /></p>
+</li>
+<li>
+<p><strong>3-</strong> Una vez anulada la factura la numeración no se puede ser reutilizada. Esa factura se queda anulada en la base de datos de Verifactu.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="125-filtro-documento-de-ventas">12.5. Filtro documento de ventas</h3>
+<ul>
+<li>
+<p>Desde el listado de documentos de ventas, se podrá filtrar por 3 nuevos campos <strong>Enviado a Verifactu</strong>, <strong>Fecha envío Verifactu</strong> y <strong>Anulado en Verifactu</strong>. De esta forma, se puede hacer un seguimiento a las facturas que se han exportado a Verifactu.</p>
+<p><img alt="Facturae empresa" src="../../../Procesos/Imagenes/PR_Facturas/verifactu_filtro.png" /></p>
 </li>
 </ul>
 <hr />
-<h2 id="12-consideraciones-finales">12. Consideraciones finales</h2>
+<h2 id="13-consideraciones-finales">13. Consideraciones finales</h2>
 <ul>
 <li>
 <p><strong>Mantén los pedidos actualizados</strong>:<br />
