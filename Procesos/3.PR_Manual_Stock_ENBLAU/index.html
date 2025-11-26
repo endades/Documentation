@@ -138,6 +138,12 @@
     <li class="toctree-l3"><a class="reference internal" href="#33-movimientos-en-almacen">3.3. Movimientos en almacén</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#34-informes-de-almacenes-inventario">3.4. Informes de almacenes (inventario)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#341-informes-de-stock">3.4.1. Informes de stock</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#342-informes-de-movimientos-de-almacen">3.4.2. Informes de movimientos de almacén</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -411,37 +417,49 @@
 </li>
 </ul>
 <h3 id="34-informes-de-almacenes-inventario">3.4. Informes de almacenes (inventario)</h3>
+<h4 id="341-informes-de-stock">3.4.1. Informes de stock</h4>
+<p>En el apartado de <strong>Almacenes → Stock</strong> se pueden imprimir distintos tipos de informes:</p>
 <ul>
-<li>
-<p>En el apartado de <strong>Almacenes</strong> - <strong>Stock</strong> se puede imprimir diferentes tipos de informes:</p>
-</li>
-<li>
-<p><strong>Resumen:</strong> Hay dos informes <strong>Inventario</strong> e <strong>Inventario por fecha</strong>.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
-<p><strong>Inventario</strong> muestra un informe de inventario, según los filtros aplicado en el listado de almacén. Incluye las columnas Artículo, Proyecto Unidades, Unidades pendientes y Unidades reservadas.</p>
-<p><img alt="Inventario" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
-<p><strong>Inventario por fecha</strong> muestra un informe de inventario en la fecha escogida. Incluye las columnas Artículo, Descripción, Unidades e Importe.</p>
-<p><img alt="Inventario por fecha" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
-</li>
-<li>
-<p><strong>Resumen con ubicación:</strong> Hay un informe <strong>Inventario detallado</strong>.</p>
-<p><strong>Inventario detallado</strong> muestra un informe de inventario, seguún los filtros aplicado en el listado de almacén detallado. Incluye Ubicación almacén, Artículo, Descripción y Unidades. inventario_detallado_resumen</p>
-<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
-</li>
-<li>
-<p><strong>Detallado:</strong> Hay un informe <strong>Inventario detallado</strong>.</p>
-<p><strong>Inventario detallado</strong> muestra un informe de inventario, según los filtros aplicado en el listado de almacén detallado. Incluye Proyecto, Número del albarán de compra, Ubicación almacén, Artículo, Descripción y Unidades agrupadas por referencia y longitud. </p>
-<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
-</li>
-<li>
-<p>En el apartado de <strong>Almacenes</strong> - <strong>Movimientos de almacén</strong> se puede imprimir diferentes tipos de informes:</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
-<p><strong>Movimientos</strong> muestra un listado de los movimientos visualizados en el listado de movimientos. Incluye Fecha del movimiento, Responsable, Proyecto asignado, Ubicación almacén, Artículo, Descripción, Unidades y Tipo de movimiento.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
-<p><strong>Movimientos I</strong> muestra un listado de los movimientos visualizados en el listado de movimientos. Incluye las columnas Tipo de movimiento, Fecha del movimiento, Responsable, Documento, Unidades, Importe, Artículo y Descripción.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
-</li>
+<li><strong>Resumen:</strong> Existen dos informes: <strong>Inventario</strong> e <strong>Inventario por fecha</strong>.</li>
 </ul>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
+<p><strong>Inventario</strong><br />
+  Genera un informe de inventario según los filtros aplicados en el listado de almacén.<br />
+  Incluye las columnas: Artículo, Proyecto, Unidades, Unidades pendientes y Unidades reservadas.</p>
+<p><img alt="Inventario" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
+<p><strong>Inventario por fecha</strong><br />
+  Genera un informe de inventario hasta la fecha seleccionada.<br />
+  Incluye las columnas: Artículo, Descripción, Unidades e Importe.</p>
+<p><img alt="Inventario por fecha" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
+<ul>
+<li><strong>Resumen con ubicación:</strong> Incluye el informe <strong>Inventario detallado (resumen)</strong>.</li>
+</ul>
+<p><strong>Inventario detallado (resumen)</strong><br />
+  Genera un informe de inventario según los filtros aplicados en el listado de almacén detallado.<br />
+  Incluye: Ubicación de almacén, Artículo, Descripción y Unidades.</p>
+<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
+<ul>
+<li><strong>Detallado:</strong> Incluye el informe <strong>Inventario detallado</strong>.</li>
+</ul>
+<p><strong>Inventario detallado</strong><br />
+  Genera un informe de inventario según los filtros aplicados en el listado de almacén detallado.<br />
+  Incluye: Proyecto, Número de albarán de compra, Ubicación de almacén, Artículo, Descripción y Unidades, agrupadas por referencia y longitud.</p>
+<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
+<h4 id="342-informes-de-movimientos-de-almacen">3.4.2. Informes de movimientos de almacén</h4>
+<p>En el apartado <strong>Almacenes → Movimientos de almacén</strong> se pueden imprimir los siguientes informes:</p>
+<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
+<ul>
+<li><strong>Movimientos</strong><br />
+  Muestra un listado de los movimientos visibles en el listado principal.<br />
+  Incluye: Fecha del movimiento, Responsable, Proyecto asignado, Ubicación de almacén, Artículo, Descripción, Unidades y Tipo de movimiento.</li>
+</ul>
+<p><img alt="Movimientos" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
+<ul>
+<li><strong>Movimientos I</strong><br />
+  Muestra un listado alternativo de los mismos movimientos.<br />
+  Incluye: Tipo de movimiento, Fecha del movimiento, Responsable, Documento, Unidades, Importe, Artículo y Descripción.</li>
+</ul>
+<p><img alt="Movimientos I" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
 <h2 id="4-inventarios">4. Inventarios</h2>
 <ul>
 <li>En el apartado de <strong>Almacenes</strong> - <strong>Inventarios</strong> se puede hacer una normalización en el almacén teniendo en cuenta lo que hay en stock en tiempo real.</li>

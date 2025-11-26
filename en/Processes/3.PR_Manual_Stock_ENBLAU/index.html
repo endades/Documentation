@@ -137,7 +137,13 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#33-warehouse-movements">3.3 Warehouse movements</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#34-warehouse-reports-inventory">3.4 Warehouse reports (inventory)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#34-warehouse-reports-inventory">3.4. Warehouse reports (inventory)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#341-stock-reports">3.4.1. Stock reports</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#342-warehouse-movement-reports">3.4.2. Warehouse movement reports</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -407,37 +413,50 @@
 <p><img alt="Abrir" src="../Imagenes/PR_Stock_Control/abrir.jpg" /></p>
 </li>
 </ul>
-<h3 id="34-warehouse-reports-inventory">3.4 Warehouse reports (inventory)</h3>
+<h3 id="34-warehouse-reports-inventory">3.4. Warehouse reports (inventory)</h3>
+<h4 id="341-stock-reports">3.4.1. Stock reports</h4>
+<p>In the <strong>Warehouses → Stock</strong> section, different types of reports can be printed:</p>
 <ul>
-<li>
-<p>In <strong>Warehouses → Stock</strong> you can print different types of reports:</p>
-</li>
-<li>
-<p><strong>Summary:</strong> includes two reports: <strong>Inventory</strong> and <strong>Inventory by date</strong>.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
-<p><strong>Inventory</strong> shows stock according to the filters applied in the warehouse listing. Columns include Item, Project Units, Outstanding Units and Reserved Units.</p>
-<p><img alt="Inventario" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
-<p><strong>Inventory by date</strong> shows inventory as of a chosen date, including columns Item, Description, Units and Amount.</p>
-<p><img alt="Inventario por fecha" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
-</li>
-<li>
-<p><strong>Summary with location:</strong> includes the <strong>Detailed inventory</strong> report.</p>
-<p><strong>Detailed inventory</strong> provides inventory grouped by filters applied in the detailed warehouse list. It includes Warehouse location, Item, Description and Units.</p>
-<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
-</li>
-<li>
-<p><strong>Detailed:</strong> the <strong>Detailed inventory</strong> report shows Project, Purchase delivery note number, Warehouse location, Item, Description and Units grouped by reference and length.</p>
-<p><img alt="Inventario detallado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
-</li>
-<li>
-<p>In <strong>Warehouses → Warehouse movements</strong> you can print movement reports:</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
-<p><strong>Movements</strong> lists the movements shown in the movements view and includes Date, Responsible, Assigned Project, Warehouse location, Item, Description, Units and Movement type.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
-<p><strong>Movements I</strong> provides a detailed list including Movement type, Date, Responsible, Document, Units, Amount, Item and Description.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
-</li>
+<li><strong>Summary:</strong> There are two reports: <strong>Inventory</strong> and <strong>Inventory by date</strong>.</li>
 </ul>
+<p><img alt="Report list" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
+<p><strong>Inventory</strong><br />
+  Generates an inventory report based on the filters applied in the warehouse list.<br />
+  Includes the following columns: Item, Project, Units, Pending units and Reserved units.</p>
+<p><img alt="Inventory" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
+<p><strong>Inventory by date</strong><br />
+  Generates an inventory report up to the selected date.<br />
+  Includes the following columns: Item, Description, Units and Amount.</p>
+<p><img alt="Inventory by date" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
+<ul>
+<li><strong>Summary with location:</strong> Includes the <strong>Detailed inventory (summary)</strong> report.</li>
+</ul>
+<p><strong>Detailed inventory (summary)</strong><br />
+  Generates an inventory report based on the filters applied in the detailed warehouse list.<br />
+  Includes: Warehouse location, Item, Description and Units.</p>
+<p><img alt="Detailed inventory" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
+<ul>
+<li><strong>Detailed:</strong> Includes the <strong>Detailed inventory</strong> report.</li>
+</ul>
+<p><strong>Detailed inventory</strong><br />
+  Generates an inventory report based on the filters applied in the detailed warehouse list.<br />
+  Includes: Project, Purchase delivery note number, Warehouse location, Item, Description and Units, grouped by reference and length.</p>
+<p><img alt="Detailed inventory" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
+<h4 id="342-warehouse-movement-reports">3.4.2. Warehouse movement reports</h4>
+<p>In the <strong>Warehouses → Warehouse movements</strong> section, the following reports can be printed:</p>
+<p><img alt="Report list" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
+<ul>
+<li><strong>Movements</strong><br />
+  Displays a list of the movements shown in the main movement list.<br />
+  Includes: Movement date, Responsible, Assigned project, Warehouse location, Item, Description, Units and Movement type.</li>
+</ul>
+<p><img alt="Movements" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
+<ul>
+<li><strong>Movements I</strong><br />
+  Displays an alternative list of the same movements.<br />
+  Includes: Movement type, Movement date, Responsible, Document, Units, Amount, Item and Description.</li>
+</ul>
+<p><img alt="Movements I" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
 <h2 id="4-inventories">4. Inventories</h2>
 <ul>
 <li>Under <strong>Warehouses → Inventories</strong> you can perform stock normalization taking into account real-time stock levels.</li>

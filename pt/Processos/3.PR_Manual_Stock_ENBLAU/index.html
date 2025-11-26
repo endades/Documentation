@@ -137,7 +137,13 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#33-movimentos-em-armazem">3.3. Movimentos em armazém</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#34-relatorios-de-armazens-inventario">3.4. Relatórios de armazéns (inventário)</a>
+    <li class="toctree-l3"><a class="reference internal" href="#34-relatorios-de-armazem-inventario">3.4. Relatórios de armazém (inventário)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#341-relatorios-de-stock">3.4.1. Relatórios de stock</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#342-relatorios-de-movimentos-de-armazem">3.4.2. Relatórios de movimentos de armazém</a>
+    </li>
+        </ul>
     </li>
         </ul>
     </li>
@@ -409,38 +415,50 @@
 <li>A opção <strong>Abrir</strong> na lista detalhada abre a guia (coluna numeração) do artigo selecionado:</li>
 </ul>
 <p><img alt="Abrir" src="../Imagenes/PR_Stock_Control/abrir.jpg" /></p>
-<h3 id="34-relatorios-de-armazens-inventario">3.4. Relatórios de armazéns (inventário)</h3>
+<h3 id="34-relatorios-de-armazem-inventario">3.4. Relatórios de armazém (inventário)</h3>
+<h4 id="341-relatorios-de-stock">3.4.1. Relatórios de stock</h4>
+<p>Na secção <strong>Armazéns → Stock</strong> podem ser impressos diferentes tipos de relatórios:</p>
 <ul>
-<li>
-<p>Na seção <strong>Armazéns</strong> - <strong>Estoque</strong> é possível imprimir diferentes tipos de relatórios:</p>
-</li>
-<li>
-<p><strong>Resumo:</strong> Existem dois relatórios: <strong>Inventário</strong> e <strong>Inventário por data</strong>.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
-<p><strong>Inventário</strong> mostra um relatório de inventário, de acordo com os filtros aplicados na lista de armazém. Inclui as colunas Artigo, Projeto, Unidades, Unidades pendentes e Unidades reservadas.</p>
-<p><img alt="Inventário" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
-<p><strong>Inventário por data</strong> mostra um relatório de inventário na data selecionada. Inclui as colunas Artigo, Descrição, Unidades e Valor.</p>
-<p><img alt="Inventário por data" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
-</li>
-<li>
-<p><strong>Resumo com localização:</strong> Existe um relatório <strong>Inventário detalhado</strong>.</p>
-<p><strong>Inventário detalhado</strong> mostra um relatório de inventário, de acordo com os filtros aplicados na lista detalhada de armazém. Inclui Localização no armazém, Artigo, Descrição e Unidades.</p>
-<p><img alt="Inventário detalhado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
-</li>
-<li>
-<p><strong>Detalhado:</strong> Existe um relatório <strong>Inventário detalhado</strong>.</p>
-<p><strong>Inventário detalhado</strong> mostra um relatório de inventário, de acordo com os filtros aplicados na lista detalhada de armazém. Inclui Projeto, Número da guia de compra, Localização no armazém, Artigo, Descrição e Unidades agrupadas por referência e comprimento.</p>
-<p><img alt="Inventário detalhado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
-</li>
-<li>
-<p>Na seção <strong>Armazéns</strong> - <strong>Movimentos de armazém</strong> é possível imprimir diferentes tipos de relatórios:</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
-<p><strong>Movimentos</strong> mostra uma lista dos movimentos visualizados na lista de movimentos. Inclui Data do movimento, Responsável, Projeto atribuído, Localização no armazém, Artigo, Descrição, Unidades e Tipo de movimento.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
-<p><strong>Movimentos I</strong> mostra uma lista dos movimentos visualizados na lista de movimentos. Inclui as colunas Tipo de movimento, Data do movimento, Responsável, Documento, Unidades, Valor, Artigo e Descrição.</p>
-<p><img alt="Listado informes" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
-</li>
+<li><strong>Resumo:</strong> Existem dois relatórios: <strong>Inventário</strong> e <strong>Inventário por data</strong>.</li>
 </ul>
+<p><img alt="Lista de relatórios" src="../Imagenes/PR_Stock_Control/informes.jpg" /></p>
+<p><strong>Inventário</strong><br />
+  Gera um relatório de inventário com base nos filtros aplicados na lista do armazém.<br />
+  Inclui as seguintes colunas: Artigo, Projeto, Unidades, Unidades pendentes e Unidades reservadas.</p>
+<p><img alt="Inventário" src="../Imagenes/PR_Stock_Control/inventario.jpg" /></p>
+<p><strong>Inventário por data</strong><br />
+  Gera um relatório de inventário até à data selecionada.<br />
+  Inclui as seguintes colunas: Artigo, Descrição, Unidades e Valor.</p>
+<p><img alt="Inventário por data" src="../Imagenes/PR_Stock_Control/inventario_fecha.jpg" /></p>
+<ul>
+<li><strong>Resumo com localização:</strong> Inclui o relatório <strong>Inventário detalhado (resumo)</strong>.</li>
+</ul>
+<p><strong>Inventário detalhado (resumo)</strong><br />
+  Gera um relatório de inventário com base nos filtros aplicados na lista detalhada do armazém.<br />
+  Inclui: Localização do armazém, Artigo, Descrição e Unidades.</p>
+<p><img alt="Inventário detalhado" src="../Imagenes/PR_Stock_Control/inventario_detallado_resumen.jpg" /></p>
+<ul>
+<li><strong>Detalhado:</strong> Inclui o relatório <strong>Inventário detalhado</strong>.</li>
+</ul>
+<p><strong>Inventário detalhado</strong><br />
+  Gera um relatório de inventário com base nos filtros aplicados na lista detalhada do armazém.<br />
+  Inclui: Projeto, Número da guia de compra, Localização do armazém, Artigo, Descrição e Unidades, agrupadas por referência e comprimento.</p>
+<p><img alt="Inventário detalhado" src="../Imagenes/PR_Stock_Control/inventario_detallado.jpg" /></p>
+<h4 id="342-relatorios-de-movimentos-de-armazem">3.4.2. Relatórios de movimentos de armazém</h4>
+<p>Na secção <strong>Armazéns → Movimentos de armazém</strong> podem ser impressos os seguintes relatórios:</p>
+<p><img alt="Lista de relatórios" src="../Imagenes/PR_Stock_Control/informes_movimientos.jpg" /></p>
+<ul>
+<li><strong>Movimentos</strong><br />
+  Apresenta uma lista dos movimentos visíveis na lista principal.<br />
+  Inclui: Data do movimento, Responsável, Projeto atribuído, Localização do armazém, Artigo, Descrição, Unidades e Tipo de movimento.</li>
+</ul>
+<p><img alt="Movimentos" src="../Imagenes/PR_Stock_Control/informes_movimientos2.jpg" /></p>
+<ul>
+<li><strong>Movimentos I</strong><br />
+  Apresenta uma lista alternativa dos mesmos movimentos.<br />
+  Inclui: Tipo de movimento, Data do movimento, Responsável, Documento, Unidades, Valor, Artigo e Descrição.</li>
+</ul>
+<p><img alt="Movimentos I" src="../Imagenes/PR_Stock_Control/informes_movimientos3.jpg" /></p>
 <h2 id="4-inventarios">4. Inventários</h2>
 <ul>
 <li>Na seção <strong>Armazéns</strong> - <strong>Inventários</strong> é possível realizar uma normalização no armazém considerando o estoque em tempo real.</li>
