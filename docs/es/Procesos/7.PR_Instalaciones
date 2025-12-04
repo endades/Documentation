@@ -1,0 +1,51 @@
+# Instalaciones
+
+## 1. Introducción
+Este manual está diseñado para guiar a los usuarios en la creación y planificación de instalaciones y montajes desde ENBLAU. De esta manera, se pueden asignar a los montadores internos y externos las instalaciones planificadas desde ENBLAU.
+
+---
+
+## 2. Instalaciones
+
+En Instalaciones se puede acceder a **Instalación**, **Instaladores externos** y el **Planificador de instalación**.
+
+  ![Instalaciones](Imagenes/PR_Instalaciones/instalaciones.jpg) 
+
+### 2.1. Instalación
+Desde el apartado de Instalaciones - **Instalación** para definir las **Configuraciones**.
+
+  ![Instalacion configuracion](Imagenes/PR_Instalaciones/instalacion_configuracion.jpg)
+
+**- 1. Numeraciones** 
+- En Numeraciones definir las numeraciones para cada tipo de documento.
+
+    ![Instalacion numeraciones](Imagenes/PR_Instalaciones/instalacion_numeraciones.jpg)
+
+**- 2. Clasificaciones** 
+- Definir las clasificaciones según necesario para asignar al documento de instalación.
+
+    ![Instalacion clasificaciones](Imagenes/PR_Instalaciones/instalacion_clasificacion.jpg)
+
+**- 3. Planificación** 
+- Definir en Planificación las **Clasificaciones** y **Estados**.
+
+    ![Instalacion clasificaciones](Imagenes/PR_Instalaciones/instalacion_plan_clasificaciones.jpg)
+
+    ![Instalacion clasificaciones](Imagenes/PR_Instalaciones/instalacion_plan_clasificaciones2.jpg)
+
+    ![Instalacion clasificaciones](Imagenes/PR_Instalaciones/instalacion_plan_estados.jpg)
+
+    ![Instalacion clasificaciones](Imagenes/PR_Instalaciones/instalacion_plan_estados2.jpg)
+
+    - Las **Clasificaciones** y **Estados** al crear una nueva tarea en el apartado del **Planificador de instalación**. 
+
+
+**- 4. Directorios por defecto**
+
+- Al seleccionar **Directorios por Defecto**, se abrirá una ventana para definir los directorios necesarios en la carpeta de instalación.
+
+    ![Instalacion clasificaciones](Imagenes/PR_Instalaciones/instalacion_dir.jpg)
+
+    ![Instalacion clasificaciones](Imagenes/PR_Instalaciones/instalacion_dir2.jpg)
+
+> ℹ️ **Nota:** Los directorios predeterminados son carpetas que pueden configurarse para que se generen automáticamente con cada instalcación.
