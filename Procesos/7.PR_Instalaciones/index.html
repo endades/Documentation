@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Instalaciones - Endades Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Instalaciones";
+        var mkdocs_page_input_path = "es\\Procesos\\7.PR_Instalaciones.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" title="Escriba el término de búsqueda aquí" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegación">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuraciones</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/1.%20CO_Configuracion_Inicial_ENBLAU/">Configuración Inicial ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">Configuración Inicial enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procesos</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.PR_Ventas_Compras/">Ventas y Compras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.PR_Facturas/">Facturación</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.PR_Manual_Stock_ENBLAU/">Géstion de control de stock ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.PR_Manual_Stock_enCONTROL/">Géstion de control de stock enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.PR_Informes/">Informes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.PR_Proyecto_cliente/">Proyectos, Clientes y Proveedores</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Instalaciones</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-instalaciones">2. Instalaciones</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-instalacion">2.1. Instalación</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#211-configuraciones">2.1.1. Configuraciones</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#212-crear-un-pedido-de-instalacion">2.1.2. Crear un pedido de instalación</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#214-crear-instalacion-desde-un-documento-de-venta">2.1.4. Crear instalación desde un documento de venta</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#213-imprimir-informes-de-instalacion">2.1.3. Imprimir informes de instalación</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-instaladores-externos">2.2. Instaladores externos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-planificador-de-instalaciones">2.3. Planificador de instalaciones</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilidades</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/1.UT_Relacion_ENBLAU_Logikal/">Relación entre fases en ENBLAU y Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/2.UT_Crear_Materiales_enMATERIAL/">Creación de materiales propios en enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/3.UT_Editar_Informes/">Creación y edición de informes personalizados</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/4.UT_Gestion_Filtros/">Gestión de filtros</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/5.UT_Actualizar_ENBLAU/">Actualización ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/6.UT_Unidad_Red/">Conectar una Unidad de Red</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/7.UT_Divisas/">Divisas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/8.UT_Importacion_Contabilidad/">Importación programa de contabilidad</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilidades/9.UT_Escandallos/">Escandallos (Agrupación de materiales)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menú de navegación en móvil">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documentos"></a></li>
+          <li class="breadcrumb-item">Procesos</li>
+      <li class="breadcrumb-item active">Instalaciones</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="instalaciones">Instalaciones</h1>
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>Este manual está diseñado para guiar a los usuarios en la creación y planificación de instalaciones y montajes desde ENBLAU. De esta manera, se pueden asignar a los montadores internos y externos las instalaciones planificadas desde la plataforma.</p>
+<hr />
+<h2 id="2-instalaciones">2. Instalaciones</h2>
+<p>En el módulo de <strong>Instalaciones</strong> se puede acceder a:</p>
+<ul>
+<li><strong><a href="#21-instalación">Instalación</a></strong></li>
+<li><strong><a href="#22-instaladores-externos">Instaladores externos</a></strong></li>
+<li><strong><a href="#23-planificador-de-instalaciones">Planificador de instalación</a></strong></li>
+</ul>
+<p><img alt="Vista principal del módulo Instalaciones" src="../Imagenes/PR_Instalaciones/instalaciones.jpg" /></p>
+<h3 id="21-instalacion">2.1. Instalación</h3>
+<h4 id="211-configuraciones">2.1.1. Configuraciones</h4>
+<p>Desde <strong>Instalación</strong> se accede a <strong>Configuraciones</strong> para definir los parámetros del sistema.</p>
+<p><img alt="Menú Configuraciones de Instalación" src="../Imagenes/PR_Instalaciones/instalacion_configuracion.jpg" /></p>
+<p><strong>1. Numeraciones</strong></p>
+<p>Definir las secuencias de numeración para cada tipo de documento.</p>
+<p><img alt="Configuración de numeraciones" src="../Imagenes/PR_Instalaciones/instalacion_numeraciones.jpg" /></p>
+<p><strong>2. Clasificaciones</strong></p>
+<p>Establecer clasificaciones para asignar a los documentos de instalación.</p>
+<p><img alt="Configuración de clasificaciones" src="../Imagenes/PR_Instalaciones/instalacion_clasificacion.jpg" /></p>
+<p><strong>3. Planificador</strong></p>
+<p>Definir <strong>Clasificaciones</strong> y <strong>Estados</strong> para las tareas del planificador.</p>
+<p><img alt="Configuración de clasificaciones para planificación" src="../Imagenes/PR_Instalaciones/instalacion_plan_clasificaciones.jpg" /></p>
+<p><img alt="Ventana de edición de clasificaciones" src="../Imagenes/PR_Instalaciones/instalacion_plan_clasificaciones2.jpg" /></p>
+<p><img alt="Configuración de estados para planificación" src="../Imagenes/PR_Instalaciones/instalacion_plan_estados.jpg" /></p>
+<p><img alt="Ventana de edición de estados" src="../Imagenes/PR_Instalaciones/instalacion_plan_estados2.jpg" /></p>
+<blockquote>
+<p><strong>ℹ️ Nota:</strong> Estas clasificaciones y estados estarán disponibles al crear una nueva tarea en el <strong>Planificador de instalación</strong>.</p>
+</blockquote>
+<p><strong>4. Directorios por defecto</strong></p>
+<p>Configurar las carpetas que se generarán automáticamente con cada instalación.</p>
+<p><img alt="Acceso a Directorios por Defecto" src="../Imagenes/PR_Instalaciones/instalacion_dir.jpg" /></p>
+<p><img alt="Configuración de directorios predeterminados" src="../Imagenes/PR_Instalaciones/instalacion_dir2.jpg" /></p>
+<blockquote>
+<p><strong>ℹ️ Nota:</strong> Los directorios predeterminados son carpetas que se generan automáticamente con cada nueva instalación.</p>
+</blockquote>
+<p><strong>5. Definición de estados</strong></p>
+<p>Configurar los estados disponibles para cada tipo de documento.</p>
+<p><img alt="Configuración de definición de estados" src="../Imagenes/PR_Instalaciones/instalacion_estados.jpg" /></p>
+<h4 id="212-crear-un-pedido-de-instalacion">2.1.2. Crear un pedido de instalación</h4>
+<p><strong>1. Nuevo</strong></p>
+<p>Para crear una instalación, ir a <strong>Instalación → Nuevo</strong>. Se abrirá una ventana donde completar los campos obligatorios:
+- Tipo de documento
+- Numeración
+- Numeración de documento
+- Instalador externo
+- Proyecto</p>
+<p><img alt="Ventana Nuevo documento de instalación" src="../Imagenes/PR_Instalaciones/instalacion_nuevo.jpg" /></p>
+<p><strong>2. Pedido de instalación</strong></p>
+<p>En la cinta superior del documento hay algunas funciones disponibles:
+- Imprimir → Imprimir informes del documento de instalación.
+- Precios → Editar los precios predefinidos del Instalador externo.
+- Nueva previsión → Crear una previsión de la instalación para que se refleje el planificador de instalaciones. </p>
+<p><strong><em>Pestaña Detalle</em></strong></p>
+<p>En esta pestaña se muestran todos los campos previamente completados (editables). En la parte inferior se pueden añadir posiciones definiendo:
+- Nombre del artículo
+- Descripción
+- Unidades
+- Precio, etc.</p>
+<p><img alt="Pestaña Detalle del documento de instalación" src="../Imagenes/PR_Instalaciones/instalacion_nuevo2.jpg" /></p>
+<p><strong><em>Pestaña Estados y observaciones</em></strong></p>
+<p>En esta pestaña se configuran campos como:
+- Forma de pago
+- Fechas de solicitud y cancelación
+- IVA, etc.</p>
+<p><img alt="Pestaña Estados y observaciones" src="../Imagenes/PR_Instalaciones/instalacion_nuevo5.jpg" /></p>
+<p><strong><em>Pestaña Planificación</em></strong></p>
+<p>Aquí se indican las fechas de inicio y fin para la planificación y se asignan instaladores internos.</p>
+<p><img alt="Pestaña Planificación" src="../Imagenes/PR_Instalaciones/instalacion_nuevo3.jpg" /></p>
+<p><strong><em>Pestaña Observaciones para instalación</em></strong></p>
+<p>Espacio para añadir notas específicas para la instalación.</p>
+<p><img alt="Pestaña Observaciones para instalación" src="../Imagenes/PR_Instalaciones/instalacion_nuevo3.jpg" /></p>
+<p><strong>3. Albarán de instalación</strong> </p>
+<p>Desde un pedido de instalación se puede generar un albarán de instalación. Indicando la forma de albaranar y luego imprimirlo.</p>
+<p><img alt="Albarán de instalación" src="../Imagenes/PR_Instalaciones/instalacion_albaran.jpg" /></p>
+<p><img alt="Albarán de instalación" src="../Imagenes/PR_Instalaciones/instalacion_albaran2.jpg" /></p>
+<p><strong>4. Facturas de instaladores externos</strong></p>
+<ul>
+<li>
+<p>Desde el apartado de <strong>Instalación</strong> ir a <strong>Facturación de albaranes</strong>.</p>
+<p><img alt="Albarán de instalación" src="../Imagenes/PR_Instalaciones/instalacion_factura.jpg" /></p>
+</li>
+<li>
+<p>Desde <strong>Facturación de albaranes</strong> indicar el instalador externos a quien se emitirá la factura.</p>
+<p><img alt="Albarán de instalación" src="../Imagenes/PR_Instalaciones/instalacion_factura2.jpg" /></p>
+</li>
+<li>
+<p>Te aparecerá el listado de albaranes a facturar del instalador seleccionado. Indicar en la columna <strong>A factura</strong> clicando y marcando el check en la casilla a los albaranes que se va a facturar. También hay la opción en los botones en la cita de arriba de <em>Seleccionar todo</em> o <em>Deseleccionar todo</em>.</p>
+<p><img alt="Albarán de instalación" src="../Imagenes/PR_Instalaciones/instalacion_factura3.jpg" /></p>
+</li>
+<li>
+<p>Antes de generar la factura puedes indicar el modo <strong>Agrupar contenido por albarán</strong> (seleccionado por defecto) o <strong>Contenido desglosado</strong>. También se puede indicar a que proyecto emitir la factura.</p>
+<p><img alt="Albarán de instalación" src="../Imagenes/PR_Instalaciones/instalacion_factura4.jpg" /></p>
+</li>
+<li>
+<p>Una vez generado la factura se puede imprimirlo o editarlo si fuera el caso.</p>
+<p><img alt="Albarán de instalación" src="../Imagenes/PR_Instalaciones/instalacion_factura5.jpg" /></p>
+</li>
+</ul>
+<h4 id="214-crear-instalacion-desde-un-documento-de-venta">2.1.4. Crear instalación desde un documento de venta</h4>
+<p>Desde un documento de venta (pedido, medición o producción) se puede:</p>
+<ul>
+<li>Crear una previsión de instalación</li>
+<li>Crear una instalación directamente</li>
+</ul>
+<p><img alt="Opción de crear instalación desde documento de venta" src="../Imagenes/PR_Instalaciones/instalacion_pedido.jpg" /></p>
+<p><strong>1. Previsión de instalación</strong></p>
+<p>Permite indicar una previsión configurando:</p>
+<ul>
+<li>Instalador externo</li>
+<li>Fecha estimada</li>
+<li>Importes pactados</li>
+</ul>
+<p><img alt="Ventana de Previsión de instalación" src="../Imagenes/PR_Instalaciones/instalacion_pedido2.jpg" /></p>
+<p><strong>2. Crear Instalación</strong></p>
+<p>Al crear la instalación desde un documento de ventas, se deben indicar las unidades a instalar de cada posición. Posteriormente, se pueden añadir instaladores externos o internos a esa instalación.</p>
+<p><img alt="Selección de unidades para la instalación" src="../Imagenes/PR_Instalaciones/instalacion_pedido3.jpg" /></p>
+<h4 id="213-imprimir-informes-de-instalacion">2.1.3. Imprimir informes de instalación</h4>
+<p>Permite imprimir los informes disponibles:</p>
+<ul>
+<li>Parte de instalación</li>
+<li>Partes de tiempos</li>
+<li>Pedido de instalación</li>
+</ul>
+<p>Antes de imprimir, se muestran las condiciones y una breve descripción del informe seleccionado.</p>
+<p><img alt="Menú de impresión de informes" src="../Imagenes/PR_Instalaciones/instalacion_imprimir.jpg" /></p>
+<hr />
+<h3 id="22-instaladores-externos">2.2. Instaladores externos</h3>
+<p>Para registrar nuevos instaladores externos:</p>
+<ol>
+<li>Ir a <strong>Instalación → Instaladores externos → Nuevo</strong></li>
+<li>
+<p>Completar los campos requeridos:</p>
+<ul>
+<li>Nombre</li>
+<li>Dirección</li>
+<li>NIF</li>
+<li>Datos de contacto</li>
+<li>
+<p>Precios, etc.</p>
+<p><img alt="Formulario de alta de instalador externo" src="../Imagenes/PR_Instalaciones/instalacion_inst_ext.jpg" /></p>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="23-planificador-de-instalaciones">2.3. Planificador de instalaciones</h3>
+<p>Desde <strong>Instalaciones → Planificador de Instalaciones</strong> se pueden visualizar y gestionar las tareas en un calendario para cada instalador (interno o externo).</p>
+<p>Desde la cinta de opciones se puede organizar la vista del calendario (día, semana, mes) y agrupar tareas por recursos o fechas.</p>
+<p><img alt="Vista principal del Planificador de instalaciones" src="../Imagenes/PR_Instalaciones/instalacion_planificador.jpg" /></p>
+<p><strong>1. Crear tarea</strong></p>
+<p>Para crear una nueva tarea:</p>
+<ul>
+<li>Seleccionar <strong>Nueva tarea</strong></li>
+<li>
+<p>En la ventana <em>Nuevo evento de instalación</em>, asignar:</p>
+<ul>
+<li>Instalador</li>
+<li>Número de instalación</li>
+<li>
+<p>Proyecto</p>
+<p><img alt="Ventana Nuevo evento de instalación" src="../Imagenes/PR_Instalaciones/instalacion_planificador2.jpg" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>En la ventana de <em>Tarea</em> detallar:</p>
+<ul>
+<li>Estados y clasificaciones</li>
+<li>Fecha y hora de inicio/fin</li>
+<li>Descripción corta</li>
+<li>
+<p>Notas</p>
+<p><img alt="Ventana de detalles de la Tarea" src="../Imagenes/PR_Instalaciones/instalacion_planificador3.jpg" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Calendario</strong></p>
+<p>Las tareas asignadas aparecen en el calendario. Al pasar el cursor sobre una tarea, se muestra información básica:</p>
+<ul>
+<li>Nombre del proyecto</li>
+<li>Número de instalación</li>
+<li>Descripción corta</li>
+</ul>
+<p>Los colores indican el estado y la clasificación (definidos previamente en la configuración). También se puede editar con un doble clic sobre la tarea.</p>
+<p><img alt="Vista de tareas en el calendario" src="../Imagenes/PR_Instalaciones/instalacion_planificador4.jpg" /> </p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navegación de pie de página">
+        <a href="../6.PR_Proyecto_cliente/" class="btn btn-neutral float-left" title="Proyectos, Clientes y Proveedores"><span class="icon icon-circle-arrow-left"></span> Anterior</a>
+        <a href="../../Utilidades/1.UT_Relacion_ENBLAU_Logikal/" class="btn btn-neutral float-right" title="Relación entre fases en ENBLAU y Logikal">Siguiente <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Construído con <a href="https://www.mkdocs.org/">MkDocs</a> usando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> provisto por <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versiones">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../6.PR_Proyecto_cliente/" style="color: #fcfcfc">&laquo; Anterior</a></span>
+    
+    
+      <span><a href="../../Utilidades/1.UT_Relacion_ENBLAU_Logikal/" style="color: #fcfcfc">Siguiente &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/lang-switcher.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>
