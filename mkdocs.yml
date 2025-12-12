@@ -22,6 +22,7 @@ plugins:
               - Géstion de control de stock enCONTROL: Procesos/4.PR_Manual_Stock_enCONTROL.md
               - Informes: Procesos/5.PR_Informes.md
               - Proyectos, Clientes y Proveedores: Procesos/6.PR_Proyecto_cliente.md
+              - Instalaciones: Procesos/7.PR_Instalaciones.md
             - Utilidades:
               - Relación entre fases en ENBLAU y Logikal: Utilidades/1.UT_Relacion_ENBLAU_Logikal.md
               - Creación de materiales propios en enMATERIALS: Utilidades/2.UT_Crear_Materiales_enMATERIAL.md
@@ -47,6 +48,7 @@ plugins:
               - Stock Control Management enCONTROL: Processes/4.PR_Manual_Stock_enCONTROL.md
               - Reports: Processes/5.PR_Informes.md
               - Projects, Clients and Suppliers: Processes/6.PR_Proyecto_cliente.md
+              - Installations: Processes/7.PR_Instalaciones.md
             - Utilities:
               - Relationship between phases in ENBLAU and Logikal: Utilities/1.UT_Relacion_ENBLAU_Logikal.md
               - Creation of custom materials in enMATERIALS: Utilities/2.UT_Crear_Materiales_enMATERIAL.md
@@ -72,6 +74,7 @@ plugins:
               - Gestione del controllo delle scorte enCONTROL: Processi/4.PR_Manual_Stock_enCONTROL.md
               - Rapporti: Processi/5.PR_Informes.md
               - Progetti, Clienti e Fornitori: Processi/6.PR_Proyecto_cliente.md
+              - Strutture: Processi/7.PR_Instalaciones.md
             - Utilità:
               - Relazione tra fasi in ENBLAU e Logikal: Utilita/1.UT_Relacion_ENBLAU_Logikal.md
               - Creazione di materiali propri in enMATERIALS: Utilita/2.UT_Crear_Materiales_enMATERIAL.md
@@ -97,6 +100,7 @@ plugins:
               - Gestão de controlo de stock enCONTROL: Processos/4.PR_Manual_Stock_enCONTROL.md
               - Relatórios: Processos/5.PR_Informes.md
               - Projetos, Clientes e Fornecedores: Processos/6.PR_Proyecto_cliente.md
+              - Instalacões: Processos/7.PR_Instalaciones.md
             - Utilidades:
               - Relação entre fases em ENBLAU e Logikal: Utilidades/1.UT_Relacion_ENBLAU_Logikal.md
               - Criação de materiais próprios em enMATERIALS: Utilidades/2.UT_Crear_Materiales_enMATERIAL.md
