@@ -74,7 +74,7 @@ plugins:
               - Gestione del controllo delle scorte enCONTROL: Processi/4.PR_Manual_Stock_enCONTROL.md
               - Rapporti: Processi/5.PR_Informes.md
               - Progetti, Clienti e Fornitori: Processi/6.PR_Proyecto_cliente.md
-              - Strutture: Processi/7.PR_Instalaciones.md
+              - Installazioni: Processi/7.PR_Instalaciones.md
             - Utilità:
               - Relazione tra fasi in ENBLAU e Logikal: Utilita/1.UT_Relacion_ENBLAU_Logikal.md
               - Creazione di materiali propri in enMATERIALS: Utilita/2.UT_Crear_Materiales_enMATERIAL.md
