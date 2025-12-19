@@ -133,13 +133,11 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#32-encontrol">3.2 enCONTROL</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#321-workstations">3.2.1 Workstations</a>
+    <li class="toctree-l4"><a class="reference internal" href="#321-workstations">3.2.1. Workstations</a>
     </li>
         </ul>
     </li>
         </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-cutting">2. Cutting</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#4-stock-control-and-reporting">4. Stock control and reporting</a>
     </li>
@@ -293,7 +291,6 @@
 <li>
 <p>Open the <strong>Control monitor</strong>. You can open it by double‑clicking any filter (in the header) or by double‑clicking a project and selecting the <strong>Control</strong> workstation if it is configured on the workstation.</p>
 <p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/control.jpg" /></p>
-<p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
 </li>
 <li>
 <p>When a project is sent to production (Workshop), it is placed in the production queue on the <strong>Production Management</strong> tab. The production manager decides priority.</p>
@@ -345,159 +342,172 @@
 <p><img alt="documentacion" src="../Imagenes/PR_Stock_Control/documentacion.jpg" /></p>
 </li>
 </ul>
-<h4 id="321-workstations">3.2.1 Workstations</h4>
-<p><strong>1. Material preparation</strong></p>
+<h4 id="321-workstations">3.2.1. Workstations</h4>
 <ul>
-<li>Ready — Marks materials with a green check to indicate preparation is complete.</li>
-<li>Not ready — Marks materials with a red X indicating they are not prepared.</li>
 <li>
-<p>Material location — If configured in enCONTROL, you can indicate where materials should be located so that decrements only occur from that location.</p>
+<p>Double-clicking on the production item will open the workstation window configured for each team.</p>
+<p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
+</li>
+</ul>
+<p><strong>1. Material Preparation (Station 0)</strong></p>
+<ul>
+<li>All Ready – Marks materials with a green check indicating they are prepared.</li>
+<li>Nothing Ready – Marks materials with a red X indicating they are not prepared.</li>
+<li>
+<p>Material Location – As configured in CONTROL, it could indicate where to place the materials. This ensures that material is deducted only from that specific location.</p>
 <p><img alt="preparacion" src="../Imagenes/PR_Stock_Control/preparacion.jpg" /></p>
 </li>
 </ul>
-<h2 id="2-cutting">2. Cutting</h2>
+<p><strong>2. Cutting (Station 1)</strong></p>
 <ul>
 <li>
-<p>In Cutting, the length of the bar and the scrap waste are indicated. A scrap window opens, and the length can be adjusted as necessary.</p>
-<p><img alt="cutting" src="../Imagenes/PR_Stock_Control/corte.jpg" /></p>
-<p><img alt="waste" src="../Imagenes/PR_Stock_Control/desperdicio.jpg" /></p>
+<p>In cutting, the bar length and scrap waste are indicated. A scrap window opens where the length can be changed as needed.</p>
+<p><img alt="corte" src="../Imagenes/PR_Stock_Control/corte.jpg" /></p>
+<p><img alt="desperdicio" src="../Imagenes/PR_Stock_Control/desperdicio.jpg" /></p>
 <blockquote>
-<p><strong>Note:</strong> From ENBLAU, go to Configuration - General - <strong>Logikal</strong>. The <strong>Minimum scrap</strong> can be set to consider when cutting a bar at the <strong>Cutting</strong> station.</p>
+<p>ℹ️ <strong>Note:</strong> In ENBLAU, under Configuration - General - <strong>Logikal</strong>. You can specify the <strong>Minimum scrap</strong> to consider when cutting a bar at the <strong>Cutting</strong> station.</p>
 </blockquote>
-<p><img alt="scraps" src="../Imagenes/PR_Stock_Control/retales.jpg" /></p>
-<p><img alt="scraps" src="../Imagenes/PR_Stock_Control/retales2.jpg" /></p>
+<p><img alt="retales" src="../Imagenes/PR_Stock_Control/retales.jpg" /></p>
+<p><img alt="retales" src="../Imagenes/PR_Stock_Control/retales2.jpg" /></p>
 </li>
 <li>
-<p>Then, from ENBLAU <strong>Warehouse Movements</strong>, the total bar output will be reflected (e.g., 6500) and then an input of the same material (e.g., 4100) according to what was specified at the cutting station.</p>
-<p><img alt="bar movements" src="../Imagenes/PR_Stock_Control/movimientos_barra.jpg" /></p>
+<p>Then, in ENBLAU <strong>Warehouse Movements</strong>, an output for the full bar (e.g., 6500) and an input for the same material (e.g., 4100) will be reflected, as indicated at the cutting station.</p>
+<p><img alt="movimientos barra" src="../Imagenes/PR_Stock_Control/movimientos_barra.jpg" /></p>
 <ul>
-<li>Also in ENBLAU, in the <strong>Stock</strong> section, you can see a list filtered by <strong>Is scrap</strong> of all scraps available in stock.</li>
+<li>Also in ENBLAU, you can view in the <strong>Stock</strong> section the list filtered by <strong>Is scrap</strong> to see all available scraps in stock.</li>
 </ul>
-<p><img alt="scraps" src="../Imagenes/PR_Stock_Control/retales3.jpg" /></p>
+<p><img alt="retales" src="../Imagenes/PR_Stock_Control/retales3.jpg" /></p>
 </li>
 <li>
-<p>In the <strong>Cut</strong> section of the enCONTROL cutting station, on the right side of the monitor, the list of cuts performed is shown, and you can print labels for each bar.</p>
-<p><img alt="cut bars" src="../Imagenes/PR_Stock_Control/cortados.jpg" /></p>
+<p>In the <strong>Cut</strong> section of the cutting station in enCONTROL, on the right side of the monitor, the list of performed cuts is displayed, and labels for each bar can be printed.</p>
+<p><img alt="cortados" src="../Imagenes/PR_Stock_Control/cortados.jpg" /></p>
 </li>
 </ul>
-<p><strong>3. Machining</strong></p>
+<p><strong>3. Machining (Station 2)</strong></p>
 <ul>
 <li>
-<p>Does not decrement materials; it is informational and records real time.</p>
+<p>Does not deduct materials; it is merely informative for time tracking. Compares against real time.</p>
 <p><img alt="mecanizado" src="../Imagenes/PR_Stock_Control/mecanizado.jpg" /></p>
 </li>
 </ul>
-<p><strong>4. Assembly</strong></p>
+<p><strong>4. Assembly (Station 3)</strong></p>
 <ul>
 <li>
-<p>Decrements materials (accessories) per unit.</p>
+<p>Deducts materials (accessories) per frame position.</p>
 <p><img alt="montaje" src="../Imagenes/PR_Stock_Control/montaje.jpg" /></p>
 </li>
 <li>
-<p>In the materials list you can mark items to be assembled at destination. These items will then be added to the <strong>Picking</strong> workstation list.</p>
+<p>In the materials list, you have the option to indicate the items to be assembled at the destination. These materials will then be added to the list at the <strong>Picking</strong> station.</p>
 </li>
 </ul>
 <p><img alt="montaje" src="../Imagenes/PR_Stock_Control/montaje_2.jpg" /></p>
-<p><strong>5. Sealing / Gasketing (Ajunquillado)</strong></p>
+<p><strong>5. Gasketing / Sealing (Station 4)</strong></p>
+<ul>
+<li>Deducts materials (Gaskets, shims, foam, etc.) per frame.</li>
+</ul>
+<p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado.jpg" /></p>
 <ul>
 <li>
-<p>Decrements materials (gaskets, wedges, foam, etc.) per unit.</p>
-<p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado.jpg" /></p>
-</li>
-<li>
-<p>In the materials list you can mark items to be assembled at destination; these will be added to the <strong>Picking</strong> list.</p>
+<p>In the materials list, you have the option to indicate the items to be assembled at the destination. These materials will then be added to the list at the <strong>Picking</strong> station.</p>
 <p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado_2.jpg" /></p>
 </li>
 </ul>
-<p><strong>6. Assembly (final)</strong></p>
+<p><strong>6. Joining / Fitting (Station 5)</strong></p>
 <ul>
-<li>Displays product information; materials are not decremented here.</li>
+<li>Frame information, but does not deduct materials.</li>
 </ul>
 <p><img alt="ensamblado" src="../Imagenes/PR_Stock_Control/ensamblado.jpg" /></p>
-<p><strong>7. Hardware (Herraje)</strong></p>
+<p><strong>7. Hardware (Station 6)</strong></p>
 <ul>
 <li>
-<p>Decrements hardware per sheet.</p>
+<p>Deducts materials (hardware) per leaf/sheet.</p>
 <p><img alt="herraje" src="../Imagenes/PR_Stock_Control/herraje.jpg" /></p>
 </li>
 <li>
-<p>In the materials list you can indicate which hardware will be mounted at destination. Those items will be added to the <strong>Picking</strong> list.</p>
+<p>In the materials list, you have the option to indicate the hardware to be assembled at the destination. These materials will then be added to the list at the <strong>Picking</strong> station.</p>
 <p><img alt="herraje" src="../Imagenes/PR_Stock_Control/herraje_2.jpg" /></p>
 </li>
 </ul>
-<p><strong>8. Welding</strong></p>
+<p><strong>8. Welding (Station 7)</strong></p>
 <ul>
 <li>
-<p>Does not decrement materials; it is informational and records real time.</p>
+<p>Does not deduct materials; it is merely informative for time tracking. Compares against real time.</p>
 <p><img alt="soldado" src="../Imagenes/PR_Stock_Control/soldado.jpg" /></p>
 </li>
 </ul>
-<p><strong>9. Final inspection</strong></p>
+<p><strong>9. Blinds (Station 8)</strong></p>
 <ul>
 <li>
-<p>Does not decrement materials. Once inspection is complete the product can be stored in the Warehouse and a finished product label can be printed.</p>
-<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion.jpg" /></p>
-<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_ubicacion.jpg" /></p>
-<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_etiqueta.jpg" /></p>
-</li>
-<li>
-<p>In ENBLAU under <strong>Warehouses → Finished product</strong> there are two lists:</p>
-<p><strong>Product locations:</strong> Shows where each finished product is stored per project and production. From this list you can issue product out, move location, and open the production document by right‑clicking the entry.</p>
-<p><img alt="ubicacion producto" src="../Imagenes/PR_Stock_Control/ubicacion_producto.jpg" /></p>
-<p><strong>Product movements:</strong> Shows movements for finished products such as entry, transfer, exit and return. From this list you can perform a return by right‑clicking an exit entry.</p>
-<p><img alt="movimientos producto" src="../Imagenes/PR_Stock_Control/movimientos_producto.jpg" /></p>
+<p>Deducts materials (blinds) per frame.</p>
+<p><img alt="puesto_persiana" src="../Imagenes/PR_Stock_Control/puesto_persiana.jpg" /></p>
 </li>
 </ul>
-<p><strong>10. Transformation</strong></p>
+<p><strong>10. Transformation (Station 9)</strong></p>
 <ul>
 <li>
-<p>At this workstation you can specify a group of materials or a bill of materials to transform into a product (e.g., a railing).</p>
+<p>At this station, you can indicate a group of materials defined in a bill of materials (BOM) to transform into a product, e.g., Railing.</p>
 <p><img alt="transformacion" src="../Imagenes/PR_Stock_Control/transformacion.jpg" /></p>
 </li>
 <li>
-<p>As in other workstations, you can mark items to be assembled at destination; those items will be added to the <strong>Picking</strong> list. You can then print labels and store the product.</p>
+<p>As in other stations, in the materials list you have the option to indicate the items to be assembled at the destination. These materials will then be added to the list at the <strong>Picking</strong> station. Additionally, you can then print the label and locate the product.</p>
 </li>
 </ul>
-<p><strong>11. Cleaning</strong></p>
+<p><strong>11. Final Inspection (Station 10)</strong></p>
 <ul>
 <li>
-<p>Does not decrement materials; it is informational and records real time.</p>
+<p>Does not deduct materials. However, once the inspection is finalized, the product can be located in the Warehouse and a label for the finished product can be printed.</p>
+<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion.jpg" /></p>
+<p><img alt="comprobacion_ubicacion" src="../Imagenes/PR_Stock_Control/comprobacion_ubicacion.jpg" /></p>
+<p><img alt="comprobacion_etiqueta" src="../Imagenes/PR_Stock_Control/comprobacion_etiqueta.jpg" /></p>
+</li>
+<li>
+<p>In ENBLAU, under Warehouses in the <strong>Finished Product</strong> section, there are two lists:</p>
+<p><strong>Product Location:</strong> Shows where the finished product for each project and production is located. From this list, you can issue, move location, and open the production document by right-clicking on the position.</p>
+<p><img alt="ubicacion_producto" src="../Imagenes/PR_Stock_Control/ubicacion_producto.jpg" /></p>
+<p><strong>Product Movements:</strong> Shows movements of the finished product such as entry, transfer, issue, and return. From this list, you can make a return by right-clicking on the issue position.</p>
+<p><img alt="movimientos_producto" src="../Imagenes/PR_Stock_Control/movimientos_producto.jpg" /></p>
+</li>
+</ul>
+<p><strong>12. Cleaning (Station 11)</strong></p>
+<ul>
+<li>
+<p>Does not deduct materials; it is merely informative for time tracking. Compares against real time.</p>
 <p><img alt="limpieza" src="../Imagenes/PR_Stock_Control/limpieza.jpg" /></p>
 </li>
 </ul>
-<p><strong>12. Picking</strong></p>
+<p><strong>13. Picking (Station 12)</strong></p>
 <ul>
 <li>
-<p>The workstation shows the list of items previously marked in other workstations that will be assembled at destination.</p>
+<p>This station shows the list of materials previously marked in other stations that will be assembled at the destination.</p>
 <p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking.jpg" /></p>
 </li>
 <li>
-<p>You can create packages and assign materials, then print the package label.</p>
-<p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking_paquete.jpg" /></p>
+<p>You can create packages and assign each material to them. Then print the label for the package.</p>
+<p><img alt="picking_paquete" src="../Imagenes/PR_Stock_Control/picking_paquete.jpg" /></p>
 <ul>
 <li>Indicate the picking location for each material.</li>
 </ul>
-<p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking_ubicacion.jpg" /></p>
+<p><img alt="picking_ubicacion" src="../Imagenes/PR_Stock_Control/picking_ubicacion.jpg" /></p>
 </li>
 </ul>
-<p><strong>13. Board (Pizarra)</strong></p>
+<p><strong>14. Board / Dashboard (Station 13)</strong></p>
 <ul>
 <li>
-<p>Shows each project’s progress and status.</p>
+<p>Shows the evolution and status of each project.</p>
 <p><img alt="pizarra" src="../Imagenes/PR_Stock_Control/pizarra.jpg" /></p>
 </li>
 </ul>
-<p><strong>14. Control</strong></p>
+<p><strong>15. Control (Station 14)</strong></p>
 <ul>
 <li>
-<p>Opens the project Control monitor where you can also see the status of each project in production.</p>
-<p><img alt="control estados" src="../Imagenes/PR_Stock_Control/control_estados.jpg" /></p>
+<p>Opens the Project Control monitor. Where you can also see the status of each project in the factory.</p>
+<p><img alt="control_estados" src="../Imagenes/PR_Stock_Control/control_estados.jpg" /></p>
 </li>
 </ul>
 <blockquote>
-<p><strong>Note:</strong> Assign priorities and resources to ensure production flows smoothly.</p>
-<p><strong>enCONTROL configuration</strong> — Configure enCONTROL beforehand. For more information, see: <a href="/Configuraciones/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Initial Configuration of enCONTROL</a></p>
-<p><strong>Filter management</strong> — Use filters and custom filters to optimize searches in listings. For more information, see: <a href="/Utilidades/4.UT_Gestion_Filtros/">4. Filter management</a></p>
+<p>ℹ️ <strong>Note</strong>: Assign priorities and resources to ensure smooth production flow.</p>
+<p><strong>enCONTROL Configuration</strong> - Configure enCONTROL beforehand. For more information, follow this link: <a href="/Configurations/2.%20CO_Initial_Configuration_enCONTROL/">2. Initial Configuration of enCONTROL</a> :</p>
+<p><strong>Filter Management</strong> - Use filters and custom filters to optimize search in lists. For more information, follow this link: <a href="/Utilities/4.UT_Filter_Management/">4. Filter Management</a> :</p>
 </blockquote>
 <hr />
 <h2 id="4-stock-control-and-reporting">4. Stock control and reporting</h2>

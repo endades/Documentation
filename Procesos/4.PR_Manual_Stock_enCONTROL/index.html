@@ -133,7 +133,7 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#32-encontrol">3.2. enCONTROL</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#321-puestos-de-trabajo">3.2.1 Puestos de trabajo</a>
+    <li class="toctree-l4"><a class="reference internal" href="#321-puestos-de-trabajo">3.2.1. Puestos de trabajo</a>
     </li>
         </ul>
     </li>
@@ -289,9 +289,8 @@
 <p>Abre <strong>enCONTROL</strong>. Aparecen los proyectos de producción. Si eres usuario administrador, verás todos los proyectos, si no, solo verás los asignados.</p>
 </li>
 <li>
-<p>Abre el <strong>monitor de control</strong>. Puedes abrirlo haciendo doble clic en cualquiera de los filtros (en la cabecera) o haciendo doble clic en el proyecto y seleccionando el puesto de <strong>Control</strong> si lo tienes configurado en el equipo.</p>
+<p>Abre el <strong>monitor de control</strong>. Puedes abrirlo haciendo doble clic en cualquiera de los filtros (en la cabecera) o haciendo doble clic en la producción y seleccionando el puesto de <strong>Control</strong> si lo tienes configurado en el equipo.</p>
 <p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/control.jpg" /></p>
-<p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
 </li>
 <li>
 <p>Cuando se envía a producción (Taller), se coloca en cola de producción en la pestaña de <strong>Gestión de Producción</strong>. El responsable de producción decide la prioridad.</p>
@@ -343,8 +342,14 @@
 <p><img alt="documentacion" src="../Imagenes/PR_Stock_Control/documentacion.jpg" /></p>
 </li>
 </ul>
-<h4 id="321-puestos-de-trabajo">3.2.1 Puestos de trabajo</h4>
-<p><strong>1. Preparación de Material</strong></p>
+<h4 id="321-puestos-de-trabajo">3.2.1. Puestos de trabajo</h4>
+<ul>
+<li>
+<p>Con un doble clic sobre la producción se abrirá la ventana del puesto de trabajo configurado para cada equipo.</p>
+<p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
+</li>
+</ul>
+<p><strong>1. Preparación de Material (Puesto 0)</strong></p>
 <ul>
 <li>Todo preparado – Marca los materiales con un check en verde indicando que está preparado.</li>
 <li>Nada Preparado – Marca los materiales con una X en rojo indicando que no está preparado.</li>
@@ -353,7 +358,7 @@
 <p><img alt="preparacion" src="../Imagenes/PR_Stock_Control/preparacion.jpg" /></p>
 </li>
 </ul>
-<p><strong>2. Corte</strong></p>
+<p><strong>2. Corte (Puesto 1)</strong></p>
 <ul>
 <li>
 <p>En corte se indica la longitud de la barra y el desperdicio de retales. Se abre una ventana de retales y puede cambiar la longitud según sé necesario.</p>
@@ -378,14 +383,14 @@
 <p><img alt="cortados" src="../Imagenes/PR_Stock_Control/cortados.jpg" /></p>
 </li>
 </ul>
-<p><strong>3. Mecanizado</strong></p>
+<p><strong>3. Mecanizado (Puesto 2)</strong></p>
 <ul>
 <li>
 <p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real.</p>
 <p><img alt="mecanizado" src="../Imagenes/PR_Stock_Control/mecanizado.jpg" /></p>
 </li>
 </ul>
-<p><strong>4. Montaje</strong></p>
+<p><strong>4. Montaje (Puesto 3)</strong></p>
 <ul>
 <li>
 <p>Se descuenta materiales (accesorios) por cada posición de cuadro.</p>
@@ -396,7 +401,7 @@
 </li>
 </ul>
 <p><img alt="montaje" src="../Imagenes/PR_Stock_Control/montaje_2.jpg" /></p>
-<p><strong>5. Ajunquillado</strong></p>
+<p><strong>5. Ajunquillado (Puesto 4)</strong></p>
 <ul>
 <li>Se descuenta materiales (Juntas, calzos, espuma, etc.) por cuadro.</li>
 </ul>
@@ -407,12 +412,12 @@
 <p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado_2.jpg" /></p>
 </li>
 </ul>
-<p><strong>6. Ensamblado</strong></p>
+<p><strong>6. Ensamblado (Puesto 5)</strong></p>
 <ul>
 <li>Información del cuadro, pero no se descuenta materiales.</li>
 </ul>
 <p><img alt="ensamblado" src="../Imagenes/PR_Stock_Control/ensamblado.jpg" /></p>
-<p><strong>7. Herraje</strong></p>
+<p><strong>7. Herraje (Puesto 6)</strong></p>
 <ul>
 <li>
 <p>Se descuenta materiales (herraje) por hoja.</p>
@@ -423,17 +428,34 @@
 <p><img alt="herraje" src="../Imagenes/PR_Stock_Control/herraje_2.jpg" /></p>
 </li>
 </ul>
-<p><strong>8. Soldado</strong></p>
+<p><strong>8. Soldado (Puesto 7)</strong></p>
 <ul>
 <li>
 <p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real. </p>
 <p><img alt="soldado" src="../Imagenes/PR_Stock_Control/soldado.jpg" /></p>
 </li>
 </ul>
-<p><strong>9. Comprobación final</strong></p>
+<p><strong>9. Persiana (Puesto 8)</strong></p>
 <ul>
 <li>
-<p>No se descuenta materiales. Pero, una vez finalice la comprobación se puede ubicar en Almacen y luego imprimir una etiqueta del producto acabado.</p>
+<p>Se descuenta materiales (persianas) por cuadro.</p>
+<p><img alt="persiana" src="../Imagenes/PR_Stock_Control/puesto_persiana.jpg" /></p>
+</li>
+</ul>
+<p><strong>10. Transformación (Puesto 9)</strong></p>
+<ul>
+<li>
+<p>Ese puesto puedes indicar un grupo de materiales definidas en escandallo para transformar en un producto, ejemplo: Barandilla. </p>
+<p><img alt="transformacion" src="../Imagenes/PR_Stock_Control/transformacion.jpg" /></p>
+</li>
+<li>
+<p>Así como en otros puestos en el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>. Además de luego poder imprimir la etiqueta y ubicar el producto.</p>
+</li>
+</ul>
+<p><strong>11. Comprobación final (Puesto 10)</strong></p>
+<ul>
+<li>
+<p>No se descuenta materiales. Pero, una vez finalice la comprobación se puede ubicar en Almacén y luego imprimir una etiqueta del producto acabado.</p>
 <p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion.jpg" /> </p>
 <p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_ubicacion.jpg" /></p>
 <p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_etiqueta.jpg" /></p>
@@ -446,24 +468,14 @@
 <p><img alt="movimientos producto" src="../Imagenes/PR_Stock_Control/movimientos_producto.jpg" /></p>
 </li>
 </ul>
-<p><strong>10. Transformación</strong></p>
-<ul>
-<li>
-<p>Ese puesto puedes indicar un grupo de materiales o escandallo para transformar en un producto, ejemplo: Barandilla. </p>
-<p><img alt="transformacion" src="../Imagenes/PR_Stock_Control/transformacion.jpg" /></p>
-</li>
-<li>
-<p>Así como en otros puestos en el listado de materiales tienes la opción de indicar los artículos que se va a montar en destino. Esos materiales luego se añadirá en el listado del puesto de <strong>Picking</strong>. Además de luego poder imprimir la etiqueta y ubicar el producto.</p>
-</li>
-</ul>
-<p><strong>11. Limpieza</strong></p>
+<p><strong>12. Limpieza (Puesto 11)</strong></p>
 <ul>
 <li>
 <p>No se descuenta materiales, simplemente es informativo por tiempo. Contrasta tiempo real.</p>
 <p><img alt="limpieza" src="../Imagenes/PR_Stock_Control/limpieza.jpg" /></p>
 </li>
 </ul>
-<p><strong>12. Picking</strong></p>
+<p><strong>13. Picking (Puesto 12)</strong></p>
 <ul>
 <li>
 <p>El puesto muestra el listado de los materiales marcados previamente en otros puestos que se montará en destino.</p>
@@ -478,14 +490,14 @@
 <p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking_ubicacion.jpg" /></p>
 </li>
 </ul>
-<p><strong>13. Pizarra</strong></p>
+<p><strong>14. Pizarra (Puesto 13)</strong></p>
 <ul>
 <li>
 <p>Muestra la evolución de cada proyecto y su estado.</p>
 <p><img alt="pizarra" src="../Imagenes/PR_Stock_Control/pizarra.jpg" /></p>
 </li>
 </ul>
-<p><strong>14. Control</strong></p>
+<p><strong>15. Control (Puesto 14)</strong></p>
 <ul>
 <li>
 <p>Abre el monitor Control de proyectos. Donde también se puede ver el estado de cada proyecto que está en fábrica.</p>

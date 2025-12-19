@@ -133,13 +133,11 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#32-encontrol">3.2. enCONTROL</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#321-postazioni-di-lavoro">3.2.1 Postazioni di lavoro</a>
+    <li class="toctree-l4"><a class="reference internal" href="#321-postazioni-di-lavoro">3.2.1. Postazioni di lavoro</a>
     </li>
         </ul>
     </li>
         </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-taglio">2. Taglio</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#4-controllo-scorte-e-report">4. Controllo scorte e report</a>
     </li>
@@ -293,7 +291,6 @@
 <li>
 <p>Apri il <strong>monitor di controllo</strong>. Puoi aprirlo facendo doppio clic su uno qualsiasi dei filtri (nell'intestazione) o facendo doppio clic sul progetto e selezionando la postazione <strong>Controllo</strong> se l'hai configurata nel computer.</p>
 <p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/control.jpg" /></p>
-<p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
 </li>
 <li>
 <p>Quando si invia in produzione (Officina), viene messo in coda di produzione nella scheda <strong>Gestione Produzione</strong>. Il responsabile di produzione decide la priorità.</p>
@@ -345,159 +342,172 @@
 <p><img alt="documentacion" src="../Imagenes/PR_Stock_Control/documentacion.jpg" /></p>
 </li>
 </ul>
-<h4 id="321-postazioni-di-lavoro">3.2.1 Postazioni di lavoro</h4>
-<p><strong>1. Preparazione Materiale</strong></p>
+<h4 id="321-postazioni-di-lavoro">3.2.1. Postazioni di lavoro</h4>
 <ul>
-<li>Tutto pronto – Segna i materiali con un segno di spunta verde indicando che è pronto.</li>
-<li>Niente Pronto – Segna i materiali con una X rossa indicando che non è pronto.</li>
 <li>
-<p>Ubicazione Materiale – A seconda di come hai configurato enCONTROL, si potrebbe indicare dove ubicare i materiali. Affinché si scalino quei materiali solo da quell'ubicazione.</p>
+<p>Con un doppio clic sulla produzione si aprirà la finestra della postazione di lavoro configurata per ogni squadra.</p>
+<p><img alt="puesto_control" src="../Imagenes/PR_Stock_Control/puesto_control.jpg" /></p>
+</li>
+</ul>
+<p><strong>1. Preparazione Materiale (Postazione 0)</strong></p>
+<ul>
+<li>Tutto Preparato – Contrassegna i materiali con un segno di spunta verde indicando che sono preparati.</li>
+<li>Nulla Preparato – Contrassegna i materiali con una X rossa indicando che non sono preparati.</li>
+<li>
+<p>Ubicazione Materiale – Come configurato inCONTROL, potrebbe indicare dove posizionare i materiali. In modo che quel materiale venga scalato solo da quell'ubicazione.</p>
 <p><img alt="preparacion" src="../Imagenes/PR_Stock_Control/preparacion.jpg" /></p>
 </li>
 </ul>
-<h2 id="2-taglio">2. Taglio</h2>
+<p><strong>2. Taglio (Postazione 1)</strong></p>
 <ul>
 <li>
-<p>In Taglio si indica la lunghezza della barra e gli scarti. Si apre una finestra degli scarti e la lunghezza può essere modificata secondo necessità.</p>
-<p><img alt="taglio" src="../Imagenes/PR_Stock_Control/corte.jpg" /></p>
-<p><img alt="scarti" src="../Imagenes/PR_Stock_Control/desperdicio.jpg" /></p>
+<p>In taglio si indica la lunghezza della barra e lo scarto dei ritagli. Si apre una finestra dei ritagli e si può cambiare la lunghezza secondo necessità.</p>
+<p><img alt="corte" src="../Imagenes/PR_Stock_Control/corte.jpg" /></p>
+<p><img alt="desperdicio" src="../Imagenes/PR_Stock_Control/desperdicio.jpg" /></p>
 <blockquote>
-<p><strong>Nota:</strong> Da ENBLAU, vai in Configurazione - Generale - <strong>Logikal</strong>. È possibile indicare lo <strong>Scarto minimo</strong> da considerare quando si taglia una barra nella postazione <strong>Taglio</strong>.</p>
+<p>ℹ️ <strong>Nota:</strong> Da ENBLAU nella sezione Configurazione - Generale - <strong>Logikal</strong>. Si può indicare il <strong>Ritaglio minimo</strong> da considerare quando si taglia una barra nella postazione di <strong>Taglio</strong>.</p>
 </blockquote>
-<p><img alt="scarti" src="../Imagenes/PR_Stock_Control/retales.jpg" /></p>
-<p><img alt="scarti" src="../Imagenes/PR_Stock_Control/retales2.jpg" /></p>
+<p><img alt="retales" src="../Imagenes/PR_Stock_Control/retales.jpg" /></p>
+<p><img alt="retales" src="../Imagenes/PR_Stock_Control/retales2.jpg" /></p>
 </li>
 <li>
-<p>Poi, da ENBLAU <strong>Movimenti di magazzino</strong>, verrà registrata l'uscita totale della barra (es. 6500) e poi l'entrata dello stesso materiale (es. 4100) come indicato nella postazione di taglio.</p>
-<p><img alt="movimenti barra" src="../Imagenes/PR_Stock_Control/movimientos_barra.jpg" /></p>
+<p>Poi da ENBLAU <strong>Movimenti</strong> di magazzino si rifletterà un'uscita della barra totale es. 6500 e poi un'entrata della stessa materia di es. 4100 come indicato nella postazione di taglio.</p>
+<p><img alt="movimientos_barra" src="../Imagenes/PR_Stock_Control/movimientos_barra.jpg" /></p>
 <ul>
-<li>Inoltre, in ENBLAU, nella sezione <strong>Stock</strong>, è possibile visualizzare l'elenco filtrato per <strong>È scarto</strong> di tutti gli scarti disponibili in magazzino.</li>
+<li>Anche in ENBLAU si può vedere nella sezione <strong>Stock</strong> l'elenco filtrato per <strong>È ritaglio</strong> tutti i ritagli disponibili in stock.</li>
 </ul>
-<p><img alt="scarti" src="../Imagenes/PR_Stock_Control/retales3.jpg" /></p>
+<p><img alt="retales" src="../Imagenes/PR_Stock_Control/retales3.jpg" /></p>
 </li>
 <li>
-<p>Nella sezione <strong>Tagliati</strong> della postazione di taglio di enCONTROL, sul lato destro del monitor, viene mostrato l'elenco dei tagli effettuati e si possono stampare le etichette di ogni barra.</p>
-<p><img alt="tagliati" src="../Imagenes/PR_Stock_Control/cortados.jpg" /></p>
+<p>Nella sezione <strong>Tagliati</strong> della postazione taglio di enCONTROL nella parte destra del monitor viene mostrato l'elenco dei tagli effettuati e si possono stampare le etichette di ogni barra.</p>
+<p><img alt="cortados" src="../Imagenes/PR_Stock_Control/cortados.jpg" /></p>
 </li>
 </ul>
-<p><strong>3. Lavorazione meccanica</strong></p>
+<p><strong>3. Lavorazione (Postazione 2)</strong></p>
 <ul>
 <li>
-<p>Non si scalano materiali, è semplicemente informativo per tempo. Confronta tempo reale.</p>
+<p>Non scala materiali, è solo informativo per i tempi. Confronta il tempo reale.</p>
 <p><img alt="mecanizado" src="../Imagenes/PR_Stock_Control/mecanizado.jpg" /></p>
 </li>
 </ul>
-<p><strong>4. Montaggio</strong></p>
+<p><strong>4. Montaggio (Postazione 3)</strong></p>
 <ul>
 <li>
-<p>Si scalano materiali (accessori) per ogni posizione del quadro.</p>
+<p>Scala materiali (accessori) per ogni posizione di telaio.</p>
 <p><img alt="montaje" src="../Imagenes/PR_Stock_Control/montaje.jpg" /></p>
 </li>
 <li>
-<p>Nell'elenco dei materiali hai l'opzione di indicare gli articoli che verranno montati in destinazione. Questi materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>.</p>
+<p>Nell'elenco materiali hai la possibilità di indicare gli articoli che verranno montati a destino. Quei materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>.</p>
 </li>
 </ul>
-<p><img alt="montaje" src="../Imagenes/PR_Stock_Control/montaje_2.jpg" /></p>
-<p><strong>5. Montaggio guarnizioni</strong></p>
+<p><img alt="montaje_2" src="../Imagenes/PR_Stock_Control/montaje_2.jpg" /></p>
+<p><strong>5. Guarnizionatura (Postazione 4)</strong></p>
 <ul>
-<li>Si scalano materiali (Guarnizioni, spessori, schiuma, ecc.) per quadro.</li>
+<li>Scala materiali (Guarnizioni, calzature, schiuma, ecc.) per telaio.</li>
 </ul>
 <p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado.jpg" /></p>
 <ul>
 <li>
-<p>Nell'elenco dei materiali hai l'opzione di indicare gli articoli che verranno montati in destinazione. Questi materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>.</p>
-<p><img alt="ajunquillado" src="../Imagenes/PR_Stock_Control/ajunquillado_2.jpg" /></p>
+<p>Nell'elenco materiali hai la possibilità di indicare gli articoli che verranno montati a destino. Quei materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>.</p>
+<p><img alt="ajunquillado_2" src="../Imagenes/PR_Stock_Control/ajunquillado_2.jpg" /></p>
 </li>
 </ul>
-<p><strong>6. Assemblaggio</strong></p>
+<p><strong>6. Assemblaggio (Postazione 5)</strong></p>
 <ul>
-<li>Informazioni del quadro, ma non si scalano materiali.</li>
+<li>Informazioni del telaio, ma non scala materiali.</li>
 </ul>
 <p><img alt="ensamblado" src="../Imagenes/PR_Stock_Control/ensamblado.jpg" /></p>
-<p><strong>7. Ferramenta</strong></p>
+<p><strong>7. Ferramenta (Postazione 6)</strong></p>
 <ul>
 <li>
-<p>Si scalano materiali (ferramenta) per anta.</p>
+<p>Scala materiali (ferramenta) per anta.</p>
 <p><img alt="herraje" src="../Imagenes/PR_Stock_Control/herraje.jpg" /></p>
 </li>
 <li>
-<p>Nell'elenco dei materiali hai l'opzione di indicare la ferramenta che verrà montata in destinazione. Questi materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>.</p>
-<p><img alt="herraje" src="../Imagenes/PR_Stock_Control/herraje_2.jpg" /></p>
+<p>Nell'elenco materiali hai la possibilità di indicare la ferramenta che verrà montata a destino. Quei materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>.</p>
+<p><img alt="herraje_2" src="../Imagenes/PR_Stock_Control/herraje_2.jpg" /></p>
 </li>
 </ul>
-<p><strong>8. Saldatura</strong></p>
+<p><strong>8. Saldatura (Postazione 7)</strong></p>
 <ul>
 <li>
-<p>Non si scalano materiali, è semplicemente informativo per tempo. Confronta tempo reale.</p>
+<p>Non scala materiali, è solo informativo per i tempi. Confronta il tempo reale.</p>
 <p><img alt="soldado" src="../Imagenes/PR_Stock_Control/soldado.jpg" /></p>
 </li>
 </ul>
-<p><strong>9. Controllo finale</strong></p>
+<p><strong>9. Tenda/avvolgibile (Postazione 8)</strong></p>
 <ul>
 <li>
-<p>Non si scalano materiali. Ma, una volta terminato il controllo si può ubicare in Magazzino e poi stampare un'etichetta del prodotto finito.</p>
-<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion.jpg" /> </p>
-<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_ubicacion.jpg" /></p>
-<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion_etiqueta.jpg" /></p>
+<p>Scala materiali (tende/avvolgibili) per telaio.</p>
+<p><img alt="puesto_persiana" src="../Imagenes/PR_Stock_Control/puesto_persiana.jpg" /></p>
+</li>
+</ul>
+<p><strong>10. Trasformazione (Postazione 9)</strong></p>
+<ul>
+<li>
+<p>In questa postazione puoi indicare un gruppo di materiali definite in distinta base per trasformare in un prodotto, esempio: Ringhiera.</p>
+<p><img alt="transformacion" src="../Imagenes/PR_Stock_Control/transformacion.jpg" /></p>
+</li>
+<li>
+<p>Come in altre postazioni, nell'elenco materiali hai la possibilità di indicare gli articoli che verranno montati a destino. Quei materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>. Inoltre poi potrai stampare l'etichetta e ubicare il prodotto.</p>
+</li>
+</ul>
+<p><strong>11. Verifica Finale (Postazione 10)</strong></p>
+<ul>
+<li>
+<p>Non scala materiali. Ma, una volta terminata la verifica si può ubicare in Magazzino e poi stampare un'etichetta del prodotto finito.</p>
+<p><img alt="comprobacion" src="../Imagenes/PR_Stock_Control/comprobacion.jpg" /></p>
+<p><img alt="comprobacion_ubicacion" src="../Imagenes/PR_Stock_Control/comprobacion_ubicacion.jpg" /></p>
+<p><img alt="comprobacion_etiqueta" src="../Imagenes/PR_Stock_Control/comprobacion_etiqueta.jpg" /></p>
 </li>
 <li>
 <p>Da ENBLAU nella sezione Magazzini nella sezione <strong>Prodotto finito</strong> ci sono due elenchi:</p>
 <p><strong>Ubicazione prodotti:</strong> Mostra dove è ubicato il prodotto finito di ogni progetto e produzione. Da questo elenco si può dare uscita, spostare di ubicazione e aprire il documento di produzione, selezionando sulla posizione con il tasto destro.</p>
-<p><img alt="ubicacion producto" src="../Imagenes/PR_Stock_Control/ubicacion_producto.jpg" /></p>
+<p><img alt="ubicacion_producto" src="../Imagenes/PR_Stock_Control/ubicacion_producto.jpg" /></p>
 <p><strong>Movimenti prodotti:</strong> Mostra i movimenti del prodotto finito come entrata, trasferimento, uscita e reso. Da questo elenco si può fare un reso, selezionando sulla posizione di uscita con il tasto destro.</p>
-<p><img alt="movimientos producto" src="../Imagenes/PR_Stock_Control/movimientos_producto.jpg" /></p>
+<p><img alt="movimientos_producto" src="../Imagenes/PR_Stock_Control/movimientos_producto.jpg" /></p>
 </li>
 </ul>
-<p><strong>10. Trasformazione</strong></p>
+<p><strong>12. Pulizia (Postazione 11)</strong></p>
 <ul>
 <li>
-<p>In questa postazione puoi indicare un gruppo di materiali o distinta base per trasformare in un prodotto, esempio: Ringhiera.</p>
-<p><img alt="transformacion" src="../Imagenes/PR_Stock_Control/transformacion.jpg" /></p>
-</li>
-<li>
-<p>Come in altre postazioni nell'elenco dei materiali hai l'opzione di indicare gli articoli che verranno montati in destinazione. Questi materiali verranno poi aggiunti all'elenco della postazione <strong>Picking</strong>. Inoltre di poter poi stampare l'etichetta e ubicare il prodotto.</p>
-</li>
-</ul>
-<p><strong>11. Pulizia</strong></p>
-<ul>
-<li>
-<p>Non si scalano materiali, è semplicemente informativo per tempo. Confronta tempo reale.</p>
+<p>Non scala materiali, è solo informativo per i tempi. Confronta il tempo reale.</p>
 <p><img alt="limpieza" src="../Imagenes/PR_Stock_Control/limpieza.jpg" /></p>
 </li>
 </ul>
-<p><strong>12. Picking</strong></p>
+<p><strong>13. Picking (Postazione 12)</strong></p>
 <ul>
 <li>
-<p>La postazione mostra l'elenco dei materiali marcati precedentemente in altre postazioni che verranno montati in destinazione.</p>
+<p>La postazione mostra l'elenco dei materiali contrassegnati precedentemente in altre postazioni che verranno montati a destino.</p>
 <p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking.jpg" /></p>
 </li>
 <li>
 <p>Puoi creare i pacchi e assegnare per ogni materiale. E poi stampare l'etichetta per il pacco.</p>
-<p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking_paquete.jpg" /></p>
+<p><img alt="picking_paquete" src="../Imagenes/PR_Stock_Control/picking_paquete.jpg" /></p>
 <ul>
 <li>Indicare l'ubicazione di picking per ogni materiale.</li>
 </ul>
-<p><img alt="picking" src="../Imagenes/PR_Stock_Control/picking_ubicacion.jpg" /></p>
+<p><img alt="picking_ubicacion" src="../Imagenes/PR_Stock_Control/picking_ubicacion.jpg" /></p>
 </li>
 </ul>
-<p><strong>13. Lavagna</strong></p>
+<p><strong>14. Lavagna (Postazione 13)</strong></p>
 <ul>
 <li>
 <p>Mostra l'evoluzione di ogni progetto e il suo stato.</p>
 <p><img alt="pizarra" src="../Imagenes/PR_Stock_Control/pizarra.jpg" /></p>
 </li>
 </ul>
-<p><strong>14. Controllo</strong></p>
+<p><strong>15. Controllo (Postazione 14)</strong></p>
 <ul>
 <li>
 <p>Apre il monitor Controllo progetti. Dove si può anche vedere lo stato di ogni progetto che è in fabbrica.</p>
-<p><img alt="control estados" src="../Imagenes/PR_Stock_Control/control_estados.jpg" /></p>
+<p><img alt="control_estados" src="../Imagenes/PR_Stock_Control/control_estados.jpg" /></p>
 </li>
 </ul>
 <blockquote>
-<p><strong>Nota</strong>: Assegna priorità e risorse per garantire la fluidità nella produzione.</p>
-<p><strong>Configurazione enCONTROL</strong> - Configurare enCONTROL preventivamente. Per maggiori informazioni, segui questo link: <a href="/Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">2. Configurazione Iniziale di enCONTROL</a> :</p>
-<p><strong>Gestione dei filtri</strong> - Usare filtri e filtri personalizzati per ottimizzare la ricerca negli elenchi. Per maggiori informazioni, segui questo link: <a href="/Utilita/4.UT_Gestion_Filtros/">4. Gestione dei filtri</a></p>
+<p>ℹ️ <strong>Nota</strong>: Assegnare priorità e risorse per assicurare la fluidità nella produzione.</p>
+<p><strong>Configurazione enCONTROL</strong> - Configurare enCONTROL precedentemente. Per maggiori informazioni, segui questo link: <a href="/Configurazioni/2.%20CO_Configurazione_Iniziale_enCONTROL/">2. Configurazione Iniziale di enCONTROL</a> :</p>
+<p><strong>Gestione filtri</strong> - Usare filtri e filtri personalizzati per ottimizzare la ricerca negli elenchi. Per maggiori informazioni, segui questo link: <a href="/Utilita/4.UT_Gestione_Filtri/">4. Gestione Filtri</a> :</p>
 </blockquote>
 <hr />
 <h2 id="4-controllo-scorte-e-report">4. Controllo scorte e report</h2>
