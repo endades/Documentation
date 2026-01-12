@@ -33,6 +33,7 @@ plugins:
               - Divisas: Utilidades/7.UT_Divisas.md
               - Importación programa de contabilidad: Utilidades/8.UT_Importacion_Contabilidad.md
               - Escandallos (Agrupación de materiales): Utilidades/9.UT_Escandallos.md
+              - Tarifas y Mano de obra (materiales ENBLAU): Utilidades/9.UT_Tarifas.md
         - locale: en
           name: English
           build: true
