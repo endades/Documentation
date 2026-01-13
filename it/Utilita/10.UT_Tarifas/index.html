@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Tariffe e Manodopera dei (materiali in ENBLAU) - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tariffe e Manodopera dei (materiali in ENBLAU)";
+        var mkdocs_page_input_path = "it\\Utilita\\10.UT_Tarifas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" title="Digita il termine di ricerca qui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurazioni</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/1.%20CO_Configuracion_Inicial_ENBLAU/">Configurazione iniziale ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurazioni/2.%20CO_Configuracion_Inicial_enCONTROL/">Configurazione iniziale enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processi</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/1.PR_Ventas_Compras/">Vendite e Acquisti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/2.PR_Facturas/">Fatturazione</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/3.PR_Manual_Stock_ENBLAU/">Gestione del controllo delle scorte ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/4.PR_Manual_Stock_enCONTROL/">Gestione del controllo delle scorte enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/5.PR_Informes/">Rapporti</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/6.PR_Proyecto_cliente/">Progetti, Clienti e Fornitori</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processi/7.PR_Instalaciones/">Installazioni</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilità</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1.UT_Relacion_ENBLAU_Logikal/">Relazione tra fasi in ENBLAU e Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2.UT_Crear_Materiales_enMATERIAL/">Creazione di materiali propri in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3.UT_Editar_Informes/">Creazione e modifica di rapporti personalizzati</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4.UT_Gestion_Filtros/">Gestione dei filtri</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5.UT_Actualizar_ENBLAU/">Aggiornamento ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6.UT_Unidad_Red/">Connessione di un'Unità di Rete</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7.UT_Divisas/">Valute</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8.UT_Importacion_Contabilidad/">Importazione programma di contabilità</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Tariffe e Manodopera dei (materiali in ENBLAU)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduzione">1. Introduzione</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-creare-tariffe">2. Creare Tariffe</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#21-generale">2.1. Generale</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#22-margine-e-importo-per-articoli">2.2. Margine e importo per articoli</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#23-importo-manodopera-minuto">2.3. Importo manodopera (Minuto)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#24-importo-manodopera-m2">2.4. Importo manodopera (m²)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#25-importo-delle-distinte-base">2.5. Importo delle distinte base</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#26-elenco-tariffe">2.6. Elenco Tariffe</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-creare-manodopera">3. Creare Manodopera</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu di navigazione mobile">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Documenti"></a></li>
+          <li class="breadcrumb-item">Utilità</li>
+      <li class="breadcrumb-item active">Tariffe e Manodopera dei (materiali in ENBLAU)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="tariffe-e-manodopera-dei-materiali-in-enblau">Tariffe e Manodopera dei Materiali in ENBLAU</h1>
+<hr />
+<h2 id="1-introduzione">1. Introduzione</h2>
+<p>Questo manuale descrive, passo dopo passo, l’utilizzo delle <strong>Tariffe</strong> e della <strong>Manodopera</strong> per definire i prezzi di costo e di vendita dei materiali in ENBLAU.</p>
+<hr />
+<h2 id="2-creare-tariffe">2. Creare Tariffe</h2>
+<ul>
+<li>Dal menu <strong>Magazzini → Tariffe</strong> si accede all’elenco delle tariffe esistenti.</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa.jpg" /></p>
+<ul>
+<li>Selezionare il pulsante <strong>Nuova</strong> per creare una nuova tariffa e indicarne il nome.</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa2.jpg" /></p>
+<h3 id="21-generale">2.1. Generale</h3>
+<ul>
+<li>
+<p>Nella scheda <strong>Generale</strong> è possibile compilare i seguenti campi:</p>
+<p><strong>Descrizione:</strong> Consente di aggiungere una descrizione della tariffa.  </p>
+<p><strong>Margine:</strong> Definisce il margine applicato alla tariffa.  </p>
+<p><strong>Tariffa ascendente:</strong> Indica se la tariffa si basa su un’altra tariffa esistente.  </p>
+<p><strong>Osservazioni:</strong> Campo per note aggiuntive.</p>
+</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa3.jpg" /></p>
+<h3 id="22-margine-e-importo-per-articoli">2.2. Margine e importo per articoli</h3>
+<ul>
+<li>Nella scheda <strong>Margine e importo per articoli</strong> è possibile definire margini e importi trascinando il riferimento finale del materiale dalla scheda <strong>Articoli</strong>, situata sul lato destro della finestra.<br />
+L’importo verrà calcolato automaticamente in base al tipo di calcolo dell’articolo: per unità, metro lineare o metro quadrato (m²).</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa4.jpg" /></p>
+<h3 id="23-importo-manodopera-minuto">2.3. Importo manodopera (Minuto)</h3>
+<ul>
+<li>Nella scheda <strong>Importo manodopera (Minuto)</strong> è possibile definire il costo al minuto trascinando il concetto di manodopera dalla scheda <strong>Manodopera</strong>.</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa5.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> La manodopera deve essere creata in precedenza nella sezione <a href="#3-creare-manodopera">3. Creare Manodopera</a>.</p>
+</blockquote>
+<h3 id="24-importo-manodopera-m2">2.4. Importo manodopera (m²)</h3>
+<ul>
+<li>Nella scheda <strong>Importo manodopera (m²)</strong> è possibile definire l’importo per metro quadrato trascinando il concetto di manodopera dalla scheda <strong>Manodopera</strong>.</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa6.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> La manodopera deve essere creata in precedenza nella sezione <strong>Manodopera</strong>.</p>
+</blockquote>
+<h3 id="25-importo-delle-distinte-base">2.5. Importo delle distinte base</h3>
+<ul>
+<li>Nella scheda <strong>Importo delle distinte base</strong> è possibile assegnare un importo fisso a una distinta base (gruppo di materiali).</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa7.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Il dettaglio dei materiali continuerà a essere calcolato separatamente. L’importo della distinta base non deve necessariamente coincidere con il totale stimato dei materiali per la vendita.</p>
+</blockquote>
+<h3 id="26-elenco-tariffe">2.6. Elenco Tariffe</h3>
+<ul>
+<li>Alla creazione di una tariffa, il sistema genera automaticamente un’altra tariffa con lo stesso nome seguito da <strong>+ SUE</strong>, destinata ai materiali sciolti.</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa8.jpg" /></p>
+<ul>
+<li>La tariffa <strong>Costo</strong> viene generata automaticamente ed è impostata come tariffa base di costo per i materiali di ENBLAU.<br />
+Questa tariffa non può essere eliminata.</li>
+</ul>
+<p><img alt="Tariffe" src="../Imagenes/UT_Tarifas/crear_tarifa8.jpg" /></p>
+<hr />
+<h2 id="3-creare-manodopera">3. Creare Manodopera</h2>
+<ul>
+<li>Dal menu <strong>Magazzini → Tariffe → Manodopera</strong> si accede all’elenco delle manodopere.</li>
+</ul>
+<p><img alt="MO" src="../Imagenes/UT_Tarifas/mo.jpg" /></p>
+<ul>
+<li>Si aprirà una finestra dalla quale sarà possibile creare e gestire diversi concetti di manodopera, compilando i seguenti campi:</li>
+</ul>
+<p><img alt="MO" src="../Imagenes/UT_Tarifas/mo2.jpg" /></p>
+<p><strong>1. Concetto:</strong> Nome della manodopera.<br />
+<strong>2. Descrizione:</strong> Descrizione opzionale del concetto.<br />
+<strong>3. Tipo:</strong> Tipo di manodopera, selezionabile dall’elenco delle postazioni disponibili in enCONTROL.<br />
+<strong>4. È fabbricazione:</strong> Indica se la manodopera è di fabbricazione.<br />
+<strong>5. È montaggio:</strong> Indica se la manodopera è di montaggio.</p>
+<p><img alt="MO" src="../Imagenes/UT_Tarifas/mo3.jpg" /></p>
+<p><strong>6. Articoli:</strong> Consente di definire il tempo di manodopera (in minuti) per ogni articolo, trascinandolo dall’albero <strong>Articoli</strong> sulla destra.<br />
+  È possibile definire un intervallo di unità (<strong>Da / A</strong>) per il materiale.</p>
+<p><img alt="MO" src="../Imagenes/UT_Tarifas/mo4.jpg" /></p>
+<p><strong>7. Distinte base:</strong> Consente di definire il tempo di manodopera (in minuti) per ogni distinta base, trascinandola dall’albero <strong>Distinte base</strong> sulla destra.</p>
+<p><img alt="MO" src="../Imagenes/UT_Tarifas/mo5.jpg" /></p>
+<hr />
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navigazione a pié di pagina">
+        <a href="../9.UT_Escandallos/" class="btn btn-neutral float-left" title="Bill of materials (Grouping of materials)"><span class="icon icon-circle-arrow-left"></span> Precedente</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Creato con <a href="https://www.mkdocs.org/">MkDocs</a> utilizzando un <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a> fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versioni">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../9.UT_Escandallos/" style="color: #fcfcfc">&laquo; Precedente</a></span>
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>
