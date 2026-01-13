@@ -33,7 +33,7 @@ plugins:
               - Divisas: Utilidades/7.UT_Divisas.md
               - Importación programa de contabilidad: Utilidades/8.UT_Importacion_Contabilidad.md
               - Escandallos (Agrupación de materiales): Utilidades/9.UT_Escandallos.md
-              - Tarifas y Mano de obra (materiales ENBLAU): Utilidades/9.UT_Tarifas.md
+              - Tarifas y Mano de obra (materiales ENBLAU): Utilidades/10.UT_Tarifas.md
         - locale: en
           name: English
           build: true
@@ -60,6 +60,7 @@ plugins:
               - Currencies: Utilities/7.UT_Divisas.md
               - Import accounting program: Utilities/8.UT_Importacion_Contabilidad.md
               - Bill of materials (Grouping of materials): Utilities/9.UT_Escandallos.md
+              - Rates and Labor (materials in ENBLAU): Utilities/10.UT_Tarifas.md
         - locale: it
           name: Italiano
           build: true
@@ -86,6 +87,7 @@ plugins:
               - Valute: Utilita/7.UT_Divisas.md
               - Importazione programma di contabilità: Utilita/8.UT_Importacion_Contabilidad.md
               - Bill of materials (Grouping of materials): Utilita/9.UT_Escandallos.md
+              - Tariffe e Manodopera dei (materiali in ENBLAU): Utilita/10.UT_Tarifas.md
         - locale: pt
           name: Português
           build: true
@@ -112,6 +114,7 @@ plugins:
               - Moedas: Utilidades/7.UT_Divisas.md
               - Importação programa de contabilidade: Utilidades/8.UT_Importacion_Contabilidad.md
               - Escandallos (Agrupación de materiales): Utilidades/9.UT_Escandallos.md
+              - Tarifas e Mão de Obra (materiais no ENBLAU): Utilidades/10.UT_Tarifas.md
 
 theme:
   name: readthedocs
