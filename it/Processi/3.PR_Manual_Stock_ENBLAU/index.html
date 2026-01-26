@@ -175,11 +175,21 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#8-controllo-dello-stock-e-report">8. Controllo dello stock e report</a>
+    <li class="toctree-l2"><a class="reference internal" href="#8-gestione-degli-scarti-in-logikal">8. Gestione degli scarti in Logikal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-importare-gli-scarti-da-excel">8.1. Importare gli scarti da Excel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#9-risoluzione-dei-problemi-comuni">9. Risoluzione dei problemi comuni</a>
+    <li class="toctree-l3"><a class="reference internal" href="#82-aggiungere-scarti-manualmente">8.2. Aggiungere scarti manualmente</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#10-conclusione">10. Conclusione</a>
+    <li class="toctree-l3"><a class="reference internal" href="#83-gestire-scarti-da-enblau">8.3. Gestire scarti da ENBLAU</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-controllo-dello-stock-e-report">9. Controllo dello stock e report</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-risoluzione-dei-problemi-comuni">10. Risoluzione dei problemi comuni</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-conclusione">11. Conclusione</a>
     </li>
     </ul>
                   </li>
@@ -647,21 +657,89 @@ Non è possibile effettuare movimenti di tipo <strong>trasferimento</strong> da 
 <p>ℹ️ <strong>Nota:</strong> Questa funzionalità è utile per gestire restituzioni interne, prodotti rifiutati o riassegnazioni logistiche all'interno del magazzino.</p>
 </blockquote>
 <hr />
-<h2 id="8-controllo-dello-stock-e-report">8. Controllo dello stock e report</h2>
+<h2 id="8-gestione-degli-scarti-in-logikal">8. Gestione degli scarti in Logikal</h2>
+<p>La gestione degli scarti in Logikal consente di riutilizzare i profili avanzati, ottimizzando il consumo di materiale e riducendo gli sprechi. Di seguito sono illustrate le diverse modalità di gestione degli scarti.</p>
+<hr />
+<h3 id="81-importare-gli-scarti-da-excel">8.1. Importare gli scarti da Excel</h3>
+<ol>
+<li>Da <strong>ENBLAU</strong>, andare su <strong>Magazzini → Stock → Dettagliato</strong> e filtrare l'elenco per <strong>scarti</strong>.</li>
+</ol>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Si consiglia di applicare il filtro per <strong>progetto assegnato</strong> per considerare solo gli scarti da utilizzare.</p>
+</blockquote>
+<ol>
+<li>Nel menu <strong>Esporta → Esporta profili</strong>, salvare il file Excel in un percorso locale di Windows.</li>
+</ol>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales2.jpg" /></p>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales3.jpg" /></p>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales4.jpg" /></p>
+<ol>
+<li>
+<p>In <strong>Logikal</strong>, aprire il progetto in cui verranno utilizzati gli scarti. Accedere a <strong>Progetto → Scarti</strong> per aprire la finestra <strong>Modifica scarti</strong>.</p>
+</li>
+<li>
+<p>Selezionare <strong>Importa</strong> e caricare il file Excel degli scarti precedentemente esportato da ENBLAU.</p>
+</li>
+</ol>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales5.jpg" /></p>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales6.jpg" /></p>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales7.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> I riferimenti mostrati in <strong>rosso</strong> indicano che quel profilo non esiste nel progetto corrente.</p>
+</blockquote>
+<ol>
+<li>Nella finestra <strong>Modifica scarti</strong>, selezionare l'opzione <strong>Usa scarti</strong> e salvare le modifiche.</li>
+</ol>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales8.jpg" /></p>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales9.jpg" /></p>
+<ol>
+<li>Nel report di <strong>Ottimizzazione tagli</strong> verranno mostrati gli scarti disponibili per ciascun profilo.</li>
+</ol>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales10.jpg" /></p>
+<hr />
+<h3 id="82-aggiungere-scarti-manualmente">8.2. Aggiungere scarti manualmente</h3>
+<p>In Logikal, nella finestra <strong>Modifica scarti</strong>, l'opzione <strong>Aggiungi</strong> permette di inserire manualmente gli scarti specificando:</p>
+<ul>
+<li>Riferimento del profilo (presente nel progetto)</li>
+<li>Quantità</li>
+<li>Lunghezza</li>
+</ul>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales1.jpg" /></p>
+<hr />
+<h3 id="83-gestire-scarti-da-enblau">8.3. Gestire scarti da ENBLAU</h3>
+<ol>
+<li>Da <strong>ENBLAU</strong>, in un documento di vendita, accedere a:<br />
+<strong>Logikal → Editor progetto → Preferenze → Scarti</strong></li>
+</ol>
+<p>Questo aprirà la stessa finestra <strong>Modifica scarti</strong> di Logikal.</p>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales11.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Il funzionamento è esattamente lo stesso descritto precedentemente in Logikal.</p>
+</blockquote>
+<ol>
+<li>Durante la lista dei materiali dal documento ENBLAU, verrà mostrata la lunghezza dello scarto da utilizzare per i profili del progetto.</li>
+</ol>
+<p><img alt="Gestione scarti" src="../Imagenes/PR_Stock_Control/utilizar_retales12.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Se il materiale è assegnato, ad esempio, a un progetto di <strong>Stock</strong>, deve essere assegnato al progetto in cui verrà utilizzato.</p>
+</blockquote>
+<hr />
+<h2 id="9-controllo-dello-stock-e-report">9. Controllo dello stock e report</h2>
 <ul>
 <li>Monitora lo stock necessario dalla sezione "Produzione".</li>
 <li>Identifica materiali riservati e pendenti in tempo reale.</li>
 <li>Genera report di inventario per valutare l'uso dei materiali e pianificare gli acquisti futuri.</li>
 </ul>
 <hr />
-<h2 id="9-risoluzione-dei-problemi-comuni">9. Risoluzione dei problemi comuni</h2>
+<h2 id="10-risoluzione-dei-problemi-comuni">10. Risoluzione dei problemi comuni</h2>
 <ul>
 <li><strong>Errore durante l'import delle referenze</strong>: Verifica che le referenze siano configurate nel database.</li>
 <li><strong>Materiali in eccesso o mancanti</strong>: Assicurati di registrare correttamente le ubicazioni e le quantità al ricevimento dei materiali.</li>
 <li><strong>Problemi con il layout del magazzino</strong>: Controlla la configurazione delle zone e adatta le impostazioni secondo necessità.</li>
 </ul>
 <hr />
-<h2 id="10-conclusione">10. Conclusione</h2>
+<h2 id="11-conclusione">11. Conclusione</h2>
 <p>Questo manuale fornisce una guida passo-passo per i processi principali del sistema di controllo delle scorte. Seguendo queste istruzioni, gli utenti saranno in grado di gestire efficacemente gli inventari, migliorare la produzione e ottimizzare la relazione con i fornitori. Per supporto aggiuntivo, contatta l'amministratore di sistema.</p>
               
 

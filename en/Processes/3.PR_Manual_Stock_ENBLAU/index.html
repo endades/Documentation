@@ -175,11 +175,21 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#8-stock-control-and-reporting">8. Stock control and reporting</a>
+    <li class="toctree-l2"><a class="reference internal" href="#8-managing-offcuts-in-logikal">8. Managing Offcuts in Logikal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-import-offcuts-from-excel">8.1. Import Offcuts from Excel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#9-troubleshooting-common-issues">9. Troubleshooting common issues</a>
+    <li class="toctree-l3"><a class="reference internal" href="#82-add-offcuts-manually">8.2. Add Offcuts Manually</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#10-conclusion">10. Conclusion</a>
+    <li class="toctree-l3"><a class="reference internal" href="#83-manage-offcuts-from-enblau">8.3. Manage Offcuts from ENBLAU</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-stock-control-and-reporting">9. Stock control and reporting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-troubleshooting-common-issues">10. Troubleshooting common issues</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-conclusion">11. Conclusion</a>
     </li>
     </ul>
                   </li>
@@ -661,21 +671,89 @@
 <p>ℹ️ Note: Proper finished product management ensures better inventory control, traceability and faster order dispatch preparation.</p>
 </blockquote>
 <hr />
-<h2 id="8-stock-control-and-reporting">8. Stock control and reporting</h2>
+<h2 id="8-managing-offcuts-in-logikal">8. Managing Offcuts in Logikal</h2>
+<p>Managing offcuts in Logikal allows reusing leftover profiles, optimizing material usage, and reducing waste. There are several ways to manage offcuts, detailed below.</p>
+<hr />
+<h3 id="81-import-offcuts-from-excel">8.1. Import Offcuts from Excel</h3>
+<ol>
+<li>From <strong>ENBLAU</strong>, go to <strong>Warehouses → Stock → Detailed</strong> and filter the list by <strong>offcuts</strong>.</li>
+</ol>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong> It is recommended to apply the <strong>assigned project</strong> filter to consider only the offcuts that should be used.</p>
+</blockquote>
+<ol>
+<li>In the menu <strong>Export → Export Profiles</strong>, save the Excel file to a local Windows path.</li>
+</ol>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales2.jpg" /></p>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales3.jpg" /></p>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales4.jpg" /></p>
+<ol>
+<li>
+<p>In <strong>Logikal</strong>, open the project where the offcuts will be used. Go to <strong>Project → Offcuts</strong> to open the <strong>Edit Offcuts</strong> window.</p>
+</li>
+<li>
+<p>Select <strong>Import</strong> and load the Excel file of offcuts previously exported from ENBLAU.</p>
+</li>
+</ol>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales5.jpg" /></p>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales6.jpg" /></p>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales7.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong> References shown in <strong>red</strong> indicate that the profile does not exist in the current project.</p>
+</blockquote>
+<ol>
+<li>In the <strong>Edit Offcuts</strong> window, check <strong>Use Offcuts</strong> and save the changes.</li>
+</ol>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales8.jpg" /></p>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales9.jpg" /></p>
+<ol>
+<li>The <strong>Cut Optimization</strong> report will show the offcuts available for each profile.</li>
+</ol>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales10.jpg" /></p>
+<hr />
+<h3 id="82-add-offcuts-manually">8.2. Add Offcuts Manually</h3>
+<p>In Logikal, in the <strong>Edit Offcuts</strong> window, the <strong>Add</strong> option allows manually entering offcuts by specifying:</p>
+<ul>
+<li>Profile reference (existing in the project)</li>
+<li>Quantity</li>
+<li>Length</li>
+</ul>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales1.jpg" /></p>
+<hr />
+<h3 id="83-manage-offcuts-from-enblau">8.3. Manage Offcuts from ENBLAU</h3>
+<ol>
+<li>From <strong>ENBLAU</strong>, in a sales document, go to:<br />
+<strong>Logikal → Project Editor → Preferences → Offcuts</strong></li>
+</ol>
+<p>This will open the same <strong>Edit Offcuts</strong> window in Logikal.</p>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales11.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong> The operation is exactly the same as described previously in Logikal.</p>
+</blockquote>
+<ol>
+<li>When listing material from the ENBLAU document, the length of the offcut to be used for the project profiles will be shown.</li>
+</ol>
+<p><img alt="Managing offcuts" src="../Imagenes/PR_Stock_Control/utilizar_retales12.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong> If the material is assigned, for example, to a <strong>Stock</strong> project, it must be assigned to the project where it will be used.</p>
+</blockquote>
+<hr />
+<h2 id="9-stock-control-and-reporting">9. Stock control and reporting</h2>
 <ul>
 <li>Monitor stock needed from the Production area.</li>
 <li>Identify reserved and pending materials in real time.</li>
 <li>Generate inventory reports to assess material usage and plan future purchases.</li>
 </ul>
 <hr />
-<h2 id="9-troubleshooting-common-issues">9. Troubleshooting common issues</h2>
+<h2 id="10-troubleshooting-common-issues">10. Troubleshooting common issues</h2>
 <ul>
 <li>Error importing references: verify references are configured in the database.</li>
 <li>Excess or missing materials: ensure locations and quantities are recorded correctly when receiving materials.</li>
 <li>Warehouse layout issues: review zone configuration and adjust as needed.</li>
 </ul>
 <hr />
-<h2 id="10-conclusion">10. Conclusion</h2>
+<h2 id="11-conclusion">11. Conclusion</h2>
 <p>This manual provides a step-by-step guide for the main processes in the stock control system. By following these instructions users can manage inventories effectively, improve production and optimize supplier relationships. For additional support contact your system administrator.</p>
               
 

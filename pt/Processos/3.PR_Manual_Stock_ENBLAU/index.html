@@ -175,11 +175,21 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#8-controle-de-estoque-e-relatorios">8. Controle de estoque e relatórios</a>
+    <li class="toctree-l2"><a class="reference internal" href="#8-gestao-de-retalhos-no-logikal">8. Gestão de retalhos no Logikal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-importar-retalhos-do-excel">8.1. Importar retalhos do Excel</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#9-resolucao-de-problemas-comuns">9. Resolução de problemas comuns</a>
+    <li class="toctree-l3"><a class="reference internal" href="#82-adicionar-retalhos-manualmente">8.2. Adicionar retalhos manualmente</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#10-conclusao">10. Conclusão</a>
+    <li class="toctree-l3"><a class="reference internal" href="#83-gerir-retalhos-a-partir-do-enblau">8.3. Gerir retalhos a partir do ENBLAU</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-controle-de-estoque-e-relatorios">9. Controle de estoque e relatórios</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-resolucao-de-problemas-comuns">10. Resolução de problemas comuns</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-conclusao">11. Conclusão</a>
     </li>
     </ul>
                   </li>
@@ -653,21 +663,89 @@ Caso contrário, não será atualizado no estoque.  </p>
 <p>ℹ️ <strong>Nota:</strong> A gestão correta do produto acabado garante melhor controle de inventário, facilita a rastreabilidade e agiliza a preparação de expedições ou entregas.</p>
 </blockquote>
 <hr />
-<h2 id="8-controle-de-estoque-e-relatorios">8. Controle de estoque e relatórios</h2>
+<h2 id="8-gestao-de-retalhos-no-logikal">8. Gestão de retalhos no Logikal</h2>
+<p>A gestão de retalhos no Logikal permite reutilizar perfis sobrantes, otimizando o consumo de material e reduzindo desperdícios. Existem várias formas de gerir os retalhos, detalhadas a seguir.</p>
+<hr />
+<h3 id="81-importar-retalhos-do-excel">8.1. Importar retalhos do Excel</h3>
+<ol>
+<li>No <strong>ENBLAU</strong>, aceder a <strong>Armazéns → Stock → Detalhado</strong> e filtrar a lista por <strong>retalhos</strong>.</li>
+</ol>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Recomenda-se aplicar o filtro por <strong>projeto atribuído</strong> para considerar apenas os retalhos que devem ser utilizados.</p>
+</blockquote>
+<ol>
+<li>No menu <strong>Exportar → Exportar perfis</strong>, guardar o ficheiro Excel numa localização local do Windows.</li>
+</ol>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales2.jpg" /></p>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales3.jpg" /></p>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales4.jpg" /></p>
+<ol>
+<li>
+<p>No <strong>Logikal</strong>, abrir o projeto onde os retalhos serão utilizados. Ir a <strong>Projeto → Retalhos</strong> para abrir a janela <strong>Editar Retalhos</strong>.</p>
+</li>
+<li>
+<p>Selecionar <strong>Importar</strong> e carregar o ficheiro Excel de retalhos previamente exportado do ENBLAU.</p>
+</li>
+</ol>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales5.jpg" /></p>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales6.jpg" /></p>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales7.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> As referências mostradas em <strong>vermelho</strong> indicam que o perfil não existe no projeto atual.</p>
+</blockquote>
+<ol>
+<li>Na janela <strong>Editar Retalhos</strong>, marque a opção <strong>Usar Retalhos</strong> e guarde as alterações.</li>
+</ol>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales8.jpg" /></p>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales9.jpg" /></p>
+<ol>
+<li>O relatório de <strong>Otimização de Cortes</strong> mostrará os retalhos disponíveis para cada perfil.</li>
+</ol>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales10.jpg" /></p>
+<hr />
+<h3 id="82-adicionar-retalhos-manualmente">8.2. Adicionar retalhos manualmente</h3>
+<p>No Logikal, na janela <strong>Editar Retalhos</strong>, a opção <strong>Adicionar</strong> permite inserir retalhos manualmente, especificando:</p>
+<ul>
+<li>Referência do perfil (existente no projeto)</li>
+<li>Quantidade</li>
+<li>Comprimento</li>
+</ul>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales1.jpg" /></p>
+<hr />
+<h3 id="83-gerir-retalhos-a-partir-do-enblau">8.3. Gerir retalhos a partir do ENBLAU</h3>
+<ol>
+<li>No <strong>ENBLAU</strong>, num documento de vendas, aceder a:<br />
+<strong>Logikal → Editor de projeto → Preferências → Retalhos</strong></li>
+</ol>
+<p>Isto abrirá a mesma janela <strong>Editar Retalhos</strong> do Logikal.</p>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales11.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> O funcionamento é exatamente o mesmo descrito anteriormente no Logikal.</p>
+</blockquote>
+<ol>
+<li>Ao listar o material a partir do documento ENBLAU, será mostrado o comprimento do retalho a utilizar para os perfis do projeto.</li>
+</ol>
+<p><img alt="Gestão de retalhos" src="../Imagenes/PR_Stock_Control/utilizar_retales12.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Se o material estiver atribuído, por exemplo, a um projeto de <strong>Stock</strong>, é necessário atribuí-lo ao projeto em que será utilizado.</p>
+</blockquote>
+<hr />
+<h2 id="9-controle-de-estoque-e-relatorios">9. Controle de estoque e relatórios</h2>
 <ul>
 <li>Monitore o estoque necessário a partir da seção "Produção".</li>
 <li>Identifique materiais reservados e pendentes em tempo real.</li>
 <li>Gere relatórios de inventário para avaliar o uso de materiais e planejar futuras compras.</li>
 </ul>
 <hr />
-<h2 id="9-resolucao-de-problemas-comuns">9. Resolução de problemas comuns</h2>
+<h2 id="10-resolucao-de-problemas-comuns">10. Resolução de problemas comuns</h2>
 <ul>
 <li><strong>Erro ao importar referências</strong>: Verifique se as referências estão configuradas na base de dados.</li>
 <li><strong>Materiais excedentes ou faltantes</strong>: Certifique-se de registrar corretamente localizações e quantidades ao receber materiais.</li>
 <li><strong>Problemas com o layout do armazém</strong>: Revise a configuração de zonas e ajuste conforme necessário.</li>
 </ul>
 <hr />
-<h2 id="10-conclusao">10. Conclusão</h2>
+<h2 id="11-conclusao">11. Conclusão</h2>
 <p>Este manual oferece um guia passo a passo para os principais processos no sistema de controle de estoque. Seguindo estas instruções, os usuários poderão gerir eficientemente os inventários, melhorar a produção e otimizar a relação com fornecedores. Para suporte adicional, contate o administrador do sistema.</p>
               
 

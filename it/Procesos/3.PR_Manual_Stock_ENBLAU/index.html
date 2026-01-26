@@ -584,21 +584,89 @@ De lo contrario, no se actualizará en el stock.  </p>
 <p>ℹ️ <strong>Nota:</strong> La correcta gestión del producto terminado garantiza un mejor control del inventario, facilita la trazabilidad y agiliza la preparación de expediciones o entregas.</p>
 </blockquote>
 <hr />
-<h2 id="8-control-de-stock-y-reportes">8. Control de stock y reportes</h2>
+<h2 id="8-gestion-de-retales-en-logikal">8. Gestión de retales en Logikal</h2>
+<p>La gestión de retales en Logikal permite reutilizar perfiles sobrantes, optimizando el consumo de material y reduciendo desperdicios. Existen varias formas de gestionar los retales, que se detallan a continuación.</p>
+<hr />
+<h3 id="81-importar-retales-desde-excel">8.1. Importar retales desde Excel</h3>
+<ol>
+<li>Desde <strong>ENBLAU</strong>, acceder a <strong>Almacenes → Stock → Detallado</strong> y filtrar el listado por <strong>retales</strong>.</li>
+</ol>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Se recomienda aplicar el filtro por <strong>proyecto asignado</strong> para considerar únicamente los retales que deban utilizarse.</p>
+</blockquote>
+<ol>
+<li>En el menú <strong>Exportar → Exportar perfiles</strong>, guardar el archivo Excel en una ruta local de Windows.</li>
+</ol>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales2.jpg" /></p>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales3.jpg" /></p>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales4.jpg" /></p>
+<ol>
+<li>
+<p>En <strong>Logikal</strong>, abrir el proyecto en el que se van a utilizar los retales. Acceder a <strong>Proyecto → Retales</strong> para abrir la ventana <strong>Editar retales</strong>.</p>
+</li>
+<li>
+<p>Seleccionar la opción <strong>Importar</strong> y cargar el archivo Excel de retales previamente exportado desde ENBLAU.</p>
+</li>
+</ol>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales5.jpg" /></p>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales6.jpg" /></p>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales7.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Las referencias mostradas en <span style= font-weight:bold;color:#C0392B;>rojo</span> indican que ese perfil no existe en el proyecto actual.</p>
+</blockquote>
+<ol>
+<li>En la ventana <strong>Editar retales</strong>, marcar la opción <strong>Usar retales</strong> y guardar los cambios.</li>
+</ol>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales8.jpg" /></p>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales9.jpg" /></p>
+<ol>
+<li>En el informe de <strong>Optimización de cortes</strong> se reflejarán los retales disponibles que pueden utilizarse para cada perfil.</li>
+</ol>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales10.jpg" /></p>
+<hr />
+<h3 id="82-anadir-retales-manualmente">8.2. Añadir retales manualmente</h3>
+<p>Desde Logikal, en la ventana <strong>Editar retales</strong>, existe la opción <strong>Añadir</strong>, que permite introducir los retales de forma manual indicando:</p>
+<ul>
+<li>Referencia del perfil (existente en el proyecto)</li>
+<li>Cantidad</li>
+<li>Longitud</li>
+</ul>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales1.jpg" /></p>
+<hr />
+<h3 id="83-gestionar-retales-desde-enblau">8.3. Gestionar retales desde ENBLAU</h3>
+<ol>
+<li>Desde <strong>ENBLAU</strong>, en un documento de ventas, acceder a<br />
+<strong>Logikal → Editor de proyecto → Preferencias → Retales</strong>.</li>
+</ol>
+<p>Esto abrirá la misma ventana <strong>Editar retales</strong> de Logikal.</p>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales11.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> El funcionamiento es exactamente el mismo que el descrito previamente en Logikal.</p>
+</blockquote>
+<ol>
+<li>Al listar el material desde el documento de ENBLAU, se mostrará la longitud del retal que se utilizará para los perfiles del proyecto.</li>
+</ol>
+<p><img alt="Gestión retales" src="../../../Procesos/Imagenes/PR_Stock_Control/utilizar_retales12.jpg" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Si el material está asignado por ejemplo, a un proyecto de <strong>Stock</strong>, es necesario asignarlo al proyecto en el que se va a utilizar.</p>
+</blockquote>
+<hr />
+<h2 id="10-control-de-stock-y-reportes">10. Control de stock y reportes</h2>
 <ul>
 <li>Monitorea el stock necesario desde la sección "Producción".</li>
 <li>Identifica materiales reservados y pendientes en tiempo real.</li>
 <li>Genera reportes de inventarios para evaluar el uso de materiales y planificar futuras compras.</li>
 </ul>
 <hr />
-<h2 id="9-resolucion-de-problemas-comunes">9. Resolución de problemas comunes</h2>
+<h2 id="11-resolucion-de-problemas-comunes">11. Resolución de problemas comunes</h2>
 <ul>
 <li><strong>Error al importar referencias</strong>: Verifica que las referencias estén configuradas en la base de datos.</li>
 <li><strong>Materiales sobrantes o faltantes</strong>: Asegúrate de registrar correctamente las ubicaciones y cantidades al recibir materiales.</li>
 <li><strong>Problemas con el layout del almacén</strong>: Revisa la configuración de zonas y ajusta según sea necesario.</li>
 </ul>
 <hr />
-<h2 id="10-conclusion">10. Conclusión</h2>
+<h2 id="12-conclusion">12. Conclusión</h2>
 <p>Este manual ofrece una guía paso a paso para los procesos principales en el sistema de control de stock. Siguiendo estas instrucciones, los usuarios podrán gestionar eficientemente los inventarios, mejorar la producción y optimizar la relación con proveedores. Para soporte adicional, contacte al administrador del sistema.</p>
               
 
