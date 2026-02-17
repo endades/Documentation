@@ -34,6 +34,7 @@ plugins:
               - Importación programa de contabilidad: Utilidades/8.UT_Importacion_Contabilidad.md
               - Escandallos (Agrupación de materiales): Utilidades/9.UT_Escandallos.md
               - Tarifas y Mano de obra (materiales ENBLAU): Utilidades/10.UT_Tarifas.md
+              - enCLAD: Utilidades/11.UT_enCLAD.md
         - locale: en
           name: English
           build: true
