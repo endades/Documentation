@@ -176,7 +176,25 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#8-creacion-de-documentos-de-compra-enblau">8. Creación de documentos de compra ENBLAU</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#9-conclusion">9. Conclusión</a>
+    <li class="toctree-l2"><a class="reference internal" href="#9-creacion-de-sistemas-y-materiales-enclad">9. Creación de sistemas y materiales enCLAD</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#91-sistemas">9.1. Sistemas</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#912-propiedades">9.1.2. Propiedades</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#913-fachada-ventilada">9.1.3. Fachada ventilada</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#914-clonar-sistemas">9.1.4. Clonar sistemas</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#92-definicion-articulos-enclad">9.2. Definición artículos enCLAD</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#93-definicion-de-reglas">9.3. Definición de reglas</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-conclusion">10. Conclusión</a>
     </li>
     </ul>
                   </li>
@@ -195,6 +213,8 @@
                   <li class="toctree-l1"><a class="reference internal" href="../9.UT_Escandallos/">Escandallos (Agrupación de materiales)</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../10.UT_Tarifas/">Tarifas y Mano de obra (materiales ENBLAU)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../11.UT_enCLAD/">enCLAD</a>
                   </li>
               </ul>
       </div>
@@ -397,7 +417,189 @@
 <li>Si el material tiene más de un proveedor asignado, puedes seleccionar el proveedor deseado con un doble clic sobre el proveedor.</li>
 </ul>
 <hr />
-<h2 id="9-conclusion">9. Conclusión</h2>
+<h2 id="9-creacion-de-sistemas-y-materiales-enclad">9. Creación de sistemas y materiales enCLAD</h2>
+<p>Creación de sistemas y materiales para <strong>fachadas ventiladas</strong> en <strong>enCLAD</strong>.</p>
+<hr />
+<h3 id="91-sistemas">9.1. Sistemas</h3>
+<p>Desde la ventana de inicio, en la barra superior, acceder a <strong>Sistema</strong>.</p>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema.png" /></p>
+<ul>
+<li>Para crear un nuevo sistema, seleccionar <strong>Nuevo</strong> en la barra superior.</li>
+</ul>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema2.png" /></p>
+<hr />
+<h4 id="912-propiedades">9.1.2. Propiedades</h4>
+<p>Desde la pestaña <strong>Propiedades</strong>, situada en la parte inferior, se definen los siguientes campos del sistema:</p>
+<ul>
+<li><strong>Nombre</strong></li>
+<li><strong>Descripción</strong></li>
+<li><strong>Proveedor</strong></li>
+<li><strong>Familia 1 y 2</strong> (organización por niveles)</li>
+<li><strong>Imagen</strong></li>
+<li><strong>Estado</strong>: Activo, Deshabilitado temporalmente o Descatalogado.</li>
+<li><strong>Tipología del sistema</strong><br />
+  En este caso, marcar la casilla <strong>Fachada ventilada</strong>.</li>
+</ul>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema3.png" /></p>
+<p>Desde la pestaña <strong>Artículos relacionados</strong>, en la parte inferior, se muestra el listado de materiales vinculados al sistema.</p>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema1.png" /></p>
+<hr />
+<h4 id="913-fachada-ventilada">9.1.3. Fachada ventilada</h4>
+<p>Desde la pestaña <strong>Tipo de sistema</strong>, en la parte superior, se mostrará una ventana donde se puede seleccionar el tipo de sistema:</p>
+<ul>
+<li>Sistema de cuelgue</li>
+<li>Sistema macho-hembra</li>
+<li>Sistema pegado</li>
+<li>Sistema remachado</li>
+</ul>
+<p>En la <strong><em>ventana lateral izquierda</em></strong> se definen los parámetros específicos del tipo de sistema.</p>
+<p>En la <strong><em>ventana inferior</em></strong> se definen otros parámetros comunes entre los distintos tipos de sistema, como:</p>
+<ul>
+<li>Distancia extremo habitual</li>
+<li>Huella mínima – Vertical</li>
+<li>Huella máxima – Vertical</li>
+<li>Huella habitual – Vertical</li>
+<li>Huella mínima – Horizontal</li>
+<li>Huella máxima – Horizontal</li>
+<li>Huella habitual – Horizontal</li>
+<li>Recercado mínimo</li>
+<li>Recercado máximo</li>
+<li>Recercado habitual</li>
+<li>Permitir recercado (casilla)</li>
+</ul>
+<p>En la <strong><em>ventana central</em></strong> se muestra el diseño de la fachada ventilada correspondiente al tipo de sistema seleccionado.</p>
+<p>Si el tipo de sistema es <strong>Sistema de cuelgue</strong>, se habilita una ventana adicional para la definición del diseño del mecanizado:</p>
+<ul>
+<li><strong>Pestaña Mecanizado cuelgue</strong><br />
+    Permite importar el dibujo en formato <code>.dwg/.dxf</code>.</li>
+<li><strong>Pestaña Otros mecanizados</strong><br />
+    Permite definir el mecanizado mediante parámetros.</li>
+</ul>
+<p>En la <strong><em>ventana lateral derecha</em></strong>, <strong>Materiales del sistema</strong>, se añaden los artículos correspondientes al sistema mediante campos desplegables:</p>
+<ul>
+<li>Coliso</li>
+<li>Remache conformado</li>
+<li>Soporte de cuelgue</li>
+<li>Pletina conformada</li>
+<li>Refuerzo bota</li>
+</ul>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema4.png" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Dependiendo del tipo de sistema seleccionado, se habilitarán unos parámetros u otros.</p>
+</blockquote>
+<p>Desde la pestaña <strong>Opciones</strong>, en la parte inferior, se mostrará una ventana con las opciones de <strong>rincón</strong> disponibles dependiendo del tipo de sistema.</p>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema5.png" /></p>
+<p>Desde la pestaña <strong>Remates</strong>, en la parte inferior, se mostrará una ventana donde definir:</p>
+<p><strong>Opciones de remate:</strong> Definir las opciones de remate para el sistema en el despliegue de opción.</p>
+<ul>
+<li>Coronación</li>
+<li>Remate inferior</li>
+<li>Cierre de cámara</li>
+<li>Ventana dintel</li>
+<li>Ventana vierteaguas</li>
+<li>Ventana jamba</li>
+</ul>
+<p><strong>Valores:</strong> Definir los valores para cada opción seleccionada. </p>
+<p><strong>Pliegues:</strong> Definir la longitud y rotación de los pliegues para cada valor seleccionado. </p>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema6.png" /></p>
+<p>Desde la pestaña <strong>Rigidizadores</strong> (solo disponible para sistemas de tipo cuelgue), se muestra el listado de materiales de tipo rigidizador vinculados al sistema.</p>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema7.png" /></p>
+<hr />
+<h4 id="914-clonar-sistemas">9.1.4. Clonar sistemas</h4>
+<p>Desde <strong>Sistemas</strong>, en la cinta superior, está disponible la opción <strong>Clonar</strong>.</p>
+<p>Esta funcionalidad copia todas las propiedades del sistema seleccionado en la lista.</p>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema9.png" /></p>
+<p><img alt="Sistema enCLAD" src="../Imagenes/UT_Crear_Material/enclad_sistema10.png" /></p>
+<hr />
+<h3 id="92-definicion-articulos-enclad">9.2. Definición artículos enCLAD</h3>
+<p>Definir artículos desde el módulo de artículos:</p>
+<p><img alt="Artículos" src="../Imagenes/UT_Crear_Material/articulos.png" /></p>
+<p>Crear un nuevo artículo:</p>
+<p><img alt="Nuevo Artículo" src="../Imagenes/UT_Crear_Material/nuevo_articulo.png" /></p>
+<hr />
+<p><strong>1. General</strong>  </p>
+<p>Rellenar los campos de información general según el tipo de cálculo seleccionado:</p>
+<ul>
+<li><strong>Barra</strong></li>
+<li><strong>Pieza</strong></li>
+<li><strong>Junta</strong></li>
+<li><strong>Superficie</strong></li>
+</ul>
+<p><img alt="Artículo enCLAD" src="../Imagenes/UT_Crear_Material/enclad_articulo1.png" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Es obligatorio indicar el sistema de fachada ventilada al que estará vinculado el material.</p>
+</blockquote>
+<hr />
+<p><strong>2. Propiedades comunes</strong>  </p>
+<p>Rellenar los campos de propiedades comunes.<br />
+Dependiendo del tipo de cálculo del material, aparecerán unos campos u otros.</p>
+<p><strong>Ejemplos:</strong></p>
+<ul>
+<li><strong>Barra</strong></li>
+</ul>
+<p><img alt="Artículo enCLAD" src="../Imagenes/UT_Crear_Material/enclad_articulo4.1.png" /></p>
+<ul>
+<li><strong>Pieza separadora</strong></li>
+</ul>
+<p><img alt="Artículo enCLAD" src="../Imagenes/UT_Crear_Material/enclad_articulo4.png" /></p>
+<hr />
+<p><strong>3. Rol</strong>  </p>
+<p>Marcar el tipo de rol del perfil (solo para artículos de tipo <strong>barra</strong>) y definir su valor en el apartado de fachada ventilada.</p>
+<p><img alt="Artículo enCLAD" src="../Imagenes/UT_Crear_Material/enclad_articulo7.png" /></p>
+<hr />
+<p><strong>4. Datos técnicos</strong> </p>
+<p>Importar el archivo <code>.dwg/.dxf</code> del material y definir las dimensiones del dibujo, como:</p>
+<ul>
+<li>Dimensiones interiores</li>
+<li>Dimensiones exteriores</li>
+<li>Profundidad</li>
+<li>Punto de inserción</li>
+<li>Otros parámetros</li>
+</ul>
+<p><img alt="Artículo enCLAD" src="../Imagenes/UT_Crear_Material/enclad_articulo2.png" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> La pestaña <strong>Datos técnicos</strong> solo está disponible para los tipos de cálculo <strong>barra</strong> y <strong>junta</strong>.</p>
+</blockquote>
+<hr />
+<p><strong>5. Reglas</strong>  </p>
+<p>Asignar una regla al perfil (solo para barras), arrastrando una regla previamente definida desde la ventana lateral derecha inferior, de la pestaña <strong>Reglas</strong>.</p>
+<p><img alt="Artículo enCLAD" src="../Imagenes/UT_Crear_Material/enclad_articulo3.png" /></p>
+<p><strong>6. Comercial y stock (asignar colores)</strong></p>
+<p>Cada color y material tendrá una referencia única <em>(Referencia Artículo + Referencia Color)</em>. Arrastra uno o más colores desde la pestaña de colores en la ventana derecha, de la pestaña <strong>Comercial y stock</strong>.</p>
+<p><img alt="Asignar Color" src="../Imagenes/UT_Crear_Material/asignar_color.png" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Información sobre como crear nuevos colores ir a <a href="#32-creación-de-colores">3.2. Creación de colores</a>.</p>
+</blockquote>
+<hr />
+<h3 id="93-definicion-de-reglas">9.3. Definición de reglas</h3>
+<p>Desde el apartado de inicio, acceder al listado <strong>Reglas de adición de artículos</strong> y seleccionar <strong>Reglas en perfiles</strong>.</p>
+<p><img alt="Reglas enCLAD" src="../Imagenes/UT_Crear_Material/enclad_reglas1.png" /></p>
+<p>Crear una <strong>Nueva</strong> regla en perfiles.</p>
+<hr />
+<p><strong>1. Propiedades</strong>  </p>
+<p>Rellenar los campos de propiedades de la regla:</p>
+<ul>
+<li>Nombre</li>
+<li>Descripción</li>
+<li>Familias (niveles de carpetas)</li>
+</ul>
+<p><img alt="Reglas enCLAD" src="../Imagenes/UT_Crear_Material/enclad_reglas2.png" /></p>
+<hr />
+<p><strong>2. Artículos relacionados</strong>  </p>
+<p>Relacionar los artículos de tipo <strong>barra</strong> arrastrándolos desde la ventana lateral derecha en <strong>Artículos</strong>.</p>
+<p><img alt="Reglas enCLAD" src="../Imagenes/UT_Crear_Material/enclad_reglas3.png" /></p>
+<hr />
+<p><strong>3. Sistemas restrictivos</strong>  </p>
+<p>Indicar los sistemas a restringir para esa regla, arrastrándolos desde la ventana lateral derecha en <strong>Sistemas</strong>.</p>
+<p><img alt="Reglas enCLAD" src="../Imagenes/UT_Crear_Material/enclad_reglas4.png" /></p>
+<hr />
+<p><strong>4. Accesorios</strong>  </p>
+<p>Indicar la opción y/o el artículo que se va a generar, arrastrándolo desde la ventana lateral derecha en <strong>Accesorios</strong>.</p>
+<p><img alt="Reglas enCLAD" src="../Imagenes/UT_Crear_Material/enclad_reglas5.png" /></p>
+<blockquote>
+<p>ℹ️ <strong>Nota:</strong> Se puede definir una configuración distinta para cada tipo de cálculo desde la pestaña correspondiente en la parte inferior de la ventana.</p>
+</blockquote>
+<h2 id="10-conclusion">10. Conclusión</h2>
 <p>Siguiendo este manual, podrás dar de alta y gestionar materiales de manera eficiente en el sistema, asegurando una correcta organización y optimización de los procesos de compra y venta.</p>
 <hr />
               

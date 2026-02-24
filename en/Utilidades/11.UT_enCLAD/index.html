@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>enCLAD - Endades Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../stylesheets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "enCLAD";
+        var mkdocs_page_input_path = "es\\Utilidades\\11.UT_enCLAD.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script>
+   
+  <style>
+    /* Botón del globo */
+    #lang-btn {
+      position: fixed;
+      top: 12px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10000;
+      transition: transform 0.2s ease;
+    }
+
+    #lang-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Menú desplegable */
+    #lang-menu {
+      position: fixed;
+      top: 45px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      flex-direction: column;
+      min-width: 150px;
+      z-index: 9999;
+      padding: 6px 0;
+    }
+
+    .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .lang-item:hover {
+      background: #f5f5f5;
+    }
+
+    .lang-item img {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../" class="icon icon-home"> Endades Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configurations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/1.%20CO_Configuracion_Inicial_ENBLAU/">Initial Configuration ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configurations/2.%20CO_Configuracion_Inicial_enCONTROL/">Initial Configuration enCONTROL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Processes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/1.PR_Ventas_Compras/">Sales and Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/2.PR_Facturas/">Invoicing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/3.PR_Manual_Stock_ENBLAU/">Stock Control Management ENBLAU</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/4.PR_Manual_Stock_enCONTROL/">Stock Control Management enCONTROL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/5.PR_Informes/">Reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/6.PR_Proyecto_cliente/">Projects, Clients and Suppliers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Processes/7.PR_Instalaciones/">Installations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Utilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/1.UT_Relacion_ENBLAU_Logikal/">Relationship between phases in ENBLAU and Logikal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/2.UT_Crear_Materiales_enMATERIAL/">Creation of custom materials in enMATERIALS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/3.UT_Editar_Informes/">Creation and editing of custom reports</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/4.UT_Gestion_Filtros/">Filter management</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/5.UT_Actualizar_ENBLAU/">ENBLAU update</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/6.UT_Unidad_Red/">Connect a Network Unit</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/7.UT_Divisas/">Currencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/8.UT_Importacion_Contabilidad/">Import accounting program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/9.UT_Escandallos/">Bill of materials (Grouping of materials)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Utilities/10.UT_Tarifas/">Rates and Labor (materials in ENBLAU)</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">Endades Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">enCLAD</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  
+                <h1 id="enclad">enCLAD</h1>
+<hr />
+<h2 id="1-introduccion">1. Introducción</h2>
+<p>El propósito de este documento es otorgar conocimientos básicos sobre el funcionamiento de <strong>enCLAD</strong>, para agilizar la gestión de procesos en el revestimiento de un edificio.</p>
+<p>Antes de comenzar a trabajar con enCLAD, es necesario disponer de una base de datos con los sistemas y materiales definidos en <strong>enMATERIALS</strong>.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad1.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad2.png" /></p>
+<hr />
+<h2 id="2-nomenclaturas-especificas-de-enclad">2. Nomenclaturas específicas de enCLAD</h2>
+<h3 id="21-linea-maestra">2.1. Línea maestra</h3>
+<p>Railes utilizados para el dibujo de huellas del edificio o montantes intermedios.</p>
+<ul>
+<li><strong>Líneas de corte</strong>: color rojo, continuas  </li>
+<li><strong>Líneas de refuerzo</strong>: color negro, discontinuas</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad3.png" /></p>
+<h3 id="22-cuadro-de-revestimiento">2.2. Cuadro de revestimiento</h3>
+<p>Área situada entre líneas.</p>
+<ul>
+<li><strong>Verde</strong>: zonas a revestir  </li>
+<li><strong>Rojo</strong>: zonas no revestidas  </li>
+<li><strong>Propiedad Revestir</strong>: <code>Sí / No</code></li>
+</ul>
+<p>Se utiliza para el cálculo automático de paneles desde el botón <strong>Diseño y cálculo</strong>.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad4.png" /></p>
+<h3 id="23-superficie-de-revestimiento">2.3. Superficie de revestimiento</h3>
+<p>Zona visible del revestimiento, independiente del muro de obra.</p>
+<p>Propiedades editables:</p>
+<ul>
+<li><strong>Remate de coronación</strong></li>
+<li><strong>Altura de coronación</strong></li>
+<li><strong>Separación respecto al muro</strong></li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad5.png" /></p>
+<h3 id="24-hueco-de-revestimiento">2.4. Hueco de revestimiento</h3>
+<p>Este hueco es independiente del hueco del que parte en el muro de obra, y del hueco dibujado sobre la superficie de revestimiento.</p>
+<p>Incluye propiedades automáticas como por ejemplo:</p>
+<ul>
+<li><strong>Recercados</strong></li>
+<li><strong>Jamba</strong></li>
+<li><strong>Dintel</strong></li>
+<li><strong>Vierteaguas</strong></li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad6.png" /></p>
+<h3 id="25-archivo-enclad">2.5. Archivo <code>.enclad</code></h3>
+<p>Formato propio de enCLAD para almacenamiento e intercambio.</p>
+<blockquote>
+<p><strong>¡Importante!</strong>⚠️ Requiere la misma base de datos de sistemas y materiales para abrirse correctamente.</p>
+</blockquote>
+<hr />
+<h2 id="3-funcionamiento-y-navegacion">3. Funcionamiento y navegación</h2>
+<h3 id="31-login">3.1. LogIn</h3>
+<p>Pantalla de inicio de sesión mediante usuario y contraseña.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad7.png" /></p>
+<h3 id="32-inicio">3.2 Inicio</h3>
+<p>Vista principal tras acceder a la aplicación.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad8.png" /></p>
+<hr />
+<h2 id="4-menu-superior">4. Menú superior</h2>
+<p>Contiene todas las acciones sobre el proyecto.</p>
+<h3 id="41-boton-de-menu">4.1. Botón de menú</h3>
+<p><strong>Proyecto:</strong></p>
+<ul>
+<li><strong>Abrir:</strong> Abre un proyecto almacenado en formato <code>.enclad</code>.</li>
+<li><strong>Guardar:</strong> Permite guardar en formato <code>.enclad</code> el proyecto abierto en el momento.</li>
+<li><strong>Exportar:</strong> Exporta según el formato seleccionado la información del proyecto.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad9.png" /></p>
+<p><strong>Formatos de exportación:</strong></p>
+<ul>
+<li><strong>DWG</strong>: Exporta a DWG la vista actual del proyecto. Formato AutoCAD.</li>
+<li><strong>EMF</strong>: Exporta a EMF la vista actual del proyecto. Formato de imagen de archivo de windows.</li>
+<li><strong>PDF</strong>: Exporta a PDF la vista actual del proyecto. Formato de ficheros de Adobe (Portable Document Format).</li>
+<li><strong>PDF 3D</strong>: Exporta a PDF 3D el proyecto actual. Formato 3D de ficheros de Adobe.</li>
+<li><strong>STEP</strong>: Exporta a STEP el proyecto actual. Standard for the Exchange of Product Data (Estándar para el intercambio de modelo de datos de producto), también conocido como ISO 10303.</li>
+<li><strong>STL</strong>: Exporta a STL el proyecto actual. Formato de transmisión de datos estándar por excelencia de la industria de creación rápida de prototipos</li>
+<li><strong>XML</strong>: Exporta a XML el proyecto actual. (Extensible Markup Language). Almacena los datos de forma que puedan ser leídos tanto por ordenadores como por personas. Un archivo . xml es un formato de datos basado en texto que es compatible con la mayoría de los editores de texto.</li>
+<li><strong>OBJ</strong>: Exporta a OBJ el proyecto actual. La extensión OBJ es un formato de archivos de imágenes en 3D.</li>
+<li><strong>IGES</strong>: Formato de archivo del software de Computer Aided Design (CAD).</li>
+<li><strong>WebGL</strong>: Estándar de web abierta para representar gráficos en cualquier navegador compatible, sin necesidad de plugins adicionales.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad10.1.png" /></p>
+<h3 id="42exportar-paneles">4.2.Exportar paneles</h3>
+<p>Exporta los paneles desplegados en formato DWG, según los valores seleccionados en la ventana de exportación, listos para enviar a corte.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad10.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad11.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad12.png" /></p>
+<ul>
+<li>Configuración de capas para exportación a DWG.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad13.png" /></p>
+<ul>
+<li>Exportar paneles a DWG </li>
+<li>Exportar rigidizadores a DWG</li>
+<li>Exportar paneles a XML </li>
+<li>Exportar rigidizadores a XML</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad14.png" /></p>
+<h3 id="43-eliminar-revestimiento">4.3. Eliminar revestimiento</h3>
+<p>El desplegable de <strong>Eliminar revestimiento</strong> nos ofrece distintas posibilidades. Eliminar partes de un revestimiento, o el revestimiento completo. </p>
+<p>Opciones:</p>
+<ul>
+<li><strong>Líneas:</strong> Nos otorga la posibilidad de eliminar las líneas de revestimiento de nuestro diseño. Eliminar las líneas de revestimiento implica la eliminación de los materiales que dependen de esta línea, como por ejemplo montantes o anclajes.</li>
+<li><strong>Cuadros:</strong> Al eliminar los cuadros de revestimiento no eliminamos ningún material. Estos cuadros únicamente son las áreas definidas que se panelarán durante el cálculo de paneles. Una vez creados los paneles no los necesitaremos y los podremos eliminar.</li>
+<li><strong>Huecos:</strong> Elimina los huecos de la superficie de revestimiento. Si ya disponemos de los paneles necesarios no es necesario disponer de los huecos de revestimiento.</li>
+<li><strong>Paneles:</strong> Elimina los paneles del proyecto.</li>
+<li><strong>Revestimiento completo:</strong> Elimina el revestimiento del/los muro/s  seleccionado/s, o en su defecto de todos los muros. Superficie de revestimiento y sus huecos, líneas de revestimiento, cuadros de revestimiento, paneles, montantes, anclajes, …</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad15.png" /></p>
+<h3 id="44-eliminar-diseno">4.4. Eliminar diseño</h3>
+<p>Elimina todo el contenido del proyecto.</p>
+<hr />
+<h2 id="5-herramientas-de-diseno">5. Herramientas de diseño</h2>
+<p>Permiten la construcción del edificio.</p>
+<h3 id="51-importar-dxf-dwg">5.1. Importar DXF / DWG</h3>
+<p>Importa:</p>
+<ul>
+<li>Niveles</li>
+<li>Muros</li>
+<li>Huecos</li>
+<li>Líneas maestras</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad16.png" /></p>
+<p><strong>Requisitos del DXF / DWG</strong>
+- Muros como polilíneas cerradas de 4 vértices.
+- Huecos como polilíneas cerradas
+- Texto interior para nombre del muro: <code>Name: "M Norte"</code>
+- Niveles definidos por recuadros con:
+  - <code>N: "Nombre del nivel", "Altura"</code></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad17.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad18.png" /></p>
+<hr />
+<h2 id="6-arquitectura">6. Arquitectura</h2>
+<h3 id="61-disenar-muros">6.1. Diseñar muros</h3>
+<p>Creación manual de muros en el nivel seleccionado.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad19.png" /></p>
+<h3 id="62-disenar-huecos">6.2. Diseñar huecos</h3>
+<p>Huecos en muros de obra o superficies de revestimiento.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad20.png" /></p>
+<h3 id="63-editar-vertices">6.3. Editar vértices</h3>
+<p>Edición de vértices independientes de los muros de obra, huecos y de la superficie de revestimiento.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad21.png" /></p>
+<hr />
+<h2 id="7-revestimiento">7. Revestimiento</h2>
+<h3 id="71-automatizacion">7.1. Automatización</h3>
+<h4 id="711-diseno-y-calculo">7.1.1. Diseño y cálculo</h4>
+<p>Automatización del cálculo de revestimiento del edificio. Mediante el asistente de diseño y cálculo podemos obtener de un modo automatizado el revestimiento necesario para los muros que tengamos seleccionados en ese momento, o para todos los muros del edificio en su defecto.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad23.png" /></p>
+<ul>
+<li>Se dibujará las líneas importadas desde el archivo de CAD, y nos creará una superficie de revestimiento en caso de ser necesario.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad23.png" /></p>
+<ul>
+<li>Modulación importada.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad24.png" /></p>
+<h5 id="712-diseno-rapido">7.1.2. Diseño rápido</h5>
+<p>El diseño rápido nos permite obtener un cálculo de la modulación del edificio, para poder obtener una aprobación inicial por parte del arquitecto / cliente implicado.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad25.png" /></p>
+<p>Opciones:</p>
+<ul>
+<li><strong>Inicializar superficie:</strong> Inicializa una superficie de revestimiento, a la distancia indicada según la salida de la fachada indicada. Esta salida será a cara vista del panel.</li>
+<li><strong>Inicializar líneas:</strong> Inicializa las huellas horizontales y verticales que definirán nuestro modelo. En el diseño rápido únicamente se calculan las huellas (Líneas de corte).
+Las líneas pueden ser de corte o de refuerzo. Las líneas de corte definirán las huellas del modelo, las de refuerzo definirán los montantes intermedios. Las líneas serán calculadas en función de los huecos y las dimensiones de los paneles escogidos.</li>
+<li><strong>Inicializar cuadros:</strong> Los cuadros serán calculados en función de las líneas de revestimiento, y serán los espacios definidos entre estas.</li>
+<li><strong>Inicializar paneles:</strong> Los paneles se calcularán por cada uno de los cuadros del diseño, siempre y cuando no hayamos establecido alguno de los cuadros como ‘No revestir’. Tendrá en cuenta los huecos o recercados que se encuentren en su interior. Al ser el diseño rápido, este cálculo de paneles no contemplará alas ni mecanizaciones. Únicamente nos mostrará una vista frontal de la modulación calculada.</li>
+</ul>
+<blockquote>
+<p><strong>Nota:</strong> No contempla alas ni mecanizados.</p>
+</blockquote>
+<h5 id="713-calculo-completo">7.1.3. Cálculo completo</h5>
+<p>El cálculo completo nos va a otorgar tanto la modulación, como el cálculo real de paneles y toda la sub estructura necesaria para llevar a cabo nuestro proyecto. Los checks que encontramos para poder manejar difieren de los checks de diseño rápido.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad26.png" /></p>
+<p>Incluye:</p>
+<ul>
+<li><strong>Inicializar paneles:</strong> Se calcularán del mismo modo que en el diseño rápido, pero al calcularlos de un modo completo, ya nos otorgará las alas necesarias y demás información para enviar a corte.</li>
+<li><strong>Calcular refuerzos:</strong> Calcula los refuerzos necesarios entre huellas.</li>
+<li><strong>Calcular perfiles:</strong> Dibuja los perfiles necesarios.</li>
+<li><strong>Calcular anclajes:</strong> Dibuja los anclajes necesarios.</li>
+</ul>
+<hr />
+<h3 id="72-parametros-de-diseno-rapido">7.2. Parámetros de diseño rápido</h3>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad27.png" /></p>
+<ul>
+<li><strong>Sistema</strong>: Selección del sistema de revestimiento.</li>
+<li><strong>Panel</strong>: Selección del panel con el que revestir.</li>
+<li><strong>Color</strong>: Color del panel.</li>
+<li><strong>Selección Dimensiones</strong>: Dimensiones disponibles del panel.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad28.png" /></p>
+<ul>
+<li><strong>Recercados</strong>: Recercados a aplicar en la superficie de revestimiento. Posteriormente se podrán modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Distancia extremos</strong>: Distancia de la huella / refuerzo desde los extremos.</li>
+<li><strong>Distancia coronación</strong>: Distancia de la huella desde la coronación de la fachada.</li>
+<li><strong>Distancia inferior</strong>: Distancia de la huella desde el remate inferior de la fachada.</li>
+<li><strong>Montantes extremos</strong>: Indica si se coloca el montante de los extremos o no.</li>
+<li><strong>Montantes extremos dividen</strong>: Indica si convertimos en huella el montante de los extremos.</li>
+<li><strong>Ajustar horizontales a huecos o recercados</strong>: Ajusta las huellas horizontales a los huecos o recercados.</li>
+<li><strong>Ajustar verticales a huecos o recercados</strong>: Ajusta las huellas verticales a los huecos o recercados.</li>
+<li><strong>Muro guía</strong>: Indica el muro a partir del cual se van a establecer las huellas horizontales. Si escogemos ninguno, se calculará cada muro por separado.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad29.png" /></p>
+<ul>
+<li><strong>Optimización</strong>:Indica el modo en el que vamos a utilizar los paneles o bobinas pertinentes.</li>
+<li><strong>Flecha</strong>: Indica la dirección de la flecha del panel para optimización.</li>
+<li><strong>Longitud máxima</strong>: Longitud máxima del panel a utilizar.</li>
+<li><strong>Distancia huella</strong>: Ancho de la huella. Inicialmente se obtiene desde el sistema escogido, y en este se indican los parámetro de mínimo y máximo.</li>
+<li><strong>Modo de cálculo</strong>: Mejor optimización.</li>
+</ul>
+<hr />
+<h3 id="73-parametros-de-calculo-completo">7.3. Parámetros de cálculo completo</h3>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad30.png" /></p>
+<ul>
+<li><strong>Montante</strong>: Montantes disponibles según sistema. Intercambiable posteriormente al cálculo. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Montante intermedio</strong>: Montantes intermedios disponibles según sistema. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad31.png" /></p>
+<ul>
+<li><strong>Salida de fachada</strong>: Salida del revestimiento a cara vista del panel. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Espesor aislante</strong>: Espesor del aislante a utilizar. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Separador</strong>: Separadores disponibles según la salida de la fachada. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad32.png" /></p>
+<ul>
+<li><strong>Distancia separadores</strong>: Distancia de cálculo de separadores necesarios. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Distancia montantes</strong>: Indica la distancia máxima entre montantes. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Distancia botas</strong>: Indica la distancia máxima entre botas en un panel de tipo cuelgue. En el caso de un panel remachado, visualizaríamos la distancia máxima entre remaches.</li>
+<li><strong>Dintel</strong>: Dinteles disponibles en el sistema. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad33.png" /></p>
+<ul>
+<li><strong>Jamba</strong>: Jambas disponibles del sistema. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Vierteaguas</strong>: Vierteaguas disponibles del sistema. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Rincón</strong>: Rincones disponibles del sistema. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Coronación y altura</strong>: Coronaciones disponibles del sistema, y la distancia que debe sobrepasar el muro de obra. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Cierre</strong>: Cierres disponibles del sistema. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+<li><strong>Remate inferior</strong>: Remates inferiores disponibles en el sistema. Posteriormente, se podrá modificar seleccionando la superficie de revestimiento.</li>
+</ul>
+<hr />
+<h2 id="8-visualizacion-de-elementos">8. Visualización de elementos</h2>
+<p>Permite mostrar u ocultar:</p>
+<ul>
+<li><strong>Superficies</strong></li>
+<li><strong>Líneas</strong></li>
+<li><strong>Cuadrícula</strong></li>
+<li><strong>Paneles</strong></li>
+<li><strong>Perfiles</strong></li>
+<li><strong>Vértices</strong></li>
+<li><strong>Flechas</strong></li>
+<li><strong>Separadores</strong></li>
+<li><strong>Nombres</strong></li>
+</ul>
+<hr />
+<h2 id="9-resumen-de-proyecto">9. Resumen de proyecto</h2>
+<p>Muestra el listado de materiales necesarios (despiece) para llevar a cabo el proyecto. Este listado puede ser copiado y pegado sobre un archivo Excel.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad34.png" /></p>
+<hr />
+<h2 id="10-barra-inferior">10. Barra inferior</h2>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad35.png" /></p>
+<ol>
+<li><strong>Soporte remoto</strong> (TeamViewer)</li>
+<li><strong>Filtros</strong>: Filtra la selección de entidades, según los filtros aplicados.</li>
+<li><strong>Modos de selección</strong>: Cambia entre los distintos modos de selección´.</li>
+<li><strong>Vistas</strong>: Bloque, alámbrica, planta. Muestra una vista en bloque del diseño 3D.</li>
+<li><strong>Referencia a grid</strong>: Referencia el puntero a la cuadrícula de la grid.</li>
+<li><strong>Referencia a objeto</strong>: Referencia el puntero a las distintas entidades del diseño.</li>
+<li>
+<p><strong>Propiedades del proyecto</strong>: Permite cambiar ciertas configuraciones del proyecto, y establecer ciertos valores por defecto.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad36.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad37.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad38.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad39.png" /></p>
+</li>
+<li>
+<p><strong>Origen</strong>: Muestra u oculta el punto de origen en el diseño.</p>
+</li>
+<li><strong>Grid</strong>: Muestra u oculta la grid del diseño</li>
+</ol>
+<hr />
+<h2 id="11-panel-lateral-izquierdo">11. Panel lateral izquierdo</h2>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad40.png" /></p>
+<h3 id="111-niveles">11.1. Niveles</h3>
+<p>Gestión y visibilidad de niveles.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad41.png" /></p>
+<h3 id="112-alzados">11.2. Alzados</h3>
+<p>Definición de alzados de nuestro diseño. Podemos tener de dos tipos, de subestructura o de modulación. Según el tipo escogido visualizaremos unos elementos u otros.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad42.png" /></p>
+<ul>
+<li><strong>Modulación y dibujos</strong></li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad43.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad44.png" /></p>
+<ul>
+<li><strong>Subestructura y dibujos</strong></li>
+</ul>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad44.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad45.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad46.png" /></p>
+<h3 id="113-planos-de-planta">11.3. Planos de planta</h3>
+<p>Definición de plantas del proyecto.</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad47.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad48.png" /></p>
+<h3 id="114-propiedades">11.4. Propiedades</h3>
+<p>Panel de propiedades del elemento seleccionado. Ejemplos:</p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad49.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad50.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad51.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad52.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad53.png" /></p>
+<p><img alt="enCLAD" src="../../../Utilidades/Imagenes/UT_enCLAD/enclad54.png" /></p>
+<hr />
+<h2 id="12-modo-de-empleo">12. Modo de empleo</h2>
+<h3 id="121-atajos-de-teclado">12.1. Atajos de teclado</h3>
+<ul>
+<li><code>CTRL + A</code> → Seleccionar todo  </li>
+<li><code>CTRL + I</code> → Invertir selección  </li>
+<li><code>CTRL + SUPR</code> → Eliminar  </li>
+<li><code>CTRL + F</code> → Zoom automático  </li>
+<li><code>CTRL + + / -</code> → Zoom  </li>
+<li><strong>Flechas</strong> → Rotación  </li>
+<li><code>ESC</code> → Cancelar  </li>
+</ul>
+<h3 id="122-comandos-tactiles">12.2. Comandos táctiles</h3>
+<ul>
+<li><strong>Doble toque</strong> → Selección  </li>
+<li><strong>Arrastrar</strong> → Rotación  </li>
+<li><strong>Pellizco</strong> → Zoom  </li>
+<li><strong>Dos dedos</strong> → Desplazamiento  </li>
+<li><strong>Giro con dos dedos</strong> → Rotación sin volteo  </li>
+</ul>
+<hr />
+<h2 id="13-creacion-de-materiales-enmaterials">13. Creación de materiales enMATERIALS</h2>
+<p>Desde el módulo enMATERIALS se creará los materiales de cada sistema de paneles ventilados composite.</p>
+<p>Para más información, sigue este enlace: <a href="/Utilidades/2.UT_Crear_Materiales_enMATERIAL/#9-creacion-de-sistemas-y-materiales-enclad">Creación de sistemas y materiales enCLAD</a></p>
+              
+
+  <!-- Botón del selector de idioma -->
+  <div id="lang-btn" title="Change language">
+    <img src="/images/globo-64.png" alt="Change language" width="22" height="22"> 
+  </div>
+
+  <!-- Menú desplegable de idiomas -->
+  <div id="lang-menu">
+    <div class="lang-item" onclick="window.location.href='/'">
+      <img src="https://flagcdn.com/es.svg" alt="Español"> <span>Español</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/en/'">
+      <img src="https://flagcdn.com/gb.svg" alt="English"> <span>English</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/it/'">
+      <img src="https://flagcdn.com/it.svg" alt="Italiano"> <span>Italiano</span>
+    </div>
+    <div class="lang-item" onclick="window.location.href='/pt/'">
+      <img src="https://flagcdn.com/pt.svg" alt="Português"> <span>Português</span>
+    </div>
+  </div>
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p> </p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+  
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../js/lang-switcher.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    const langBtn = document.getElementById("lang-btn");
+    const langMenu = document.getElementById("lang-menu");
+
+    langBtn.addEventListener("click", () => {
+      const visible = langMenu.style.display === "flex";
+      langMenu.style.display = visible ? "none" : "flex";
+    });
+
+    // Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+        langMenu.style.display = "none";
+      }
+    });
+  </script>
+
+
+</body>
+</html>
