@@ -62,6 +62,7 @@ plugins:
               - Import accounting program: Utilities/8.UT_Importacion_Contabilidad.md
               - Bill of materials (Grouping of materials): Utilities/9.UT_Escandallos.md
               - Rates and Labor (materials in ENBLAU): Utilities/10.UT_Tarifas.md
+              - enCLAD: Utilities/11.UT_enCLAD.md
         - locale: it
           name: Italiano
           build: true
@@ -89,6 +90,7 @@ plugins:
               - Importazione programma di contabilità: Utilita/8.UT_Importacion_Contabilidad.md
               - Bill of materials (Grouping of materials): Utilita/9.UT_Escandallos.md
               - Tariffe e Manodopera dei (materiali in ENBLAU): Utilita/10.UT_Tarifas.md
+              - enCLAD: Utilita/11.UT_enCLAD.md
         - locale: pt
           name: Português
           build: true
@@ -116,6 +118,7 @@ plugins:
               - Importação programa de contabilidade: Utilidades/8.UT_Importacion_Contabilidad.md
               - Escandallos (Agrupación de materiales): Utilidades/9.UT_Escandallos.md
               - Tarifas e Mão de Obra (materiais no ENBLAU): Utilidades/10.UT_Tarifas.md
+              - enCLAD: Utilidades/11.UT_enCLAD.md
 
 theme:
   name: readthedocs
